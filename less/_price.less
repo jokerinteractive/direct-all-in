@@ -1,0 +1,19 @@
+@import "__mixins"; // TODO: move all imports to style
+
+.price {
+  padding-top: 50px;
+  background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #fff 50%, #fff 100%);
+
+  &__wrap {
+    .wrap;
+  }
+
+  &__title {
+    text-align: center;
+
+    > span {
+      padding: 0 10px 15px;
+      border-bottom: 2px dotted fade(#e7e2c7, 70%);
+    }
+  }
+}
