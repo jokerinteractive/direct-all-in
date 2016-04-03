@@ -1,0 +1,21 @@
+.earlier {
+  position: relative;
+  padding: 180px 160px 100px 400px;
+  background: url(../img/bg-earlier-tile.png) no-repeat ~"50% 50px/100% auto",
+    url(../img/bg-earlier-border.png) repeat-x ~"50% 4px/12px 2px",
+    url(../img/bg-earlier.jpg) no-repeat ~"50% 120px/80%";
+
+  &::before {
+    position: absolute;
+    top: 185px;
+    left: 60px;
+    display: block;
+    width: 275px;
+    height: 275px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #8474c1 url(../img/start.png) no-repeat ~"50% 50%/275px 275px";
+    box-shadow: 0 0 68px 0 fade(#000, 20%);
+    content: " ";
+  }
+}
