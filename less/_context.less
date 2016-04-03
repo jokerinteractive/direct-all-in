@@ -1,0 +1,40 @@
+@import "__mixins"; // TODO: move all imports to style
+
+.context {
+  padding-bottom: 150px;
+  border-bottom: 1px solid #f0f2f4;
+  background: #f7f9fa linear-gradient(to top, #f6f8fa 0%, #fff 50%, #fff 100%);
+
+  &__wrap {
+    .wrap;
+  }
+
+  &__title {
+    .title-dotted;
+    margin-bottom: 35px;
+  }
+
+  &__title-second {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  &__text, // TODO: maybe transfer to mixin
+  &__features {
+    margin-right: auto;
+    margin-left: auto;
+    width: 66%;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__features {
+    padding: 60px;
+    border: 1px solid #d9d9d9;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 13px 0 fade(#000, 8%);
+  }
+}
