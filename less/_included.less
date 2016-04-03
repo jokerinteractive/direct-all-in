@@ -1,0 +1,41 @@
+@import "__mixins"; // TODO: move all imports to style
+
+.included {
+  padding-top: 35px;
+  background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #fff 50%, #fff 100%);
+
+  &__wrap {
+    .wrap;
+  }
+
+  &__title {
+    .title-dotted;
+  }
+
+  &__features {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  &__feature {
+    box-sizing: border-box;
+    margin-bottom: 35px;
+    font-size: 14px;
+    flex: 0 0 45%;
+
+    &:nth-child(2n+1) {
+      padding-right: 100px;
+      text-align: right;
+    }
+
+    &:nth-child(2n) {
+      padding-left: 100px;
+    }
+
+    h6,
+    p {
+      margin: 10px 0;
+    }
+  }
+}
