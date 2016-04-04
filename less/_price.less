@@ -2,6 +2,7 @@
 
 .price {
   padding-top: 35px;
+  border-top: 1px solid #f0f2f4;
   background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #fff 50%, #fff 100%);
 
   &__wrap {
@@ -9,11 +10,17 @@
   }
 
   &__title {
-    text-align: center;
+    .title-dotted;
+  }
 
-    > span {
-      padding: 0 10px 15px;
-      border-bottom: 2px dotted fade(#e7e2c7, 70%);
+  &__list {
+    li::before {
+      display: inline-block;
+      margin: -2px 8px 0 2px;
+      color: #338bc3;
+      content: "●";
+      vertical-align: top;
+      font-size: 21px;
     }
   }
 }
