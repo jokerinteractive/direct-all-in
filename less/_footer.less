@@ -1,0 +1,50 @@
+@import "__mixins"; // TODO: move all imports to style
+
+.footer {
+  background: #232d57 url(../img/bg-footer.jpg) no-repeat 50% 50%/cover;
+  color: #fff;
+
+  &__wrap { .wrap; }
+
+  &__nav {
+    background-color: fade(#000, 20%);
+
+    h5 { font-size: 14px; }
+
+    li {
+      margin: 0;
+      font-size: 13px;
+    }
+
+    a {
+      color: #c3c3c3;
+      text-decoration: none;
+
+      &:hover { text-decoration: underline; }
+    }
+  }
+
+  &__nav-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__call-us { text-align: center; }
+
+  &__call-us-title { font-size: 22px; }
+
+  &__navbar {
+    background-color: #fff;
+    color: #393939;
+    font-size: 13px;
+
+    a {
+      color: #393939;
+
+      &:hover { text-decoration: none; }
+    }
+
+    p,
+    li { margin: 0; }
+  }
+}
