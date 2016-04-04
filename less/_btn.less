@@ -1,0 +1,24 @@
+.btn {
+  position: relative;
+  padding: 10px 15px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff304f;
+  box-shadow: 0 3px 0 0 #9d0c22;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  transition: top .05s cubic-bezier(0.42, 0, 0.58, 1);
+
+  &:hover {
+    background-color: #EB3051;
+    transition: none;
+  }
+
+  &:active {
+    top: 2px;
+    background-color: #ff304f;
+    box-shadow: 0 1px 0 0 #890C22;
+    transform-origin: 50% 100% 0;
+  }
+}
