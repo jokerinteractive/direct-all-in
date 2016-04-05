@@ -108,7 +108,7 @@
   </main>
   <footer class="footer">
     <div class="footer__call-us">
-      <h4>Узнайте стоимость услуг, которые подойдут именно Вам</h4>
+      <h4 class="footer__call-us-title">Узнайте стоимость услуг,<br>которые подойдут именно Вам</h4>
       <form class="form" action="">
         <input class="form__text" type="text" placeholder="Ваше Имя">
         <input class="form__text" type="text" placeholder="Ваш номер телефона">
@@ -116,70 +116,76 @@
       </form>
     </div>
     <nav class="footer__nav">
-      <ul>
-        <li>
-          <h5>Услуги</h5>
-          <ul>
-            <li><a href="">Цены на настройку контекстной рекламы</a></li>
-            <li><a href="">Аудиты и консультации</a></li>
-            <li><a href="">Настройка Яндекс.Директ</a></li>
-            <li><a href="">Настройка Google Adwords</a></li>
-            <li><a href="">Ведение и аналитика</a></li>
-          </ul>
-        </li>
-        <li>
-          <h5>Обучение</h5>
-          <ul>
-            <li><a href="">Бесплатный курс по Яндекс.Директ</a></li>
-            <li><a href="">Книга Филиппа Царевского</a></li>
-            <li><a href="">Индивидуальный коучинг по Яндекс.Директ</a></li>
-            <li><a href="">Обучение ведению и аналитике рекламы</a></li>
-            <li><a href="">Демонстрационная настройка Яндекс.Директ</a></li>
-            <li><a href="">Тест на уровень знаний Яндекс.Директ</a></li>
-          </ul>
-        </li>
-        <li>
-          <h5>Материалы</h5>
-          <ul>
-            <li><a href="">Блог</a></li>
-            <li><a href="">Кейсы</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Вакансии</a></li>
-          </ul>
-        </li>
-        <li>
-          <h4>Получите бесплатный курс по Яндекс.Директ из 12 уроков </h4>
-          <p>Самый исчерпывающий и структурированный на рынке (по отзывам).</p>
-          <form class="form" action="">
-            <input class="form__text" type="text" placeholder="Ваш E-Mail">
-            <input class="btn" type="submit" value="Получить курс">
-          </form>
-        </li>
-      </ul>
+      <div class="footer__wrap">
+        <ul class="footer__nav-item">
+          <li>
+            <h5>Услуги</h5>
+            <ul>
+              <li><a href="">Цены на настройку контекстной рекламы</a></li>
+              <li><a href="">Аудиты и консультации</a></li>
+              <li><a href="">Настройка Яндекс.Директ</a></li>
+              <li><a href="">Настройка Google Adwords</a></li>
+              <li><a href="">Ведение и аналитика</a></li>
+            </ul>
+          </li>
+          <li>
+            <h5>Обучение</h5>
+            <ul>
+              <li><a href="">Бесплатный курс по Яндекс.Директ</a></li>
+              <li><a href="">Книга Филиппа Царевского</a></li>
+              <li><a href="">Индивидуальный коучинг по Яндекс.Директ</a></li>
+              <li><a href="">Обучение ведению и аналитике рекламы</a></li>
+              <li><a href="">Демонстрационная настройка Яндекс.Директ</a></li>
+              <li><a href="">Тест на уровень знаний Яндекс.Директ</a></li>
+            </ul>
+          </li>
+          <li>
+            <h5>Материалы</h5>
+            <ul>
+              <li><a href="">Блог</a></li>
+              <li><a href="">Кейсы</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Вакансии</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Получите бесплатный курс по Яндекс.Директ из 12 уроков </h4>
+            <p>Самый исчерпывающий и структурированный на рынке (по отзывам).</p>
+            <form class="form" action="">
+              <input class="form__text" type="text" placeholder="Ваш E-Mail">
+              <input class="btn" type="submit" value="Получить курс">
+            </form>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <ul class="footer__navbar">
-      <li>
-        <a href="">Политика конфиденциальности</a>
-        <a href="">Партнерская программа</a>
-      </li>
-      <li>
-        <p>ИП Царевский Ф. Л.<br>
-          ОГРНИП 31377460370109</p>
-      </li>
-      <li class="social">
-        <a href="">yt</a>
-        <a href="">fb</a>
-        <a href="">tw</a>
-        <a href="">ig</a>
-        <a href="">vk</a>
-      </li>
-      <li>
-        <a href="mailto:sale@direct-all-in.ru">sale@direct-all-in.ru</a>
-      </li>
-      <li>
-        <span>8 (499) 649-54-17</span>
-      </li>
-    </ul>
+    <div class="footer__navbar">
+      <div class="footer__wrap">
+        <ul>
+          <li>
+            <a href="">Политика конфиденциальности</a>
+            <a href="">Партнерская программа</a>
+          </li>
+          <li>
+            <p>ИП Царевский Ф. Л.<br>
+              ОГРНИП 31377460370109</p>
+          </li>
+          <li class="social">
+            <a href="">yt</a>
+            <a href="">fb</a>
+            <a href="">tw</a>
+            <a href="">ig</a>
+            <a href="">vk</a>
+          </li>
+          <li>
+            <a href="mailto:sale@direct-all-in.ru">sale@direct-all-in.ru</a>
+          </li>
+          <li>
+            <span>8 (499) 649-54-17</span>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
