@@ -1,9 +1,46 @@
 @import "__mixins"; // TODO: move all imports to style
 
 .metrika {
-  &__wrap { .wrap; }
+  &__wrap {
+    .wrap;
+    &::after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+  }
 
-  &__title { .title-dotted; }
+  &__title {
+    .title-dotted;
+    margin-bottom: 35px;
+  }
 
-  &__show { font-size: 18px; }
+  &__text {
+    float: left;
+    padding-right: 2%;
+    width: 48%;
+    font-size: 16px;
+  }
+
+  &__show {
+    position: relative;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 18px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      display: block;
+      width: 144px;
+      height: 144px;
+      border: 1px solid fade(#000, 10%);
+      border-radius: 50%;
+      background: #fff url(../img/i-metrika.png) no-repeat ~"50% 50%/80%";
+      box-shadow: 0 0 55px 0 fade(#000, 10%);
+      content: " ";
+      transform: translate(-50%, -50%);
+    }
+  }
 }
