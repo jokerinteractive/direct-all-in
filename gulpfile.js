@@ -10,15 +10,15 @@ var
 var
 	paths = {
 		jade : {
-			location: 'jade/**/*.jade',
-			compiled: 'jade/_pages/*.jade',
+			location: './jade/**/*.jade',
+			compiled: './jade/_pages/*.jade',
 			destination: '.'
 		},
 
 		less : {
-			location    : 'less/**/*.less',
-			entryPoint  : 'css/style.css',
-			destination: 'css'
+			location    : './less/style.less',
+			entryPoint  : './css/style.css',
+			destination: './css'
 		}
 	};
 
@@ -32,10 +32,19 @@ gulp.task('jade', function() {
 		.pipe(gulp.dest(paths.jade.destination));
 });
 
-/* --------- scss --------- */
+/* --------- less --------- */
+/*
+gulp.task('less', function () {
+  gulp.src(paths.less.location)
+    .pipe(less({
+      //paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
+    .pipe(gulp.dest(paths.less.destination));
+}); */
 
 gulp.task('less', function () {
 	gulp.src(paths.less.location)
+    	.pipe(less())
     	.pipe(gulp.dest(paths.less.destination));
 });
 
