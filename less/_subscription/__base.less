@@ -1,0 +1,33 @@
+.subscription {
+
+	*, 
+	*:before,
+	*:after {
+		box-sizing: border-box;
+	}
+	
+	section {
+
+	}
+
+	.wrapper {
+		display: block;
+		margin: 0 auto;
+		max-width: 1152px;
+	}
+
+	.clearfix {
+
+		&:before,
+		&:after {
+			content: " ";
+			display: table;
+		}
+
+		&:after {
+			clear: both;
+		}
+	}
+}
+
+
