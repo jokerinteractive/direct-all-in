@@ -3,6 +3,7 @@
 var
 	gulp        = require('gulp'),
 	jade        = require('gulp-jade'),
+	plumber     = require('gulp-plumber'),
 	less        = require('gulp-less');
 
 /* --------- paths --------- */
@@ -17,6 +18,7 @@ var
 
 		less : {
 			location    : './less/style.less',
+			watch		: './less/**/*.less',
 			entryPoint  : './css/style.css',
 			destination: './css'
 		}
@@ -26,6 +28,7 @@ var
 
 gulp.task('jade', function() {
 	gulp.src(paths.jade.compiled)
+		.pipe(plumber())
 		.pipe(jade({
 			pretty: '\t',
 		}))
@@ -33,17 +36,10 @@ gulp.task('jade', function() {
 });
 
 /* --------- less --------- */
-/*
-gulp.task('less', function () {
-  gulp.src(paths.less.location)
-    .pipe(less({
-      //paths: [ path.join(__dirname, 'less', 'includes') ]
-    }))
-    .pipe(gulp.dest(paths.less.destination));
-}); */
 
 gulp.task('less', function () {
 	gulp.src(paths.less.location)
+		.pipe(plumber())
     	.pipe(less())
     	.pipe(gulp.dest(paths.less.destination));
 });
@@ -52,7 +48,7 @@ gulp.task('less', function () {
 
 gulp.task('watch', function(){
 	gulp.watch(paths.jade.location, ['jade']);
-	gulp.watch(paths.less.location, ['less']);
+	gulp.watch(paths.less.watch, ['less']);
 });
 
 /* --------- default --------- */
