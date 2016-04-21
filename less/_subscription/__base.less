@@ -1,33 +1,27 @@
+/* TODO: вынести в ./less/_subscription.less */
 .subscription {
+  *, /* TODO: попахивает хаками, зачем это?) */
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-	*, 
-	*:before,
-	*:after {
-		box-sizing: border-box;
-	}
-	
-	section {
+  .wrapper { /* TODO: зачем каскад в блоке .subscription? */
+    display: block;
+    margin: 0 auto;
+    max-width: 1152px;
+  }
 
-	}
+  .clearfix { /* TODO: зачем каскад в блоке .subscription? */
 
-	.wrapper {
-		display: block;
-		margin: 0 auto;
-		max-width: 1152px;
-	}
+    &::before,
+    &::after {
+      content: " ";
+      display: table;
+    }
 
-	.clearfix {
-
-		&:before,
-		&:after {
-			content: " ";
-			display: table;
-		}
-
-		&:after {
-			clear: both;
-		}
-	}
+    &::after {
+      clear: both;
+    }
+  }
 }
-
-

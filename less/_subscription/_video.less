@@ -1,80 +1,77 @@
 .subscription__video {
-	color: #fff;
-	background-color: #ccc;
-	padding: 70px 0 79px 40px;
+  padding: 70px 0 79px 40px;
+  background-color: #ccc;
+  color: #fff;
 
-	.subscription__video--wrapper {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: flex-start;
-	}
+  .subscription__video--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-	&--video {
-		width: 760px;
-		height: 475px;
-		background-color: #000;
-		border: none;
-	}
+  &--video {
+    width: 760px;
+    height: 475px;
+    border: none;
+    background-color: #000;
+  }
 
-	.video-info {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: flex-start;
-		padding-left: 40px;
-		width: 368px;
-		height: 475px;
+  .video-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 40px;
+    width: 368px;
+    height: 475px;
 
-		&__top {
-			
-			&--watch {
-				font-size: 35px;
-				margin: 0;
-				margin-bottom: 15px;
-			}
+    &__top {
 
-			&--choose {
-				line-height: 1.3;
-				font-size: 28px;
-				margin: 0;
-				margin-bottom: 46px;
-			}
+      &--watch {
+        font-size: 35px;
+        margin: 0 0 15px;
+      }
 
-			&--text {
-				padding: 5px 0 5px 18px;
-				margin: 0;
-				font-size: 18px;
-				line-height: 1.3;
-				border-left: 2px solid rgb(255, 47, 79);
-			}
-		}
+      &--choose {
+        line-height: 1.3;
+        font-size: 28px;
+        margin: 0 0 46px;
+      }
 
-		&__bottom {
-			&--like {
-				font-size: 18px;
-				margin: 0;
-			}
+      &--text {
+        padding: 5px 0 5px 18px;
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.3;
+        border-left: 2px solid rgb(255, 47, 79);
+      }
+    }
 
-			.socials {
-				margin: 0;
-				padding: 0;
+    &__bottom {
+      &--like {
+        font-size: 18px;
+        margin: 0;
+      }
 
-				&__item {
-					font-size: 0;
-					display: inline-block;
-					list-style: none;
-					margin-left: 10px;
-					width: 30px;
-					height: 30px;
-					background-color: #000;
-					margin: 0;
+      .socials {
+        margin: 0;
+        padding: 0;
 
-					&:first-of-type {
-						margin-left: 0;
-					}
-				}
-			}
-		}
-	}
+        &__item {
+          font-size: 0;
+          display: inline-block;
+          list-style: none;
+          width: 30px;
+          height: 30px;
+          background-color: #000;
+          margin: 0 0 0 10px;
+
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
 }
