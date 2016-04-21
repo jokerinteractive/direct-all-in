@@ -529,7 +529,7 @@ li {
 .price {
   padding-top: 35px;
   border-top: 1px solid #f0f2f4;
-  background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #fff 50%, #fff 100%);
+  background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #ffffff 50%, #ffffff 100%);
 }
 .price article,
 .price aside {
@@ -573,7 +573,7 @@ li {
   position: relative;
   clear: both;
   padding-top: 35px;
-  background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #fff 50%, #fff 100%);
+  background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #ffffff 50%, #ffffff 100%);
 }
 .included__wrap {
   margin-right: auto;
@@ -632,7 +632,7 @@ li {
 .context {
   padding-bottom: 150px;
   border-bottom: 1px solid #f0f2f4;
-  background: #f7f9fa linear-gradient(to top, #f6f8fa 0%, #fff 50%, #fff 100%);
+  background: #f7f9fa linear-gradient(to top, #f6f8fa 0%, #ffffff 50%, #ffffff 100%);
 }
 .context__wrap {
   margin-right: auto;
@@ -712,7 +712,7 @@ li {
   height: 144px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background: #fff url(../img/i-metrika.png) no-repeat 50% 50%/80%;
+  background: #ffffff url(../img/i-metrika.png) no-repeat 50% 50%/80%;
   box-shadow: 0 0 55px 0 rgba(0, 0, 0, 0.1);
   content: " ";
   transform: translate(-50%, -50%);
