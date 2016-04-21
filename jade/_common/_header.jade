@@ -5,15 +5,11 @@ header.header
       a.logo(href="/") Direct All-in
 
       nav.main-menu
-        a.main-menu__item(href="") Главная
-        a.main-menu__item(href="") Обучение</a>
-        a.main-menu__item.main-menu__item--active(href="") Услуги
-        a.main-menu__item(href="") Материалы
-        a.main-menu__item(href="") Контакты
+        each item in site.data.header
+          a.main-menu__item(href=item.link) #{item.name}
 
-      a.header__phone(href="#") 8&nbsp;(499)&nbsp;649-54-17
+      a.header__phone(href="/callback") 8&nbsp;(499)&nbsp;649-54-17
         span.header__callback Заказать звонок
 
-
-  h1.header__title Формирование цены 
+  h1.header__title Формирование цены
     small на настройку контекстной рекламы
