@@ -1,12 +1,30 @@
+@import "__mixins";
+
+
 .earlier {
   position: relative;
-  padding: 180px 160px 100px 400px;
-  background: url(../img/bg-earlier-tile.png) no-repeat ~"50% 50px/100% auto", url(../img/bg-earlier-border.png) repeat-x ~"50% 4px/12px 2px", url(../img/bg-earlier.jpg) no-repeat ~"50% 120px/80%";
+  // background: url(../img/bg-earlier-tile.png) no-repeat ~"50% 50px/100% auto", url(../img/bg-earlier-border.png) repeat-x ~"50% 4px/12px 2px", url(../img/bg-earlier.jpg) no-repeat ~"50% 120px/80%";
+  // padding: 180px 160px 100px 400px;
+  // background: url("../img/bg-earlier-tile.png") no-repeat ~"50% 50px/100% auto", url("../img/bg-earlier-border.png") repeat-x ~"50% 4px/12px 2px";
+  background: url(../img/bg-earlier-tile.png) no-repeat ~"50% 20px/50% auto", url(../img/bg-earlier-border.png) repeat-x ~"50% 4px/12px 2px";
+  padding-top: 73px;
 
-  &::before {
+  &__wrap {
+    .wrap;
+    position: relative;
+    // background: url("../img/bg-earlier.jpg") no-repeat ~"50% 0";
+    background: url(../img/bg-earlier.jpg) ~"50% 0px/90%" no-repeat;
+    padding: 107px 90px 50px 515px;
+    box-sizing: border-box;
+  }
+
+  &__wrap::before {
     position: absolute;
-    top: 185px;
-    left: 60px;
+    // top: 185px;
+    top: 107px;
+    // left: 60px;
+    // left: 95px;
+    left: 200px;
     display: block;
     width: 275px;
     height: 275px;
