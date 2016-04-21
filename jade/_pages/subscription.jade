@@ -1,149 +1,141 @@
 extends ../template
 
 block main-content
-	wrapper.subscription
+  wrapper.subscription
 
-		section.subscription__main
-			wrapper.subscription__main--wrapper.wrapper.clearfix
+    section.subscription__main
+      wrapper.subscription__main--wrapper.wrapper.clearfix
+        .subscription__main--left.yandex-course
+          h3.yandex-course__call Пройди бесплатный курс по
+          wrapper.yandex-course__logo
+            img.yandex-course__logo-img(src="./img/subscriptions/yandex.png" alt="Яндекс Директ")
+            | Яндес Директ
+          h3.yandex-course__from От Филиппа Царевского
+          p.yandex-course__feedback "Самый исчерпывающий и структурированный на рынке"
+          p.yandex-course__by (по отзывам подписчиков)
 
-				.subscription__main--left.yandex-course
-					h3.yandex-course__call Пройди бесплатный курс по
-					wrapper.yandex-course__logo
-						img.yandex-course__logo-img(src="./img/subscriptions/yandex.png" alt="Яндекс Директ") 
-						| Яндес Директ
-					h3.yandex-course__from От Филиппа Царевского
-					p.yandex-course__feedback "Самый исчерпывающий и структурированный на рынке"
-					p.yandex-course__by (по отзывам подписчиков)
+        .subscription__main--right.get-course
+          h3.get-course__twelve 12 пошаговых уроков, по одному каждый день
+          p.get-course__details Нюансы, которых не знает 95% рекламодателей и 70% специалистов (данные основаны на сотнях аудитов и консультаций)
+          form.get-course__form(action="")
+            input.get-course__form--text(type="text" placeholder="Введите ваш e-mail")
+            input.get-course__form--button(type="submit" value="Получить уроки")
 
-				.subscription__main--right.get-course
-					h3.get-course__twelve 12 пошаговых уроков, по одному каждый день
-					p.get-course__details Нюансы, которых не знает 95% рекламодателей и 70% специалистов (данные основаны на сотнях аудитов и консультаций)
-					form.get-course__form(action="")
-						input.get-course__form--text(type="text" placeholder="Введите ваш e-mail")
-						input.get-course__form--button(type="submit" value="Получить уроки")
-		
-		section.subscription__effective
-			wrapper.wrapper.subscription__effective--wrapper
+    section.subscription__effective
+      wrapper.wrapper.subscription__effective--wrapper
+        header.subscription__effective--header.clearfix.effective-header
+          .effective-header__left
+            wrapper.effective-header__left--wrapper
+              img.effective-header__left--img(src="./img/subscriptions/effective.png" alt="Эффект")
 
-				header.subscription__effective--header.clearfix.effective-header
+          .effective-header__right
+            h3.effective-header__right--head
+              | В среднем, эффективность контекстной рекламы после прохождения курса увеличивается в 2,34 раза
+            p.effective-header__right--text
+              | Кто-то снижает расходы, кто-то увеличивает количество заявок или повышает их качество, кому-то удается поднять средний чек.
+            p.effective-header__right--text
+              | Рекламодатели смогут легко отличить дилетанта от профессионала, а директологи (или специалисты по контекстной рекламе, если угодно) повысят свою экспертность и будут дороже продавать свои услуги.
 
-					.effective-header__left
-						wrapper.effective-header__left--wrapper
-							img.effective-header__left--img(src="./img/subscriptions/effective.png" alt="Эффект")
+        article.subscription__effective--content.effective-content
+          h3.effective-content__header
+            | За счёт чего это происходит?
 
-					.effective-header__right
-						h3.effective-header__right--head
-							| В среднем, эффективность контекстной рекламы после прохождения курса увеличивается в 2,34 раза
-						p.effective-header__right--text
-							| Кто-то снижает расходы, кто-то увеличивает количество заявок или повышает их качество, кому-то удается поднять средний чек.
-						p.effective-header__right--text
-							| Рекламодатели смогут легко отличить дилетанта от профессионала, а директологи (или специалисты по контекстной рекламе, если угодно) повысят свою экспертность и будут дороже продавать свои услуги.
-				
-				article.subscription__effective--content.effective-content
-					h3.effective-content__header
-						| За счёт чего это происходит?
+          wrapper.effective-content__wrapper
+            ul.effective-content__column
+              li.effective-content__column--element.column-element
+                wrapper.column-element__wrapper
+                  img.column-element__wrapper--img(src="" alt="")
+                p.column-element__text
+                  | Узнаете азы, без которых Директ превращается в слив бюджета.
 
-					wrapper.effective-content__wrapper
+              li.effective-content__column--element.column-element(style="margin-bottom: 66px;")
+                wrapper.column-element__wrapper
+                  img.column-element__wrapper--img(src="" alt="")
+                p.column-element__text
+                  | Узнаете чем Яндекс Директ отличается от лотереи и почему контекстная реклама - это мощный маркетинговый инструмент.
 
-						ul.effective-content__column
-							li.effective-content__column--element.column-element
-								wrapper.column-element__wrapper
-									img.column-element__wrapper--img(src="" alt="")
-								p.column-element__text
-									| Узнаете азы, без которых Директ превращается в слив бюджета.
+              li.effective-content__column--element.column-element(style="margin-bottom: 68px;")
+                wrapper.column-element__wrapper
+                  img.column-element__wrapper--img(src="" alt="")
+                p.column-element__text
+                  | Выставите правильные настройки в интерфейсе, которые сэкономят ваш бюджет.
 
-							li.effective-content__column--element.column-element(style="margin-bottom: 66px;")
-								wrapper.column-element__wrapper
-									img.column-element__wrapper--img(src="" alt="")
-								p.column-element__text
-									| Узнаете чем Яндекс Директ отличается от лотереи и почему контекстная реклама - это мощный маркетинговый инструмент.
+              li.effective-content__column--element.column-element
+                wrapper.column-element__wrapper
+                  img.column-element__wrapper--img(src="" alt="")
+                p.column-element__text
+                  | Научитесь правильно вести компанииконтролировать ставки и постоянно улучшать результаты.
 
-							li.effective-content__column--element.column-element(style="margin-bottom: 68px;")
-								wrapper.column-element__wrapper
-									img.column-element__wrapper--img(src="" alt="")
-								p.column-element__text
-									| Выставите правильные настройки в интерфейсе, которые сэкономят ваш бюджет.
+            ul.effective-content__column
+              li.effective-content__column--element.column-element
+                wrapper.column-element__wrapper
+                  img.column-element__wrapper--img(src="" alt="")
+                p.column-element__text
+                  | Избежите типичных ошибок начинающих рекламодателей.
 
-							li.effective-content__column--element.column-element
-								wrapper.column-element__wrapper
-									img.column-element__wrapper--img(src="" alt="")
-								p.column-element__text
-									| Научитесь правильно вести компанииконтролировать ставки и постоянно улучшать результаты.
+              li.effective-content__column--element.column-element
+                wrapper.column-element__wrapper
+                  img.column-element__wrapper--img(src="" alt="")
+                p.column-element__text
+                  | Составите сильное предложение и выделитесь среди конкурентов.
 
+              li.effective-content__column--element.column-element
+                wrapper.column-element__wrapper
+                  img.column-element__wrapper--img(src="" alt="")
+                p.column-element__text
+                  | Получите много дешевых заявок при помощи РСЯ и ретаргетинга.
 
-						ul.effective-content__column
-							li.effective-content__column--element.column-element
-								wrapper.column-element__wrapper
-									img.column-element__wrapper--img(src="" alt="")
-								p.column-element__text
-									| Избежите типичных ошибок начинающих рекламодателей.
+              li.effective-content__column--element.column-element
+                wrapper.column-element__wrapper
+                  img.column-element__wrapper--img(src="" alt="")
+                p.column-element__text
+                  | Зададите любые вопросы и гарантированно получите на них ответы от Филиппа Царевского.
 
-							li.effective-content__column--element.column-element
-								wrapper.column-element__wrapper
-									img.column-element__wrapper--img(src="" alt="")
-								p.column-element__text
-									| Составите сильное предложение и выделитесь среди конкурентов.
+            ul.effective-content__column
+              li.effective-content__column--element.column-element(style="margin-bottom: 43px;")
+                wrapper.column-element__wrapper
+                  img.column-element__wrapper--img(src="" alt="")
+                p.column-element__text
+                  | Научитесь собирать целевые ключевики, правильно их сортировать и минусовать, а также выделять приоритеты. Показы будут только целевые.
 
-							li.effective-content__column--element.column-element
-								wrapper.column-element__wrapper
-									img.column-element__wrapper--img(src="" alt="")
-								p.column-element__text
-									| Получите много дешевых заявок при помощи РСЯ и ретаргетинга.
+              li.effective-content__column--element.column-element
+                wrapper.column-element__wrapper
+                  img.column-element__wrapper--img(src="" alt="")
+                p.column-element__text
+                  | Напишете грамотные продающие объявления.
 
-							li.effective-content__column--element.column-element
-								wrapper.column-element__wrapper
-									img.column-element__wrapper--img(src="" alt="")
-								p.column-element__text
-									| Зададите любые вопросы и гарантированно получите на них ответы от Филиппа Царевского.
+              li.effective-content__column--element.column-element(style="margin-bottom: 68px;")
+                wrapper.column-element__wrapper
+                  img.column-element__wrapper--img(src="" alt="")
+                p.column-element__text
+                  | Получите доступ к записям вебинаров, авторским статьям, ответам на любые вопросы.
 
-						ul.effective-content__column
-							li.effective-content__column--element.column-element(style="margin-bottom: 43px;")
-								wrapper.column-element__wrapper
-									img.column-element__wrapper--img(src="" alt="")
-								p.column-element__text
-									| Научитесь собирать целевые ключевики, правильно их сортировать и минусовать, а также выделять приоритеты. Показы будут только целевые.
+              li.effective-content__column--element.column-element
+                wrapper.column-element__wrapper
+                  img.column-element__wrapper--img(src="" alt="")
+                p.column-element__text
+                  | Будете в курсе всех тенденций и новинок.
 
-							li.effective-content__column--element.column-element
-								wrapper.column-element__wrapper
-									img.column-element__wrapper--img(src="" alt="")
-								p.column-element__text
-									| Напишете грамотные продающие объявления.
+    section.subscription__video
+      wrapper.wrapper.subscription__video--wrapper
+        iframe.subscription__video--video(src="")
 
-							li.effective-content__column--element.column-element(style="margin-bottom: 68px;")
-								wrapper.column-element__wrapper
-									img.column-element__wrapper--img(src="" alt="")
-								p.column-element__text
-									| Получите доступ к записям вебинаров, авторским статьям, ответам на любые вопросы.
+        wrapper.subscription__video--info.video-info
+          .video-info__top
+            h3.video-info__top--watch
+              | Посмотрите один урок,
+            h4.video-info__top--choose
+              | И решите, смотреть ли весь курс:
+            p.video-info__top--text
+              | Урок 1. Подготовка к настройке Яндекс.Директ
 
-							li.effective-content__column--element.column-element
-								wrapper.column-element__wrapper
-									img.column-element__wrapper--img(src="" alt="")
-								p.column-element__text
-									| Будете в курсе всех тенденций и новинок.
-
-							
-
-		section.subscription__video
-			wrapper.wrapper.subscription__video--wrapper
-				iframe.subscription__video--video(src="")
-
-				wrapper.subscription__video--info.video-info
-					.video-info__top
-						h3.video-info__top--watch
-							| Посмотрите один урок,
-						h4.video-info__top--choose
-							| И решите, смотреть ли весь курс:
-						p.video-info__top--text
-							| Урок 1. Подготовка к настройке Яндекс.Директ
-
-					.video-info__bottom
-						p.video-info__bottom--like
-							| Понравился видео-урок? Жми лайк и расскажи о нем своим друзьям:
-						ul.video-info__bottom--socials.socials
-							li.socials__item.socials__item--vk
-								| ВКонтакте
-							li.socials__item.socials__item--fb
-								| Фейсбук
-							li.socials__item.socials__item--tw
-								| Твиттер
-
+          .video-info__bottom
+            p.video-info__bottom--like
+              | Понравился видео-урок? Жми лайк и расскажи о нем своим друзьям:
+            ul.video-info__bottom--socials.socials
+              li.socials__item.socials__item--vk
+                | ВКонтакте
+              li.socials__item.socials__item--fb
+                | Фейсбук
+              li.socials__item.socials__item--tw
+                | Твиттер
