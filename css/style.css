@@ -465,14 +465,8 @@ li {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .header__wrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
@@ -508,7 +502,6 @@ li {
   display: inline-block;
   padding: 10px 15px 25px;
   font-size: 14px;
-  -webkit-transition: box-shadow 0.5s;
   transition: box-shadow 0.5s;
 }
 .main-menu__item:hover,
@@ -536,8 +529,7 @@ li {
 .price {
   padding-top: 35px;
   border-top: 1px solid #f0f2f4;
-  background: #f7f9fa -webkit-linear-gradient(top, #f6f8fa 0%, #ffffff 50%, #ffffff 100%);
-  background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #ffffff 50%, #ffffff 100%);
+  background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #fff 50%, #fff 100%);
 }
 .price article,
 .price aside {
@@ -581,8 +573,7 @@ li {
   position: relative;
   clear: both;
   padding-top: 35px;
-  background: #f7f9fa -webkit-linear-gradient(top, #f6f8fa 0%, #ffffff 50%, #ffffff 100%);
-  background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #ffffff 50%, #ffffff 100%);
+  background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #fff 50%, #fff 100%);
 }
 .included__wrap {
   margin-right: auto;
@@ -600,26 +591,16 @@ li {
   border-bottom: 2px dotted rgba(231, 226, 199, 0.7);
 }
 .included__features {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 .included__feature {
   position: relative;
   box-sizing: border-box;
   margin-bottom: 35px;
   font-size: 14px;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 45%;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
+  flex: 0 0 45%;
 }
 .included__feature::before {
   top: 20px;
@@ -651,8 +632,7 @@ li {
 .context {
   padding-bottom: 150px;
   border-bottom: 1px solid #f0f2f4;
-  background: #f7f9fa -webkit-linear-gradient(bottom, #f6f8fa 0%, #ffffff 50%, #ffffff 100%);
-  background: #f7f9fa linear-gradient(to top, #f6f8fa 0%, #ffffff 50%, #ffffff 100%);
+  background: #f7f9fa linear-gradient(to top, #f6f8fa 0%, #fff 50%, #fff 100%);
 }
 .context__wrap {
   margin-right: auto;
@@ -732,11 +712,10 @@ li {
   height: 144px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background: #ffffff url(../img/i-metrika.png) no-repeat 50% 50%/80%;
+  background: #fff url(../img/i-metrika.png) no-repeat 50% 50%/80%;
   box-shadow: 0 0 55px 0 rgba(0, 0, 0, 0.1);
   content: " ";
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .footer {
   background: #232d57 url(../img/bg-footer.jpg) no-repeat 50% 50% / cover;
@@ -780,14 +759,8 @@ li {
   margin-bottom: 10px;
 }
 .footer__nav-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .footer__call-us {
   padding-top: 60px;
@@ -819,14 +792,8 @@ li {
   margin: 0;
 }
 .footer__navbar ul {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .footer__navbar-contacts {
   font-size: 17px;
@@ -839,7 +806,6 @@ li {
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
   font-size: 17px;
-  -webkit-transition: background-color 0.1s cubic-bezier(0.42, 0, 0.58, 1);
   transition: background-color 0.1s cubic-bezier(0.42, 0, 0.58, 1);
 }
 .form__text:focus {
@@ -855,20 +821,17 @@ li {
   color: #fff;
   font-size: 17px;
   cursor: pointer;
-  -webkit-transition: top 0.05s cubic-bezier(0.42, 0, 0.58, 1);
   transition: top 0.05s cubic-bezier(0.42, 0, 0.58, 1);
 }
 .btn:hover {
   background-color: #EB3051;
-  -webkit-transition: none;
   transition: none;
 }
 .btn:active {
   top: 2px;
   background-color: #ff304f;
   box-shadow: 0 1px 0 0 #890C22;
-  -webkit-transform-origin: 50% 100% 0;
-          transform-origin: 50% 100% 0;
+  transform-origin: 50% 100% 0;
 }
 .particles-js-canvas-el {
   position: absolute;
