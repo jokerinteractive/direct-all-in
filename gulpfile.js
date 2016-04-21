@@ -1,22 +1,42 @@
+'use strict';
+
+var argv = require("minimist")(process.argv.slice(2));
+var isOnProduction = !!argv.production;
+
 /* --------- plugins --------- */
 
 var
   gulp = require('gulp'),
   jade = require('gulp-jade'),
+  less = require('gulp-less'),
+  notify = require('gulp-notify'),
+  rename = require("gulp-rename"),
   plumber = require('gulp-plumber'),
-  less = require('gulp-less');
+  postcss = require('gulp-postcss'),
+  fs = require('fs'),
+  foldero = require('foldero'),
+  flexboxfixer = require('postcss-flexboxfixer'),
+  reporter = require('postcss-reporter'),
+  syntax_less = require('postcss-less'),
+  cssnano = require('cssnano'),
+  stylelint = require('stylelint'),
+  autoprefixer = require('autoprefixer'),
+  server = require('browser-sync');
+
 
 /* --------- paths --------- */
 
 var
   paths = {
+    build: '.',
     jade: {
       location: './jade/**/*.jade',
       compiled: './jade/_pages/*.jade',
+      data: './jade/_data/',
       destination: '.'
     },
 
-    less: {
+    style: {
       location: './less/style.less',
       watch: './less/**/*.less',
       entryPoint: './css/style.css',
@@ -27,21 +47,94 @@ var
 /* --------- jade --------- */
 
 gulp.task('jade', function () {
-  gulp.src(paths.jade.compiled)
-    .pipe(plumber())
-    .pipe(jade({
-      pretty: '\t'
+  var siteData = {};
+  if (fs.existsSync(paths.jade.data)) {
+    siteData = foldero(paths.jade.data, {
+      recurse: true,
+      whitelist: '(.*/)*.+\.(json)$',
+      loader: function loadAsString(file) {
+        var json = {};
+        try {
+          json = JSON.parse(fs.readFileSync(file, 'utf8'));
+        } catch (e) {
+          console.log('Error Parsing JSON file: ' + file);
+          console.log('==== Details Below ====');
+          console.log(e);
+        }
+        return json;
+      }
+    });
+  }
+
+  return gulp.src(paths.jade.compiled)
+    .pipe(plumber({
+      errorHandler: notify.onError('Error:  <%= error.message %>')
     }))
-    .pipe(gulp.dest(paths.jade.destination));
+    .pipe(jade({
+      locals: {
+        site: {
+          data: siteData
+        }
+      },
+      pretty: true
+    }))
+    .pipe(gulp.dest(paths.jade.destination))
+    .pipe(notify({
+      message: 'Jade: <%= file.relative %>',
+      sound: 'Pop'
+    }));
 });
 
-/* --------- less --------- */
+/* --------- styletest --------- */
 
-gulp.task('less', function () {
-  gulp.src(paths.less.location)
+gulp.task('styletest', function () {
+  var processors = [
+    stylelint(),
+    reporter({
+      throwError: true
+    })
+  ];
+
+  return gulp.src(paths.style.watch)
     .pipe(plumber())
+    .pipe(postcss(processors, {
+      syntax: syntax_less
+    }))
+});
+
+/* --------- style --------- */
+
+gulp.task('style', ['styletest'], function () {
+  gulp.src(paths.style.location)
+    .pipe(plumber({
+      errorHandler: notify.onError('Error:  <%= error.message %>')
+    }))
+    // .pipe(gulpIf(!isOnProduction, sourcemaps.init()))
     .pipe(less())
-    .pipe(gulp.dest(paths.less.destination));
+    .pipe(postcss([
+      flexboxfixer,
+      autoprefixer({
+        browsers: [
+          'last 2 version',
+          'last 2 Chrome versions',
+          'last 2 Firefox versions',
+          'last 2 Opera versions',
+          'last 2 Edge versions'
+        ]
+      }),
+      cssnano({
+        safe: true
+      })
+    ]))
+    .pipe(rename('style.min.css'))
+    // .pipe(gulpIf(!isOnProduction, sourcemaps.write()))
+    .pipe(gulp.dest(paths.style.destination))
+
+    .pipe(server.stream())
+    .pipe(notify({
+      message: 'Style: <%= file.relative %>',
+      sound: 'Pop'
+    }));
 });
 
 /* --------- watch --------- */
@@ -51,6 +144,29 @@ gulp.task('watch', function () {
   gulp.watch(paths.less.watch, ['less']);
 });
 
+/* --------- serve --------- */
+
+gulp.task('serve', function () {
+  server.init({
+    server: {
+      baseDir: paths.build
+    },
+    notify: true,
+    open: false,
+    ui: false
+  });
+});
+
 /* --------- default --------- */
 
-gulp.task('default', ['jade', 'less', 'watch']);
+var allTasks = ['style', 'jade'];
+if (!isOnProduction) {
+  allTasks.push('serve');
+}
+
+gulp.task('default', allTasks, function () {
+  if (!isOnProduction) {
+    gulp.watch(paths.style.watch, ['style', server.stream]);
+    gulp.watch(paths.jade.location, ['jade', server.reload]);
+  }
+});
