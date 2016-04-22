@@ -1,9 +1,11 @@
 @import "__mixins"; // TODO: move all imports to style
 
 .context {
-  padding-bottom: 150px;
-  border-bottom: 1px solid #f0f2f4;
-  background: #f7f9fa linear-gradient(to top, #f6f8fa 0%, #fff 50%, #fff 100%);
+  padding-top: 120px;
+  padding-bottom: 75px;
+  // padding-bottom: 150px; //TODO: check out where else it is used
+  // border-bottom: 1px solid #f0f2f4; //TODO: check out where else it is used
+  background: url(../img/bg-arrow-gradient.png) ~"50% 0/100% auto" no-repeat, url(../img/context-web-bg.png) ~"50% 520px/80% auto" no-repeat;
 
   &__wrap { .wrap; }
 
@@ -28,9 +30,29 @@
 
   &__features {
     padding: 60px;
+    padding-top: 25px;
+    padding-left: 95px;
     border: 1px solid #d9d9d9;
     border-radius: 30px;
     background-color: #fff;
     box-shadow: 0 4px 13px 0 fade(#000, 8%);
+  }
+
+  &__feature {
+    position: relative;
+    padding-left: 100px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 73px;
+      height: 73px;
+      background: url(../img/context-sprt.jpg) 0 0 no-repeat;
+    }
+
+    &-safe::after { background-position: 0 -80px; }
+    &-glass::after { background-position: 0 -160px; }
   }
 }

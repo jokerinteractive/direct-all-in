@@ -8,11 +8,19 @@
   article,
   aside { float: left; }
 
-  article { width: 60%; }
+  article { width: 77%; }
 
   &__wrap { .wrap; }
 
-  &__title { .title-dotted; }
+  &__title {
+    .title-dotted;
+    margin-top: 55px;
+  }
+
+  &__arguments-block {
+    padding-left: 100px;
+    box-sizing: border-box;
+  }
 
   &__list {
     li::before {
@@ -26,11 +34,17 @@
   }
 
   &__feature {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     padding: 40px;
     text-align: center;
     border-radius: 50%;
     border: 2px dashed #ebebeb;
+    margin: 0;
+    margin-bottom: 25px;
+
+    img {
+      margin: 10px auto;
+    }
   }
 }

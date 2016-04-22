@@ -1,4 +1,216 @@
 extends ../template
 
 block main-content
-	p Hello
+	wrapper.subscription
+
+		section.subscription__main
+			wrapper.subscription__main--wrapper.wrapper.clearfix
+
+				.subscription__main--left.yandex-course
+					h3.yandex-course__call Пройди бесплатный курс по
+					wrapper.yandex-course__logo
+						img.yandex-course__logo-img(src="./img/subscriptions/yandex.png" alt="Яндекс Директ")
+						| Яндес Директ
+					h3.yandex-course__from От Филиппа Царевского
+					p.yandex-course__feedback "Самый исчерпывающий и структурированный на рынке"
+					p.yandex-course__by (по отзывам подписчиков)
+
+				.subscription__main--right.get-course
+					h3.get-course__twelve 12 пошаговых уроков, по одному каждый день
+					p.get-course__details Нюансы, которых не знает 95% рекламодателей и 70% специалистов (данные основаны на сотнях аудитов и консультаций)
+					form.get-course__form(action="")
+						input.get-course__form--text(type="text" placeholder="Введите ваш e-mail")
+						input.get-course__form--button(type="submit" value="Получить уроки")
+
+		section.subscription__effective
+			wrapper.wrapper.subscription__effective--wrapper
+
+				header.subscription__effective--header.clearfix.effective-header
+
+					.effective-header__left
+						wrapper.effective-header__left--wrapper
+							img.effective-header__left--img(src="./img/subscriptions/effective.png" alt="Эффект")
+
+					.effective-header__right
+						h3.effective-header__right--head
+							| В среднем, эффективность контекстной рекламы после прохождения курса увеличивается в 2,34 раза
+						p.effective-header__right--text
+							| Кто-то снижает расходы, кто-то увеличивает количество заявок или повышает их качество, кому-то удается поднять средний чек.
+						p.effective-header__right--text
+							| Рекламодатели смогут легко отличить дилетанта от профессионала, а директологи (или специалисты по контекстной рекламе, если угодно) повысят свою экспертность и будут дороже продавать свои услуги.
+
+				article.subscription__effective--content.effective-content
+					h3.effective-content__header
+						| За счёт чего это происходит?
+
+					wrapper.effective-content__wrapper
+
+						ul.effective-content__column
+							li.effective-content__column--element.column-element
+								wrapper.column-element__wrapper
+									img.column-element__wrapper--img(src="" alt="")
+								p.column-element__text
+									| Узнаете азы, без которых Директ превращается в слив бюджета.
+
+							li.effective-content__column--element.column-element(style="margin-bottom: 66px;")
+								wrapper.column-element__wrapper
+									img.column-element__wrapper--img(src="" alt="")
+								p.column-element__text
+									| Узнаете чем Яндекс Директ отличается от лотереи и почему контекстная реклама - это мощный маркетинговый инструмент.
+
+							li.effective-content__column--element.column-element(style="margin-bottom: 68px;")
+								wrapper.column-element__wrapper
+									img.column-element__wrapper--img(src="" alt="")
+								p.column-element__text
+									| Выставите правильные настройки в интерфейсе, которые сэкономят ваш бюджет.
+
+							li.effective-content__column--element.column-element
+								wrapper.column-element__wrapper
+									img.column-element__wrapper--img(src="" alt="")
+								p.column-element__text
+									| Научитесь правильно вести компанииконтролировать ставки и постоянно улучшать результаты.
+
+
+						ul.effective-content__column
+							li.effective-content__column--element.column-element
+								wrapper.column-element__wrapper
+									img.column-element__wrapper--img(src="" alt="")
+								p.column-element__text
+									| Избежите типичных ошибок начинающих рекламодателей.
+
+							li.effective-content__column--element.column-element
+								wrapper.column-element__wrapper
+									img.column-element__wrapper--img(src="" alt="")
+								p.column-element__text
+									| Составите сильное предложение и выделитесь среди конкурентов.
+
+							li.effective-content__column--element.column-element
+								wrapper.column-element__wrapper
+									img.column-element__wrapper--img(src="" alt="")
+								p.column-element__text
+									| Получите много дешевых заявок при помощи РСЯ и ретаргетинга.
+
+							li.effective-content__column--element.column-element
+								wrapper.column-element__wrapper
+									img.column-element__wrapper--img(src="" alt="")
+								p.column-element__text
+									| Зададите любые вопросы и гарантированно получите на них ответы от Филиппа Царевского.
+
+						ul.effective-content__column
+							li.effective-content__column--element.column-element(style="margin-bottom: 43px;")
+								wrapper.column-element__wrapper
+									img.column-element__wrapper--img(src="" alt="")
+								p.column-element__text
+									| Научитесь собирать целевые ключевики, правильно их сортировать и минусовать, а также выделять приоритеты. Показы будут только целевые.
+
+							li.effective-content__column--element.column-element
+								wrapper.column-element__wrapper
+									img.column-element__wrapper--img(src="" alt="")
+								p.column-element__text
+									| Напишете грамотные продающие объявления.
+
+							li.effective-content__column--element.column-element(style="margin-bottom: 68px;")
+								wrapper.column-element__wrapper
+									img.column-element__wrapper--img(src="" alt="")
+								p.column-element__text
+									| Получите доступ к записям вебинаров, авторским статьям, ответам на любые вопросы.
+
+							li.effective-content__column--element.column-element
+								wrapper.column-element__wrapper
+									img.column-element__wrapper--img(src="" alt="")
+								p.column-element__text
+									| Будете в курсе всех тенденций и новинок.
+
+		section.subscription__video
+			wrapper.wrapper.subscription__video--wrapper
+				iframe.subscription__video--video(src="")
+
+				wrapper.subscription__video--info.video-info
+					.video-info__top
+						h3.video-info__top--watch
+							| Посмотрите один урок,
+						h4.video-info__top--choose
+							| и решите, смотреть ли весь курс:
+						p.video-info__top--text
+							| Урок 1. Подготовка к настройке Яндекс.Директ
+
+					.video-info__bottom
+						p.video-info__bottom--like
+							| Понравился видео-урок? Жми лайк и расскажи о нем своим друзьям:
+						ul.video-info__bottom--socials.socials
+							li.socials__item.socials__item--vk
+								| ВКонтакте
+							li.socials__item.socials__item--fb
+								| Фейсбук
+							li.socials__item.socials__item--tw
+								| Твиттер
+
+		section.subscription__better
+			wrapper.wrapper.subscription__better--wrapper
+				h3.subscription__better--header
+					| Чем ещё этот курс лучше большинства на рынке:
+				artcile.subscription__better--content
+
+					.subscription__better--column.left-column
+						ul.better-list
+
+							li.better-list__item
+								header.better-list__item--header
+									| Уроки от 8 до 27 минут.
+								p.better-list__item--text
+									| Ценим ваше время, поэтому сократили каждую тему до необходимого минимума. Нет воды. Только практика, выжимка самого важного.
+
+							li.better-list__item(style="margin-bottom: 60px;")
+								header.better-list__item--header
+									| Авторские наработки
+								p.better-list__item--text
+									| Минимум пересказа и очередной трактовки справочника Яндекса. Всё остальное - фишки, методы, сравнение вариантов.
+
+							li.better-list__item(style="margin-bottom: 60px;")
+								header.better-list__item--header
+									| То, что действительно работает.
+								p.better-list__item--text
+									| Каждую тему аргументирую и доказывают. На рынке много спорной информации или "высосанных из пальца" фишек. Например, галочка, которая снижает расходыв 2 раза, не существует, но звучит она очень красиво.
+
+							li.better-list__item
+								header.better-list__item--header
+									| Поддержка автора.
+								p.better-list__item--text
+									| 2 раза в неделю я отвечаю на любые вопросы по Яндекс.Директ. Без возможности получить обратную связь, уточнить спорные или непонятные моменты, задать дополнительный вопрос, привести пример из практики и получить совет от эксперта, видеозаписи сами по себе дают лишь ощую информацию, не всегда применимую в конкретном случае.
+
+					.subscription__better--column.right-column
+
+						.quote
+							p.quote__text
+								| Например, можно сказать:
+							header.quote__quote
+								| "Существует оператор фиксации словоформы. Для этого нужно поставить восклицательный знак перед словом".
+							p.quote__text
+								| Большинство других ведущих подают 90% информации в таком стиле. Я же стараюсь рассказать, в каких случаях и что применять, как найти такие случаи, показать примеры.
+
+						ul.better-list
+
+							li.better-list__item(style="margin-bottom: 50px;")
+								header.better-list__item--header
+									| Действительно бесплатно.
+								p.better-list__item--text
+									| Информации достаточно, чтобы настроить полноценную рекламную кампанию. Более того, у меня множество дополнительных уроков, записей вебинаров, статей, и всё это в открытом доступе. Да, у меня есть платные курсы для тех, кто хочет получить ещё больше нюансов. Однако и без них бесплатный контент имеет большую практическую ценность, а не просто даётся для привлечения внимания.
+
+							li.better-list__item
+								header.better-list__item--header
+									| Структурированность и чёткость.
+								p.better-list__item--text
+									| Всё разложено по полочкам, выстроено пошагаво, донесено простым и понятным языком. Кроме того, речь и дикция в порядке, голос приятный, звук и изображение качественные, что тоже немаловажно.
+
+		section.subscription__test
+			wrapper.wrapper.subscription__test--wrapper
+				header.subscription__test--header
+					h3.subscription__test--head
+						| Думаете, что и так хорошо разбираетесь?
+				p.subscription__test--text
+					| Пройдите онлайн тест на знание Яндекс.Директ
+					br
+					| и проверьте это!
+				a.subscription__test--link(href="")
+					| Пройти тест
+
