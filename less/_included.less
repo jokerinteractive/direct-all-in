@@ -32,7 +32,15 @@
       border: 1px solid #ebebeb;
       border-radius: 50%;
       content: " ";
+      background: url(../img/included-sprt.png) 0 0 no-repeat;
     }
+
+    &-interview::before { background-position: 0 0; }
+    &-audit::before { background-position: 0 -80px; }
+    &-consulting::before { background-position: 0 -160px; }
+    &-month::before { background-position: -80px 0; }
+    &-star::before { background-position: -80px -80px; }
+    &-target::before { background-position: -80px -160px; }
 
     &:nth-child(2n+1) {
       padding-right: 100px;
