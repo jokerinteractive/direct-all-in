@@ -95,7 +95,7 @@ gulp.task('styletest', function () {
     })
   ];
 
-  return gulp.src(paths.style.watch)
+  gulp.src('**/*.less')
     .pipe(plumber())
     .pipe(postcss(processors, {
       syntax: syntax_less
