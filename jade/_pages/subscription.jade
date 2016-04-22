@@ -221,7 +221,7 @@ block main-content
 
           .about-speaker__header--left.speaker-photo
             wrapper.speaker-photo__wrapper
-              img.speaker-photo__img(src="../img/subscriptions/speaker.jpg" alt="Филипп Царевский")
+              img.speaker-photo__img(src="./img/subscriptions/speaker.jpg" alt="Филипп Царевский")
 
           .about-speaker__header--right.speaker-descr
             small.speaker-descr__coach
@@ -235,9 +235,81 @@ block main-content
             p.speaker-descr__text
               | Его отличие от многих других специалистов в том, что он учит получать прибыль из директа и все методы рассматривает исключительно через призму
 
-        .about-speaker__quote
+        article.about-speaker__quote
           h4.about-speaker__quote--text
-            | "Яндекс.Директ - это мощный управляемый маркетинговый инструмент, а не лотерея "сработает/не сработает". Он сработает всегда, при умном подходе."
+            | "Яндекс.Директ - это мощный управляемый
+            br
+            | маркетинговый инструмент, а не лотерея "сработает/не
+            br
+            | сработает". Он сработает всегда, при умном подходе."
           p.about-speaker__quote--comment
             | - эти слова от Филиппа слышали все, кто с ним хотя бы минимально знаком.
+
+        article.about-speaker__notfor
+          header.about-speaker__notfor--header
+            | Внимание! Курс не будет полезен для:
+
+          ul.about-speaker__notfor--list.notfor-list
+
+            li.notfor-list__item
+              wrapper.notfor-list__item--wrapper
+                header.notfor-list__item--header
+                  | Инфобизнесмена, арбитражника, сетевика.
+                p.notfor-list__item--text
+                  | Он заточен под настоящий малый бизнес.
+
+            li.notfor-list__item
+              wrapper.notfor-list__item--wrapper
+                header.notfor-list__item--header
+                  | Выпускника бизнес-тренингов,
+                p.notfor-list__item--text
+                  | Для которого слово своего "гуру" авторитетнее любого аргумента, пусть даже 100 раз логически доказанного.
+
+            li.notfor-list__item
+              wrapper.notfor-list__item--wrapper
+                header.notfor-list__item--header
+                  | Тому, кто много смотрит, но ничего не делает.
+                p.notfor-list__item--text
+                  | Вся информация исключительно практическая. Зачем вам ещё тонна видеоряда, если он не будет иметь практического применения?
+
+        article.about-speaker__comment
+          header.about-speaker__comment--header
+            | Почитайте отзывы тех, кто уже прошел этот курс.
+
+          wrapper.about-speaker__comment--wrapper.clearfix
+
+            a.about-speaker__comment--move.move-back(href="") Назад
+
+            .about-speaker__comment--comment.about-comment
+              wrapper.about-comment__wrapper
+
+                wrapper.about-comment__image.clearfix
+                  img.about-comment__image-pic(src="./img/subscriptions/comments/comm1.jpg" alt="Комментарий")
+
+                wrapper.about-comment__text
+                  header.about-comment__text--head
+                    | Материал структурирован, помог расставить по полочкам.
+                  p.about-comment__text--par
+                    | Филипп, большое спасибо за столь ценный материал, который помог расставить в голове всю кашу о Яндекс.Директ. Материал весь структурирован, все действия последовательны и расписаны технические нюансы.
+
+                  p.about-comment__text--par
+                    | Из фишек: раньше справлялась только якорями на быстрые ссылки, теперь знаю, как сделать намн...
+                    ap.about-comment__text--link(href="")
+                      | Показать полностью
+
+                  p.about-comment__text--author
+                    | Аня Дианова
+
+              nav.about-comment__nav
+                wrapper.about-comment__nav--wrapper
+                  a.about-comment__nav--link.active(href="")
+                    | 1
+                  a.about-comment__nav--link(href="")
+                    | 2
+                  a.about-comment__nav--link(href="")
+                    | 3
+                  a.about-comment__nav--link(href="")
+                    | 4
+
+            a.about-speaker__comment--move.move-foward(href="") Вперёд
 
