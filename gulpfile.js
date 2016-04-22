@@ -141,7 +141,7 @@ gulp.task('style', ['styletest'], function () {
 
 gulp.task('watch', function () {
   gulp.watch(paths.jade.location, ['jade']);
-  gulp.watch(paths.less.watch, ['less']);
+  gulp.watch(paths.style.watch, ['style']);
 });
 
 /* --------- serve --------- */
