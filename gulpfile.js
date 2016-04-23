@@ -125,6 +125,7 @@ gulp.task('style', ['styletest'], function () {
         safe: true
       })
     ]))
+    .pipe(gulp.dest(paths.style.destination))
     .pipe(rename('style.min.css'))
     // .pipe(gulpIf(!isOnProduction, sourcemaps.write()))
     .pipe(gulp.dest(paths.style.destination))
