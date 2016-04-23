@@ -1,5 +1,11 @@
 @import "__mixins";
 
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .adwords-calmness {
   background: #f4f4f4;
   color: #000;
@@ -7,11 +13,6 @@
 
   &__wrap { .wrap; }
 
-  &::after {
-    content: '';
-    display: table;
-    clear: both;
-  }
 
   h2 {
     margin-top: 0;
@@ -89,5 +90,35 @@
       padding-right: 40px;
     }
     &-item::after { left: 0; }
+  }
+
+  &__promises {
+    margin: 0 57px;
+    position: relative;
+    padding: 50px 15px 50px 65px;
+    background: #fff;
+  }
+
+  &__promises-left {
+    float: left;
+    max-width: 392px;
+  }
+
+  &__promises-right {
+    float: right;
+    max-width: 480px;
+  }
+
+  &__confidence-left,
+  &__confidence-right {
+    padding-left: 98px;
+    max-width: 551px;
+    box-sizing: border-box;
+  }
+  &__confidence-left {
+    float: left;
+  }
+  &__confidence-right {
+    float: right;
   }
 }
