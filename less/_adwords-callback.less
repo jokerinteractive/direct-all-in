@@ -1,0 +1,47 @@
+@import "__mixins";
+
+.adwords-callback {
+  background: #0e3b5a url(../img/bg-header.png) no-repeat 50% 50%/cover;
+  color: #fff;
+  padding: 65px 60px;
+
+  &__wrap { .wrap; }
+
+  &-left {
+    float: left;
+    max-width: 527px;
+    min-width: 257px; //TODO check result
+
+    &-logo {
+      padding-left: 85px;
+      position: relative;
+    }
+
+    &-logo::before {
+      content: '';
+      position: absolute;
+      left: -4px;
+      background: url(../img/google-adwords-logo.png) no-repeat;
+    }
+  }
+
+  &-form {
+    float: right;
+    max-width: 392px;
+    min-width: 233px;
+    padding-right: 27px;
+
+    input {
+      width: 100%;
+      paddin:20px 25px;
+      border: 1px solid #306283;
+      border: 1px solid rgba(255,255,255,.21); //TODO rgba поддерживаем?
+    }
+
+    &-button {
+      background-color: #1b92f0;
+      box-shadow: inset 0 1px rgba(255,255,255,.27), 3px 0 rgba(0,0,0,.21); //TODO check result
+      font-weight: 500; //TODO check result
+    }
+  }
+}
