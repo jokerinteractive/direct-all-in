@@ -1,0 +1,56 @@
+@import "__mixins";
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.adwords-puzzle {
+    padding-top: 145px;
+    background: url('../img/puzzle-top-bg.png') no-repeat ~"50% 0/100% auto";
+
+    &__wrap { .wrap }
+
+    &__title {
+      max-width: 588px;
+      margin: 0 auto;
+      font-size: 22px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    &__header {
+      &-logo {
+        float: left;
+        max-width: 490px;
+        box-sizing: border-box;
+        padding-left: 16.33%; //196/1200*100%;
+        padding-right: 6.17%; //74/1200*100%;
+      }
+      &-right {
+        float: right;
+        max-width: 710px;
+        box-sizing: border-box;
+        padding: 30px 24px;
+      }
+
+      &-feature {
+        padding-left: 37px;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: 0;
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          background: #ff2f4f;
+        }
+      }
+    }
+
+
+}
