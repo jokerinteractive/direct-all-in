@@ -1,25 +1,31 @@
 @import "__mixins";
 
 .clearfix::after {
-  content: '';
   display: table;
   clear: both;
+
+  content: '';
 }
 
 .adwords-founder {
+  position: relative;
+
   padding-top: 184px;
   padding-bottom: 130px;
-  position: relative;
+
   background: url('../img/founder-texture-top-x.png') 0 0 repeat-x, linear-gradient(to bottom, transparent 85%, #fff 100%), url('../img/founder-texture-bg.png') 0 0 repeat;
 
   &::before {
-    content: '';
     position: absolute;
-    width: 169px;
-    height: 126px;
     top: -37px;
     left: 50%;
+
+    width: 169px;
+    height: 126px;
+
+    content: '';
     transform: translateX(-50%);
+
     background: url('../img/founder-top-logo.png') 50% 50% no-repeat;
   }
   &__wrap { .wrap }
@@ -29,20 +35,23 @@
 
     &-texts {
       float: left;
-      margin-left: 61px;
+
       max-width: 625px;
+      margin-left: 61px;
     }
 
     &-pre {
       margin:24px 0;
+
       font-size: 16px;
     }
 
     &-title {
-      font-size: 43px;
-      font-weight: 500;
       margin-top: 21px;
       margin-bottom: 12px;
+
+      font-size: 43px;
+      font-weight: 500;
     }
 
     &-subtitle {
@@ -56,19 +65,22 @@
 
     &-left {
       float: left;
-      padding-left: 196px;
+
+      box-sizing: border-box;
       max-width: 196*2px;
       margin-right: 61px;
-      box-sizing: border-box;
+      padding-left: 196px;
 
       &-item {
         margin-bottom: 44px;
 
         &-digit {
+          margin-bottom: 3px;
+
           border-bottom: 3px solid #338bc3;
+
           font-size: 42px;
           font-weight: 500;
-          margin-bottom: 3px;
         }
 
         .red-line {border-color: #ff2f4f; }
@@ -80,20 +92,25 @@
 
     &-right {
       float: left;
+
       max-width: 625px;
 
       &-item {
-        padding-left: 37px;
         position: relative;
+
         margin-top: 0;
+        padding-left: 37px;
       }
       &-item::before {
-        content: '';
         position: absolute;
-        left: 0;
         top: 10px;
+        left: 0;
+
         width: 10px;
         height: 10px;
+
+        content: '';
+
         border-radius: 50%;
         background: #338bc3;
       }
@@ -105,28 +122,34 @@
     &-title { text-align: center; }
 
     &-item {
-      max-width: 955px;
-      box-sizing: border-box;
-      margin: 10px auto;
-      border-radius: 23px;
-      border: 1px solid #e7e7e7;
-      background: #fff;
       position: relative;
+
+      box-sizing: border-box;
+      max-width: 955px;
+      margin: 10px auto;
+
+      border: 1px solid #e7e7e7;
+      border-radius: 23px;
+      background: #fff;
 
       &-pagination-prev, &-pagination-next, {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
-        border: 1px solid #ececec;
-        border-radius: 50%;
+
+        box-sizing: border-box;
         width: 52px;
         height: 52px;
-        box-sizing: border-box;
+
+        transform: translateY(-50%);
         text-align: center;
-        line-height: 52px;
+
         color: #d0d0d0;
-        font-size: 0px;
+        border: 1px solid #ececec;
+        border-radius: 50%;
         background: url('../img/reviews-sprt.png') no-repeat 0 0;
+
+        font-size: 0px;
+        line-height: 52px;
 
         &:hover { border-color: #338bc3; }
         &:active { border-color: #b7e0ff; }
@@ -138,6 +161,7 @@
       }
       &-pagination-next {
         right: -87px;
+
         background-position: -100px 0;
         &:hover { background-position: -100px -50px; }
         &:active { background-position: -100px -100px; }
@@ -145,28 +169,33 @@
 
       &-image {
         float: left;
-        max-width: 294px;
-        min-width: 225px;
+
         box-sizing: border-box;
-        padding-left: 7.75%;
-        padding-right: 2.83%;
+        min-width: 225px;
+        max-width: 294px;
         padding-top: 49px;
+        padding-right: 2.83%;
+        padding-left: 7.75%;
 
         img { border-radius: 50%; }
 
         &::before {
-          content: '';
           position: absolute;
           top: 38px;
           left: 3.77%;
+
           width: 33px;
           height: 28px;
+
+          content: '';
+
           background: url('../img/reviews-sprt.png') no-repeat -59px -11px;
         }
       }
 
       &-texts {
         float: right;
+
         max-width: 610px;
         margin-right: 5.235%;
         padding-top: 40px;
@@ -179,23 +208,29 @@
       }
 
       &-slider {
-        font-size: 0px;
-        text-align: center;
         display: block;
-        width: 100%;
         clear:both;
+
+        width: 100%;
         padding: 22px 0;
+
+        text-align: center;
+
+        font-size: 0px;
 
         &-radio { display: none; }
 
         &-point {
           display: inline-block;
+
           width: 12px;
           height: 12px;
-          background: #f2f2f2;
           margin: 0 3px;
-          border-radius: 50%;
+
           cursor: pointer;
+
+          border-radius: 50%;
+          background: #f2f2f2;
         }
 
         #review-1:checked ~ &-point[for='review-1'] { background: #368cc3; }
@@ -214,12 +249,14 @@
     &-block {
       &-item {
         float: left;
+
         width: 328px;
         margin: auto 24/1200*100%;
 
         &-text {
-          text-align: center;
           margin: 0;
+
+          text-align: center;
         }
       }
       &-item:nth-of-type(2n) { margin: auto 60/1200*100%; }
