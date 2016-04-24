@@ -87,6 +87,7 @@
   }
 
   &__reviews {
+    margin-bottom: 41px;
     &-title { text-align: center; }
 
     &-item {
@@ -188,6 +189,25 @@
         #review-4:checked ~ &-point[for='review-4'] { background: #368cc3; }
 
       }
+    }
+  }
+
+  &__videos {
+    margin-top: 70px;
+
+    &-title { text-align: center; }
+    &-block {
+      &-item {
+        float: left;
+        width: 328px;
+        margin: auto 24/1200*100%;
+
+        &-text {
+          text-align: center;
+          margin: 0;
+        }
+      }
+      &-item:nth-of-type(2n) { margin: auto 60/1200*100%; }
     }
   }
 }
