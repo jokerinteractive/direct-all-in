@@ -9,6 +9,19 @@
 .adwords-founder {
   padding-top: 184px;
   padding-bottom: 130px;
+  position: relative;
+  background: url('../img/founder-texture-top-x.png') 0 0 repeat-x, url('../img/founder-texture-bg.png') 0 0 repeat;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 169px;
+    height: 126px;
+    top: -37px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('../img/founder-top-logo.png') 50% 50% no-repeat;
+  }
   &__wrap { .wrap }
 
   &__head {
