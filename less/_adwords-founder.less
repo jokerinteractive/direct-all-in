@@ -87,6 +87,8 @@
   }
 
   &__reviews {
+    &-title { text-align: center; }
+
     &-item {
       max-width: 955px;
       box-sizing: border-box;
@@ -96,52 +98,95 @@
       background: #fff;
       position: relative;
 
-      &-pagination {
+      &-pagination-prev, &-pagination-next, {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        border: 1ps solid #ececec;
+        border: 1px solid #ececec;
+        border-radius: 50%;
         width: 52px;
         height: 52px;
+        box-sizing: border-box;
         text-align: center;
         line-height: 52px;
         color: #d0d0d0;
-        font-size: 21px;
+        font-size: 0px;
+        background: url('../img/reviews-sprt.png') no-repeat 0 0;
 
-        &-prev { left: -87px; }
-        &-next { right: -87px; }
+        &:hover { border-color: #338bc3; }
+        &:active { border-color: #b7e0ff; }
+      }
+      &-pagination-prev {
+        left: -87px;
+        &:hover { background-position: 0 -50px; }
+        &:active { background-position: 0 -100px; }
+      }
+      &-pagination-next {
+        right: -87px;
+        background-position: -100px 0;
+        &:hover { background-position: -100px -50px; }
+        &:active { background-position: -100px -100px; }
       }
 
       &-image {
-        // height: 100%;
         float: left;
         max-width: 294px;
         min-width: 225px;
-        padding-left: 25.17%;
+        box-sizing: border-box;
+        padding-left: 7.75%;
+        padding-right: 5.34%;
         padding-top: 49px;
+
+        img { border-radius: 50%; }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 38px;
+          left: 3.77%;
+          width: 33px;
+          height: 28px;
+          background: url('../img/reviews-sprt.png') no-repeat -59px -11px;
+        }
       }
 
       &-texts {
         float: right;
         max-width: 610px;
         margin-right: 5.235%;
+        padding-top: 40px;
+
+        &-title, &-text, &-author { margin: 0; }
+        &-title, &-author { font-weight: 600; }
+        &-title { margin-bottom: 12px; }
+        &-text { margin-bottom: 26px; }
       }
 
       &-slider {
+        font-size: 0px;
         text-align: center;
         display: block;
         width: 100%;
+        clear:both;
+        padding: 22px 0;
 
         &-radio { display: none; }
+
         &-point {
+          display: inline-block;
           width: 12px;
           height: 12px;
           background: #f2f2f2;
-          margin: 0 6px;
+          margin: 0 3px;
+          border-radius: 50%;
+          cursor: pointer;
         }
-        &-point-active { //TODO set better selector
-          background: #368cc3;
-        }
+
+        #review-1:checked ~ &-point[for='review-1'] { background: #368cc3; }
+        #review-2:checked ~ &-point[for='review-2'] { background: #368cc3; }
+        #review-3:checked ~ &-point[for='review-3'] { background: #368cc3; }
+        #review-4:checked ~ &-point[for='review-4'] { background: #368cc3; }
+
       }
     }
   }
