@@ -85,4 +85,64 @@
       }
     }
   }
+
+  &__reviews {
+    &-item {
+      max-width: 955px;
+      box-sizing: border-box;
+      margin: 10px auto;
+      border-radius: 23px;
+      border: 1px solid #e7e7e7;
+      background: #fff;
+      position: relative;
+
+      &-pagination {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 1ps solid #ececec;
+        width: 52px;
+        height: 52px;
+        text-align: center;
+        line-height: 52px;
+        color: #d0d0d0;
+        font-size: 21px;
+
+        &-prev { left: -87px; }
+        &-next { right: -87px; }
+      }
+
+      &-image {
+        // height: 100%;
+        float: left;
+        max-width: 294px;
+        min-width: 225px;
+        padding-left: 25.17%;
+        padding-top: 49px;
+      }
+
+      &-texts {
+        float: right;
+        max-width: 610px;
+        margin-right: 5.235%;
+      }
+
+      &-slider {
+        text-align: center;
+        display: block;
+        width: 100%;
+
+        &-radio { display: none; }
+        &-point {
+          width: 12px;
+          height: 12px;
+          background: #f2f2f2;
+          margin: 0 6px;
+        }
+        &-point-active { //TODO set better selector
+          background: #368cc3;
+        }
+      }
+    }
+  }
 }
