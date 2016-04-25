@@ -10,9 +10,13 @@
 .adwords-puzzle {
     padding-top: 145px;
 
-    background: url('../img/puzzle-top-bg.png') no-repeat ~"50% 0/100% auto";
+    background: url('../img/puzzles/puzzle-top-bg.png') no-repeat ~"50% 0/100% auto";
 
-    &__wrap { .wrap }
+    &__wrap {
+      padding-left: 98/1200*100%;
+
+      .wrap;
+    }
 
     &__title {
       max-width: 588px;
@@ -62,5 +66,106 @@
       }
     }
 
+  &__specialists-box {
+    float: left;
+
+    box-sizing: border-box;
+    width: 39.17%; //470/1200*100%;
+    min-width: 400px;
+    min-height: 465px;
+    margin: 21px;
+
+    border: 1px solid #c4c4c4;
+    border: 1px solid rgba(196,196,196,.85);
+    border-radius: 20px;
+    box-shadow: 0 9px rgba(0,0,0,.15);
+  }
+
+  &__specialists-description {
+    float: left;
+
+  }
+
+  &__spec {
+    position: relative;
+
+    float: left;
+
+    box-sizing: border-box;
+    width: 50%;
+    min-height: 233px;
+    padding-top: 163px;
+
+    text-align: center;
+
+    &::after {
+      position: absolute;
+      z-index: -2;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+
+      content: '';
+
+      background: url('../img/puzzles/left-top.png') no-repeat 50% 50%;
+    }
+
+    &-image {
+      position: absolute;
+      bottom: 70px;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    &-title {
+      margin: 0;
+
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+    }
+
+    &-text {
+      margin: 0;
+
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
+
+  &__spec:nth-of-type(1)::after {
+    z-index: -1;
+    right:-41px;
+    bottom: -43px;
+
+    background: url('../img/puzzles/left-top.png');
+  }
+
+  &__spec:nth-of-type(2)::after {
+    z-index: -1;
+    bottom: -43px;
+
+    background: url('../img/puzzles/right-top.png');
+  }
+
+  &__spec:nth-of-type(3)::after { background: url('../img/puzzles/left-bottom.png'); }
+
+  &__spec:nth-of-type(4)::after {
+    left:-41px;
+
+    background: url('../img/puzzles/right-bottom.png');
+  }
+
+  &__spec:nth-of-type(3),
+  &__spec:nth-of-type(4) {
+    padding-top: 173px;
+  }
+
+  &__spec:nth-of-type(3) &__spec-image,
+  &__spec:nth-of-type(4) &__spec-image {
+    bottom: 60px;
+  }
 
 }
