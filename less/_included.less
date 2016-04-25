@@ -1,0 +1,65 @@
+@import "__mixins"; // TODO: move all imports to style
+
+.included {
+  position: relative;
+  clear: both;
+  padding-top: 35px;
+  // background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #fff 50%, #fff 100%); //TODO: check out where else it is used
+  background: #fff url(../img/included-web.png) 50% 0 no-repeat;
+
+  &__wrap { .wrap; }
+
+  &__title {
+    .title-dotted;
+    margin-top: 65px;
+  }
+
+  &__features {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  &__feature {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 35px;
+    font-size: 14px;
+    flex: 0 0 45%;
+
+    &::before {
+      top: 20px;
+      position: absolute;
+      display: block;
+      width: 80px;
+      height: 80px;
+      border: 1px solid #ebebeb;
+      border-radius: 50%;
+      content: " ";
+      background: url(../img/included-sprt.png) 0 0 no-repeat;
+    }
+
+    &-interview::before { background-position: 0 0; }
+    &-audit::before { background-position: 0 -80px; }
+    &-consulting::before { background-position: 0 -160px; }
+    &-month::before { background-position: -80px 0; }
+    &-star::before { background-position: -80px -80px; }
+    &-target::before { background-position: -80px -160px; }
+
+    &:nth-child(2n+1) {
+      padding-right: 100px;
+      text-align: right;
+
+      &::before { right: -10px; }
+    }
+
+    &:nth-child(2n) {
+      padding-left: 100px;
+
+      &::before { left: -10px; }
+    }
+
+    h6,
+    p { margin: 10px 0; }
+  }
+}
