@@ -17,10 +17,9 @@ html(lang="ru")
     link(rel="stylesheet", href="css/style.min.css")
     link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 
-  body
 
-    wrapper.subscription
-
+body
+  wrapper.subscription
       header.header
         .header__navbar
           .header__wrap
@@ -30,17 +29,15 @@ html(lang="ru")
               span.header__callback Заказать звонок
 
       section.subscription__main
-        wrapper.subscription__main--wrapper.wrapper.clearfix
-
+        .subscription__main--wrapper.wrapper.clearfix
           .subscription__main--left.yandex-course
             h3.yandex-course__call Пройди бесплатный курс по
-            wrapper.yandex-course__logo
+            .yandex-course__logo
               img.yandex-course__logo-img(src="./img/subscriptions/yandex.png" alt="Яндекс Директ")
               | Яндес Директ
             h3.yandex-course__from От Филиппа Царевского
             p.yandex-course__feedback "Самый исчерпывающий и структурированный на рынке"
             p.yandex-course__by (по отзывам подписчиков)
-
           .subscription__main--right.get-course
             h3.get-course__twelve 12 пошаговых уроков, по одному каждый день
             p.get-course__details Нюансы, которых не знает 95% рекламодателей и 70% специалистов (данные основаны на сотнях аудитов и консультаций)
@@ -49,14 +46,11 @@ html(lang="ru")
               input.get-course__form--button(type="submit" value="Получить уроки")
 
       section.subscription__effective
-        wrapper.wrapper.subscription__effective--wrapper
-
+        .wrapper.subscription__effective--wrapper
           header.subscription__effective--header.clearfix.effective-header
-
             .effective-header__left
-              wrapper.effective-header__left--wrapper
+              .effective-header__left--wrapper
                 img.effective-header__left--img(src="./img/subscriptions/effective.png" alt="Эффект")
-
             .effective-header__right
               h3.effective-header__right--head
                 | В среднем, эффективность контекстной рекламы после прохождения курса увеличивается в 2,34 раза
@@ -64,34 +58,31 @@ html(lang="ru")
                 | Кто-то снижает расходы, кто-то увеличивает количество заявок или повышает их качество, кому-то удается поднять средний чек.
               p.effective-header__right--text
                 | Рекламодатели смогут легко отличить дилетанта от профессионала, а директологи (или специалисты по контекстной рекламе, если угодно) повысят свою экспертность и будут дороже продавать свои услуги.
-
           article.subscription__effective--content.effective-content
             h3.effective-content__header
               | За счёт чего это происходит?
-
-            wrapper.effective-content__wrapper
-
+            .effective-content__wrapper
               ul.effective-content__column
                 li.effective-content__column--element.column-element
-                  wrapper.column-element__wrapper
+                  .column-element__wrapper
                     img.column-element__wrapper--img(src="" alt="")
                   p.column-element__text
                     | Узнаете азы, без которых Директ превращается в слив бюджета.
 
                 li.effective-content__column--element.column-element(style="margin-bottom: 66px;")
-                  wrapper.column-element__wrapper
+                  .column-element__wrapper
                     img.column-element__wrapper--img(src="" alt="")
                   p.column-element__text
                     | Узнаете чем Яндекс Директ отличается от лотереи и почему контекстная реклама - это мощный маркетинговый инструмент.
 
                 li.effective-content__column--element.column-element(style="margin-bottom: 68px;")
-                  wrapper.column-element__wrapper
+                  .column-element__wrapper
                     img.column-element__wrapper--img(src="" alt="")
                   p.column-element__text
                     | Выставите правильные настройки в интерфейсе, которые сэкономят ваш бюджет.
 
                 li.effective-content__column--element.column-element
-                  wrapper.column-element__wrapper
+                  .column-element__wrapper
                     img.column-element__wrapper--img(src="" alt="")
                   p.column-element__text
                     | Научитесь правильно вести компанииконтролировать ставки и постоянно улучшать результаты.
@@ -99,59 +90,59 @@ html(lang="ru")
 
               ul.effective-content__column
                 li.effective-content__column--element.column-element
-                  wrapper.column-element__wrapper
+                  .column-element__wrapper
                     img.column-element__wrapper--img(src="" alt="")
                   p.column-element__text
                     | Избежите типичных ошибок начинающих рекламодателей.
 
                 li.effective-content__column--element.column-element
-                  wrapper.column-element__wrapper
+                  .column-element__wrapper
                     img.column-element__wrapper--img(src="" alt="")
                   p.column-element__text
                     | Составите сильное предложение и выделитесь среди конкурентов.
 
                 li.effective-content__column--element.column-element
-                  wrapper.column-element__wrapper
+                  .column-element__wrapper
                     img.column-element__wrapper--img(src="" alt="")
                   p.column-element__text
                     | Получите много дешевых заявок при помощи РСЯ и ретаргетинга.
 
                 li.effective-content__column--element.column-element
-                  wrapper.column-element__wrapper
+                  .column-element__wrapper
                     img.column-element__wrapper--img(src="" alt="")
                   p.column-element__text
                     | Зададите любые вопросы и гарантированно получите на них ответы от Филиппа Царевского.
 
               ul.effective-content__column
                 li.effective-content__column--element.column-element(style="margin-bottom: 43px;")
-                  wrapper.column-element__wrapper
+                  .column-element__wrapper
                     img.column-element__wrapper--img(src="" alt="")
                   p.column-element__text
                     | Научитесь собирать целевые ключевики, правильно их сортировать и минусовать, а также выделять приоритеты. Показы будут только целевые.
 
                 li.effective-content__column--element.column-element
-                  wrapper.column-element__wrapper
+                  .column-element__wrapper
                     img.column-element__wrapper--img(src="" alt="")
                   p.column-element__text
                     | Напишете грамотные продающие объявления.
 
                 li.effective-content__column--element.column-element(style="margin-bottom: 68px;")
-                  wrapper.column-element__wrapper
+                  .column-element__wrapper
                     img.column-element__wrapper--img(src="" alt="")
                   p.column-element__text
                     | Получите доступ к записям вебинаров, авторским статьям, ответам на любые вопросы.
 
                 li.effective-content__column--element.column-element
-                  wrapper.column-element__wrapper
+                  .column-element__wrapper
                     img.column-element__wrapper--img(src="" alt="")
                   p.column-element__text
                     | Будете в курсе всех тенденций и новинок.
 
       section.subscription__video
-        wrapper.wrapper.subscription__video--wrapper
+        .wrapper.subscription__video--wrapper
           iframe.subscription__video--video(src="")
 
-          wrapper.subscription__video--info.video-info
+          .subscription__video--info.video-info
             .video-info__top
               h3.video-info__top--watch
                 | Посмотрите один урок,
@@ -172,7 +163,7 @@ html(lang="ru")
                   | Твиттер
 
       section.subscription__better
-        wrapper.wrapper.subscription__better--wrapper
+        .wrapper.subscription__better--wrapper
           h3.subscription__better--header
             | Чем ещё этот курс лучше большинства на рынке:
           artcile.subscription__better--content
@@ -229,7 +220,7 @@ html(lang="ru")
                     | Всё разложено по полочкам, выстроено пошагаво, донесено простым и понятным языком. Кроме того, речь и дикция в порядке, голос приятный, звук и изображение качественные, что тоже немаловажно.
 
       section.subscription__test
-        wrapper.wrapper.subscription__test--wrapper
+        .wrapper.subscription__test--wrapper
           header.subscription__test--header
             h3.subscription__test--head
               | Думаете, что и так хорошо разбираетесь?
@@ -241,12 +232,12 @@ html(lang="ru")
             | Пройти тест
 
       section.about-speaker
-        wrapper.wrapper.about-speaker__wrapper
+        .wrapper.about-speaker__wrapper
 
           header.about-speaker__header
 
             .about-speaker__header--left.speaker-photo
-              wrapper.speaker-photo__wrapper
+              .speaker-photo__wrapper
                 img.speaker-photo__img(src="./img/subscriptions/speaker.jpg" alt="Филипп Царевский")
 
             .about-speaker__header--right.speaker-descr
@@ -278,21 +269,21 @@ html(lang="ru")
             ul.about-speaker__notfor--list.notfor-list
 
               li.notfor-list__item
-                wrapper.notfor-list__item--wrapper
+                .notfor-list__item--wrapper
                   header.notfor-list__item--header
                     | Инфобизнесмена, арбитражника, сетевика.
                   p.notfor-list__item--text
                     | Он заточен под настоящий малый бизнес.
 
               li.notfor-list__item
-                wrapper.notfor-list__item--wrapper
+                .notfor-list__item--wrapper
                   header.notfor-list__item--header
                     | Выпускника бизнес-тренингов,
                   p.notfor-list__item--text
                     | Для которого слово своего "гуру" авторитетнее любого аргумента, пусть даже 100 раз логически доказанного.
 
               li.notfor-list__item
-                wrapper.notfor-list__item--wrapper
+                .notfor-list__item--wrapper
                   header.notfor-list__item--header
                     | Тому, кто много смотрит, но ничего не делает.
                   p.notfor-list__item--text
@@ -302,17 +293,17 @@ html(lang="ru")
             header.about-speaker__comment--header
               | Почитайте отзывы тех, кто уже прошел этот курс.
 
-            wrapper.about-speaker__comment--wrapper.clearfix
+            .about-speaker__comment--wrapper.clearfix
 
               a.about-speaker__comment--move.move-back(href="") Назад
 
               .about-speaker__comment--comment.about-comment
-                wrapper.about-comment__wrapper
+                .about-comment__wrapper
 
-                  wrapper.about-comment__image.clearfix
+                  .about-comment__image.clearfix
                     img.about-comment__image-pic(src="./img/subscriptions/comments/comm1.jpg" alt="Комментарий")
 
-                  wrapper.about-comment__text
+                  .about-comment__text
                     header.about-comment__text--head
                       | Материал структурирован, помог расставить по полочкам.
                     p.about-comment__text--par
@@ -320,14 +311,14 @@ html(lang="ru")
 
                     p.about-comment__text--par
                       | Из фишек: раньше справлялась только якорями на быстрые ссылки, теперь знаю, как сделать намн...
-                      ap.about-comment__text--link(href="")
+                      a.about-comment__text--link(href="")
                         | Показать полностью
 
                     p.about-comment__text--author
                       | Аня Дианова
 
                 nav.about-comment__nav
-                  wrapper.about-comment__nav--wrapper
+                  .about-comment__nav--wrapper
                     a.about-comment__nav--link.active(href="")
                       | 1
                     a.about-comment__nav--link(href="")
@@ -340,7 +331,7 @@ html(lang="ru")
               a.about-speaker__comment--move.move-foward(href="") Вперёд
 
       section.subscribe-course
-        wrapper.wrapper.subscribe-course__wrapper
+        .wrapper.subscribe-course__wrapper
           article.subscribe-course__text
             header.subscribe-course__text--header
               | Курс абсолютно бесплатный.

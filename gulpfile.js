@@ -1,28 +1,27 @@
 'use strict';
 
-var argv = require("minimist")(process.argv.slice(2));
+var argv = require('minimist')(process.argv.slice(2));
 var isOnProduction = !!argv.production;
 
 /* --------- plugins --------- */
 
 var
+  fs = require('fs'),
   gulp = require('gulp'),
   jade = require('gulp-jade'),
   less = require('gulp-less'),
   notify = require('gulp-notify'),
-  rename = require("gulp-rename"),
+  rename = require('gulp-rename'),
   plumber = require('gulp-plumber'),
   postcss = require('gulp-postcss'),
-  fs = require('fs'),
-  foldero = require('foldero'),
-  flexboxfixer = require('postcss-flexboxfixer'),
-  reporter = require('postcss-reporter'),
   syntax_less = require('postcss-less'),
+  reporter = require('postcss-reporter'),
+  flexboxfixer = require('postcss-flexboxfixer'),
   cssnano = require('cssnano'),
+  foldero = require('foldero'),
+  server = require('browser-sync'),
   stylelint = require('stylelint'),
-  autoprefixer = require('autoprefixer'),
-  server = require('browser-sync');
-
+  autoprefixer = require('autoprefixer');
 
 /* --------- paths --------- */
 
@@ -66,7 +65,7 @@ gulp.task('jade', function () {
     });
   }
 
-  return gulp.src(paths.jade.compiled)
+  gulp.src(paths.jade.compiled)
     .pipe(plumber({
       errorHandler: notify.onError('Error:  <%= error.message %>')
     }))
@@ -95,7 +94,7 @@ gulp.task('styletest', function () {
     })
   ];
 
-  return gulp.src(paths.style.watch)
+  gulp.src('**/*.less')
     .pipe(plumber())
     .pipe(postcss(processors, {
       syntax: syntax_less
@@ -126,6 +125,7 @@ gulp.task('style', ['styletest'], function () {
         safe: true
       })
     ]))
+    .pipe(gulp.dest(paths.style.destination))
     .pipe(rename('style.min.css'))
     // .pipe(gulpIf(!isOnProduction, sourcemaps.write()))
     .pipe(gulp.dest(paths.style.destination))
@@ -170,5 +170,3 @@ gulp.task('default', allTasks, function () {
     gulp.watch(paths.jade.location, ['jade', server.reload]);
   }
 });
-
-
