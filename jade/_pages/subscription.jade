@@ -1,7 +1,33 @@
-extends ../template
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title Direct All-in
 
-block main-content
-  .subscription
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+    // IE TODO: rm?
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+
+    meta(name="description", content="")
+    meta(name="keywords", content="")
+    meta(name="author", content="")
+
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,cyrillic")
+    link(rel="stylesheet", href="css/style.min.css")
+    link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+
+
+body
+  wrapper.subscription
+      header.header
+        .header__navbar
+          .header__wrap
+            a.logo(href="/") Direct All-in
+
+            a.header__phone(href="/callback") 8&nbsp;(499)&nbsp;649-54-17
+              span.header__callback Заказать звонок
+
       section.subscription__main
         .subscription__main--wrapper.wrapper.clearfix
           .subscription__main--left.yandex-course
@@ -18,6 +44,7 @@ block main-content
             form.get-course__form(action="")
               input.get-course__form--text(type="text" placeholder="Введите ваш e-mail")
               input.get-course__form--button(type="submit" value="Получить уроки")
+
       section.subscription__effective
         .wrapper.subscription__effective--wrapper
           header.subscription__effective--header.clearfix.effective-header
@@ -315,3 +342,30 @@ block main-content
           form.get-course__form(action="")
             input.get-course__form--text(type="text" placeholder="Введите ваш e-mail")
             input.get-course__form--button(type="submit" value="Получить уроки")
+
+      footer.footer
+        .footer__navbar
+          .footer__wrap
+            ul
+              li
+                a(href="") Политика конфиденциальности
+                br
+                a(href="") Партнерская программа
+
+              li
+                p ИП Царевский Ф. Л.
+                  br
+                  | ОГРНИП 31377460370109
+
+              li.social
+                a(href="") yt
+                a(href="") fb
+                a(href="") tw
+                a(href="") ig
+                a(href="") vk
+
+              li
+                a.footer__navbar-contacts(href="mailto:sale@direct-all-in.ru") sale@direct-all-in.ru
+
+              li
+                span.footer__navbar-contacts 8 (499) 649-54-17
