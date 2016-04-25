@@ -80,12 +80,22 @@
 
       &__wrapper {
         display: block;
+        position: relative;
         width: 130px;
         height: 130px;
         margin: 0 auto;
         border-radius: 50%;
         border: 2px solid rgb(194, 224, 243);
         background-color: #fff;
+
+        &--img {
+          display: block;
+          position: absolute;
+          width: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
 
       &__text {
