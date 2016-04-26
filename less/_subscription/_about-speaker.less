@@ -1,5 +1,22 @@
 .about-speaker {
   color: #000;
+  position: relative;
+  padding-bottom: 68px;
+  background: url('../img/founder-texture-top-x.png') 0 0 repeat-x, linear-gradient(to bottom, transparent 85%, #fff 100%), url('../img/founder-texture-bg.png') 0 0 repeat;
+
+  &::before {
+    position: absolute;
+    top: -37px;
+    left: 50%;
+
+    width: 169px;
+    height: 126px;
+
+    content: '';
+    transform: translateX(-50%);
+
+    background: url('../img/founder-top-logo.png') 50% 50% no-repeat;
+  }
 
   &__wrapper {
     padding-top: 158px;
@@ -132,8 +149,22 @@
           display: inline-block;
           border: 1px solid rgb(183, 183, 183);
           background-color: #fff;
+          background-repeat: no-repeat;
+          background-position: center center;
           border-radius: 12px;
           margin-right: 43px;
+        }
+
+        &.business::before {
+          background-image: url('../img/subscriptions/icons/infoBusinessman.svg');
+        }
+
+        &.study::before {
+          background-image: url('../img/subscriptions/icons/alumniBusinessTren.svg');
+        }
+
+        &.nothing::before {
+          background-image: url('../img/subscriptions/icons/doingNothing.svg');
         }
 
         &--wrapper {
@@ -158,7 +189,6 @@
 
   &__comment {
     display: block;
-    padding-bottom: 68px;
 
     &--header {
       font-size: 35px;

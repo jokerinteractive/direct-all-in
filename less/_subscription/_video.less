@@ -54,6 +54,7 @@
       &--like {
         font-size: 18px;
         margin: 0;
+        margin-bottom: 10px;
       }
 
       .socials {
@@ -64,13 +65,27 @@
           font-size: 0;
           display: inline-block;
           list-style: none;
-          width: 30px;
-          height: 30px;
-          background-color: #000;
-          margin: 0 0 0 10px;
+          width: 61px;
+          height: 24px;
+          overflow: hidden;
+          margin: 0 0 0 5px;
+          background-repeat: no-repeat;
+          background-image: url('../img/subscriptions/icons/socials.png');
 
           &:first-of-type {
             margin-left: 0;
+          }
+
+          &--vk {
+            background-position: 0 0;
+          }
+
+          &--fb {
+            background-position: -65px 0;
+          }
+
+          &--tw {
+            background-position: -130px 0;
           }
         }
       }
