@@ -1,8 +1,10 @@
 body {
   background-color: #fff;
   color: #555;
-  font: 300 20px "Open Sans", Arial, sans-serif;
+  font: 300 20px "Open Sans", arial, sans-serif;
 }
+
+body > * { min-width: 900px; }
 
 h1,
 h2,
@@ -27,3 +29,9 @@ ul {
 
 p,
 li { margin: 35px 0; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
