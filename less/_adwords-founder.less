@@ -4,7 +4,7 @@
   display: table;
   clear: both;
 
-  content: '';
+  content: "";
 }
 
 .adwords-founder {
@@ -13,7 +13,7 @@
   padding-top: 184px;
   padding-bottom: 130px;
 
-  background: url('../img/founder-texture-top-x.png') 0 0 repeat-x, linear-gradient(to bottom, transparent 85%, #fff 100%), url('../img/founder-texture-bg.png') 0 0 repeat;
+  background: url("../img/founder-texture-top-x.png") 0 0 repeat-x, linear-gradient(to bottom, transparent 85%, #fff 100%), url("../img/founder-texture-bg.png") 0 0 repeat;
 
   &::before {
     position: absolute;
@@ -23,12 +23,13 @@
     width: 169px;
     height: 126px;
 
-    content: '';
+    content: "";
     transform: translateX(-50%);
 
-    background: url('../img/founder-top-logo.png') 50% 50% no-repeat;
+    background: url("../img/founder-top-logo.png") 50% 50% no-repeat;
   }
-  &__wrap { .wrap }
+
+  &__wrap { .wrap; }
 
   &__head {
     &-image { float: left; }
@@ -41,7 +42,7 @@
     }
 
     &-pre {
-      margin:24px 0;
+      margin: 24px 0;
 
       font-size: 16px;
     }
@@ -67,7 +68,7 @@
       float: left;
 
       box-sizing: border-box;
-      max-width: 196*2px;
+      max-width: 392px;
       margin-right: 61px;
       padding-left: 196px;
 
@@ -83,8 +84,8 @@
           font-weight: 500;
         }
 
-        .red-line {border-color: #ff2f4f; }
-        .light-blue-line {border-color: #8fc6e9; }
+        .red-line { border-color: #ff2f4f; }
+        .light-blue-line { border-color: #8fc6e9; }
 
         &-text { margin-top: 3px; }
       }
@@ -109,7 +110,7 @@
         width: 10px;
         height: 10px;
 
-        content: '';
+        content: "";
 
         border-radius: 50%;
         background: #338bc3;
@@ -132,7 +133,8 @@
       border-radius: 23px;
       background: #fff;
 
-      &-pagination-prev, &-pagination-next, {
+      &-pagination-prev,
+      &-pagination-next, {
         position: absolute;
         top: 50%;
 
@@ -146,19 +148,21 @@
         color: #d0d0d0;
         border: 1px solid #ececec;
         border-radius: 50%;
-        background: url('../img/reviews-sprt.png') no-repeat 0 0;
+        background: url("../img/reviews-sprt.png") no-repeat 0 0;
 
-        font-size: 0px;
+        font-size: 0;
         line-height: 52px;
 
         &:hover { border-color: #338bc3; }
         &:active { border-color: #b7e0ff; }
       }
+
       &-pagination-prev {
         left: -87px;
         &:hover { background-position: 0 -50px; }
         &:active { background-position: 0 -100px; }
       }
+
       &-pagination-next {
         right: -87px;
 
@@ -187,9 +191,9 @@
           width: 33px;
           height: 28px;
 
-          content: '';
+          content: "";
 
-          background: url('../img/reviews-sprt.png') no-repeat -59px -11px;
+          background: url("../img/reviews-sprt.png") no-repeat -59px -11px;
         }
       }
 
@@ -201,22 +205,31 @@
         padding-top: 40px;
         padding-left: 24px;
 
-        &-title, &-text, &-author { margin: 0; }
-        &-title, &-author { font-weight: 600; }
+        &-title,
+        &-text,
+        &-author {
+          margin: 0;
+        }
+
+        &-title,
+        &-author {
+          font-weight: 600;
+        }
+
         &-title { margin-bottom: 12px; }
         &-text { margin-bottom: 26px; }
       }
 
       &-slider {
         display: block;
-        clear:both;
+        clear: both;
 
         width: 100%;
         padding: 22px 0;
 
         text-align: center;
 
-        font-size: 0px;
+        font-size: 0;
 
         &-radio { display: none; }
 
@@ -233,10 +246,10 @@
           background: #f2f2f2;
         }
 
-        #review-1:checked ~ &-point[for='review-1'] { background: #368cc3; }
-        #review-2:checked ~ &-point[for='review-2'] { background: #368cc3; }
-        #review-3:checked ~ &-point[for='review-3'] { background: #368cc3; }
-        #review-4:checked ~ &-point[for='review-4'] { background: #368cc3; }
+        #review-1:checked ~ &-point[for="review-1"] { background: #368cc3; }
+        #review-2:checked ~ &-point[for="review-2"] { background: #368cc3; }
+        #review-3:checked ~ &-point[for="review-3"] { background: #368cc3; }
+        #review-4:checked ~ &-point[for="review-4"] { background: #368cc3; }
 
       }
     }
@@ -251,7 +264,7 @@
         float: left;
 
         width: 328px;
-        margin: auto 24/1200*100%;
+        margin: auto 2%;
 
         &-text {
           margin: 0;
@@ -259,7 +272,7 @@
           text-align: center;
         }
       }
-      &-item:nth-of-type(2n) { margin: auto 60/1200*100%; }
+      &-item:nth-of-type(2n) { margin: auto 5%; }
     }
   }
 }
