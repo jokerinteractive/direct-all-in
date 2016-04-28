@@ -1,0 +1,96 @@
+@import "__mixins";
+
+.better {
+  color: #000;
+  padding-top: 60px;
+  padding-bottom: 62px;
+  background: url("../img/calmness-light-bg.png") no-repeat 50% 0;
+
+  &__wrap {
+    .wrap();
+  }
+
+  &__h3 {
+    text-align: center;
+    font-size: 34px;
+    margin: 25px 0;
+
+    & > span {
+      border-bottom: 2px dashed #c2e0f3;
+      padding: 0 10px 10px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__left-column {
+    width: 527px;
+    padding-left: 30px;
+  }
+
+  &__right-column {
+    width: 564px;
+    padding-top: 20px;
+
+    .better-list {
+      padding-left: 30px;
+      padding-top: 5px;
+    }
+  }
+
+  &__list {
+    padding: 52px 0 0;
+    margin: 0;
+  }
+
+  &__list-item {
+    display: block;
+    padding: 0;
+    margin: 0 0 44px;
+  }
+
+  &__list-header {
+    font-weight: bold;
+    font-size: 20px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 37px;
+      height: 18px;
+      background: url(../img/subscriptions/check.png) no-repeat;
+    }
+  }
+
+  &__list-text {
+    font-size: 18px;
+    margin: 10px 0;
+    padding-left: 37px;
+  }
+
+  .quote {
+    display: block;
+    width: 511px;
+    height: 336px;
+    padding: 20px 30px;
+    background: url(../img/subscriptions/quote.png) no-repeat 0 0;
+
+    &__text {
+      font-size: 18px;
+      margin: 9px 0 7px;
+    }
+
+    &__quote {
+      color: rgb(10, 86, 135);
+      font-style: italic;
+      font-size: 24px;
+      line-height: 1.5;
+    }
+
+  }
+}
