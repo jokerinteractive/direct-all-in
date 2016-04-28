@@ -1,9 +1,14 @@
 .subscription__effective {
   color: #000;
-  background: #fff url(../img/subscriptions/effective-bg.png);
+
+  &--header {
+    background-image: url('../img/calmness-light-bg.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
 
   .effective-header {
-    padding: 95px 0;
+    padding: 95px 0 0;
 
     &__left {
       float: left;
@@ -40,7 +45,9 @@
   }
 
   .effective-content {
+    background: #fff url(../img/subscriptions/effective-bg.png) no-repeat;
     display: block;
+    padding-top: 120px;
 
     &__header {
       font-size: 36px;
