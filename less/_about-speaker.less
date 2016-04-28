@@ -2,20 +2,20 @@
   color: #000;
   position: relative;
   padding-bottom: 68px;
-  background: url('../img/founder-texture-top-x.png') 0 0 repeat-x, linear-gradient(to bottom, transparent 85%, #fff 100%), url('../img/founder-texture-bg.png') 0 0 repeat;
+  background: url("../img/founder-texture-top-x.png") 0 1px repeat-x, linear-gradient(to bottom, transparent 85%, #fff 100%), url("../img/founder-texture-bg.png") 0 0 repeat;
 
   &::before {
     position: absolute;
-    top: -37px;
+    top: -36px;
     left: 50%;
 
     width: 169px;
     height: 126px;
 
-    content: '';
+    content: "";
     transform: translateX(-50%);
 
-    background: url('../img/founder-top-logo.png') 50% 50% no-repeat;
+    background: url("../img/founder-top-logo.png") 50% 50% no-repeat;
   }
 
   &__wrapper {
@@ -29,7 +29,8 @@
     align-items: flex-start;
 
     &--left {
-      width: 368px;
+      width: 308px;
+      padding-left: 60px;
     }
 
     .speaker-photo {
@@ -91,8 +92,8 @@
     &--text {
       font-size: 33px;
       line-height: 38px;
-      margin: 0;
-      margin-bottom: 30px;
+      margin: 0 10% 30px;
+      font-style: italic;
     }
 
     &--comment {
@@ -156,15 +157,15 @@
         }
 
         &.business::before {
-          background-image: url('../img/subscriptions/icons/infoBusinessman.svg');
+          background-image: url("../img/subscriptions/icons/infoBusinessman.svg");
         }
 
         &.study::before {
-          background-image: url('../img/subscriptions/icons/alumniBusinessTren.svg');
+          background-image: url("../img/subscriptions/icons/alumniBusinessTren.svg");
         }
 
         &.nothing::before {
-          background-image: url('../img/subscriptions/icons/doingNothing.svg');
+          background-image: url("../img/subscriptions/icons/doingNothing.svg");
         }
 
         &--wrapper {
@@ -215,23 +216,22 @@
       &.move-back {
         background-image: url("../img/subscriptions/back.png");
         background-repeat: no-repeat;
-        left: 0;
+        left: 50px;
       }
 
       &.move-foward {
         background-image: url("../img/subscriptions/foward.png");
         background-repeat: no-repeat;
-        right: 0;
+        right: 50px;
       }
     }
 
     &--comment {
       display: block;
-      margin: 0 auto;
+      margin: 0 150px;
       border: 1px solid rgb(231, 231, 231);
       border-radius: 25px;
       background-color: rgb(255, 255, 255);
-      width: 958px;
       height: 339px;
     }
 
@@ -248,6 +248,7 @@
       &__image {
         display: block;
         width: 206px;
+        margin-right: 25px;
 
         &::before {
           content: "";
@@ -271,7 +272,6 @@
 
       &__text {
         display: block;
-        width: 650px;
         padding-top: 3px;
 
         &--head {

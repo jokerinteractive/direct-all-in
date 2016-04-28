@@ -1,0 +1,11 @@
+.header__navbar
+  .header__wrap
+
+    a.logo(href="/") Direct All-in
+
+    nav.main-menu
+      each item in site.data.header
+        a.main-menu__item(href=item.link) #{item.name}
+
+    a.header__phone(href="/callback") 8&nbsp;(499)&nbsp;649-54-17
+      span.header__callback Заказать звонок
