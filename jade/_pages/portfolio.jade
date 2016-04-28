@@ -19,19 +19,21 @@ block main-content
         article.clients__pics
           header.clients__pics--header
             | Клиенты, которые уже доверили нам свои рекламные компании:
+
           wrapper.clients__pics--wrapper
-            img.clients__pics--img(src="", alt="")
-            img.clients__pics--img(src="", alt="")
-            img.clients__pics--img(src="", alt="")
-            img.clients__pics--img(src="", alt="")
-            img.clients__pics--img(src="", alt="")
-            img.clients__pics--img(src="", alt="")
+            .clients__pics--block.block-1
+            .clients__pics--block.block-2
+            .clients__pics--block.block-3
+            .clients__pics--block.block-4
+            .clients__pics--block.block-5
+            .clients__pics--block.block-6
+
           wrapper.clients__pics--wrapper
-            img.clients__pics--img(src="", alt="")
-            img.clients__pics--img(src="", alt="")
-            img.clients__pics--img(src="", alt="")
-            img.clients__pics--img(src="", alt="")
-            img.clients__pics--img(src="", alt="")
+            .clients__pics--block.block-7
+            .clients__pics--block.block-8
+            .clients__pics--block.block-9
+            .clients__pics--block.block-10
+            .clients__pics--block.block-11
 
     section.clients__video
       header.clients__video--header
@@ -47,13 +49,13 @@ block main-content
           | Благодарственные письма
         wrapper.clients__thnx--wrapper
           .clients__thnx--item
-            img.clients__thnx--img(img="", alt="")
+            img.clients__thnx--img(src="./img/portfolio/letters/1.png", alt="")
           .clients__thnx--item
-            img.clients__thnx--img(img="", alt="")
+            img.clients__thnx--img(src="./img/portfolio/letters/2.png", alt="")
           .clients__thnx--item
-            img.clients__thnx--img(img="", alt="")
+            img.clients__thnx--img(src="./img/portfolio/letters/3.png", alt="")
           .clients__thnx--item
-            img.clients__thnx--img(img="", alt="")
+            img.clients__thnx--img(src="./img/portfolio/letters/4.png", alt="")
 
     section.clients__case
       wrapper.wrapper.clients__case--wrapper
@@ -61,25 +63,23 @@ block main-content
           | Кейсы
 
         article.clients__case--article
-          wrapper.clients__case--screen
-            img.clients__case--img(src="", alt="")
+          .clients__case--screen.screen-1
           wrapper.clients__case--text.case-text
             header.case-text__header
               | История ведения кампании в Яндекс.Директ
             p.case-text__descr
               | Полтора года назад к нам обратился Кирилл за настройке рекламы в Яндекс.Директ. Во-первых, с непонятной для нас темой (антиколлекторы, abankiri.ru), а во-вторых, ещё и на старте своего бизнеса. Изначально он хотел работать с оплатой а результат (процент с продаж), но у нас были сомнения по поводу этого самого результата. Поэтому мы взялись за проект на обычных для всех клиентов условиях. И очень удивились, когда заявки пошли одна за другой.
 
-              a.case-text__descr-link(href="")
+              a.case-text__descr--link(href="")
                 | Подробнее
 
         article.clients__case--article
-          wrapper.clients__case--screen
-            img.clients__case--img(src="", alt="")
+          .clients__case--screen.screen-2
           wrapper.clients__case--text.case-text
             header.case-text__header
               | Выжили благодаря аналитике
             p.case-text__descr
               | История стартапа, который прорвался исключительно благодаря контекстной рекламе. Подключение дополнительных сервисов и ежедневная работа аналитиков позволили увеличивать прибыль ежемесячно и всего за 2 года разрастить до одной из самых больших в Москве юридических фирм.
 
-              a.case-text__descr-link(href="")
+              a.case-text__descr--link(href="")
                 | Подробнее
