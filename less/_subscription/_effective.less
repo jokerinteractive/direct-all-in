@@ -1,51 +1,48 @@
-.subscription__effective {
+@import "../__mixins";
+
+.effective {
   color: #000;
 
-  &--header {
-    background-image: url('../img/calmness-light-bg.png');
-    background-repeat: no-repeat;
-    background-position: center 0;
+  &__header {
+    background: url("../img/calmness-light-bg.png") no-repeat 50% 0;
   }
 
-  .effective-header {
-    padding: 95px 0 0;
+  &__wrap {
+    .wrap();
+  }
 
-    &__left {
-      float: left;
-      width: 368px;
-      padding-left: 38px;
+  &__header {
+    padding-top: 95px;
+  }
+  &__left {
+    float: left;
+    width: 296px;
+    padding-left: 40px;
+    padding-right: 60px;
 
-      &--wrapper {
-        display: block;
-        width: 296px;
-      }
-
-      &--img {
-        display: block;
-        width: 100%;
-      }
+    img {
+      display: block;
+      width: 100%;
     }
+  }
 
-    &__right {
-      float: right;
-      width: 760px;
+  &__right {
+    float: right;
+    width: 760px;
+  }
 
-      &--head {
-        margin: 0;
-        margin-bottom: 22px;
-        font-size: 34px;
-      }
+  &__h3 {
+    margin: 0 0 22px;
+    font-size: 34px;
+  }
 
-      &--text {
-        margin: 0;
-        margin-bottom: 12px;
-        font-size: 18px;
-      }
-    }
+  &__text {
+    margin: 0 0 12px;
+    font-size: 18px;
   }
 
   .effective-content {
-    background: #fff url(../img/subscriptions/effective-bg.png) no-repeat;
+    background: #fff url(../img/subscriptions/effective-bg.png) no-repeat 50% 0;
     display: block;
     padding-top: 120px;
 
@@ -106,7 +103,7 @@
       }
 
       &__text {
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
         margin: 30px 0;
         line-height: 1.5;
