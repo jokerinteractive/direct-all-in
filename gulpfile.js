@@ -98,7 +98,7 @@ gulp.task('styletest', function () {
     .pipe(plumber())
     .pipe(postcss(processors, {
       syntax: syntax_less
-    }))
+    }));
 });
 
 /* --------- style --------- */
