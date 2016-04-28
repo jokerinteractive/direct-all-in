@@ -3,67 +3,228 @@
 .wrap { .wrap; }
 
 .dotted-underline {
-  .title-dotted;
+  margin-bottom: 0;
   padding-right: 27px;
   padding-bottom: 16px;
   padding-left: 27px;
-  margin-bottom: 0;
+
+  .title-dotted;
 
   // background: url("../img/adwords-beige-dot.png") repeat-x 0 95%;
 }
 
 .work-stages {
-
+  padding-bottom: 45px;
   &__round {
     display: flex;
     flex-direction: row;
+
+    padding-bottom: 95px;
+
+    background: url("../img/work-stages/stage-round.svg") no-repeat 50% 45px;
+
     justify-content: center;
   }
 
   &__title { text-align: center; }
   &__list {
+    // @item-1-padding: 196px;
+    @item-1-padding: 199px;
+    @item-2-padding: 250px;
+    @item-3-padding: 240px;
+    @item-4-padding: 180px;
+    // @item-5-padding: 74px;
+    @item-5-padding: 77px;
+
     &-left,
     &-right {
-      max-width: 527px;
       display: flex;
+
+      width: 50%;
+      max-width: 527px;
+
+      justify-content: space-around;
     }
 
     &-left {
       flex-direction: column-reverse;
-      justify-content: flex-end;
+
       margin-right: 12px;
     }
 
     &-right {
       flex-direction: column;
+
       margin-left: 12px;
     }
 
     &-left &-item { text-align: right; }
 
     &-item {
-      font-size: 15px;
+      position: relative;
+
       margin: 0;
+      margin-bottom: 75px;
+
+      font-size: 14px;
+
+      &::after {
+        position: absolute;
+        top: -7px;
+        right: 0;
+
+        width: 50px;
+        height: 50px;
+
+        content: "";
+
+        background: url("../img/work-stages/stage-round-sprt.svg");
+      }
+    }
+
+    &-left &-item:first-child {
+      padding-right: @item-1-padding;
+      &::after {
+        top: -15px;
+        right: @item-1-padding - 60px;
+
+        background-position: 0 -200px;
+      }
+    }
+
+    &-left &-item:nth-child(2) {
+      padding-right: @item-2-padding;
+      &::after {
+        right: @item-2-padding - 60px;
+
+        background-position: 0 -150px;
+      }
+    }
+
+    &-left &-item:nth-child(3) {
+      padding-right: @item-3-padding;
+      &::after {
+        right: @item-3-padding - 60px;
+
+        background-position: 0 -100px;
+      }
+    }
+
+    &-left &-item:nth-child(4) {
+      padding-right: @item-4-padding;
+      &::after {
+        right: @item-4-padding - 60px;
+
+        background-position: 0 -50px;
+      }
+    }
+
+    &-left &-item:nth-child(5) {
+      padding-right: @item-5-padding;
+      &::after {
+        right: @item-5-padding - 60px;
+
+        background-position: 0 0;
+      }
+    }
+
+    &-right &-item:first-child {
+      padding-left: @item-5-padding;
+      &::after {
+        left: @item-5-padding - 60px;
+
+        background-position: -50px 0;
+      }
+    }
+
+    &-right &-item:nth-child(2) {
+      padding-left: @item-4-padding;
+      &::after {
+        left: @item-4-padding - 60px;
+
+        background-position: -50px -50px;
+      }
+    }
+
+    &-right &-item:nth-child(3) {
+      min-height: 40px;
+      margin-bottom: 60px;
+      padding-left: @item-3-padding;
+      &::after {
+        top: 0;
+        left: @item-3-padding - 60px;
+
+        background-position: -50px -100px;
+      }
+    }
+    &-right &-item:nth-child(4) {
+      padding-left: @item-2-padding;
+      &::after {
+        top: 18px;
+        left: @item-2-padding - 60px;
+
+        background-position: -50px -150px;
+      }
+    }
+    &-right &-item:nth-child(5) {
+      padding-left: @item-1-padding;
+      &::after {
+        top: 5px;
+        left: @item-1-padding - 60px;
+
+        background-position: -50px -200px;
+      }
+    }
+
+    &-left &-item:first-child,
+    &-right &-item:nth-child(5) {
+      margin-bottom: 0;
+    }
+
+    &-left &-item:nth-child(5),
+    &-right &-item:first-child {
       margin-bottom: 35px;
     }
 
-    @item-1-padding: 196px;
-    @item-2-padding: 250px;
-    @item-3-padding: 240px;
-    @item-4-padding: 180px;
-    @item-5-padding: 74px;
-
-    &-left &-item:first-child { padding-right: @item-1-padding;}
-    &-left &-item:nth-child(2) { padding-right: @item-2-padding;}
-    &-left &-item:nth-child(3) { padding-right: @item-3-padding;}
-    &-left &-item:nth-child(4) { padding-right: @item-4-padding;}
-    &-left &-item:nth-child(5) { padding-right: @item-5-padding;}
-
-    &-right &-item:first-child { padding-left: @item-5-padding;}
-    &-right &-item:nth-child(2) { padding-left: @item-4-padding;}
-    &-right &-item:nth-child(3) { padding-left: @item-3-padding;}
-    &-right &-item:nth-child(4) { padding-left: @item-2-padding;}
-    &-right &-item:nth-child(5) { padding-left: @item-1-padding;}
+    &-digit {
+      display: none;
+    }
   }
 
+  &__bottom {
+    display: flex;
+
+    padding-left: 2%;
+
+    justify-content: center;
+
+    &-item {
+      position: relative;
+
+      max-width: 180px;
+      margin: 5px;
+      padding-top: 80px;
+
+      text-align: center;
+
+      font-size: 14px;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        width: 50px;
+        height: 50px;
+
+        content: "";
+        transform: translateX(-50%);
+
+        background: url("../img/work-stages/stage-round-sprt.svg") no-repeat 0 -250px;
+      }
+    }
+
+    &-item:nth-child(2)::before { background-position: -50px -250px; }
+    &-item:nth-child(3)::before { background-position: 0 -300px; }
+  }
 }
