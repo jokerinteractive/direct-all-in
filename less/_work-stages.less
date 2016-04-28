@@ -13,5 +13,57 @@
 }
 
 .work-stages {
+
+  &__round {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   &__title { text-align: center; }
+  &__list {
+    &-left,
+    &-right {
+      max-width: 527px;
+      display: flex;
+    }
+
+    &-left {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      margin-right: 12px;
+    }
+
+    &-right {
+      flex-direction: column;
+      margin-left: 12px;
+    }
+
+    &-left &-item { text-align: right; }
+
+    &-item {
+      font-size: 15px;
+      margin: 0;
+      margin-bottom: 35px;
+    }
+
+    @item-1-padding: 196px;
+    @item-2-padding: 250px;
+    @item-3-padding: 240px;
+    @item-4-padding: 180px;
+    @item-5-padding: 74px;
+
+    &-left &-item:first-child { padding-right: @item-1-padding;}
+    &-left &-item:nth-child(2) { padding-right: @item-2-padding;}
+    &-left &-item:nth-child(3) { padding-right: @item-3-padding;}
+    &-left &-item:nth-child(4) { padding-right: @item-4-padding;}
+    &-left &-item:nth-child(5) { padding-right: @item-5-padding;}
+
+    &-right &-item:first-child { padding-left: @item-5-padding;}
+    &-right &-item:nth-child(2) { padding-left: @item-4-padding;}
+    &-right &-item:nth-child(3) { padding-left: @item-3-padding;}
+    &-right &-item:nth-child(4) { padding-left: @item-2-padding;}
+    &-right &-item:nth-child(5) { padding-left: @item-1-padding;}
+  }
+
 }
