@@ -22,18 +22,14 @@
   }
 
   &__head {
+    display: flex;
+
     margin-bottom: 65px;
     padding-bottom: 10px;
 
-    &-image {
-      float: left;
-
-      margin-top: 4px;
-    }
+    &-image { margin-top: 4px; }
 
     &-texts {
-      float: left;
-
       max-width: 625px;
       margin-left: 61px;
     }
@@ -59,15 +55,16 @@
   }
 
   &__achivements {
-    h3 { text-align: center; }
+    display: flex;
+
+    justify-content: flex-start;
+    &-title { text-align: center; }
 
     &-left {
-      float: left;
-
       box-sizing: border-box;
       max-width: 392px;
       margin-right: 87px;
-      padding-left: 196px;
+      padding-left: 9%;
 
       &-item {
         width: 171px;
@@ -98,7 +95,6 @@
       float: left;
 
       box-sizing: border-box;
-      // max-width: 625px;
       max-width: 606px;
 
       &-item {
@@ -141,9 +137,12 @@
     &-item {
       position: relative;
 
+      display: flex;
+
       box-sizing: border-box;
       max-width: 955px;
       margin: 10px auto;
+      padding-bottom: 45px;
 
       border: 1px solid #e7e7e7;
       border-radius: 23px;
@@ -188,8 +187,6 @@
       }
 
       &-image {
-        float: left;
-
         box-sizing: border-box;
         min-width: 225px;
         max-width: 294px;
@@ -214,8 +211,6 @@
       }
 
       &-texts {
-        float: right;
-
         max-width: 610px;
         margin-right: 5.235%;
         padding-top: 40px;
@@ -237,12 +232,13 @@
       }
 
       &-slider {
-        display: block;
-        clear: both;
+        position: absolute;
+        bottom: 22px;
+        left: 50%;
 
         width: 100%;
-        padding: 22px 0;
 
+        transform: translateX(-50%);
         text-align: center;
 
         font-size: 0;
@@ -278,21 +274,23 @@
 
     &-title { text-align: center; }
     &-block {
-      &-item {
-        float: left;
+      display: flex;
+      flex-direction: row;
 
+      flex-wrap: wrap;
+
+      &-item {
         width: 328px;
         margin: auto 2%;
 
         &-text {
-          margin: 0;
+          margin: 10px 0;
 
           text-align: center;
 
           font-size: 18px;
         }
       }
-      &-item:nth-of-type(2n) { margin: auto 5%; }
     }
   }
 }

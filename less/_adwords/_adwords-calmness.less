@@ -129,16 +129,15 @@
       &::before,
       &::after {
         position: absolute;
-        top: -3px;
-        bottom: -3px;
+        top: 50%;
 
         width: 58px;
         min-height: 341px;
 
         content: "";
+        transform: translateY(-50%);
 
-        background: url("../img/promises-left-brace.svg")  no-repeat 2px 50%;
-        background-size: cover;
+        background: url("../img/promises-left-brace.svg");
       }
 
       &::before {
@@ -148,7 +147,7 @@
       &::after {
         right: -58px;
 
-        transform: rotate(180deg);
+        transform: translateY(-50%) rotate(180deg);
       }
     }
 
@@ -234,6 +233,8 @@
 
     .adwords-wrap { padding: 60px; }
 
+    &-content { display: flex; }
+
     &-title {
       margin: 0 0 70px;
 
@@ -269,8 +270,6 @@
 
     &-left,
     &-right {
-      float: left;
-
       max-width: 453px;
     }
 
