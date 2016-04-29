@@ -63,21 +63,36 @@
   &__feature-connect::after { background-position: -96px -96px; }
   &__feature-training::after { background-position: -96px -192px; }
 
+  &__features {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  &__features-left,
+  &__features-right {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+  }
+
   &__features-left {
-    float: left;
+    margin-right: 12px;
 
     text-align: right;
 
     &-item {
       padding-right: 135px;
-
       padding-left: 40px;
     }
     &-item::after { right: 0; }
   }
 
   &__features-right {
-    float: right;
+    margin-left: 12px;
+
     &-item {
       padding-right: 40px;
       padding-left: 135px;
@@ -91,10 +106,13 @@
     padding-top: 210px;
     padding-bottom: 112px;
 
-    background: linear-gradient(to bottom, transparent 0, #fff 1%, #cdcdcd 57.42%, #b4b4b4 42.42%, #fff 99%, transparent 100%);
+    background: linear-gradient(to bottom, transparent 0, #fff 1%, #e7e7e7 57.42%, #dddddd 42.42%, #fff 99%, transparent 100%);
 
     &-inside {
       position: relative;
+
+      display: flex;
+      flex-direction: row;
 
       box-sizing: border-box;
       min-height: 341px;
@@ -104,6 +122,9 @@
       background: #fff;
 
       font-size: 12px;
+
+      justify-content: space-between;
+      flex-wrap: nowrap;
 
       &::before,
       &::after {
@@ -116,7 +137,7 @@
 
         content: "";
 
-        background: url("../img/promises-left-brace.png")  no-repeat 2px 50%;
+        background: url("../img/promises-left-brace.svg")  no-repeat 2px 50%;
         background-size: cover;
       }
 
@@ -132,9 +153,14 @@
     }
 
     &-left {
-      float: left;
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
 
       max-width: 392px;
+
+      justify-content: flex-start;
 
       &-title {
         margin: 0;
@@ -154,8 +180,6 @@
     }
 
     &-right {
-      float: right;
-
       max-width: 480px;
       padding-left: 37px;
 
@@ -204,8 +228,9 @@
   }
 
   &__confidence {
-    background: url("../img/confidence-bg-dots-lines.png") 33% 99%;
     padding-top: 84px;
+
+    background: url("../img/confidence-bg-dots-lines.png") 33% 99%;
 
     .adwords-wrap { padding: 60px; }
 
@@ -244,8 +269,9 @@
 
     &-left,
     &-right {
-      max-width: 453px;
       float: left;
+
+      max-width: 453px;
     }
 
     &-left { margin-right: 9.58%; }
