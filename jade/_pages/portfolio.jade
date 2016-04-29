@@ -42,30 +42,32 @@ body
     section.clients__video
       header.clients__video--header
         | Посмотрите видеоотзывы от довольных клиентов:
-      wrapper.clients__video--slider
+      wrapper.clients__video--slider.slider
 
-        a.clients__video--nav.prev(href="")
+        //На текст в ссылке завязан JS. Осторожно!
+
+        a.clients__video--nav.slider-nav.prev(href="")
           | prev
           img.clients__video--button(src="./img/icons/prev.svg", alt="prev")
 
-        .clients__video--slide.slide-1
+        .clients__video--slide.slide.slide-1
           ifame.clients__video--video(src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0")
           p.clients__video--text
             | ??? при ограничении на Яндекс.Директ
-        .clients__video--slide.slide-2.active
+        .clients__video--slide.slide.slide-2.active
           ifame.clients__video--video(src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0")
           p.clients__video--text
             | Всё о курсе Яндекс Директ Филиппа Царевского
-        .clients__video--slide.slide-3.active
+        .clients__video--slide.slide.slide-3.active
           ifame.clients__video--video(src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0")
           p.clients__video--text
             | Настройки в Яндекс.Директ
-        .clients__video--slide.slide-4
+        .clients__video--slide.slide.slide-4
           ifame.clients__video--video(src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0")
           p.clients__video--text
             | Настройки в Яндекс.Директ
 
-        a.clients__video--nav.next(href="")
+        a.clients__video--nav.slider-nav.next(href="")
           | next
           img.clients__video--button(src="./img/icons/next.svg", alt="next")
 
@@ -122,3 +124,5 @@ body
             input.btn(type="submit" value="Отправить заявку")
       include ../_common/_footer__nav
       include ../_common/_footer__navbar
+  script(src = "js/jquery.min.js")
+  script(src = "js/script.js")

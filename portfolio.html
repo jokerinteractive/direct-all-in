@@ -56,23 +56,24 @@
     </section>
     <section class="clients__video">
       <header class="clients__video--header">Посмотрите видеоотзывы от довольных клиентов:</header>
-      <wrapper class="clients__video--slider"><a href="" class="clients__video--nav prev">prev<img src="./img/icons/prev.svg" alt="prev" class="clients__video--button"></a>
-        <div class="clients__video--slide slide-1">
+      <wrapper class="clients__video--slider slider">
+        <!--На текст в ссылке завязан JS. Осторожно!--><a href="" class="clients__video--nav slider-nav prev">prev<img src="./img/icons/prev.svg" alt="prev" class="clients__video--button"></a>
+        <div class="clients__video--slide slide slide-1">
           <ifame src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0" class="clients__video--video"></ifame>
           <p class="clients__video--text">??? при ограничении на Яндекс.Директ</p>
         </div>
-        <div class="clients__video--slide slide-2 active">
+        <div class="clients__video--slide slide slide-2 active">
           <ifame src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0" class="clients__video--video"></ifame>
           <p class="clients__video--text">Всё о курсе Яндекс Директ Филиппа Царевского</p>
         </div>
-        <div class="clients__video--slide slide-3 active">
+        <div class="clients__video--slide slide slide-3 active">
           <ifame src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0" class="clients__video--video"></ifame>
           <p class="clients__video--text">Настройки в Яндекс.Директ</p>
         </div>
-        <div class="clients__video--slide slide-4">
+        <div class="clients__video--slide slide slide-4">
           <ifame src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0" class="clients__video--video"></ifame>
           <p class="clients__video--text">Настройки в Яндекс.Директ</p>
-        </div><a href="" class="clients__video--nav next">next<img src="./img/icons/next.svg" alt="next" class="clients__video--button"></a>
+        </div><a href="" class="clients__video--nav slider-nav next">next<img src="./img/icons/next.svg" alt="next" class="clients__video--button"></a>
       </wrapper>
     </section>
     <section class="clients__thnx">
@@ -177,4 +178,6 @@
       </div>
     </footer>
   </wrapper>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
