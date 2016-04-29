@@ -37,7 +37,7 @@ var
 
     style: {
       location: './less/style.less',
-      watch: './less/**/*.less',
+      watch: ['./less/*.less', './less/_*/*.less'],
       entryPoint: './css/style.css',
       destination: './css'
     }
@@ -94,11 +94,11 @@ gulp.task('styletest', function () {
     })
   ];
 
-  gulp.src('**/*.less')
+  gulp.src(paths.style.watch)
     .pipe(plumber())
     .pipe(postcss(processors, {
       syntax: syntax_less
-    }))
+    }));
 });
 
 /* --------- style --------- */

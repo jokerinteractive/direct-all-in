@@ -1,7 +1,11 @@
-extends ../template
+include ../_common/_doctype
 
-block main-content
+body
   wrapper.portfolio
+
+    header.header
+      include ../_common/_header__navbar
+
     header.portfolio__header
       h2.portfolio__header--text
         | Портфолио
@@ -39,9 +43,31 @@ block main-content
       header.clients__video--header
         | Посмотрите видеоотзывы от довольных клиентов:
       wrapper.clients__video--slider
-        iframe.clients__video--slide
-        iframe.clients__video--slide
-        iframe.clients__video--slide
+
+        a.clients__video--nav.prev(href="")
+          | prev
+          img.clients__video--button(src="./img/icons/prev.svg", alt="prev")
+
+        .clients__video--slide.slide-1
+          ifame.clients__video--video(src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0")
+          p.clients__video--text
+            | ??? при ограничении на Яндекс.Директ
+        .clients__video--slide.slide-2.active
+          ifame.clients__video--video(src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0")
+          p.clients__video--text
+            | Всё о курсе Яндекс Директ Филиппа Царевского
+        .clients__video--slide.slide-3.active
+          ifame.clients__video--video(src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0")
+          p.clients__video--text
+            | Настройки в Яндекс.Директ
+        .clients__video--slide.slide-4
+          ifame.clients__video--video(src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0")
+          p.clients__video--text
+            | Настройки в Яндекс.Директ
+
+        a.clients__video--nav.next(href="")
+          | next
+          img.clients__video--button(src="./img/icons/next.svg", alt="next")
 
     section.clients__thnx
       wrapper.wrapper.clients__thnx--wrapper
@@ -83,3 +109,16 @@ block main-content
 
               a.case-text__descr--link(href="")
                 | Подробнее
+
+    footer.footer
+      .footer__call-us
+        h4.footer__call-us-title Чтобы пообщаться с менеджером, узнать все детали и получить ответы
+          br
+          | на оставшиеся вопросы, оставьте заявку, и мы перезвоним в ближайшее рабочее время.
+        form.form(action="")
+          input.form__text(type="text" placeholder="Ваше Имя")
+          input.form__text(type="text" placeholder="Ваш номер телефона")
+          .footer__submit
+            input.btn(type="submit" value="Отправить заявку")
+      include ../_common/_footer__nav
+      include ../_common/_footer__navbar
