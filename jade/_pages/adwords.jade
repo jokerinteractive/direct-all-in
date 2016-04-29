@@ -2,7 +2,7 @@ extends ../template
 
 block main-content
   .adwords-callback.clearfix
-    .adwords-callback__wrap
+    .adwords-wrap
       .adwords-callback__left
         h2 Настройка
         img(src='img/google-adwords-logo.png')
@@ -15,7 +15,7 @@ block main-content
         input.adwords-callback__form-phone(type='text' placeholder='Ваш номер телефона')
         input.adwords-callback__form-button(type='submit' value='Позвонить мне')
   .adwords-calmness.clearfix
-    .adwords-calmness__wrap
+    .adwords-wrap
       h2 
         span.dotted-underline Работая с нами, Вы спите Спокойно!
       .adwords-calmness__features.clearfix
@@ -41,7 +41,7 @@ block main-content
             h3.adwords-calmness__feature-title Обучение для вас и ваших сотрудников
             p.adwords-calmness__feature-text Если вы решите вести рекламную кампанию самостоятельно, мы проконсультируем по базовым принципам её настройки и ведения.
   .adwords-calmness__promises.clearfix
-    .wrap
+    .adwords-wrap
       .adwords-calmness__promises-inside
         .clearfix
           .adwords-calmness__promises-left
@@ -56,7 +56,7 @@ block main-content
               li.adwords-calmness__promises-list-item Рост прибыли без увеличения бюджета.
             p.adwords-calmness__promises-right-ps Количество кликов, просмотров страниц и прочие параметры мы отслеживаем и анализируем только через призму роста продаж.
   .adwords-calmness__confidence
-    .wrap.clearfix
+    .adwords-wrap.clearfix
       h2.adwords-calmness__confidence-title
         span.dotted-underline Вы можете быть уверены в результатах, потому что:
       ul.adwords-calmness__confidence-left
@@ -72,7 +72,7 @@ block main-content
         li.adwords-calmness__confidence-item Мы знаем всё о AdWords и о том, что на него влияет.
         li.adwords-calmness__confidence-item 1 аналитик ведёт не более 10 проектов.
   .adwords-founder.clearfix
-    .adwords-founder__wrap
+    .adwords-wrap
       .adwords-founder__head.clearfix
         img(src='img/founder.png').adwords-founder__head-image
         .adwords-founder__head-texts
@@ -134,7 +134,7 @@ block main-content
             img(src="http://placehold.it/329x193").adwords-founder__videos-block-item-image
             p.adwords-founder__videos-block-item-text Настройки в Яндекс Директ
   .adwords-puzzle.clearfix
-    .adwords-puzzle__wrap
+    .adwords-wrap
       h2.adwords-puzzle__title Авторская система построения работы специалистов над рекламной кампанией
       .adwords-puzzle__header.clearfix
         .adwords-puzzle__header-logo
@@ -184,7 +184,7 @@ block main-content
             | Это позволяет каждому специалисту выполнять свой объём 
             | и при этом не перегреваться от перегрузки.
   .configuration.clearfix
-    .wrap
+    .adwords-wrap
       h2.configuration__title Мы настроим Google AdWords:
       h3.configuration__subtitle Что входит в настройки?
       .configuration__browser.clearfix
@@ -232,7 +232,7 @@ block main-content
             .adwords-configuration__item-image.adwords-configuration__item-image-ads
             p.adwords-configuration__item-text Уникальные эффективные объявления под каждый сегмент целевой аудитории
   .work-stages.clearfix
-    .wrap
+    .adwords-wrap
       h2.work-stages__title
         span.dotted-underline Этапы работы с нами
       .work-stages__round
@@ -281,7 +281,7 @@ block main-content
         p.work-stages__bottom-item Расширение кампании, перенос в Яндекс.Директ
         p.work-stages__bottom-item Самостоятельное ведение кампании
   .will-never-collaborate
-    .wrap
+    .adwords-wrap
       h2.will-never-collaborate__title
         span.dotted-underline С кем мы не работаем из принципа?
       ul.will-never-collaborate__features
@@ -306,7 +306,7 @@ block main-content
             h4.will-never-collaborate__valueless-subtitle – На настройку кампании со 100 000 ключевиков с ценой 2 рубля/клик. 
             p.will-never-collaborate__valueless-text Стратегически неверно для бизнеса. Это повлечет за собой большие риски, высокую стоимость работ, раздутие бюджета, долгий запуск, нарушение принципа Парето и т. д.
   .no-magic
-    .wrap
+    .adwords-wrap
       h2.no-magic__title Может быть, вы больше верите в чудо, 
         br
         | чем в планомерную работу с точным расчётом?
@@ -315,7 +315,7 @@ block main-content
       p.no-magic__text Фанатов же модных тренингов, привыкших везде искать волшебную таблетку, стараемся избегать.
       p.no-magic__text.no-magic__signature — Direct All-In
   .adwords-portfolio
-    .wrap
+    .adwords-wrap
       h2.adwords-portfolio__title Портфолио
       .adwords-portfolio__content
         .adwords-portfolio__item
@@ -336,7 +336,7 @@ block main-content
           p.adwords-portfolio__item-description Банкротство физическиз лиц
           a(href="#").adwords-portfolio__item-link Смотреть другие кейсы
   .adwords-clients
-    .wrap
+    .adwords-wrap
       h2.adwords-clients__title Наши клиенты
       .adwords-clients__brands
         img(src="./img/portfolio/brands/dance-hostel.png" width="97" height="57")
@@ -352,7 +352,7 @@ block main-content
         img(src="./img/portfolio/brands/office-world.png" width="170" height="21")
         img(src="./img/portfolio/brands/mayorcars.png" width="207" height="34")
   .questions
-    .wrap
+    .adwords-wrap
       h2.questions__title Часто задаваемые вопросы
       .questions__content
         .questions__item
