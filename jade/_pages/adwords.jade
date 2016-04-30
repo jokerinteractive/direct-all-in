@@ -3,17 +3,18 @@ extends ../template
 block main-content
   .adwords-callback.clearfix
     .adwords-wrap
-      .adwords-callback__left
-        h2 Настройка
-        img(src='img/google-adwords-logo.png')
-        p Премиум-услуги по настройке контекстной рекламы для малого бизнеса, работающего на рынке от 1 года.
-        p Рекламный бюджет от 20 000 до 500 000 рублей.
-      form(action='' method='').adwords-callback__form
-        h3 Заполните заявку,
-        p.adwords-callback__form-expert-analisys и получите экспертную оценку действующей кампании и разработку стратегии бесплатно!
-        input.adwords-callback__form-name(type='text' placeholder='Ваше Имя')
-        input.adwords-callback__form-phone(type='text' placeholder='Ваш номер телефона')
-        input.adwords-callback__form-button(type='submit' value='Позвонить мне')
+      .adwords-callback__content
+        .adwords-callback__left
+          h2 Настройка
+          img(src='img/google-adwords-logo.png')
+          p Премиум-услуги по настройке контекстной рекламы для малого бизнеса, работающего на рынке от 1 года.
+          p Рекламный бюджет от 20 000 до 500 000 рублей.
+        form(action='' method='').adwords-callback__form
+          h3 Заполните заявку,
+          p.adwords-callback__form-expert-analisys и получите экспертную оценку действующей кампании и разработку стратегии бесплатно!
+          input.adwords-callback__form-name.header-subscription-block__input(type='text' placeholder='Ваше Имя')
+          input.adwords-callback__form-phone.header-subscription-block__input(type='text' placeholder='Ваш номер телефона')
+          input.adwords-callback__form-button.header-subscription-block__input(type='submit' value='Позвонить мне')
   .adwords-calmness.clearfix
     .adwords-wrap
       h2 

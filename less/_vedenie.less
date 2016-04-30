@@ -1,0 +1,32 @@
+@import "__mixins";
+@import "_adwords/_adwords-callback";
+@import "_adwords/_adwords-calmness";
+@import "_adwords/_adwords-clients";
+@import "_adwords/_adwords-founder";
+@import "_puzzle";
+@import "_adwords/_adwords-portfolio";
+@import "_configuration";
+@import "_work-stages";
+@import "_will-never-collaborate";
+@import "_no-magic";
+@import "_questions";
+@import "_services-list";
+
+.vedenie-wrap { .wrap; }
+
+.vedenie {
+  &-calmness {
+    .adwords-calmness;
+    &__feature-budget::after {
+      background: url("../img/icons/icon_safe.svg") no-repeat 50% 50%;
+    }
+  }
+  &-founder { .adwords-founder; }
+  &-puzzle { .adwords-puzzle; }
+  &-portfolio { .adwords-portfolio; }
+  &-clients {
+    .adwords-clients;
+    background: #fff;
+  }
+  &-footer .form__text { margin: 0 12px; }
+}

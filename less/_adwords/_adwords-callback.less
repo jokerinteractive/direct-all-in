@@ -8,6 +8,11 @@
     margin-bottom: 24px;
   }
 
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+  }
   &::after {
     display: table;
     clear: both;
@@ -16,14 +21,15 @@
   }
 
   &__left {
-    float: left;
+    // float: left;
 
-    min-width: 450px; //TODO how should it look when squeezed?
+    min-width: 450px;
     max-width: 527px;
+    margin-right: 20px;
   }
 
   &__form {
-    float: right;
+    // float: right;
 
     box-sizing: border-box;
     min-width: 233px;
@@ -38,15 +44,7 @@
       box-sizing: border-box;
       width: 100%;
       margin-bottom: 11px;
-      padding: 20px 25px 19px;
 
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, .21);
-      border-radius: 5px;
-      background-color: rgba(0, 0, 0, .21);
-
-      font-size: 15px;
-      line-height: 19px;
     }
 
     input&-button {
