@@ -1,0 +1,26 @@
+@import "_webinar/_header";
+@import "_webinar/_achieve";
+
+.webinar {
+  box-sizing: border-box;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+
+  .header__navbar {
+    padding-bottom: 10px;
+  }
+
+  .about-speaker {
+    background: url(../img/calmness-light-bg.png) no-repeat 50% 0/cover;
+
+    &:before {
+      content: "";
+      display: none;
+    }
+  }
+}

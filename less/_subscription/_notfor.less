@@ -1,0 +1,84 @@
+.notfor {
+  padding: 60px 0 30px;
+
+  &__header {
+    display: block;
+    text-align: center;
+    font-size: 34px;
+    padding-top: 8px;
+    margin-bottom: 30px;
+  }
+
+  &-list {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 30px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../img/subscriptions/line.png");
+    }
+
+    &__item {
+      font-size: 20px;
+      padding-left: 66px;
+      margin-bottom: 58px;
+
+      &:first-of-type {
+        margin-top: 58px;
+
+        .notfor-list__item--wrapper {
+          vertical-align: top;
+          margin-top: 16px;
+        }
+      }
+
+      &::before {
+        content: "";
+        width: 96px;
+        height: 96px;
+        display: inline-block;
+        border: 1px solid rgb(183, 183, 183);
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 12px;
+        margin-right: 43px;
+      }
+
+      &.business::before {
+        background-image: url("../img/subscriptions/icons/infoBusinessman.svg");
+      }
+
+      &.study::before {
+        background-image: url("../img/subscriptions/icons/alumniBusinessTren.svg");
+      }
+
+      &.nothing::before {
+        background-image: url("../img/subscriptions/icons/doingNothing.svg");
+      }
+
+      &--wrapper {
+        display: inline-block;
+        max-width: 500px;
+      }
+
+      &--header {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      &--text {
+        margin: 0;
+        font-weight: normal;
+        font-size: 18px;
+      }
+    }
+  }
+}

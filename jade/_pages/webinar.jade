@@ -1,0 +1,88 @@
+include ../_common/_doctype
+
+body
+  wrapper.webinar
+
+    header.header
+      .header__navbar
+        .header__wrap
+          a.logo(href="/") Direct All-in
+          a.header__phone(href="/callback") 8&nbsp;(499)&nbsp;649-54-17
+            span.header__callback Заказать звонок
+
+    header.webinar__header
+      wrapper.wrapper
+        .webinar__flex
+          .webinar__flex--left
+            img.webinar__header--img(src="", alt="Самый лучший вебинар")
+          .webinar__flex--right.get-course
+            h3.get-course__header
+              | Запись вебинара по ведению и аналитике рекламных компаний в
+            .yandex-course__logo
+              img.yandex-course__logo-img(src="./img/subscriptions/yandex.png" alt="Яндекс Директ")
+              | Яндес Директ
+            p.get-course__details 5-часовая запись настройки
+              br
+              | рекламной кампании с комментариями
+              br
+              | Филиппа Царевского
+            a.btn.get-course__btn(href="")
+              | Купить вебинар
+
+    section.about-speaker
+      wrapper.wrapper.about-speaker__wrapper
+        header.about-speaker__header
+
+          .about-speaker__header--left.speaker-photo
+            .speaker-photo__wrapper
+              img.speaker-photo__img(src="./img/subscriptions/speaker.jpg" alt="Филипп Царевский")
+
+          .about-speaker__header--right.speaker-descr
+            small.speaker-descr__coach
+              | Ведущий курса&nbsp;—
+            h3.speaker-descr__name
+              | Филипп Царевский
+            p.speaker-descr__text
+              | Автор книги &laquo;Яндес.Директ: как получать прибыль, а не играть в лотерею&raquo;
+            p.speaker-descr__text
+              | «Раз в год, в середине весны, я провожу вебинары по ведению и аналитике рекламных компаний в Яндекс.Директ. Цель - дать инстукции сотрудникам и клиентам, а также создать дополнительный материал для месячного курса по Яндекс.Директ.&raquo;
+
+        article.about-speaker__fact
+          | По сути, вебинар отвечает на вопрос:
+          br
+          span.red &laquo;
+          | Что делать с рекламной компанией после её запуска?
+          span.red &raquo;
+
+    section.achieve
+      wrapper.wrapper
+        header.achieve__header
+          | Вот, чего вы можете достичь после просмотра:
+        wrapper.achieve__flex
+          .achieve__flex--item
+            img.achieve__flex--img(src="" alt="Увеличь ROI c директа в 2-10 раз")
+            p.achieve__flex--text
+              | Увеличь ROI c директа в 2-10 раз
+
+          .achieve__flex--item
+            img.achieve__flex--img(src="" alt="Повысить конверсию сайта, не внося на нем изменений")
+            p.achieve__flex--text
+              | Повысить конверсию сайта, не внося на нем изменений
+
+          .achieve__flex--item
+            img.achieve__flex--img(src="" alt=" Найти и залатать дыры, сливающие бюджет")
+            p.achieve__flex--text
+              | Найти и залатать дыры, сливающие бюджет
+
+          .achieve__flex--item
+            img.achieve__flex--img(src="" alt="Узнать все свои показатели")
+            p.achieve__flex--text
+              | Узнать все свои показатели
+
+          .achieve__flex--item
+            img.achieve__flex--img(src="" alt="Зарабатывать больше")
+            p.achieve__flex--text
+              | Зарабатывать больше
+
+    footer.footer
+      include ../_common/_footer__navbar

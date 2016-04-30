@@ -14,7 +14,7 @@ body
         p.yandex-course__feedback "Самый исчерпывающий и структурированный на рынке"
         p.yandex-course__by (по отзывам подписчиков)
       .subscription__column--right.get-course
-        h3.get-course__twelve 12 пошаговых уроков, по одному каждый день
+        h3.get-course__header 12 пошаговых уроков, по одному каждый день
         p.get-course__details Нюансы, которых не знает 95% рекламодателей и 70% специалистов (данные основаны на сотнях аудитов и консультаций)
         form.form(action="")
           input.form__text.get-course__input-text(type="text" placeholder="Введите ваш e-mail")
@@ -236,11 +236,11 @@ body
         p.about-speaker__quote--comment
           | — эти слова от Филиппа слышали все, кто с ним хотя бы минимально знаком.
 
-      article.about-speaker__notfor
-        header.about-speaker__notfor--header
+      article.notfor
+        header.notfor__header
           | Внимание! Курс не будет полезен для:
 
-        ul.about-speaker__notfor--list.notfor-list
+        ul.notfor-list
 
           li.notfor-list__item.business
             .notfor-list__item--wrapper
@@ -263,15 +263,15 @@ body
               p.notfor-list__item--text
                 | Вся информация исключительно практическая. Зачем вам ещё тонна видеоряда, если он не будет иметь практического применения?
 
-      article.about-speaker__comment
-        header.about-speaker__comment--header
+      article.comment
+        header.comment--header
           | Почитайте отзывы тех, кто уже прошел этот курс.
 
-        .about-speaker__comment--wrapper.clearfix
+        .comment--wrapper.clearfix
 
-          a.about-speaker__comment--move.move-back(href="") Назад
+          a.comment--move.move-back(href="") Назад
 
-          .about-speaker__comment--comment.about-comment
+          .comment--comment.about-comment
             .about-comment__wrapper
 
               .about-comment__image.clearfix
@@ -302,7 +302,7 @@ body
                 a.about-comment__nav--link(href="")
                   | 4
 
-          a.about-speaker__comment--move.move-foward(href="") Вперёд
+          a.comment--move.move-foward(href="") Вперёд
 
   section.subscribe-course
     .wrapper.subscribe-course__wrapper

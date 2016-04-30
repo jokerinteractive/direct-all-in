@@ -1,0 +1,132 @@
+.comment {
+  display: block;
+
+  &--header {
+    font-size: 35px;
+    margin-bottom: 63px;
+    text-align: center;
+  }
+
+  &--wrapper {
+    display: block;
+    position: relative;
+    height: 339px;
+  }
+
+  &--move {
+    background-position: center;
+    display: block;
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: 50%;
+    margin-top: -37px;
+    font-size: 0;
+
+    &.move-back {
+      background-image: url("../img/subscriptions/back.png");
+      background-repeat: no-repeat;
+      left: 50px;
+    }
+
+    &.move-foward {
+      background-image: url("../img/subscriptions/foward.png");
+      background-repeat: no-repeat;
+      right: 50px;
+    }
+  }
+
+  &--comment {
+    display: block;
+    margin: 0 150px;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    height: 339px;
+  }
+
+  .about-comment {
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 47px 36px 10px;
+    }
+
+    &__image {
+      display: block;
+      width: 206px;
+      margin-right: 25px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 36px;
+        height: 36px;
+        background-repeat: no-repeat;
+        float: left;
+        background-image: url(../img/subscriptions/quotes.png);
+      }
+
+      &-pic {
+        display: block;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        float: right;
+        margin-top: 5px;
+      }
+    }
+
+    &__text {
+      display: block;
+      padding-top: 3px;
+
+      &--head {
+        font-size: 20px;
+      }
+
+      &--par {
+        margin: 10px 0;
+        font-size: 18px;
+      }
+
+      &--author {
+        margin: 12px 0 0;
+        font-size: 20px;
+      }
+    }
+
+    &__nav {
+      display: block;
+      text-align: center;
+
+      &--wrapper {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+      }
+
+      &--link {
+        display: inline-block;
+        vertical-align: top;
+        width: 11px;
+        height: 11px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-color: #f3f3f3;
+        font-size: 0;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        &.active {
+          background-color: #338bc3;
+        }
+      }
+    }
+  }
+}
