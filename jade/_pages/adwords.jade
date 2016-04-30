@@ -1,20 +1,38 @@
-extends ../template
+include ../_common/_doctype
 
-block main-content
-  .adwords-callback.clearfix
+body
+
+  header.header
+    include ../_common/_header__navbar
+  .callback-header
     .adwords-wrap
-      .adwords-callback__content
-        .adwords-callback__left
+      .callback-header__content
+        .callback-header__left
           h2 Настройка
           img(src='img/google-adwords-logo.png')
           p Премиум-услуги по настройке контекстной рекламы для малого бизнеса, работающего на рынке от 1 года.
           p Рекламный бюджет от 20 000 до 500 000 рублей.
-        form(action='' method='').adwords-callback__form
+        form(action='' method='').callback-header__form
           h3 Заполните заявку,
-          p.adwords-callback__form-expert-analisys и получите экспертную оценку действующей кампании и разработку стратегии бесплатно!
-          input.adwords-callback__form-name.header-subscription-block__input(type='text' placeholder='Ваше Имя')
-          input.adwords-callback__form-phone.header-subscription-block__input(type='text' placeholder='Ваш номер телефона')
-          input.adwords-callback__form-button.header-subscription-block__input(type='submit' value='Позвонить мне')
+          p.callback-header__form-expert-analisys и получите экспертную оценку действующей кампании и разработку стратегии бесплатно!
+          input.callback-header__form-name.header-subscription-block__input(type='text' placeholder='Ваше Имя')
+          input.callback-header__form-phone.header-subscription-block__input(type='text' placeholder='Ваш номер телефона')
+          input.callback-header__form-button.header-subscription-block__input(type='submit' value='Позвонить мне')
+  //- 
+  //- .adwords-callback.clearfix
+  //-   .adwords-wrap
+  //-     .adwords-callback__content
+  //-       .adwords-callback__left
+  //-         h2 Настройка
+  //-         img(src='img/google-adwords-logo.png')
+  //-         p Премиум-услуги по настройке контекстной рекламы для малого бизнеса, работающего на рынке от 1 года.
+  //-         p Рекламный бюджет от 20 000 до 500 000 рублей.
+  //-       form(action='' method='').adwords-callback__form
+  //-         h3 Заполните заявку,
+  //-         p.adwords-callback__form-expert-analisys и получите экспертную оценку действующей кампании и разработку стратегии бесплатно!
+  //-         input.adwords-callback__form-name.header-subscription-block__input(type='text' placeholder='Ваше Имя')
+  //-         input.adwords-callback__form-phone.header-subscription-block__input(type='text' placeholder='Ваш номер телефона')
+  //-         input.adwords-callback__form-button.header-subscription-block__input(type='submit' value='Позвонить мне')
   .calmness.adwords-calmness.clearfix
     .adwords-wrap
       h2 
@@ -437,3 +455,18 @@ block main-content
             p.blog__feature-date 15 Августа 2015
             a(href="#").blog__feature-text.link-blue Как сэкономить 5 часов при настройке кампании в Директе и улучшить... 
       a(href="#").blog__button.btn__blue-border Просмотреть все записи
+
+  footer.footer.vedenie-footer.footer__call-us
+    h4.footer__call-us-title Чтобы пообщаться с менеджером, узнать все детали и получить ответы 
+      br 
+      | на оставшиеся вопросы, оставьте заявку, и мы перезвоним в ближайшее рабочее время.
+
+    form.form(action="")
+      input.form__text(type="text" placeholder="Ваше Имя")
+      input.form__text(type="text" placeholder="Ваш номер телефона")
+      
+      .footer__submit
+        input.btn(type="submit" value="Позвонить мне")
+
+    include ../_common/_footer__nav
+    include ../_common/_footer__navbar
