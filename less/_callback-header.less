@@ -1,4 +1,4 @@
-.adwords-callback {
+.callback-header {
   padding: 65px 60px;
   color: #fff;
   .header-arrow-background;
@@ -6,6 +6,11 @@
   h2 {
     margin-top: 0;
     margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 65px;
+    font-weight: 500; // TODO Какой-то другой шрифт тут нужен...
   }
 
   &__content {
@@ -23,9 +28,10 @@
   &__left {
     // float: left;
 
-    min-width: 450px;
-    max-width: 527px;
+    // min-width: 450px;
+    // max-width: 527px;
     margin-right: 20px;
+    width: 50%;
   }
 
   &__form {
@@ -36,15 +42,12 @@
     max-width: 392px;
     padding-right: 27px;
 
-    &-expert-analisys {
-      font-weight: 700;
-    }
+    &-expert-analisys { font-weight: 500; }
 
     input {
       box-sizing: border-box;
       width: 100%;
       margin-bottom: 11px;
-
     }
 
     input&-button {
