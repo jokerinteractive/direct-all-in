@@ -1,0 +1,88 @@
+.faq {
+
+  .header {
+    &__title > small {
+      display: block;
+      margin: 0 auto;
+
+      width: 814px;
+
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+
+  &__questions {
+    display: block;
+    padding: 80px 0;
+    background: url('../img/calmness-light-bg.png') no-repeat;
+    background-position: center 0;
+
+    &--list {
+      display: block;
+      margin: 0 auto;
+
+      width: 814px;
+
+      text-align: left;
+    }
+
+    &--item {
+      display: block;
+
+      margin: 0;
+      margin-bottom: 40px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .question-item {
+
+      &__header {
+        display: inline-block;
+        padding-bottom: 3px;
+
+        font-size: 24px;
+        border-bottom: 2px dashed #ff8395;
+      }
+
+      &__text {
+        display: block;
+
+        margin: 0;
+        margin-top: 20px;
+
+        font-size: 18px;
+        line-height: 22px;
+
+        b {
+          font-weight: bold;
+        }
+
+        &--link {
+          color: #11adfe;
+        }
+      }
+    }
+  }
+
+  .footer {
+    &__call-us {
+
+      &-title {
+        font-size: 30px;
+        line-height: 36px;
+
+        & > small {
+          display: block;
+          margin-top: 5px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
