@@ -1,5 +1,6 @@
 .form {
-  &__text {
+  &__text,
+  &__textarea {
     padding: 12px 15px;
     outline: none;
     border: 1px solid fade(#fff, 33%);
@@ -26,5 +27,18 @@
         background-color: hsla(0, 0%, 0%, .2);
       }
     }
+  }
+
+  &__text:first-of-type {
+    margin-right: 26px;
+  }
+
+  &__textarea {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    width: 466px;
+    resize: none;
   }
 }
