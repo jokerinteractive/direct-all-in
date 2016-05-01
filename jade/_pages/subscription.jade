@@ -19,6 +19,7 @@ body
         form.form(action="")
           input.form__text.get-course__input-text(type="text" placeholder="Введите ваш e-mail")
           input.btn.get-course__btn(type="submit" value="Получить уроки")
+
   section.effective
     header.effective__header
       div.effective__wrap.clearfix
@@ -39,86 +40,84 @@ body
           ul.effective-content__column
             li.effective-content__column--element.column-element
               .column-element__wrapper
-                img.column-element__wrapper--img(src="./img/subscriptions/icons/glasses.svg", alt="")
-
-                //use(xlink:href="./img/subscriptions/icons/glasses.svg#glasses")
+                img.column-element__wrapper--img(src="./img/icons/glasses.svg", alt="")
 
               p.column-element__text
                 | Узнаете азы, без которых Директ превращается в слив бюджета.
 
             li.effective-content__column--element.column-element(style="margin-bottom: 66px;")
               .column-element__wrapper
-                img.column-element__wrapper--img(src="./img/subscriptions/icons/emc.svg" alt="")
+                img.column-element__wrapper--img(src="./img/icons/emc.svg" alt="")
               p.column-element__text
                 | Узнаете чем Яндекс Директ отличается от лотереи и почему контекстная реклама - это мощный маркетинговый инструмент.
 
             li.effective-content__column--element.column-element(style="margin-bottom: 68px;")
               .column-element__wrapper
-                img.column-element__wrapper--img(src="./img/subscriptions/icons/settings.svg" alt="")
+                img.column-element__wrapper--img(src="./img/icons/settings.svg" alt="")
               p.column-element__text
                 | Выставите правильные настройки в интерфейсе, которые сэкономят ваш бюджет.
 
             li.effective-content__column--element.column-element
               .column-element__wrapper
-                img.column-element__wrapper--img(src="./img/subscriptions/icons/growth.svg" alt="")
+                img.column-element__wrapper--img(src="./img/icons/growth.svg" alt="")
               p.column-element__text
-                | Научитесь правильно вести компани и контролировать ставки и постоянно улучшать результаты.
+                | Научитесь правильно вести компании и контролировать ставки и постоянно улучшать результаты.
 
           ul.effective-content__column
             li.effective-content__column--element.column-element
               .column-element__wrapper
-                img.column-element__wrapper--img(src="./img/subscriptions/icons/noMistakes.svg" alt="")
+                img.column-element__wrapper--img(src="./img/icons/noMistakes.svg" alt="")
               p.column-element__text
                 | Избежите типичных ошибок начинающих рекламодателей.
 
             li.effective-content__column--element.column-element
               .column-element__wrapper
-                img.column-element__wrapper--img(src="./img/subscriptions/icons/note.svg" alt="")
+                img.column-element__wrapper--img(src="./img/icons/note.svg" alt="")
               p.column-element__text
                 | Составите сильное предложение и выделитесь среди конкурентов.
 
             li.effective-content__column--element.column-element
               .column-element__wrapper
-                img.column-element__wrapper--img(src="./img/subscriptions/icons/molecular.svg" alt="")
+                img.column-element__wrapper--img(src="./img/icons/molecular.svg" alt="")
               p.column-element__text
                 | Получите много дешевых заявок при помощи РСЯ и ретаргетинга.
 
             li.effective-content__column--element.column-element
               .column-element__wrapper
-                img.column-element__wrapper--img(src="./img/subscriptions/icons/user.svg" alt="")
+                img.column-element__wrapper--img(src="./img/icons/user.svg" alt="")
               p.column-element__text
                 | Зададите любые вопросы и гарантированно получите на них ответы от Филиппа Царевского.
 
           ul.effective-content__column
             li.effective-content__column--element.column-element(style="margin-bottom: 43px;")
               .column-element__wrapper
-                img.column-element__wrapper--img(src="./img/subscriptions/icons/brunches.svg" alt="")
+                img.column-element__wrapper--img(src="./img/icons/brunches.svg" alt="")
               p.column-element__text
                 | Научитесь собирать целевые ключевики, правильно их сортировать и минусовать, а также выделять приоритеты. Показы будут только целевые.
 
             li.effective-content__column--element.column-element
               .column-element__wrapper
-                img.column-element__wrapper--img(src="./img/subscriptions/icons/searchDoc.svg" alt="")
+                img.column-element__wrapper--img(src="./img/icons/searchDoc.svg" alt="")
               p.column-element__text
                 | Напишете грамотные продающие объявления.
 
             li.effective-content__column--element.column-element(style="margin-bottom: 68px;")
               .column-element__wrapper
-                img.column-element__wrapper--img(src="./img/subscriptions/icons/book.svg" alt="")
+                img.column-element__wrapper--img(src="./img/icons/book.svg" alt="")
               p.column-element__text
                 | Получите доступ к записям вебинаров, авторским статьям, ответам на любые вопросы.
 
             li.effective-content__column--element.column-element
               .column-element__wrapper
-                img.column-element__wrapper--img(src="./img/subscriptions/icons/target.svg" alt="")
+                img.column-element__wrapper--img(src="./img/icons/target.svg" alt="")
               p.column-element__text
                 | Будете в курсе всех тенденций и новинок.
 
-  section.subscription__video
-    .wrapper.subscription__video--wrapper
-      iframe.subscription__video--video(src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0")
+  section.video
+    .wrapper.video__wrapper
+      iframe.video__iframe(src="http://www.youtube.com/embed/D5mfs_Cn-QU?autoplay=0")
 
-      .subscription__video--info.video-info
+      .video__info.video-info
         .video-info__top
           h3.video-info__top--watch
             | Посмотрите один урок,
@@ -198,7 +197,7 @@ body
                 | Всё разложено по полочкам, выстроено пошагаво, донесено простым и понятным языком. Кроме того, речь и дикция в порядке, голос приятный, звук и изображение качественные, что тоже немаловажно.
 
   section.test
-    .test_wrap
+    .test__wrap
       header.test__header
         h3.test__head
           | Думаете, что и так хорошо разбираетесь?
@@ -236,31 +235,31 @@ body
         p.about-speaker__quote--comment
           | — эти слова от Филиппа слышали все, кто с ним хотя бы минимально знаком.
 
-      article.notfor
-        header.notfor__header
+      article.course-for
+        header.course-for__header
           | Внимание! Курс не будет полезен для:
 
-        ul.notfor-list
+        ul.course-for-list
 
-          li.notfor-list__item.business
-            .notfor-list__item--wrapper
-              header.notfor-list__item--header
+          li.course-for-list__item.business
+            .course-for-list__item--wrapper
+              header.course-for-list__item--header
                 | Инфобизнесмена, арбитражника, сетевика.
-              p.notfor-list__item--text
+              p.course-for-list__item--text
                 | Он заточен под настоящий малый бизнес.
 
-          li.notfor-list__item.study
-            .notfor-list__item--wrapper
-              header.notfor-list__item--header
+          li.course-for-list__item.study
+            .course-for-list__item--wrapper
+              header.course-for-list__item--header
                 | Выпускника бизнес-тренингов,
-              p.notfor-list__item--text
+              p.course-for-list__item--text
                 | Для которого слово своего "гуру" авторитетнее любого аргумента, пусть даже 100 раз логически доказанного.
 
-          li.notfor-list__item.nothing
-            .notfor-list__item--wrapper
-              header.notfor-list__item--header
+          li.course-for-list__item.nothing
+            .course-for-list__item--wrapper
+              header.course-for-list__item--header
                 | Тому, кто много смотрит, но ничего не делает.
-              p.notfor-list__item--text
+              p.course-for-list__item--text
                 | Вся информация исключительно практическая. Зачем вам ещё тонна видеоряда, если он не будет иметь практического применения?
 
       article.comment

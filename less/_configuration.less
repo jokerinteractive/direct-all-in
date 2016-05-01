@@ -97,6 +97,7 @@ span.dotted-underline {
         vertical-align: top;
 
         line-height: 30px;
+        font-size: 26px;
       }
     }
 
@@ -119,6 +120,32 @@ span.dotted-underline {
       font-size: 16px;
 
       justify-content: space-around;
+    }
+
+    &--list {
+      display: block;
+      padding: 60px 0;
+      width: 800px;
+
+      .list-item {
+        display: block;
+
+        margin-top: 0;
+        margin-bottom: 15px;
+
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+
+        &__num {
+          color: red;
+          margin-right: 10px;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

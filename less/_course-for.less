@@ -1,4 +1,4 @@
-.notfor {
+.course-for {
   padding: 60px 0 30px;
 
   &__header {
@@ -22,12 +22,17 @@
       height: 40px;
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url("../img/subscriptions/line.png");
+      background-image: url(../img/decoration/red-line.png);
     }
 
     &__item {
+      display: flex;
+
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
       font-size: 20px;
-      padding-left: 66px;
       margin-bottom: 58px;
 
       &:first-of-type {
@@ -53,20 +58,33 @@
       }
 
       &.business::before {
-        background-image: url("../img/subscriptions/icons/infoBusinessman.svg");
+        background-image: url(../img/icons/infoBusinessman.svg);
       }
 
       &.study::before {
-        background-image: url("../img/subscriptions/icons/alumniBusinessTren.svg");
+        background-image: url(../img/icons/alumniBusinessTren.svg);
       }
 
       &.nothing::before {
-        background-image: url("../img/subscriptions/icons/doingNothing.svg");
+        background-image: url(../img/icons/doingNothing.svg);
+      }
+
+      &.answer::before {
+        background-image: url(../img/icons/answer.svg);
+      }
+
+      &.pay::before {
+        background-image: url(../img/icons/pay.svg);
+      }
+
+      &.newLessons::before {
+        background-image: url(../img/icons/newLessons.svg);
       }
 
       &--wrapper {
-        display: inline-block;
-        max-width: 500px;
+        display: block;
+        width: 550px;
+        text-align: left;
       }
 
       &--header {
