@@ -1,0 +1,68 @@
+@import "__mixins";
+@import "_adwords/_adwords-callback";
+@import "_calmness";
+@import "_adwords/_adwords-clients";
+@import "_adwords/_adwords-founder";
+@import "_puzzle";
+@import "_adwords/_adwords-portfolio";
+@import "__browser";
+@import "_work-stages";
+@import "_adwords/_adwords-configuration";
+@import "_will-never-collaborate";
+@import "_no-magic";
+@import "_questions";
+@import "_services-list";
+
+.vedenie-wrap { .wrap; }
+
+.calmness__feature-budget::after { background: url("../img/icons/icon_safe.svg") no-repeat 50% 50%; }
+.vedenie {
+
+  &-founder { .adwords-founder; }
+  &-puzzle { .adwords-puzzle; }
+  &-portfolio { .adwords-portfolio; }
+  &-clients {
+    background: #fff;
+
+    .adwords-clients;
+  }
+  &-footer .form__text { margin: 0 12px; }
+
+  &-explanation {
+    padding-top: 60px;
+
+    text-align: center;
+
+    .beige-icons-repeating-background;
+
+    &__title {
+      margin: 0;
+
+      font-size: 30px;
+      line-height: 42px;
+    }
+
+    &__item-image {
+      .browser__item-image;
+
+      &-clik { .browser__item-image-cursor; }
+      &-retargeting { .browser__item-image-glasses; }
+      &-monitoring { .browser__item-image-target; }
+
+      &-visitors { .browser__item-image-microscope; }
+      &-AB { .browser__item-image-AB; }
+      &-budget { .browser__item-image-tablet; }
+
+      &-traffic { .browser__item-image-atom; }
+      &-CTR { .browser__item-image-increase; }
+      &-extension { .browser__item-image-network; }
+
+      &-phrase { .browser__item-image-molecula; }
+      &-distribution { .browser__item-image-search; }
+      &-ads { .browser__item-image-notes; }
+
+      &-revision { .browser__item-image-loupe; }
+      &-support { .browser__item-image-growth; }
+    }
+  }
+}

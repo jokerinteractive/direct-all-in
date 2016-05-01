@@ -1,19 +1,23 @@
 @import "__mixins";
 @import "_adwords/_adwords-callback";
-@import "_adwords/_adwords-calmness";
+@import "_calmness";
 @import "_adwords/_adwords-clients";
 @import "_adwords/_adwords-founder";
 @import "_puzzle";
 @import "_adwords/_adwords-portfolio";
-@import "_configuration";
+@import "_adwords/_adwords-configuration";
 @import "_work-stages";
 @import "_will-never-collaborate";
 @import "_no-magic";
 @import "_questions";
 @import "_services-list";
+@import "_callback-header";
 @import "_blog";
 
-.adwords-wrap { .wrap; }
+.adwords {
+  &-wrap { .wrap; }
+  &-calmness { .beige-icons-repeating-background; }
+}
 
 span.dotted-underline {
   padding-right: 27px;

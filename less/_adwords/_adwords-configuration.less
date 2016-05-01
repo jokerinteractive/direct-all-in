@@ -1,0 +1,145 @@
+@import "../__mixins";
+@import "../__browser";
+
+.wrap { .wrap; }
+
+span.dotted-underline {
+  padding-right: 27px;
+  padding-bottom: 16px;
+  padding-left: 27px;
+
+  background: url("../img/adwords-beige-dot.png") repeat-x 0 95%;
+}
+
+.configuration {
+  padding-top: 60px;
+
+  text-align: center;
+
+  background: url("../img/configuration-top-bg.png") no-repeat 50% 0, linear-gradient(180deg, #fafafa 0, #fafafa 34px, #f9f9f9 34px, #f9f9f9 101px, #f8f8f8 101px, #f8f8f8 473px, transparent 474px, transparent 100%);
+
+  &__title {
+    margin: 0;
+
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 35px;
+
+    line-height: 34px;
+  }
+
+//   &__browser {
+//     display: block;
+//
+//     max-width: 1000px;
+//     margin: 35px auto;
+//
+//     border: 1px solid rgba(105, 105, 105, .25);
+//     border-radius: 6px;
+//     background: #fff;
+//     box-shadow: 1px 4px 14px rgba(0, 0, 0, .08);
+//
+//     &-top {
+//       position: relative;
+//
+//       display: block;
+//
+//       padding: 0 98px;
+//
+//       text-align: center;
+//
+//       border-bottom: 1px solid rgba(105, 105, 105, .25);
+//       background: #f4f4f4;
+//     }
+//
+//     &-url {
+//       margin: 0;
+//
+//       font-size: 10px;
+//       font-weight: 500;
+//       line-height: 23px;
+//     }
+//
+//     &-buttons {
+//       position: absolute;
+//       top: 7px;
+//       left: 10px;
+//
+//       height: 13px;
+//       margin: 0;
+//     }
+//
+//     &-button {
+//       float: left;
+//
+//       width: 13px;
+//       height: 13px;
+//       margin: 0;
+//       margin-right: 5px;
+//
+//       border-radius: 50%;
+//
+//       &:nth-of-type(1) { background: #ed1c24; }
+//       &:nth-of-type(2) { background: #ffc600; }
+//       &:nth-of-type(3) { background: #39b54a; }
+//     }
+//
+//     &-title {
+//       margin: 0 11px;
+//       padding: 20px;
+//
+//       border-bottom: 3px solid #e5e5e5;
+//
+//       span {
+//         vertical-align: top;
+//
+//         line-height: 30px;
+//       }
+//     }
+//
+//     &-content {
+//       display: flex;
+//       flex-direction: row;
+//
+//       justify-content: space-around;
+//       flex-wrap: wrap;
+//     }
+//
+//     &-item {
+//       display: flex;
+//       flex-direction: column;
+//
+//       box-sizing: border-box;
+//       width: 333px;
+//       padding: 24px;
+//
+//       font-size: 16px;
+//
+//       justify-content: space-around;
+//     }
+//   }
+}
+
+.adwords-configuration {
+  &__item-image { .browser__item-image;
+
+    &-CTR { .browser__item-image-cursor; }
+    &-AB { .browser__item-image-AB; }
+    &-monitoring { .browser__item-image-target; }
+
+    &-insight { .browser__item-image-microscope; }
+    &-implementation { .browser__item-image-glasses; }
+    &-month { .browser__item-image-month; }
+
+    &-optimization { .browser__item-image-atom; }
+    &-frequency { .browser__item-image-increase; }
+    &-retargeting { .browser__item-image-molecula; }
+
+    &-KMC { .browser__item-image-search; }
+    &-ads { .browser__item-image-network; }
+  }
+}

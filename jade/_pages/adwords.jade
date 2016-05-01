@@ -1,76 +1,95 @@
-extends ../template
+include ../_common/_doctype
 
-block main-content
-  .adwords-callback.clearfix
+body
+
+  header.header
+    include ../_common/_header__navbar
+  .callback-header
     .adwords-wrap
-      .adwords-callback__left
-        h2 Настройка
-        img(src='img/google-adwords-logo.png')
-        p Премиум-услуги по настройке контекстной рекламы для малого бизнеса, работающего на рынке от 1 года.
-        p Рекламный бюджет от 20 000 до 500 000 рублей.
-      form(action='' method='').adwords-callback__form
-        h3 Заполните заявку,
-        p.adwords-callback__form-expert-analisys и получите экспертную оценку действующей кампании и разработку стратегии бесплатно!
-        input.adwords-callback__form-name(type='text' placeholder='Ваше Имя')
-        input.adwords-callback__form-phone(type='text' placeholder='Ваш номер телефона')
-        input.adwords-callback__form-button(type='submit' value='Позвонить мне')
-  .adwords-calmness.clearfix
+      .callback-header__content
+        .callback-header__left
+          h2 Настройка
+          img(src='img/google-adwords-logo.png')
+          p Премиум-услуги по настройке контекстной рекламы для малого бизнеса, работающего на рынке от 1 года.
+          p Рекламный бюджет от 20 000 до 500 000 рублей.
+        form(action='' method='').callback-header__form
+          h3 Заполните заявку,
+          p.callback-header__form-expert-analisys и получите экспертную оценку действующей кампании и разработку стратегии бесплатно!
+          input.callback-header__form-name.header-subscription-block__input(type='text' placeholder='Ваше Имя')
+          input.callback-header__form-phone.header-subscription-block__input(type='text' placeholder='Ваш номер телефона')
+          input.callback-header__form-button.header-subscription-block__input(type='submit' value='Позвонить мне')
+  //- 
+  //- .adwords-callback.clearfix
+  //-   .adwords-wrap
+  //-     .adwords-callback__content
+  //-       .adwords-callback__left
+  //-         h2 Настройка
+  //-         img(src='img/google-adwords-logo.png')
+  //-         p Премиум-услуги по настройке контекстной рекламы для малого бизнеса, работающего на рынке от 1 года.
+  //-         p Рекламный бюджет от 20 000 до 500 000 рублей.
+  //-       form(action='' method='').adwords-callback__form
+  //-         h3 Заполните заявку,
+  //-         p.adwords-callback__form-expert-analisys и получите экспертную оценку действующей кампании и разработку стратегии бесплатно!
+  //-         input.adwords-callback__form-name.header-subscription-block__input(type='text' placeholder='Ваше Имя')
+  //-         input.adwords-callback__form-phone.header-subscription-block__input(type='text' placeholder='Ваш номер телефона')
+  //-         input.adwords-callback__form-button.header-subscription-block__input(type='submit' value='Позвонить мне')
+  .calmness.adwords-calmness.clearfix
     .adwords-wrap
       h2 
         span.dotted-underline Работая с нами, Вы спите Спокойно!
-      .adwords-calmness__features.clearfix
-        .adwords-calmness__features-left
-          .adwords-calmness__feature.adwords-calmness__features-left-item.adwords-calmness__feature-growth
-            h3.adwords-calmness__feature-title Существенный приток 
+      .calmness__features.clearfix
+        .calmness__features-left
+          .calmness__feature.calmness__features-left-item.calmness__feature-growth
+            h3.calmness__feature-title Существенный приток 
               u клиентов
-            p.adwords-calmness__feature-text В среднем ROI рекламной кампании наших заказчиков увеличивается в 3,7 раза. Благодаря снижению стоимости клика, повышению эффективности объявлений, отстройки от конкурентов и других факторов.
-          .adwords-calmness__feature.adwords-calmness__features-left-item.adwords-calmness__feature-strategy
-            h3.adwords-calmness__feature-title Долгосрочная рекламная стратегия 
-            p.adwords-calmness__feature-text Чтобы вы всегда понимали, за счёт чего масштабироваться и как выжать максимум из рекламной кампании.
-          .adwords-calmness__feature.adwords-calmness__features-left-item.adwords-calmness__feature-reporting
-            h3.adwords-calmness__feature-title Полную прозрачность и подробную отчётность
-            p.adwords-calmness__feature-text Вы круглосуточно в любой момент имеете доступ ко всей информации и регулярно получаете отчёты о ходе кампании.
-        .adwords-calmness__features-right
-          .adwords-calmness__feature.adwords-calmness__features-right-item.adwords-calmness__feature-partnership
-            h3.adwords-calmness__feature-title Мы – официальные партнеры Google
-            p.adwords-calmness__feature-text Промокоды на 3000 рублей, доступ к закрытым материалам и персональная поддержка позволяют сделать рекламные кампании ещё эффективнее.
-          .adwords-calmness__feature.adwords-calmness__features-right-item.adwords-calmness__feature-connect
-            h3.adwords-calmness__feature-title Оперативная связь с нашими специалистами
-            p.adwords-calmness__feature-text Корректировки рекламной кампании вы сможете сделать всего в течение 1 часа.
-          .adwords-calmness__feature.adwords-calmness__features-right-item.adwords-calmness__feature-training
-            h3.adwords-calmness__feature-title Обучение для вас и ваших сотрудников
-            p.adwords-calmness__feature-text Если вы решите вести рекламную кампанию самостоятельно, мы проконсультируем по базовым принципам её настройки и ведения.
-  .adwords-calmness__promises.clearfix
+            p.calmness__feature-text В среднем ROI рекламной кампании наших заказчиков увеличивается в 3,7 раза. Благодаря снижению стоимости клика, повышению эффективности объявлений, отстройки от конкурентов и других факторов.
+          .calmness__feature.calmness__features-left-item.calmness__feature-strategy
+            h3.calmness__feature-title Долгосрочная рекламная стратегия 
+            p.calmness__feature-text Чтобы вы всегда понимали, за счёт чего масштабироваться и как выжать максимум из рекламной кампании.
+          .calmness__feature.calmness__features-left-item.calmness__feature-reporting
+            h3.calmness__feature-title Полную прозрачность и подробную отчётность
+            p.calmness__feature-text Вы круглосуточно в любой момент имеете доступ ко всей информации и регулярно получаете отчёты о ходе кампании.
+        .calmness__features-right
+          .calmness__feature.calmness__features-right-item.calmness__feature-partnership
+            h3.calmness__feature-title Мы – официальные партнеры Google
+            p.calmness__feature-text Промокоды на 3000 рублей, доступ к закрытым материалам и персональная поддержка позволяют сделать рекламные кампании ещё эффективнее.
+          .calmness__feature.calmness__features-right-item.calmness__feature-connect
+            h3.calmness__feature-title Оперативная связь с нашими специалистами
+            p.calmness__feature-text Корректировки рекламной кампании вы сможете сделать всего в течение 1 часа.
+          .calmness__feature.calmness__features-right-item.calmness__feature-training
+            h3.calmness__feature-title Обучение для вас и ваших сотрудников
+            p.calmness__feature-text Если вы решите вести рекламную кампанию самостоятельно, мы проконсультируем по базовым принципам её настройки и ведения.
+  .calmness__promises.clearfix
     .adwords-wrap
-      .adwords-calmness__promises-inside
-        .adwords-calmness__promises-left
-          h3.adwords-calmness__promises-left-title Отсутствие пустых обещаний!
-          p.adwords-calmness__promises-left-text Перед началом работы наши специалисты делают аудит вашей рекламной кампании и статистики. Только после этого вы получаете персональные гарантии, которые закрепляются в договоре, как и наша ответственность.
-        .adwords-calmness__promises-right
-          p.adwords-calmness__promises-right-title Только объективные гарантии, например:
-          ul.adwords-calmness__promises-list
-            li.adwords-calmness__promises-list-item Увеличение окупаемости ваших рекламных инвестиций.
-            li.adwords-calmness__promises-list-item Снижение цены заявки.
-            li.adwords-calmness__promises-list-item Приток целевых клиентов и отсеивание нецелевых.
-            li.adwords-calmness__promises-list-item Рост прибыли без увеличения бюджета.
-          p.adwords-calmness__promises-right-ps Количество кликов, просмотров страниц и прочие параметры мы отслеживаем и анализируем только через призму роста продаж.
-  .adwords-calmness__confidence
+      .calmness__promises-inside
+        .calmness__promises-left
+          h3.calmness__promises-left-title Отсутствие пустых обещаний!
+          p.calmness__promises-left-text Перед началом работы наши специалисты делают аудит вашей рекламной кампании и статистики. Только после этого вы получаете персональные гарантии, которые закрепляются в договоре, как и наша ответственность.
+        .calmness__promises-right
+          p.calmness__promises-right-title Только объективные гарантии, например:
+          ul.calmness__promises-list
+            li.calmness__promises-list-item Увеличение окупаемости ваших рекламных инвестиций.
+            li.calmness__promises-list-item Снижение цены заявки.
+            li.calmness__promises-list-item Приток целевых клиентов и отсеивание нецелевых.
+            li.calmness__promises-list-item Рост прибыли без увеличения бюджета.
+          p.calmness__promises-right-ps Количество кликов, просмотров страниц и прочие параметры мы отслеживаем и анализируем только через призму роста продаж.
+  .calmness__confidence
     .adwords-wrap.clearfix
-      h2.adwords-calmness__confidence-title
+      h2.calmness__confidence-title
         span.dotted-underline Вы можете быть уверены в результатах, потому что:
-      .adwords-calmness__confidence-content
-        ul.adwords-calmness__confidence-left
-          li.adwords-calmness__confidence-item На погружение в ваш бизнес и разработку долгосрочной стратегии рекламной кампании выделяем 3–4 дня 
+      .calmness__confidence-content
+        ul.calmness__confidence-left
+          li.calmness__confidence-item На погружение в ваш бизнес и разработку долгосрочной стратегии рекламной кампании выделяем 3–4 дня 
             br
             | (а не 30 минут для галочки).
-          li.adwords-calmness__confidence-item Ход кампании опирается на потребности вашего бизнеса и цели, а не только на внутренние показатели.
-          li.adwords-calmness__confidence-item Нам это выгодно. Когда вы зарабатываете, то становитесь нашим постоянным клиентом. 
-          li.adwords-calmness__confidence-item Ваш сайт будет разобран по косточкам. Десятки рекомендаций по увеличению конверсий!
-        ul.adwords-calmness__confidence-right
-          li.adwords-calmness__confidence-item Мы сделаем анализ целевой аудитории и конкурентов, предоставим вам идеи по разработке уникального торгового предложения.
-          li.adwords-calmness__confidence-item Работа продолжается до получения вами прибыли. 
-          li.adwords-calmness__confidence-item Мы знаем всё о AdWords и о том, что на него влияет.
-          li.adwords-calmness__confidence-item 1 аналитик ведёт не более 10 проектов.
+          li.calmness__confidence-item Ход кампании опирается на потребности вашего бизнеса и цели, а не только на внутренние показатели.
+          li.calmness__confidence-item Нам это выгодно. Когда вы зарабатываете, то становитесь нашим постоянным клиентом. 
+          li.calmness__confidence-item Ваш сайт будет разобран по косточкам. Десятки рекомендаций по увеличению конверсий!
+        ul.calmness__confidence-right
+          li.calmness__confidence-item Мы сделаем анализ целевой аудитории и конкурентов, предоставим вам идеи по разработке уникального торгового предложения.
+          li.calmness__confidence-item Работа продолжается до получения вами прибыли. 
+          li.calmness__confidence-item Мы знаем всё о AdWords и о том, что на него влияет.
+          li.calmness__confidence-item 1 аналитик ведёт не более 10 проектов.
   .adwords-founder.clearfix
     .adwords-wrap
       .adwords-founder__head.clearfix
@@ -117,10 +136,10 @@ block main-content
             input(id="review-2" type="radio" name="reviews-slider" ).adwords-founder__reviews-item-slider-radio
             input(id="review-3" type="radio" name="reviews-slider" ).adwords-founder__reviews-item-slider-radio
             input(id="review-4" type="radio" name="reviews-slider" ).adwords-founder__reviews-item-slider-radio
-            label(for="review-1").adwords-founder__reviews-item-slider-point
-            label(for="review-2").adwords-founder__reviews-item-slider-point
-            label(for="review-3").adwords-founder__reviews-item-slider-point
-            label(for="review-4").adwords-founder__reviews-item-slider-point
+            label(for="review-1").adwords-founder__reviews-item-slider-point.slider-dot
+            label(for="review-2").adwords-founder__reviews-item-slider-point.slider-dot
+            label(for="review-3").adwords-founder__reviews-item-slider-point.slider-dot
+            label(for="review-4").adwords-founder__reviews-item-slider-point.slider-dot
       .adwords-founder__videos.clearfix
         h3.adwords-founder__videos-title Посмотрите самые популярные видео
         .adwords-founder__videos-block
@@ -187,48 +206,48 @@ block main-content
     .adwords-wrap
       h2.configuration__title Мы настроим Google AdWords:
       h3.configuration__subtitle Что входит в настройки?
-      .configuration__browser.clearfix
-        .configuration__browser-top.clearfix
-          p.configuration__browser-url www.direct-all-in.ru
-          ul.configuration__browser-buttons
-            li.configuration__browser-button
-            li.configuration__browser-button
-            li.configuration__browser-button
-        .configuration__browser-title
+      .browser.clearfix
+        .browser-top.clearfix
+          p.browser-url www.direct-all-in.ru
+          ul.browser-buttons
+            li.browser-button
+            li.browser-button
+            li.browser-button
+        .browser-title
           img(src="./img/browser-adwords-logo.png" wodth="183" height="30")
           span  / Настройки
-        .configuration__browser-content
-          .configuration__browser-item
+        .browser-content
+          .browser-item
             .adwords-configuration__item-image.adwords-configuration__item-image-CTR
             p.adwords-configuration__item-text CTR от 7% 
-          .configuration__browser-item
+          .browser-item
             .adwords-configuration__item-image.adwords-configuration__item-image-AB
             p.adwords-configuration__item-text Проведение А/Б тестирования
-          .configuration__browser-item
+          .browser-item
             .adwords-configuration__item-image.adwords-configuration__item-image-monitoring
             p.adwords-configuration__item-text Мониторинг ваших конкурентов
-          .configuration__browser-item
+          .browser-item
             .adwords-configuration__item-image.adwords-configuration__item-image-insight
             p.adwords-configuration__item-text Глубокое погружение в ваш бизнес (интервью с менеджером проекта)
-          .configuration__browser-item
+          .browser-item
             .adwords-configuration__item-image.adwords-configuration__item-image-implementation
             p.adwords-configuration__item-text Помощь во внедрении систем аналитики. Подсчёт всех показателей
-          .configuration__browser-item
+          .browser-item
             .adwords-configuration__item-image.adwords-configuration__item-image-month
             p.adwords-configuration__item-text Ведение кампании от 1 месяца включено
-          .configuration__browser-item
+          .browser-item
             .adwords-configuration__item-image.adwords-configuration__item-image-optimization
             p.adwords-configuration__item-text Оптимизацию по времени, регионам, мобильным устройствам, полу и возрасту
-          .configuration__browser-item
+          .browser-item
             .adwords-configuration__item-image.adwords-configuration__item-image-frequency
             p.adwords-configuration__item-text Правильная работа с низкочастотными запросами, позволяющая увеличить общий CTR и конверсию, и снизить цену клика
-          .configuration__browser-item
+          .browser-item
             .adwords-configuration__item-image.adwords-configuration__item-image-retargeting
             p.adwords-configuration__item-text Настройка Ретаргетинга по различным сегментам, позволяющая показывать объявлениям тем, кто уже был на сайте
-          .configuration__browser-item
+          .browser-item
             .adwords-configuration__item-image.adwords-configuration__item-image-KMC
             p.adwords-configuration__item-text Отдельная настройка медийных площадок (КМС)
-          .configuration__browser-item
+          .browser-item
             .adwords-configuration__item-image.adwords-configuration__item-image-ads
             p.adwords-configuration__item-text Уникальные эффективные объявления под каждый сегмент целевой аудитории
   .work-stages.clearfix
@@ -322,35 +341,35 @@ block main-content
           h3.adwords-portfolio__item-title Видео отзывы
           img(src="http://placehold.it/367x228" width="367" height="228").adwords-portfolio__item-image 
           p.adwords-portfolio__item-description Дмитрий, Интернет Магазин Сувениров
-          a(href="#").adwords-portfolio__item-link Смотреть другие отзывы
+          a(href="#").adwords-portfolio__item-link.link-blue Смотреть другие отзывы
         .adwords-portfolio__item
           h3.adwords-portfolio__item-title Благодарственные письма
           img(src="../img/portfolio/oren-house.svg" width="367" height="228").adwords-portfolio__item-image 
           p.adwords-portfolio__item-description OpenHouse
-          a(href="#").adwords-portfolio__item-link Смотреть другие письма
+          a(href="#").adwords-portfolio__item-link.link-blue Смотреть другие письма
         .adwords-portfolio__item
           h3.adwords-portfolio__item-title Истории-Кейсы
           h4.adwords-portfolio__item-subtitle Выжили благодаря аналитике
           p.adwords-portfolio__item-text История стартапа, который прорвался исключительно благодаря контекстной рекламе. Подключение дополнительных сервисов и ежедневная работа аналитиков позволили увеличивать прибыль ежемесячно и всего за 2года разрастить до одной из самых больших в Москве юридических ... 
-            a(href="#") Читать далее
+            a(href="#").link-blue Читать далее
           p.adwords-portfolio__item-description Банкротство физическиз лиц
-          a(href="#").adwords-portfolio__item-link Смотреть другие кейсы
+          a(href="#").adwords-portfolio__item-link.link-blue Смотреть другие кейсы
   .adwords-clients
     .adwords-wrap
       h2.adwords-clients__title Наши клиенты
       .adwords-clients__brands
-        img(src="./img/portfolio/brands/dance-hostel.png" width="97" height="57")
-        img(src="./img/portfolio/brands/mepione.png" width="170" height="175")
-        img(src="./img/portfolio/brands/ruslan-mitrofanov.png" width="131" height="147")
-        img(src="./img/portfolio/brands/promtehalp.png" width="152" height="89")
-        img(src="./img/portfolio/brands/voskovie-ruchki.png" width="82" height="117")
-        img(src="./img/portfolio/brands/elit-finance-group.png" width="145" height="101")
+        img(src="./img/portfolio/clients/1.png" width="97" height="57")
+        img(src="./img/portfolio/clients/2.png" width="170" height="175")
+        img(src="./img/portfolio/clients/3.png" width="131" height="147")
+        img(src="./img/portfolio/clients/4.png" width="152" height="89")
+        img(src="./img/portfolio/clients/5.png" width="82" height="117")
+        img(src="./img/portfolio/clients/6.png" width="145" height="101")
       .adwords-clients__brands
-        img(src="./img/portfolio/brands/video-lis.png" width="171" height="46")
-        img(src="./img/portfolio/brands/top-tips.png" width="139" height="44")
-        img(src="./img/portfolio/brands/safe-space.png" width="120" height="22")
-        img(src="./img/portfolio/brands/office-world.png" width="170" height="21")
-        img(src="./img/portfolio/brands/mayorcars.png" width="207" height="34")
+        img(src="./img/portfolio/clients/7.png" width="171" height="46")
+        img(src="./img/portfolio/clients/8.png" width="139" height="44")
+        img(src="./img/portfolio/clients/9.png" width="120" height="22")
+        img(src="./img/portfolio/clients/10.png" width="170" height="21")
+        img(src="./img/portfolio/clients/11.png" width="207" height="34")
   .questions
     .adwords-wrap
       h2.questions__title Часто задаваемые вопросы
@@ -371,7 +390,7 @@ block main-content
           h3.questions__item-title
             span А вдруг вы будете набивать мне цены за клик, чтобы получить комиссию Яндекса?
           p.questions__item-text Чтобы исключить подобный соблазн, мы не получаем комиссию от Яндекса. Не заинтересованы набивать цены за клик. Напротив – делаем всё, чтобы снизить её. Если вы будете довольны – приведете к нам клиентов. Мы много раз в этом убеждались.
-      a(href="#").questions__button Все вопросы
+      a(href="#").questions__button.btn__red-border Все вопросы
   .services-list
     .adwords-wrap
       h2.services-list__title Какие услуги вы можете заказать в агентстве Direct All-In:
@@ -424,15 +443,30 @@ block main-content
           a(href="#").blog__feature-link
             img(src="./img/blog/2015-12-25-01.jpg" width="368" height="228")
             p.blog__feature-date 21 Декабря 2015
-            a(href="#").blog__feature-text Выставление ставок в Яндекс.Директ. Как избежать типичной ошибки?
+            a(href="#").blog__feature-text.link-blue Выставление ставок в Яндекс.Директ. Как избежать типичной ошибки?
         section.blog__feature
           a(href="#").blog__feature-link
             img(src="./img/blog/2015-10-09-01.jpg" width="368" height="228")
             p.blog__feature-date 9 Октября 2015
-            a(href="#").blog__feature-text Как стать высокооплачиваемым директологом?
+            a(href="#").blog__feature-text.link-blue Как стать высокооплачиваемым директологом?
         section.blog__feature
           a(href="#").blog__feature-link
             img(src="./img/blog/2015-08-15-01.jpg" width="368" height="228")
             p.blog__feature-date 15 Августа 2015
-            a(href="#").blog__feature-text Как сэкономить 5 часов при настройке кампании в Директе и улучшить... 
-      a(href="#").blog__button Просмотреть все записи
+            a(href="#").blog__feature-text.link-blue Как сэкономить 5 часов при настройке кампании в Директе и улучшить... 
+      a(href="#").blog__button.btn__blue-border Просмотреть все записи
+
+  footer.footer.vedenie-footer.footer__call-us
+    h4.footer__call-us-title Чтобы пообщаться с менеджером, узнать все детали и получить ответы 
+      br 
+      | на оставшиеся вопросы, оставьте заявку, и мы перезвоним в ближайшее рабочее время.
+
+    form.form(action="")
+      input.form__text(type="text" placeholder="Ваше Имя")
+      input.form__text(type="text" placeholder="Ваш номер телефона")
+      
+      .footer__submit
+        input.btn(type="submit" value="Позвонить мне")
+
+    include ../_common/_footer__nav
+    include ../_common/_footer__navbar

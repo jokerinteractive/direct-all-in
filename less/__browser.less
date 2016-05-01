@@ -1,0 +1,122 @@
+.browser {
+  display: block;
+
+  max-width: 1000px;
+  margin: 35px auto;
+
+  border: 1px solid rgba(105, 105, 105, .25);
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 1px 4px 14px rgba(0, 0, 0, .08);
+
+  &-top {
+    position: relative;
+
+    display: block;
+
+    padding: 0 98px;
+
+    text-align: center;
+
+    border-bottom: 1px solid rgba(105, 105, 105, .25);
+    background: #f4f4f4;
+  }
+
+  &-url {
+    margin: 0;
+
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  &-buttons {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+
+    height: 13px;
+    margin: 0;
+  }
+
+  &-button {
+    float: left;
+
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    margin-right: 5px;
+
+    border-radius: 50%;
+
+    &:nth-of-type(1) { background: #ed1c24; }
+    &:nth-of-type(2) { background: #ffc600; }
+    &:nth-of-type(3) { background: #39b54a; }
+  }
+
+  &-title {
+    margin: 0 11px;
+    padding: 20px;
+
+    border-bottom: 3px solid #e5e5e5;
+
+    span {
+      vertical-align: top;
+
+      line-height: 30px;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    width: 333px;
+    padding: 24px;
+
+    font-size: 16px;
+
+    justify-content: space-around;
+  }
+}
+
+.browser__item-image() {
+  display: block;
+
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+
+  border: 2px solid #c2e0f3;
+  border-radius: 6px;
+  background: url("../img/browser-sprt.svg") no-repeat 0 0;
+}
+
+.browser__item-image-cursor() { background-position: 0 0; }
+.browser__item-image-AB() { background-position: -70px 0; }
+.browser__item-image-target() { background-position: -140px 0; }
+
+.browser__item-image-microscope() { background-position: 0 -70px; }
+.browser__item-image-glasses() { background-position: -70px -70px; }
+.browser__item-image-month() { background-position: -140px -70px; }
+
+.browser__item-image-atom() { background-position: 0 -140px; }
+.browser__item-image-increase() { background-position: -70px -140px; }
+.browser__item-image-molecula() { background-position: -140px -140px; }
+
+.browser__item-image-search() { background-position: 0 -210px; }
+.browser__item-image-network() { background-position: -70px -210px; }
+.browser__item-image-tablet() { background-position: -140px -210px; }
+
+.browser__item-image-notes() { background-position: 0 -280px; }
+.browser__item-image-loupe() { background-position: -70px -280px; }
+.browser__item-image-growth() { background-position: -140px -280px; }
