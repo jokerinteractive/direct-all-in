@@ -8,86 +8,19 @@ body
     .vedenie-wrap
       .callback-header__content
         .callback-header__left
-          h2 Ведение и Аналитика
-          h1 Контекстной Рекламы
+          h2 Настройка
+          img(src='./img/yandex-direct-logo.svg')
           p Премиум-услуги по настройке контекстной рекламы для малого бизнеса, работающего на рынке от 1 года.
           p Рекламный бюджет от 20 000 до 500 000 рублей.
         form(action='' method='').callback-header__form
           h3 Заполните заявку,
-          p.callback-header__form-expert-analisys и получите экспертную оценку действующей кампании и разработку стратегии 
-            strong бесплатно!
+          p.callback-header__form-expert-analisys и получите экспертную оценку действующей кампании и разработку стратегии
+            strong  бесплатно!
           input.callback-header__form-name.header-subscription-block__input(type='text' placeholder='Ваше Имя')
           input.callback-header__form-phone.header-subscription-block__input(type='text' placeholder='Ваш номер телефона')
           input.callback-header__form-button.header-subscription-block__input(type='submit' value='Позвонить мне')
 
-  .vedenie-explanation
-    .vedenie-wrap
-      h2.vedenie-explanation__title Что такое Ведение?
-      .browser
-        .browser-top
-          p.browser-url www.direct-all-in.ru
-          ul.browser-buttons
-            li.browser-button
-            li.browser-button
-            li.browser-button
-        .browser-content
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-clik
-            p.vedenie-explanation__item-text Снижение цены за клик
-
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-retargeting
-            p.vedenie-explanation__item-text Ведение РСЯ и Ретаргетинга
-
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-monitoring
-            p.vedenie-explanation__item-text Мониторинг ваших конкурентов
-
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-visitors
-            p.vedenie-explanation__item-text Анализ поведения посетителей в метрике
-
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-AB
-            p.vedenie-explanation__item-text А/Б тест объявлений, стратегий, площадок, быстрых ссылок
-
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-budget
-            p.vedenie-explanation__item-text Оптимизация бюджета в зависимости от количества продаж
-          
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-traffic
-            p.vedenie-explanation__item-text Работа над улучшением качества трафика (работа с анализом целевой аудитории)
-          
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-CTR
-            p.vedenie-explanation__item-text Борьба за каждые 0,5% CTR (каждые 0,5% это плюс 50-300 кликов в месяц!)
-
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-extension
-            p.vedenie-explanation__item-text По возможности, добавление новых ключевых запросов (например, сезонных)
-          
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-phrase
-            p.vedenie-explanation__item-text Добавление ключевых фраз
-          
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-distribution
-            p.vedenie-explanation__item-text Выявление эффективных и неэффективных ключевых фраз, распределение по ним бюджета
-          
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-ads
-            p.vedenie-explanation__item-text Проработка каждого объявления
-            
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-revision
-            p.vedenie-explanation__item-text Отминусовка и уточнение ключевиков (чистка трафика)
-
-          .browser-item
-            .vedenie-explanation__item-image.vedenie-explanation__item-image-support
-            p.vedenie-explanation__item-text Поддержка ставок
-
-  .calmness.clearfix
+  .calmness.index-calmness.clearfix
     .vedenie-wrap
       h2 
         span.dotted-underline Работая с нами, Вы спите Спокойно!
@@ -256,8 +189,108 @@ body
           p.vedenie-puzzle__specialists-description-text Как известно, 4-ядерный процессор работает гораздо быстрее и эффективнее 1-ядерного благодаря параллельному выполнению разных задач. Ваши задачи решаются в многопотоковом режиме. 
             | Это позволяет каждому специалисту выполнять свой объём 
             | и при этом не перегреваться от перегрузки.
+
+  .configuration.clearfix
+    .adwords-wrap
+      h2.configuration__title Мы настроим Яндекс.Директ:
+      h3.configuration__subtitle Что входит в настройки?
+      .browser.clearfix
+        .browser-top.clearfix
+          p.browser-url www.direct-all-in.ru
+          ul.browser-buttons
+            li.browser-button
+            li.browser-button
+            li.browser-button
+        .browser-title
+          img(src="./img/browser-direct-logo.svg")
+        .browser-content
+          .browser-item
+            .adwords-configuration__item-image.adwords-configuration__item-image-CTR
+            p.adwords-configuration__item-text CTR от 7% 
+          .browser-item
+            .adwords-configuration__item-image.adwords-configuration__item-image-AB
+            p.adwords-configuration__item-text Проведение А/Б тестирования
+          .browser-item
+            .adwords-configuration__item-image.adwords-configuration__item-image-monitoring
+            p.adwords-configuration__item-text Мониторинг ваших конкурентов
+          .browser-item
+            .adwords-configuration__item-image.adwords-configuration__item-image-insight
+            p.adwords-configuration__item-text Глубокое погружение в ваш бизнес (интервью с менеджером проекта)
+          .browser-item
+            .adwords-configuration__item-image.adwords-configuration__item-image-implementation
+            p.adwords-configuration__item-text Помощь во внедрении систем аналитики. Подсчёт всех показателей
+          .browser-item
+            .adwords-configuration__item-image.adwords-configuration__item-image-month
+            p.adwords-configuration__item-text Ведение кампании
+              br 
+              |  от 1 месяца включено
+          .browser-item
+            .adwords-configuration__item-image.adwords-configuration__item-image-optimization
+            p.adwords-configuration__item-text Оптимизацию по времени, регионам, мобильным устройствам, полу и возрасту
+          .browser-item
+            .adwords-configuration__item-image.adwords-configuration__item-image-frequency
+            p.adwords-configuration__item-text Правильная работа с низкочастотными запросами, позволяющая увеличить общий CTR и конверсию, и снизить цену клика
+          .browser-item
+            .adwords-configuration__item-image.adwords-configuration__item-image-retargeting
+            p.adwords-configuration__item-text Настройка Ретаргетинга по различным сегментам, позволяющая показывать объявлениям тем, кто уже был на сайте
+          .browser-item
+            .adwords-configuration__item-image.adwords-configuration__item-image-KMC
+            p.adwords-configuration__item-text Отдельная настройка медийных площадок (КМС)
+          .browser-item
+            .adwords-configuration__item-image.adwords-configuration__item-image-ads
+            p.adwords-configuration__item-text Уникальные эффективные объявления под каждый сегмент целевой аудитории
+
+  .work-stages
+    .adwords-wrap
+      h2.work-stages__title
+        span.dotted-underline Этапы работы с нами
+      .work-stages__round
+        ul.work-stages__list-left
+          li.work-stages__list-item
+            span.work-stages__list-digit 01
+            |  Бесплатный анализ действующих кампаний
+          li.work-stages__list-item
+            span.work-stages__list-digit 02
+            |  Согласование работы –
+            br 
+            | договора, цели, нюансы, и т.д.. Оплата
+          li.work-stages__list-item
+            span.work-stages__list-digit 03
+            |  Интервью с менеджером проекта. Погружение в бизнес.
+          li.work-stages__list-item
+            span.work-stages__list-digit 04
+            |  Разработка стратегии
+          li.work-stages__list-item
+            span.work-stages__list-digit 05
+            |  Сбор ключевых запросов.
+            br 
+            | Предварительное согласование.
+        ul.work-stages__list-right
+          li.work-stages__list-item
+            span.work-stages__list-digit 06
+            |  Доработка ключевых запросов. 
+            br 
+            | Написание объявлений, загрузка, модерация
+          li.work-stages__list-item
+            span.work-stages__list-digit 07
+            |  Тестовый запуск (цель – набрать статистику)
+          li.work-stages__list-item
+            span.work-stages__list-digit 08
+            |  Анализ тестового запуска
+          li.work-stages__list-item
+            span.work-stages__list-digit 09
+            |  Ведение. Постоянное взаимодействие и обратная связь.
+          li.work-stages__list-item
+            span.work-stages__list-digit 10
+            |  Через месяц – подведение итогов, анализ, отчеты,  согласование дальнейших планов
+      .work-stages__bottom
+        p.work-stages__bottom-item Кампанию ведем 
+          br
+          | Мы
+        p.work-stages__bottom-item Расширение кампании, перенос в Яндекс.Директ
+        p.work-stages__bottom-item Самостоятельное ведение кампании
   .will-never-collaborate
-    .vedenie-wrap
+    .adwords-wrap
       h2.will-never-collaborate__title
         span.dotted-underline С кем мы не работаем из принципа?
       ul.will-never-collaborate__features
@@ -282,7 +315,7 @@ body
             h4.will-never-collaborate__valueless-subtitle – На настройку кампании со 100 000 ключевиков с ценой 2 рубля/клик. 
             p.will-never-collaborate__valueless-text Стратегически неверно для бизнеса. Это повлечет за собой большие риски, высокую стоимость работ, раздутие бюджета, долгий запуск, нарушение принципа Парето и т. д.
   .no-magic
-    .vedenie-wrap
+    .adwords-wrap
       h2.no-magic__title Может быть, вы больше верите в чудо, 
         br
         | чем в планомерную работу с точным расчётом?
@@ -290,46 +323,66 @@ body
       p.no-magic__text Нам нравится работать с осознанными предпринимателями, понимающими риски и ответственность, умеющими добиваться результата через эксперименты.
       p.no-magic__text Фанатов же модных тренингов, привыкших везде искать волшебную таблетку, стараемся избегать.
       p.no-magic__text.no-magic__signature — Direct All-In
-  .vedenie-portfolio
-    .vedenie-wrap
-      h2.vedenie-portfolio__title Портфолио
-      .vedenie-portfolio__content
-        .vedenie-portfolio__item
-          h3.vedenie-portfolio__item-title Видео отзывы
+  .adwords-portfolio
+    .adwords-wrap
+      h2.adwords-portfolio__title Портфолио
+      .adwords-portfolio__content
+        .adwords-portfolio__item
+          h3.adwords-portfolio__item-title Видео отзывы
           img(src="./img/portfolio/video-review-dmitriy.jpg" width="367" height="228").adwords-portfolio__item-image 
-          p.vedenie-portfolio__item-description Дмитрий, Интернет Магазин Сувениров
-          a(href="#").vedenie-portfolio__item-link.link-blue Смотреть другие отзывы
-        .vedenie-portfolio__item
-          h3.vedenie-portfolio__item-title Благодарственные письма
+          p.adwords-portfolio__item-description Дмитрий, Интернет Магазин Сувениров
+          a(href="#").adwords-portfolio__item-link.link-blue Смотреть другие отзывы
+        .adwords-portfolio__item
+          h3.adwords-portfolio__item-title Благодарственные письма
           img(src="./img/portfolio/oren-house.svg" width="367" height="228").adwords-portfolio__item-image 
-          p.vedenie-portfolio__item-description OpenHouse
-          a(href="#").vedenie-portfolio__item-link.link-blue Смотреть другие письма
-        .vedenie-portfolio__item
-          h3.vedenie-portfolio__item-title Истории-Кейсы
-          h4.vedenie-portfolio__item-subtitle Выжили благодаря аналитике
-          p.vedenie-portfolio__item-text История стартапа, который прорвался исключительно благодаря контекстной рекламе. Подключение дополнительных сервисов и ежедневная работа аналитиков позволили увеличивать прибыль ежемесячно и всего за 2года разрастить до одной из самых больших в Москве юридических ... 
+          p.adwords-portfolio__item-description OpenHouse
+          a(href="#").adwords-portfolio__item-link.link-blue Смотреть другие письма
+        .adwords-portfolio__item
+          h3.adwords-portfolio__item-title Истории-Кейсы
+          h4.adwords-portfolio__item-subtitle Выжили благодаря аналитике
+          p.adwords-portfolio__item-text История стартапа, который прорвался исключительно благодаря контекстной рекламе. Подключение дополнительных сервисов и ежедневная работа аналитиков позволили увеличивать прибыль ежемесячно и всего за 2года разрастить до одной из самых больших в Москве юридических ... 
             a(href="#").link-blue Читать далее
-          p.vedenie-portfolio__item-description Банкротство физическиз лиц
-          a(href="#").vedenie-portfolio__item-link.link-blue Смотреть другие кейсы
-  .vedenie-clients
-    .vedenie-wrap
-      h2.vedenie-clients__title Наши клиенты
-      .vedenie-clients__brands
+          p.adwords-portfolio__item-description Банкротство физическиз лиц
+          a(href="#").adwords-portfolio__item-link.link-blue Смотреть другие кейсы
+  .adwords-clients
+    .adwords-wrap
+      h2.adwords-clients__title Наши клиенты
+      .adwords-clients__brands
         img(src="./img/portfolio/clients/1.png" width="97" height="57")
         img(src="./img/portfolio/clients/2.png" width="170" height="175")
         img(src="./img/portfolio/clients/3.png" width="131" height="147")
         img(src="./img/portfolio/clients/4.png" width="152" height="89")
         img(src="./img/portfolio/clients/5.png" width="82" height="117")
         img(src="./img/portfolio/clients/6.png" width="145" height="101")
-      .vedenie-clients__brands
+      .adwords-clients__brands
         img(src="./img/portfolio/clients/7.png" width="171" height="46")
         img(src="./img/portfolio/clients/8.png" width="139" height="44")
         img(src="./img/portfolio/clients/9.png" width="120" height="22")
         img(src="./img/portfolio/clients/10.png" width="170" height="21")
         img(src="./img/portfolio/clients/11.png" width="207" height="34")
-        footer.footer
+  .questions
+    .adwords-wrap
+      h2.questions__title Часто задаваемые вопросы
+      .questions__content
+        .questions__item
+          h3.questions__item-title
+            span Дорого у вас!
+          p.questions__item-text Реклама не бывает дорогой или дешевой. Она либо эффективна, либо неэффективна. Мы всё делаем на высочайшем уровне, по сути вы покупаете себе отдел маркетинга, который разрабатывает рекламную стратегию даже за рамками Директа. Контекстную рекламу нельзя хорошо настроить за 5–10 т. р.
+        .questions__item
+          h3.questions__item-title
+            span Зачем нужно ведение?
+          p.questions__item-text Цель ведения – постоянное увеличение прибыли. Причём тут есть две стороны: если кампанию остановить, то все показатели начнут уменьшаться. Если же продолжать ведение – они могут улучшаться либо оставаться стабильным. Под показателями мы понимаем не только CTR и цену за клик, но и многое другое: ROI, PPV, CV, количество отказов, возвраты на сайт, глубина просмотра и продолжительность визита и т. д. Ведение происходит за счёт аналитики трафика, распределения бюджета, А/Б тестов, оптимизации всех процессов. Это может длиться годами.
+        .questions__item
+          h3.questions__item-title
+            span Какая наша мотивация?
+          p.questions__item-text Мы прекрасно понимаем, что вас абсолютно не интересует CTR и другие второстепенные показатели. Вам интересна только прибыль. И ещё лучше мы понимаем, что чем больше вы сможете заработать, тем больше услуг вы у нас закажете и тем больше будете с нами работать. Поэтому приложим все усилия, вплоть до прослушивания звонков, чтобы росла именно прибыль. Кроме того, когда клиент доволен, он рекомендует нас своим знакомым.
+        .questions__item
+          h3.questions__item-title
+            span А вдруг вы будете набивать мне цены за клик, чтобы получить комиссию Яндекса?
+          p.questions__item-text Чтобы исключить подобный соблазн, мы не получаем комиссию от Яндекса. Не заинтересованы набивать цены за клик. Напротив – делаем всё, чтобы снизить её. Если вы будете довольны – приведете к нам клиентов. Мы много раз в этом убеждались.
+      a(href="#").questions__button.btn__red-border Все вопросы
   .services-list
-    .vedenie-wrap
+    .adwords-wrap
       h2.services-list__title Какие услуги вы можете заказать в агентстве Direct All-In:
       ul.services-list__content
         li.services-list__item
@@ -356,12 +409,47 @@ body
           img(src="./img/services-list/training.svg" width="145px" heigth="145px")
           p.services-list__item-text Обучение
             br
-            | контекстной рекламе    
-  
+            | контекстной рекламе
+  .blog
+    .adwords-wrap
+      h2.blog__title Блог
+      ul.blog__menu
+        li.blog__menu-item.blog__menu-item-active
+          a(href="#") Все
+        li.blog__menu-item
+          a(href="#") Обучающие статьи
+        li.blog__menu-item
+          a(href="#") Истории
+        li.blog__menu-item
+          a(href="#") Новости агентства
+        li.blog__menu-item
+          a(href="#") Не только Директ
+        li.blog__menu-item
+          a(href="#") Клиентам агентства
+        li.blog__menu-item
+          a(href="#") Мои статьи в СМИ
+      .blog__features
+        section.blog__feature
+          a(href="#").blog__feature-link
+            img(src="./img/blog/2015-12-25-01.jpg" width="368" height="228")
+            p.blog__feature-date 21 Декабря 2015
+            a(href="#").blog__feature-text.link-blue Выставление ставок в Яндекс.Директ. Как избежать типичной ошибки?
+        section.blog__feature
+          a(href="#").blog__feature-link
+            img(src="./img/blog/2015-10-09-01.jpg" width="368" height="228")
+            p.blog__feature-date 9 Октября 2015
+            a(href="#").blog__feature-text.link-blue Как стать высокооплачиваемым директологом?
+        section.blog__feature
+          a(href="#").blog__feature-link
+            img(src="./img/blog/2015-08-15-01.jpg" width="368" height="228")
+            p.blog__feature-date 15 Августа 2015
+            a(href="#").blog__feature-text.link-blue Как сэкономить 5 часов при настройке кампании в Директе и улучшить... 
+      a(href="#").blog__button.btn__blue-border Просмотреть все записи
+
   footer.footer.vedenie-footer.footer__call-us
     h4.footer__call-us-title Чтобы пообщаться с менеджером, узнать все детали и получить ответы 
       br 
-      | на оставшиеся вопросы, оставьте заявку, и мы перезвоним в ближайшее время.
+      | на оставшиеся вопросы, оставьте заявку, и мы перезвоним в ближайшее рабочее время.
 
     form.form(action="")
       input.form__text(type="text" placeholder="Ваше Имя")
