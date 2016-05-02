@@ -1,8 +1,31 @@
+@import "__mixins";
+@import "_better";
+@import "_subscription/_test";
+
 @import "_subscription/__base";
 @import "_subscription/_main";
 @import "_subscription/_effective";
-@import "_subscription/_video";
 @import "_subscription/_better";
-@import "_subscription/_test";
-@import "_subscription/_about-speaker";
+@import "_about-speaker";
 @import "_subscription/_subscribe_course";
+
+.subscription {
+  background: url(../img/subscriptions/bg.jpg) 50% 100%;
+  height: 456px;
+  color: #fff;
+
+  &__wrap {
+    .wrap();
+  }
+
+  &__column {
+    &--left {
+      float: left;
+      width: 50%;
+    }
+    &--right {
+      float: right;
+      width: 40%;
+    }
+  }
+}

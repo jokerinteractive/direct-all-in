@@ -4,6 +4,7 @@
   padding-right: 20px;
   padding-left: 20px;
   max-width: 1200px;
+  box-sizing: border-box;
 }
 
 .title-dotted() {
@@ -13,5 +14,93 @@
   > span {
     padding: 0 10px 15px;
     border-bottom: 2px dotted fade(#e7e2c7, 70%);
+  }
+}
+
+.beige-icons-repeating-background() { background: url("../img/calmness/calmness-light-bg.png") repeat-x 50% 0; }
+.header-arrow-background() { background: #0e3b5a url("../img/bg-adwords-feedback.png") no-repeat ~"50% 50%/100% auto"; }
+
+.link-blue {
+  color: #2e8dd6;
+
+  &:hover { color: #ff304f; }
+  &:visited { color: #ff304f; }
+}
+
+.slider-dot {
+  background: #f3f3f3;
+
+  &:hover { background: #e7e7e7; }
+  &:active { background: #cee2f1; }
+}
+
+.btn__blue-border {
+  display: block;
+  padding: 12px;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: #1970b3;
+  border: 1px solid #1970b3;
+  border-radius: 5px;
+
+  font-size: 16px;
+
+  &:hover {
+    background: #2e8dd6; //#ff304f;
+    border-color: #2e8dd6;
+    color: #fff;
+  }
+
+  &:active {
+    background: #0f3e5f;
+    border-color: #0f3e5f;
+    color: #4980a6;
+  }
+}
+
+.btn__red-border {
+  display: block;
+  padding: 12px;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: #ff304f;
+  border: 1px solid #ff304f;
+  border-radius: 5px;
+
+  &:hover {
+    background: #ff304f; //#ff304f;
+    border-color: #ff304f;
+    color: #fff;
+  }
+
+  &:active {
+    background: #981125;
+    border-color: #981125;
+    color: #db586b;
+  }
+}
+
+.header-subscription-block {
+
+  &__input {
+    padding: 20px 25px 19px;
+
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .21);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .21);
+
+    font-size: 15px;
+    line-height: 19px;
+
+    &:hover { border-color: #6babd7; }
+    &:active {
+      color: #2f5771;
+      border-color: #fff;
+    }
   }
 }

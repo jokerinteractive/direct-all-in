@@ -1,0 +1,71 @@
+@import "_webinar/_header";
+@import "_webinar/_achieve";
+
+.webinar {
+  box-sizing: border-box;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+
+  .header__navbar {
+    padding-bottom: 10px;
+  }
+
+  .about-speaker {
+    background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 0/cover;
+
+    &:before {
+      content: "";
+      display: none;
+    }
+  }
+
+  .video { //блок перекрывает предыдущий и z-index не спасает
+    display: block;
+    background: #fff url(../img/video-bg.png) no-repeat 50% 50%/cover;
+
+    //margin-top: -100px;
+
+    &-info__top {
+      &--choose {
+        font-size: 24px;
+        font-weight: normal;
+      }
+
+      &--text {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .course-for {
+    background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 0;
+
+    &-list::before {
+      background-image: url(../img/decoration/blue-line.png);
+    }
+  }
+
+  .comment {
+    display: block;
+    padding: 60px 0;
+    background: #f8f8f8 url(../img/included-web.png) 50% 0 no-repeat;
+
+    &--header {
+      text-align: center;
+    }
+
+    &--head {
+      display: inline-block;
+
+      margin: 0;
+
+      border-bottom: 2px dashed #c2e0f3;
+      padding-bottom: 3px;
+    }
+  }
+}

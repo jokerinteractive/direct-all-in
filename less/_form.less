@@ -1,5 +1,6 @@
 .form {
-  &__text {
+  &__text,
+  &__textarea {
     padding: 12px 15px;
     outline: none;
     border: 1px solid fade(#fff, 33%);
@@ -12,5 +13,32 @@
     &:focus {
       background-color: fade(#fff, 20%);
     }
+
+    &__text:first-of-type {
+      margin-right: 26px;
+    }
+
+    &--big {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 366px;
+      margin-bottom: 15px;
+      padding: 15px;
+      background-color: hsla(0, 0%, 0%, .1);
+      box-shadow: inset 0 0 35px rgba(0, 0, 0, .1);
+      &:focus {
+        background-color: hsla(0, 0%, 0%, .2);
+      }
+    }
+  }
+
+  &__textarea {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    width: 466px;
+    resize: none;
   }
 }

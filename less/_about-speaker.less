@@ -1,0 +1,116 @@
+.about-speaker {
+  color: #000;
+  position: relative;
+  padding-bottom: 68px;
+  background: url(../img/founder/founder-texture-top-x.png) 0 1px repeat-x, linear-gradient(to bottom, transparent 85%, #fff 100%), url(../img/founder/founder-texture-bg.png) 0 0 repeat;
+
+  &::before {
+    position: absolute;
+    top: -36px;
+    left: 50%;
+
+    width: 169px;
+    height: 126px;
+
+    content: "";
+    transform: translateX(-50%);
+
+    background: url(../img/founder/founder-top-logo.png) 50% 50% no-repeat;
+  }
+
+  &__wrapper {
+    padding-top: 158px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &--left {
+      width: 308px;
+    }
+
+    .speaker-photo {
+
+      &__wrapper {
+        display: block;
+        border: 1px solid rgb(232, 229, 210);
+        border-radius: 50%;
+        background-color: #fff;
+        overflow: hidden;
+        width: 324px;
+        height: 324px;
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &--right {
+      width: 760px;
+    }
+
+    .speaker-descr {
+
+      &__coach {
+        color: rgb(122, 122, 122);
+        font-size: 23px;
+      }
+
+      &__name {
+        font-size: 53px;
+        font-weight: normal;
+        margin: 20px 0 7px;
+      }
+
+      &__text {
+        width: 680px;
+        margin: 0;
+        margin-bottom: 24px;
+        font-size: 18px;
+        line-height: 24px;
+
+
+        &:first-of-type {
+          font-size: 22px;
+          margin-bottom: 28px;
+        }
+      }
+    }
+  }
+
+  &__fact {
+    display: block;
+    margin: 50px auto 0;
+
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    .red {
+      color: #ff8395;
+    }
+  }
+
+  &__quote {
+    display: block;
+    padding: 12px 74px;
+    text-align: center;
+
+    &--text {
+      font-size: 33px;
+      line-height: 38px;
+      margin: 0 10% 30px;
+      font-style: italic;
+    }
+
+    &--comment {
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+}
