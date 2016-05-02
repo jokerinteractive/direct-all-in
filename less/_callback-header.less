@@ -1,8 +1,24 @@
 .callback-header {
+  position: relative;
+
   padding: 65px 60px;
+
   color: #fff;
+
   .header-arrow-background;
 
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    left: 0;
+
+    height: 2px;
+
+    content: "";
+
+    background: url("../img/header-dashed-line.svg") repeat-x 50% 0;
+  }
   h2 {
     margin-top: 0;
     margin-bottom: 24px;
@@ -10,32 +26,22 @@
 
   h1 {
     font-size: 65px;
-    font-weight: 500; // TODO Какой-то другой шрифт тут нужен...
+    font-family: "PT Sans Narrow", "Open Sans", arial, sans-serif;
   }
 
   &__content {
     display: flex;
+
     justify-content: space-between;
 
   }
-  &::after {
-    display: table;
-    clear: both;
-
-    content: "";
-  }
 
   &__left {
-    // float: left;
-
-    // min-width: 450px;
-    // max-width: 527px;
-    margin-right: 20px;
     width: 50%;
+    margin-right: 20px;
   }
 
   &__form {
-    // float: right;
 
     box-sizing: border-box;
     min-width: 233px;
