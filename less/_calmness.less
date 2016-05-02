@@ -1,23 +1,7 @@
-@import "__mixins";
-
-.wrap { .wrap; }
-
-span.dotted-underline {
-  padding-right: 27px;
-  padding-bottom: 16px;
-
-  padding-left: 27px;
-
-  background: url("../img/adwords-beige-dot.png") repeat-x 0 95%;
-}
-
-.adwords-calmness {
+.calmness {
   padding: 65px 12px 90px;
 
   color: #000;
-  background: url("../img/calmness-light-bg.png") repeat-x 50% 0;
-
-  &__wrap { .wrap; }
 
   h2 {
     margin-top: 0;
@@ -68,31 +52,46 @@ span.dotted-underline {
 
     border: 1px solid rgba(220, 225, 170, .85);
     border-radius: 50%;
-    background: url("../img/calmness-sprt.png") no-repeat 0 0;
+    background: url("../img/icons/safe.svg") no-repeat 50% 50%;
   }
 
-  &__feature-growth::after { background-position: 0 0; }
-  &__feature-strategy::after { background-position: 0 -96px; }
-  &__feature-reporting::after { background-position: 0 -192px; }
-  &__feature-partnership::after { background-position: -96px 0; }
-  &__feature-connect::after { background-position: -96px -96px; }
-  &__feature-training::after { background-position: -96px -192px; }
+  &__feature-growth::after { background-image: url("../img/icons/icon_diagram_1.svg"); }
+  &__feature-strategy::after { background-image: url("../img/icons/icon_strategy-growth.svg"); }
+  &__feature-reporting::after { background-image: url("../img/icons/icon_report.svg"); }
+  &__feature-partnership::after { background-image: url("../img/icons/icon_adwords-small.svg"); }
+  &__feature-connect::after { background-image: url("../img/icons/icon_mobile-phone.svg"); }
+  &__feature-training::after { background-image: url("../img/icons/icon_book.svg"); }
+
+  &__features {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  &__features-left,
+  &__features-right {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+  }
 
   &__features-left {
-    float: left;
+    margin-right: 12px;
 
     text-align: right;
 
     &-item {
       padding-right: 135px;
-
       padding-left: 40px;
     }
     &-item::after { right: 0; }
   }
 
   &__features-right {
-    float: right;
+    margin-left: 12px;
+
     &-item {
       padding-right: 40px;
       padding-left: 135px;
@@ -106,10 +105,13 @@ span.dotted-underline {
     padding-top: 210px;
     padding-bottom: 112px;
 
-    background: linear-gradient(to bottom, transparent 0, #fff 1%, #cdcdcd 57.42%, #b4b4b4 42.42%, #fff 99%, transparent 100%);
+    background: linear-gradient(to bottom, transparent 0, #fff 1%, #e7e7e7 57.42%, #ddd 42.42%, #fff 99%, transparent 100%);
 
     &-inside {
       position: relative;
+
+      display: flex;
+      flex-direction: row;
 
       box-sizing: border-box;
       min-height: 341px;
@@ -120,19 +122,21 @@ span.dotted-underline {
 
       font-size: 12px;
 
+      justify-content: space-between;
+      flex-wrap: nowrap;
+
       &::before,
       &::after {
         position: absolute;
-        top: -3px;
-        bottom: -3px;
+        top: 50%;
 
         width: 58px;
         min-height: 341px;
 
         content: "";
+        transform: translateY(-50%);
 
-        background: url("../img/promises-left-brace.png")  no-repeat 2px 50%;
-        background-size: cover;
+        background: url("../img/calmness/promises-left-brace.svg");
       }
 
       &::before {
@@ -142,14 +146,19 @@ span.dotted-underline {
       &::after {
         right: -58px;
 
-        transform: rotate(180deg);
+        transform: translateY(-50%) rotate(180deg);
       }
     }
 
     &-left {
-      float: left;
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
 
       max-width: 392px;
+
+      justify-content: flex-start;
 
       &-title {
         margin: 0;
@@ -169,8 +178,6 @@ span.dotted-underline {
     }
 
     &-right {
-      float: right;
-
       max-width: 480px;
       padding-left: 37px;
 
@@ -219,9 +226,14 @@ span.dotted-underline {
   }
 
   &__confidence {
-    background: url("../img/confidence-bg-dots-lines.png") 33% 99%;
+    padding-top: 84px;
 
-    .wrap { padding: 60px; }
+    // background: url("../img/calmness/confidence-bg-dots-lines.png") 33% 99%;
+    background: url("../img/calmness/confidence-bg-dots-lines.png") 36.5% 158%;
+
+    // .adwords-wrap { padding: 60px; }
+
+    &-content { display: flex; }
 
     &-title {
       margin: 0 0 70px;
@@ -259,10 +271,10 @@ span.dotted-underline {
     &-left,
     &-right {
       max-width: 453px;
-      float: left;
     }
 
-    &-left { margin-right: 9.58%; }
+    // &-left { margin-right: 9.58%; }
+    &-left { margin-right: 10.2%; }
 
     &-item:nth-of-type(1) { margin-bottom: 4.57%; }
     &-item:nth-of-type(2) { margin-bottom: 6.93%; }

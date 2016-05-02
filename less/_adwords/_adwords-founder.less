@@ -1,19 +1,11 @@
-@import "__mixins";
-
-.clearfix::after {
-  display: table;
-  clear: both;
-
-  content: "";
-}
-
 .adwords-founder {
   position: relative;
 
-  padding-top: 184px;
+  padding-top: 134px;
   padding-bottom: 130px;
 
-  background: url("../img/founder-texture-top-x.png") 0 0 repeat-x, linear-gradient(to bottom, transparent 85%, #fff 100%), url("../img/founder-texture-bg.png") 0 0 repeat;
+  color: #000;
+  background: url("../img/founder/founder-texture-top-x.png") 0 0 repeat-x, linear-gradient(to bottom, transparent 85%, #fff 100%), url("../img/founder/founder-texture-bg.png") 0 0 repeat;
 
   &::before {
     position: absolute;
@@ -26,108 +18,131 @@
     content: "";
     transform: translateX(-50%);
 
-    background: url("../img/founder-top-logo.png") 50% 50% no-repeat;
+    background: url("../img/founder/founder-top-logo.png") 50% 50% no-repeat;
   }
 
-  &__wrap { .wrap; }
-
   &__head {
-    &-image { float: left; }
+    display: flex;
+
+    margin-bottom: 65px;
+    padding-bottom: 10px;
+
+    &-image { margin-top: 4px; }
 
     &-texts {
-      float: left;
-
       max-width: 625px;
       margin-left: 61px;
     }
 
-    &-pre {
-      margin: 24px 0;
-
-      font-size: 16px;
-    }
+    &-pre { margin: 22px 0 17px; }
 
     &-title {
-      margin-top: 21px;
-      margin-bottom: 12px;
+      margin-top: 14px;
+      margin-bottom: 0;
 
-      font-size: 43px;
+      font-size: 57px;
       font-weight: 500;
     }
 
     &-subtitle {
       margin: 0;
-      margin-bottom: 43px;
+      margin-bottom: 35px;
+
+      color: #5f5f5f;
     }
+
+    &-description { font-size: 15px; }
   }
 
   &__achivements {
-    h3 { text-align: center; }
+    display: flex;
+
+    justify-content: flex-start;
+    &-title { text-align: center; }
 
     &-left {
-      float: left;
-
       box-sizing: border-box;
       max-width: 392px;
-      margin-right: 61px;
-      padding-left: 196px;
+      margin-right: 87px;
+      padding-left: 9%;
 
       &-item {
-        margin-bottom: 44px;
+        width: 171px;
+        margin-bottom: 30px;
 
         &-digit {
-          margin-bottom: 3px;
+          margin: 3px 0;
 
           border-bottom: 3px solid #338bc3;
 
-          font-size: 42px;
+          font-size: 57px;
           font-weight: 500;
         }
 
         .red-line { border-color: #ff2f4f; }
         .light-blue-line { border-color: #8fc6e9; }
 
-        &-text { margin-top: 3px; }
+        &-text {
+          max-width: 153px;
+          margin-top: 5px;
+
+          font-size: 14px;
+        }
       }
     }
 
     &-right {
       float: left;
 
-      max-width: 625px;
+      box-sizing: border-box;
+      max-width: 606px;
 
       &-item {
         position: relative;
 
         margin-top: 0;
         padding-left: 37px;
-      }
-      &-item::before {
-        position: absolute;
-        top: 10px;
-        left: 0;
 
-        width: 10px;
-        height: 10px;
+        font-size: 17px;
 
-        content: "";
+        &::before {
+          position: absolute;
+          top: 9px;
+          left: 0;
 
-        border-radius: 50%;
-        background: #338bc3;
+          width: 10px;
+          height: 10px;
+
+          content: "";
+
+          border-radius: 50%;
+          background: #338bc3;
+        }
       }
     }
   }
 
   &__reviews {
     margin-bottom: 41px;
-    &-title { text-align: center; }
+
+    &-title {
+      margin-top: 27px;
+      margin-bottom: 40px;
+
+      text-align: center;
+
+      font-weight: 600;
+    }
 
     &-item {
       position: relative;
 
+      display: flex;
+
       box-sizing: border-box;
       max-width: 955px;
       margin: 10px auto;
+      padding-bottom: 45px;
 
       border: 1px solid #e7e7e7;
       border-radius: 23px;
@@ -142,13 +157,14 @@
         width: 52px;
         height: 52px;
 
+        cursor: pointer;
         transform: translateY(-50%);
         text-align: center;
 
         color: #d0d0d0;
         border: 1px solid #ececec;
         border-radius: 50%;
-        background: url("../img/reviews-sprt.png") no-repeat 0 0;
+        background: url("../img/founder/reviews-sprt.png") no-repeat 0 0;
 
         font-size: 0;
         line-height: 52px;
@@ -172,8 +188,6 @@
       }
 
       &-image {
-        float: left;
-
         box-sizing: border-box;
         min-width: 225px;
         max-width: 294px;
@@ -193,13 +207,11 @@
 
           content: "";
 
-          background: url("../img/reviews-sprt.png") no-repeat -59px -11px;
+          background: url("../img/founder/reviews-sprt.png") no-repeat -59px -11px;
         }
       }
 
       &-texts {
-        float: right;
-
         max-width: 610px;
         margin-right: 5.235%;
         padding-top: 40px;
@@ -221,12 +233,13 @@
       }
 
       &-slider {
-        display: block;
-        clear: both;
+        position: absolute;
+        bottom: 22px;
+        left: 50%;
 
         width: 100%;
-        padding: 22px 0;
 
+        transform: translateX(-50%);
         text-align: center;
 
         font-size: 0;
@@ -243,13 +256,15 @@
           cursor: pointer;
 
           border-radius: 50%;
-          background: #f2f2f2;
+          // background: #f2f2f2;
         }
 
-        #review-1:checked ~ &-point[for="review-1"] { background: #368cc3; }
-        #review-2:checked ~ &-point[for="review-2"] { background: #368cc3; }
-        #review-3:checked ~ &-point[for="review-3"] { background: #368cc3; }
-        #review-4:checked ~ &-point[for="review-4"] { background: #368cc3; }
+        #review-1:checked ~ &-point[for="review-1"],
+        #review-2:checked ~ &-point[for="review-2"],
+        #review-3:checked ~ &-point[for="review-3"],
+        #review-4:checked ~ &-point[for="review-4"] {
+          background: #368cc3;
+        }
 
       }
     }
@@ -260,19 +275,23 @@
 
     &-title { text-align: center; }
     &-block {
-      &-item {
-        float: left;
+      display: flex;
+      flex-direction: row;
 
+      flex-wrap: wrap;
+
+      &-item {
         width: 328px;
         margin: auto 2%;
 
         &-text {
-          margin: 0;
+          margin: 10px 0;
 
           text-align: center;
+
+          font-size: 18px;
         }
       }
-      &-item:nth-of-type(2n) { margin: auto 5%; }
     }
   }
 }

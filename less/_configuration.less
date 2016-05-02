@@ -27,6 +27,7 @@ span.dotted-underline {
   &__subtitle {
     margin: 0;
     margin-bottom: 35px;
+
     line-height: 34px;
   }
 
@@ -34,7 +35,6 @@ span.dotted-underline {
     display: block;
 
     max-width: 1000px;
-
     margin: 35px auto;
 
     border: 1px solid rgba(105, 105, 105, .25);
@@ -89,7 +89,6 @@ span.dotted-underline {
 
     &-title {
       margin: 0 11px;
-
       padding: 20px;
 
       border-bottom: 3px solid #e5e5e5;
@@ -98,16 +97,85 @@ span.dotted-underline {
         vertical-align: top;
 
         line-height: 30px;
+        font-size: 26px;
       }
     }
 
+    &-content {
+      display: flex;
+      flex-direction: row;
+
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
     &-item {
-      float: left;
+      display: flex;
+      flex-direction: column;
 
       box-sizing: border-box;
       width: 333px;
       padding: 24px;
 
+      font-size: 16px;
+
+      justify-content: space-around;
     }
+
+    &--list {
+      display: block;
+      padding: 60px 0;
+      width: 800px;
+
+      .list-item {
+        display: block;
+
+        margin-top: 0;
+        margin-bottom: 15px;
+
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+
+        &__num {
+          color: red;
+          margin-right: 10px;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.adwords-configuration {
+  &__item-image {
+    display: block;
+
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+
+    border: 2px solid #c2e0f3;
+    border-radius: 6px;
+    background: url("../img/adwors-configuration-sprt.svg") no-repeat 0 0;
+
+    &-CTR { background-position: 0 0; }
+    &-AB { background-position: -69px 0; }
+    &-monitoring { background-position: -137px 0; }
+
+    &-insight { background-position: 0 -70px; }
+    &-implementation { background-position: -70px -70px; }
+    &-month { background-position: -140px -70px; }
+
+    &-optimization { background-position: 0 -140px; }
+    &-frequency { background-position: -70px -140px; }
+    &-retargeting { background-position: -140px -140px; }
+
+    &-KMC { background-position: 0 -210px; }
+    &-ads { background-position: -70px -210px; }
+
   }
 }
