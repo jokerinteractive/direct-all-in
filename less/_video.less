@@ -1,25 +1,25 @@
 .video {
   color: #fff;
-  background: #ccc url(../img/subscriptions/video.jpg) -30px -203px;
-  padding: 70px 0 79px 40px;
+  background: #0f3c5b url(../img/subscriptions/video.jpg) -30px -203px;
 
   &__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 70px 0 79px 40px;
+    box-sizing: border-box;
   }
 
   &__iframe {
-    width: 55%;
+    width: 760px;
     height: 475px;
     background-color: #000;
     border: none;
   }
 
   .video-info {
-    padding-left: 10px;
-    width: 40%;
+    width: 380px;
     min-height: 475px;
     position: relative;
     display: flex;
@@ -33,6 +33,7 @@
       &--watch {
         font-size: 35px;
         margin: 0 0 10px;
+        line-height: 1.4;
       }
 
       &--choose {
@@ -53,8 +54,9 @@
     &__bottom {
       &--like {
         font-size: 18px;
+        line-height: 1.4;
         margin: 0;
-        margin-bottom: 10px;
+        margin-bottom: 16px;
         color: #aadcff;
       }
 
