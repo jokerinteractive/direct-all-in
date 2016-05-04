@@ -7,13 +7,17 @@ var isOnProduction = !!argv.production;
 
 var
   fs = require('fs'),
+  del = require('del'),
   gulp = require('gulp'),
   jade = require('gulp-jade'),
   less = require('gulp-less'),
   notify = require('gulp-notify'),
   rename = require('gulp-rename'),
+  uglify = require('gulp-uglify'),
+  deploy = require('gulp-gh-pages'),
   plumber = require('gulp-plumber'),
   postcss = require('gulp-postcss'),
+  imagemin = require('gulp-imagemin'),
   syntax_less = require('postcss-less'),
   reporter = require('postcss-reporter'),
   flexboxfixer = require('postcss-flexboxfixer'),
@@ -32,16 +36,48 @@ var
       location: './jade/**/*.jade',
       compiled: './jade/_pages/*.jade',
       data: './jade/_data/',
-      destination: '.'
+      destination: './build'
     },
 
     style: {
       location: './less/style.less',
       watch: ['./less/*.less', './less/_*/*.less'],
       entryPoint: './css/style.css',
-      destination: './css'
+      destination: './build/css'
     }
   };
+
+/* --------- clean build folder --------- */
+
+gulp.task('clean', function () {
+  return del('build/**/*');
+});
+
+/* --------- js compress --------- */
+
+gulp.task('js', function () {
+  return gulp.src('js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/js'));
+});
+
+/* --------- img compress --------- */
+
+  gulp.task('images', function() {
+  return gulp.src('img/**/*.{png,jpg,gif,svg}')
+    .pipe(imagemin({
+      optimizationLevel: 3,
+      progressive: true
+    }))
+    .pipe(gulp.dest('build/img'));
+});
+
+/* --------- push build to gh-pages --- */
+
+gulp.task('deploy', ['clean', 'style', 'jade', 'js', 'images'], function () {
+  return gulp.src(['./build/**/*'])
+    .pipe(deploy())
+});
 
 /* --------- jade --------- */
 
@@ -65,7 +101,7 @@ gulp.task('jade', function () {
     });
   }
 
-  gulp.src(paths.jade.compiled)
+  return gulp.src(paths.jade.compiled)
     .pipe(plumber({
       errorHandler: notify.onError('Error:  <%= error.message %>')
     }))
@@ -94,7 +130,7 @@ gulp.task('styletest', function () {
     })
   ];
 
-  gulp.src(paths.style.watch)
+  return gulp.src(paths.style.watch)
     .pipe(plumber())
     .pipe(postcss(processors, {
       syntax: syntax_less
@@ -104,7 +140,7 @@ gulp.task('styletest', function () {
 /* --------- style --------- */
 
 gulp.task('style', ['styletest'], function () {
-  gulp.src(paths.style.location)
+  return gulp.src(paths.style.location)
     .pipe(plumber({
       errorHandler: notify.onError('Error:  <%= error.message %>')
     }))
