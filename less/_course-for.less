@@ -1,0 +1,97 @@
+.course-for {
+  padding: 60px 0 10px;
+
+  &__header {
+    display: block;
+    text-align: center;
+    font-size: 34px;
+    padding-top: 8px;
+    margin-bottom: 30px;
+  }
+
+  &-list {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 30px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/decoration/red-line.png);
+    }
+
+    &__item {
+      display: flex;
+
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 20px;
+      margin-bottom: 71px;
+
+      &:first-of-type {
+        margin-top: 58px;
+      }
+
+      &::before {
+        content: "";
+        width: 96px;
+        height: 96px;
+        display: inline-block;
+        border: 1px solid rgb(183, 183, 183);
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 12px;
+        margin-right: 43px;
+      }
+
+      &.business::before {
+        background-image: url(../img/icons/infoBusinessman.svg);
+      }
+
+      &.study::before {
+        background-image: url(../img/icons/alumniBusinessTren.svg);
+      }
+
+      &.nothing::before {
+        background-image: url(../img/icons/doingNothing.svg);
+      }
+
+      &.answer::before {
+        background-image: url(../img/icons/answer.svg);
+      }
+
+      &.pay::before {
+        background-image: url(../img/icons/pay.svg);
+      }
+
+      &.newLessons::before {
+        background-image: url(../img/icons/newLessons.svg);
+      }
+
+      &--wrapper {
+        display: block;
+        width: 550px;
+        text-align: left;
+      }
+
+      &--header {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      &--text {
+        margin: 0;
+        font-weight: normal;
+        font-size: 18px;
+      }
+    }
+  }
+}

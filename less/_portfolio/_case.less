@@ -1,24 +1,41 @@
 .clients__case {
-  padding: 60px 0;
+  background: #fff url(../img/portfolio/thnx-bg.png) no-repeat top center;
+
+  &--wrapper {
+    padding: 80px 0 105px;
+  }
 
   &--header {
     font-size: 34px;
     text-align: center;
+    margin-top: 8px;
   }
 
   &--article {
     display: flex;
     width: 970px;
-    margin: 40px auto 0;
+    margin: 20px auto 0;
     flex-direction: row;
     justify-content: space-between;
+
+    &:first-of-type {
+      margin-top: 60px;
+    }
   }
 
   &--screen {
     display: block;
     width: 276px;
-    height: 230px;
-    background-color: #ccc;
+    height: 200px;
+
+    &.screen-1 {
+      background-image: url('../img/portfolio/case-1.jpg');
+    }
+
+    &.screen-2 {
+      background-image: url('../img/portfolio/case-2.jpg');
+    }
+
   }
 
   &--img {
@@ -28,18 +45,21 @@
 
   .case-text {
     display: block;
-    width: 660px;
+    width: 670px;
 
     &__header {
-      font-size: 24px;
+      font-size: 27px;
     }
 
     &__descr {
-      font-size: 18px;
-    }
-
-    &__link {
       display: block;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 5px;
+
+      &--link {
+        display: block;
+      }
     }
   }
 }

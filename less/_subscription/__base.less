@@ -1,18 +1,18 @@
 /* TODO: вынести в ./less/_subscription.less */
 .subscription {
-  *, /* TODO: попахивает хаками, зачем это?) */
+  *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
 
-  .wrapper { /* TODO: зачем каскад в блоке .subscription? */
+  .wrapper {
     display: block;
     margin: 0 auto;
-    max-width: 1152px;
+    width: 1200px;
   }
 
-  .clearfix { /* TODO: зачем каскад в блоке .subscription? */
+  .clearfix {
 
     &::before,
     &::after {
