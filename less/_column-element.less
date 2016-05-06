@@ -1,0 +1,36 @@
+.column-element {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 93px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__wrapper {
+    display: block;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid rgb(194, 224, 243);
+    background-color: #fff;
+
+    &--img {
+      display: block;
+      position: absolute;
+      width: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__text {
+    font-size: 17px;
+    text-align: center;
+    margin: 23px 0 30px;
+    line-height: 1.5;
+  }
+}

@@ -1,7 +1,4 @@
 @import "__mixins";
-@import "_better";
-@import "_subscription/_test";
-@import "_subscription/__base";
 @import "_subscription/_main";
 @import "_subscription/_effective";
 @import "_about-speaker";
@@ -11,10 +8,10 @@
   background: url(../img/subscriptions/bg.jpg) 50% 100% #0f3c5b;
 
   color: #fff;
+  .box-sizing();
 
   &__wrap {
     .wrap();
-    padding-right: 0;
   }
 
   &__column {
