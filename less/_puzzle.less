@@ -10,7 +10,8 @@
 .adwords-puzzle {
   padding-top: 145px;
 
-  background: url("../img/puzzles/puzzle-top-bg.svg") repeat-x 50% 0, url("../img/puzzles/puzzle-top-bg-light.svg") no-repeat ~"50% 0/100% auto", url("../img/puzzles/puzzles-bg.png") no-repeat 50% 95%;
+  // background: url("../img/puzzles/puzzle-top-bg.svg") repeat-x 50% 0, url("../img/puzzles/puzzle-top-bg-light.svg") no-repeat ~"50% 0/100% auto", url("../img/puzzles/puzzles-bg.png") no-repeat 50% 95%;
+  background: url("../../img/puzzles/puzzle-bg-top.png") no-repeat 50% -55px, url("../../img/puzzles/puzzles-bg.png") no-repeat 50% 95%;
 
   &__wrap {
     padding-left: 8.16%;
@@ -136,6 +137,7 @@
     border: 1px solid rgba(196, 196, 196, .85);
     border-radius: 20px;
     box-shadow: 0 9px rgba(0, 0, 0, .15);
+    background: url("../../img/puzzles/puzzle-specs-bg.svg") no-repeat ~"50% 50%/110% auto";
   }
 
   &__specialists-description {
@@ -176,19 +178,6 @@
 
     text-align: center;
 
-    &::after {
-      position: absolute;
-      z-index: -2;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-
-      content: "";
-
-      background: url("../img/puzzles/left-top.png") no-repeat 50% 50%;
-    }
-
     &-image {
       position: absolute;
       bottom: 70px;
@@ -211,29 +200,6 @@
       font-size: 10px;
       line-height: 13px;
     }
-  }
-
-  &__spec:nth-of-type(1)::after {
-    z-index: -1;
-    right: -41px;
-    bottom: -43px;
-
-    background: url("../img/puzzles/left-top.png");
-  }
-
-  &__spec:nth-of-type(2)::after {
-    z-index: -1;
-    bottom: -43px;
-
-    background: url("../img/puzzles/right-top.png");
-  }
-
-  &__spec:nth-of-type(3)::after { background: url("../img/puzzles/left-bottom.png"); }
-
-  &__spec:nth-of-type(4)::after {
-    left: -41px;
-
-    background: url("../img/puzzles/right-bottom.png");
   }
 
   &__spec:nth-of-type(3),

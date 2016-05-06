@@ -1,8 +1,8 @@
 include ../_common/_doctype
 
 body
-  header.header
-    include ../_common/_header__navbar
+  header.header.header--padding
+    include ../_common/_header__navbar--nomenu
   section.subscription
     .subscription__wrap.clearfix
       .subscription__column--left.yandex-course
@@ -13,7 +13,7 @@ body
         h3.yandex-course__from От Филиппа Царевского
         p.yandex-course__feedback "Самый исчерпывающий и структурированный на рынке"
         p.yandex-course__by (по отзывам подписчиков)
-      .subscription__column--right.get-course
+      .subscription__column--right.get-course.get-course--subscribe
         h3.get-course__header 12 пошаговых уроков, по
           br
           | одному каждый день
@@ -34,7 +34,7 @@ body
             | Кто-то снижает расходы, кто-то увеличивает количество заявок или повышает их качество, кому-то удается поднять средний чек.
           p.effective__text
             | Рекламодатели смогут легко отличить дилетанта от профессионала, а директологи (или специалисты по контекстной рекламе, если угодно) повысят свою экспертность и будут дороже продавать свои услуги.
-    .wrapper.subscription__effective--wrapper
+    .subscription__wrap.subscription__effective--wrapper
       article.subscription__effective--content.effective-content
         h3.effective-content__header
           | За счёт чего это происходит?
@@ -116,7 +116,7 @@ body
                 | Будете в курсе всех тенденций и новинок.
 
   section.video
-    .wrapper.video__wrapper
+    .subscription__wrap.video__wrapper
       iframe.video__iframe(src="http://www.youtube.com/embed/O1YwexOF0Gc?autoplay=0")
 
       .video__info.video-info
@@ -213,7 +213,7 @@ body
         | Пройти тест
 
   section.about-speaker
-    .wrapper.about-speaker__wrapper
+    .subscription__wrap.about-speaker__wrapper
 
       header.about-speaker__header
 
