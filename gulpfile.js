@@ -200,6 +200,8 @@ if (!isOnProduction) {
   allTasks.push('serve');
 }
 
+gulp.task('build', ['clean', 'style', 'jade', 'images', 'js']);
+
 gulp.task('default', allTasks, function () {
   if (!isOnProduction) {
     gulp.watch(paths.style.watch, ['style', server.stream]);
