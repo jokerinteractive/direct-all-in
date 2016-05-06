@@ -10,17 +10,32 @@
     box-sizing: inherit;
   }
 
+  .get-course {
+    padding-top: 18px;
+    padding-bottom: 50px;
+
+    &__details {
+      padding-bottom: 16px;
+      padding-left: 20px;
+      margin-top: 33px;
+    }
+  }
 
   .header__navbar {
     padding-bottom: 10px;
   }
 
   .about-speaker {
+
     background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 0/cover;
 
-    &:before {
-      content: "";
-      display: none;
+    &__wrapper {
+      padding-top: 70px;
+
+      &::before {
+        content: "";
+        display: none;
+      }
     }
   }
 
@@ -31,9 +46,15 @@
     //margin-top: -100px;
 
     &-info__top {
+      &--watch {
+        font-size: 34px;
+        margin-bottom: 26px;
+      }
       &--choose {
         font-size: 24px;
+        line-height: 36px;
         font-weight: normal;
+        margin-bottom: 20px;
       }
 
       &--text {
@@ -52,8 +73,14 @@
 
   .comment {
     display: block;
-    padding: 60px 0;
     background: #f8f8f8 url(../img/included-web.png) 50% 0 no-repeat;
+
+    &__wrapper {
+      display: block;
+      position: relative;
+
+      padding: 60px 0;
+    }
 
     &--header {
       text-align: center;
@@ -66,6 +93,14 @@
 
       border-bottom: 2px dashed #c2e0f3;
       padding-bottom: 3px;
+    }
+  }
+
+  .configuration {
+    padding-top: 40px;
+
+    &__browser {
+      margin-top: 0;
     }
   }
 }

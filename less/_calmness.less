@@ -227,11 +227,19 @@
 
   &__confidence {
     padding-top: 84px;
+    position: relative;
 
-    // background: url("../img/calmness/confidence-bg-dots-lines.png") 33% 99%;
-    background: url("../img/calmness/confidence-bg-dots-lines.png") 36.5% 158%;
-
-    // .adwords-wrap { padding: 60px; }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1270px;
+      left: 50%;
+      top: 0;
+      bottom: 100%;
+      background: url("../img/calmness/confidence-bg-dots-lines.png") -85px 162px no-repeat;
+      height: 100%;
+      transform: translateX(-50%);
+    }
 
     &-content { display: flex; }
 

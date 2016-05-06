@@ -1,33 +1,35 @@
 .achieve {
-  padding: 60px 0;
-  background: #fafafa no-repeat 50% 0;
-  background-image: url(../img/configuration-top-bg.png);
+  background: #fafafa url(../img/configuration-top-bg.png) no-repeat 50% 0;
+
+  &__wrapper {
+    padding: 100px 0 0;
+  }
 
   &__header {
-    font-size: 32px;
+    font-size: 34px;
     line-height: 38px;
     text-align: center;
   }
 
   &__flex {
     display: flex;
-    margin-top: 60px;
+    margin-top: 75px;
 
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
 
     &--item {
       display: block;
 
-      width: 200px;
+      width: 160px;
     }
 
     &--wrapper {
       display: block;
       position: relative;
 
-      width: 100%;
-      height: 200px;
+      width: 140px;
+      height: 140px;
 
       background-color: #fff;
       border-radius: 50%;
@@ -37,14 +39,14 @@
       display: block;
       position: absolute;
 
-      width: 100px;
-      height: 100px;
+      width: 65px;
+      height: 65px;
 
       top: 50%;
       left: 50%;
 
-      margin-top: -50px;
-      margin-left: -50px;
+      margin-top: -32px;
+      margin-left: -32px;
     }
 
     &--text {
