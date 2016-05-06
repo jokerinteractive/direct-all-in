@@ -9,7 +9,7 @@
   background: #fff;
   box-shadow: 1px 4px 14px rgba(0, 0, 0, .08);
 
-  &-top {
+  &__top {
     position: relative;
 
     display: block;
@@ -22,7 +22,7 @@
     background: #f4f4f4;
   }
 
-  &-url {
+  &__url {
     margin: 0;
 
     font-size: 10px;
@@ -30,7 +30,7 @@
     line-height: 23px;
   }
 
-  &-buttons {
+  &__buttons {
     position: absolute;
     top: 7px;
     left: 10px;
@@ -39,7 +39,7 @@
     margin: 0;
   }
 
-  &-button {
+  &__button {
     float: left;
 
     width: 13px;
@@ -54,7 +54,7 @@
     &:nth-of-type(3) { background: #39b54a; }
   }
 
-  &-title {
+  &__title {
     margin: 0 11px;
     padding: 20px;
 
@@ -67,7 +67,7 @@
     }
   }
 
-  &-content {
+  &__content {
     display: flex;
     flex-direction: row;
 
@@ -75,7 +75,7 @@
     flex-wrap: wrap;
   }
 
-  &-item {
+  &__item {
     display: flex;
     flex-direction: column;
 
@@ -85,7 +85,7 @@
 
     font-size: 16px;
 
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 }
 
@@ -97,26 +97,47 @@
   margin: 0 auto;
 
   border: 2px solid #c2e0f3;
+
   border-radius: 6px;
-  background: url("../img/browser-sprt.svg") no-repeat 0 0;
+
+  background: url("../img/icons/searchDoc.svg") no-repeat 50% 50%;
+  background-size: 70%;
 }
 
-.browser__item-image-cursor() { background-position: 0 0; }
-.browser__item-image-AB() { background-position: -70px 0; }
-.browser__item-image-target() { background-position: -140px 0; }
+.browser__item-image-cursor() {
+  background-image: url("../img/icons/cursor.svg");
+  background-size: 100%;
+}
 
-.browser__item-image-microscope() { background-position: 0 -70px; }
-.browser__item-image-glasses() { background-position: -70px -70px; }
-.browser__item-image-month() { background-position: -140px -70px; }
+.browser__item-image-AB() {
+  background-image: url("../img/icons/AB.svg");
+  background-size: 100%;
+}
 
-.browser__item-image-atom() { background-position: 0 -140px; }
-.browser__item-image-increase() { background-position: -70px -140px; }
-.browser__item-image-molecula() { background-position: -140px -140px; }
+.browser__item-image-target() { background-image: url("../img/icons/target.svg"); }
 
-.browser__item-image-search() { background-position: 0 -210px; }
-.browser__item-image-network() { background-position: -70px -210px; }
-.browser__item-image-tablet() { background-position: -140px -210px; }
+.browser__item-image-microscope() {
+  background-image: url("../img/icons/microscope.svg");
+  background-size: 100%;
+}
 
-.browser__item-image-notes() { background-position: 0 -280px; }
-.browser__item-image-loupe() { background-position: -70px -280px; }
-.browser__item-image-growth() { background-position: -140px -280px; }
+.browser__item-image-glasses() { background-image: url("../img/icons/glasses.svg"); }
+.browser__item-image-month() { background-image: url("../img/icons/calendar_1month.svg"); }
+
+.browser__item-image-atom() {
+  background-image: url("../img/icons/atom.svg");
+  background-size: 100%;
+}
+.browser__item-image-increase() { background-image: url("../img/icons/highConversion.svg"); }
+.browser__item-image-molecula() { background-image: url("../img/icons/molecular.svg"); }
+
+.browser__item-image-search() { background-image: url("../img/icons/searchDoc.svg"); }
+.browser__item-image-network() { background-image: url("../img/icons/brunches.svg"); }
+.browser__item-image-tablet() {
+  background-image: url("../img/icons/settings.svg");
+  background-size: 60%;
+}
+
+.browser__item-image-notes() { background-image: url("../img/icons/note.svg"); }
+.browser__item-image-loupe() { background-image: url("../img/icons/zoomIn.svg"); }
+.browser__item-image-growth() { background-image: url("../img/icons/growth.svg"); }

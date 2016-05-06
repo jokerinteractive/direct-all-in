@@ -1,4 +1,5 @@
 @import "__mixins";
+@import "__browser";
 
 .wrap { .wrap(); }
 
@@ -149,30 +150,23 @@ span.dotted-underline {
 
 .adwords-configuration {
   &__item-image {
-    display: block;
 
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
+    .browser__item-image;
 
-    border: 2px solid #c2e0f3;
-    border-radius: 6px;
-    background: url("../img/adwors-configuration-sprt.svg") no-repeat 0 0;
+    &-CTR { .browser__item-image-cursor; }
+    &-AB { .browser__item-image-AB; }
+    &-monitoring { .browser__item-image-target; }
 
-    &-CTR { background-position: 0 0; }
-    &-AB { background-position: -69px 0; }
-    &-monitoring { background-position: -137px 0; }
+    &-insight { .browser__item-image-microscope; }
+    &-implementation { .browser__item-image-glasses; }
+    &-month { .browser__item-image-month; }
 
-    &-insight { background-position: 0 -70px; }
-    &-implementation { background-position: -70px -70px; }
-    &-month { background-position: -140px -70px; }
+    &-optimization { .browser__item-image-atom; }
+    &-frequency { .browser__item-image-increase; }
+    &-retargeting { .browser__item-image-molecula; }
 
-    &-optimization { background-position: 0 -140px; }
-    &-frequency { background-position: -70px -140px; }
-    &-retargeting { background-position: -140px -140px; }
-
-    &-KMC { background-position: 0 -210px; }
-    &-ads { background-position: -70px -210px; }
+    &-KMC { .browser__item-image-search(); }
+    &-ads { .browser__item-image-network(); }
 
   }
 }
