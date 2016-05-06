@@ -58,7 +58,7 @@ gulp.task('clean', function () {
 gulp.task('js', function () {
   return gulp.src('js/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('./build/js'));
+    .pipe(gulp.dest('build/js'));
 });
 
 /* --------- img compress --------- */
@@ -74,7 +74,7 @@ gulp.task('js', function () {
 
 /* --------- push build to gh-pages --- */
 
-gulp.task('deploy', ['clean', 'style', 'jade', 'js', 'images'], function () {
+gulp.task('deploy', ['style', 'jade', 'js', 'images'], function () {
   return gulp.src(['./build/**/*'])
     .pipe(deploy())
 });
