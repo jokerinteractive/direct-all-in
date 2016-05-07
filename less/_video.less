@@ -94,4 +94,28 @@
       }
     }
   }
+
+  &--webinar { //блок перекрывает предыдущий и z-index не спасает
+    display: block;
+    background: #fff url(../img/video-bg.png) no-repeat 50% 50%/cover;
+
+    //margin-top: -100px;
+
+    .video-info__top {
+      &--watch {
+        font-size: 34px;
+        margin-bottom: 26px;
+      }
+      &--choose {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: normal;
+        margin-bottom: 20px;
+      }
+
+      &--text {
+        font-size: 24px;
+      }
+    }
+  }
 }
