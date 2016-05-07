@@ -1,7 +1,7 @@
 include ../_common/_doctype
 
 body
-  wrapper.portfolio
+  .portfolio
 
     header.header
       include ../_common/_header__navbar
@@ -11,7 +11,7 @@ body
         | Портфолио
 
     section.clients
-      wrapper.wrapper.clients__wrapper
+      .portfolio__wrap.clients__wrapper
 
         header.clients__header
           h3.clients__header--text
@@ -24,7 +24,7 @@ body
           header.clients__pics--header
             | Клиенты, которые уже доверили нам свои рекламные компании:
 
-          wrapper.clients__pics--wrapper
+          .clients__pics--wrapper
             .clients__pics--block.block-1
             .clients__pics--block.block-2
             .clients__pics--block.block-3
@@ -32,7 +32,7 @@ body
             .clients__pics--block.block-5
             .clients__pics--block.block-6
 
-          wrapper.clients__pics--wrapper
+          .clients__pics--wrapper
             .clients__pics--block.block-7
             .clients__pics--block.block-8
             .clients__pics--block.block-9
@@ -42,7 +42,7 @@ body
     section.clients__video
       header.clients__video--header
         | Посмотрите видеоотзывы от довольных клиентов:
-      wrapper.clients__video--slider.slider
+      .clients__video--slider.slider
 
         //На текст в ссылке завязан JS. Осторожно!
 
@@ -72,10 +72,10 @@ body
           img.clients__video--button(src="./img/icons/next.svg", alt="next")
 
     section.clients__thnx
-      wrapper.wrapper.clients__thnx--wrapper
+      .portfolio__wrap.clients__thnx--wrapper
         header.clients__thnx--header
           | Благодарственные письма
-        wrapper.clients__thnx--flex
+        .clients__thnx--flex
           .clients__thnx--item
             img.clients__thnx--img(src="./img/portfolio/letters/1.png", alt="")
           .clients__thnx--item
@@ -86,13 +86,13 @@ body
             img.clients__thnx--img(src="./img/portfolio/letters/4.png", alt="")
 
     section.clients__case
-      wrapper.wrapper.clients__case--wrapper
+      .portfolio__wrap.clients__case--wrapper
         header.clients__case--header
           | Кейсы
 
         article.clients__case--article
           .clients__case--screen.screen-1
-          wrapper.clients__case--text.case-text
+          .clients__case--text.case-text
             header.case-text__header
               | История ведения кампании в Яндекс.Директ
             p.case-text__descr
@@ -103,7 +103,7 @@ body
 
         article.clients__case--article
           .clients__case--screen.screen-2
-          wrapper.clients__case--text.case-text
+          .clients__case--text.case-text
             header.case-text__header
               | Выжили благодаря аналитике
             p.case-text__descr
