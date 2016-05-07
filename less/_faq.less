@@ -1,17 +1,7 @@
 .faq {
 
-  .header {
-    &__title > small {
-      display: block;
-      margin: 0 auto;
-
-      width: 814px;
-
-      font-size: 18px;
-      font-weight: normal;
-      line-height: 24px;
-      text-align: center;
-    }
+  &__wrap {
+    .wrap();
   }
 
   &__questions {
@@ -40,51 +30,6 @@
 
       &:last-of-type {
         margin-bottom: 0;
-      }
-    }
-
-    .question-item {
-
-      &__header {
-        display: inline-block;
-        padding-bottom: 3px;
-
-        font-size: 24px;
-        border-bottom: 2px dashed #ff8395;
-      }
-
-      &__text {
-        display: block;
-
-        margin: 0;
-        margin-top: 20px;
-
-        font-size: 18px;
-        line-height: 22px;
-
-        b {
-          font-weight: bold;
-        }
-
-        &--link {
-          color: #11adfe;
-        }
-      }
-    }
-  }
-
-  .footer {
-    &__call-us {
-
-      &-title {
-        font-size: 30px;
-        line-height: 36px;
-
-        & > small {
-          display: block;
-          margin-top: 5px;
-          font-size: 20px;
-        }
       }
     }
   }

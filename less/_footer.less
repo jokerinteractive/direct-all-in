@@ -1,4 +1,4 @@
-@import "__mixins"; // TODO: move all imports to style
+@import "__mixins";
 
 .footer {
   background: #232d57 url(../img/bg-footer.jpg) no-repeat 50% 50%/cover;
@@ -55,6 +55,19 @@
     padding-top: 60px;
     padding-bottom: 40px;
     text-align: center;
+
+    &--big {
+      .footer__call-us-title {
+        font-size: 30px;
+        line-height: 36px;
+
+        & > small {
+          display: block;
+          margin-top: 5px;
+          font-size: 20px;
+        }
+      }
+    }
   }
 
   &__call-us-title {

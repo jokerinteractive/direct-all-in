@@ -1,16 +1,16 @@
 include ../_common/_doctype
 
 body
-  wrapper.faq
+  .faq
 
     header.header
       include ../_common/_header__navbar
 
-      h1.header__title Часто задаваемые вопросы
+      h1.header__title.header__title--big Часто задаваемые вопросы
         small За время работы потенциальные клиенты задали нам десятки вопросов. Мы выделили самые популярные из них и разместили на этой странице. Так вы сможете лучше понять наш подход и принять взвешенное решение о сотрудничестве с нами.
 
     section.faq__questions
-      wrapper.wrapper.faq__questions--wrapper
+      .faq__wrap.faq__questions--wrapper
         ul.faq__questions--list
           li.faq__questions--item.question-item
             header.question-item__header
@@ -183,7 +183,7 @@ body
 
     footer.footer
 
-      .footer__call-us
+      .footer__call-us.footer__call-us--big
         h4.footer__call-us-title Остались вопросы без ответа?
           small Задайте их через форму, и мы ответим в ближайшее время:
 
