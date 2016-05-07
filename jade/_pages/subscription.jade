@@ -4,7 +4,7 @@ body
   header.header.header--padding
     include ../_common/_header__navbar--nomenu
   section.subscription
-    .subscription__wrap.clearfix
+    .subscription__wrap.clearfix.subscription__wrap--main
       .subscription__column--left.yandex-course
         h3.yandex-course__call Пройди бесплатный курс по
         .yandex-course__logo
@@ -19,8 +19,8 @@ body
           | одному каждый день
         p.get-course__details Нюансы, которых не знает 95% рекламодателей и 70% специалистов (данные основаны на сотнях аудитов и консультаций)
         form.form(action="")
-          input.form__text.get-course__input-text(type="text" placeholder="Введите ваш e-mail")
-          input.btn.get-course__btn(type="submit" value="Получить уроки")
+          input.form__text.form__text--big.get-course__input-text(type="text" placeholder="Введите ваш e-mail")
+          input.btn.btn--main.get-course__btn(type="submit" value="Получить уроки")
 
   section.effective
     header.effective__header
@@ -212,7 +212,7 @@ body
       a.btn.btn--main.test__btn(href="")
         | Пройти тест
 
-  section.about-speaker
+  section.about-speaker.about-speaker--subscribe
     .subscription__wrap.about-speaker__wrapper
 
       header.about-speaker__header
@@ -308,7 +308,7 @@ body
           a.comment--move.move-foward(href="") Вперёд
 
   section.subscribe-course
-    .wrapper.subscribe-course__wrapper
+    .subscription__wrap.subscribe-course__wrapper
       article.subscribe-course__text
         header.subscribe-course__text--header
           | Курс абсолютно бесплатный.

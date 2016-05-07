@@ -4,18 +4,14 @@ body
   wrapper.webinar
 
     header.header
-      .header__navbar
-        .header__wrap
-          a.logo(href="/") Direct All-in
-          a.header__phone(href="/callback") 8&nbsp;(499)&nbsp;649-54-17
-            span.header__callback Заказать звонок
+      include ../_common/_header__navbar--nomenu
 
     header.webinar__header
-      wrapper.wrapper.webinar__header--wrapper
+      .webinar__wrap.webinar__header--wrapper
         .webinar__flex
           .webinar__flex--left
             img.webinar__header--img(src="./img/webinar-video.png", alt="Самый лучший вебинар")
-          .webinar__flex--right.get-course
+          .webinar__flex--right.get-course.get-course--webinar
             h3.get-course__header
               | Запись вебинара по ведению и аналитике рекламных компаний в
             .yandex-course__logo
@@ -26,11 +22,11 @@ body
               | рекламной кампании с комментариями
               br
               | Филиппа Царевского
-            a.btn.get-course__btn(href="")
+            a.btn.btn--cta.get-course__btn(href="")
               | Купить вебинар
 
     section.about-speaker
-      wrapper.wrapper.about-speaker__wrapper
+      .webinar__wrap.about-speaker__wrapper
         header.about-speaker__header
 
           .about-speaker__header--left.speaker-photo
@@ -55,42 +51,42 @@ body
           span.red &raquo;
 
     section.achieve
-      wrapper.wrapper.achieve__wrapper
+      .webinar__wrap.achieve__wrapper
         header.achieve__header
           | Вот, чего вы можете достичь после просмотра:
-        wrapper.achieve__flex
+        .achieve__flex
           .achieve__flex--item
-            wrapper.achieve__flex--wrapper
+            .achieve__flex--wrapper
               img.achieve__flex--img(src="./img/icons/diagram.svg" alt="Увеличь ROI c директа в 2-10 раз")
             p.achieve__flex--text
               | Увеличить ROI c директа в 2-10 раз
 
           .achieve__flex--item
-            wrapper.achieve__flex--wrapper
+            .achieve__flex--wrapper
               img.achieve__flex--img(src="./img/icons/highConversion.svg" alt="Повысить конверсию сайта, не внося на нем изменений")
             p.achieve__flex--text
               | Повысить конверсию сайта, не внося на нем изменений
 
           .achieve__flex--item
-            wrapper.achieve__flex--wrapper
+            .achieve__flex--wrapper
               img.achieve__flex--img(src="./img/icons/zoomIn.svg" alt=" Найти и залатать дыры, сливающие бюджет")
             p.achieve__flex--text
               | Найти и залатать дыры, сливающие бюджет
 
           .achieve__flex--item
-            wrapper.achieve__flex--wrapper
+            .achieve__flex--wrapper
               img.achieve__flex--img(src="./img/icons/growth.svg" alt="Узнать все свои показатели")
             p.achieve__flex--text
               | Узнать все свои показатели
 
           .achieve__flex--item
-            wrapper.achieve__flex--wrapper
+            .achieve__flex--wrapper
               img.achieve__flex--img(src="./img/icons/moreMoney.svg" alt="Зарабатывать больше")
             p.achieve__flex--text
               | Зарабатывать больше
 
     section.configuration.clearfix
-      wrapper.adwords-wrap
+      .webinar__wrap.adwords-wrap
         .configuration__browser.clearfix
           .configuration__browser-top.clearfix
             p.configuration__browser-url www.direct-all-in.ru
@@ -210,7 +206,7 @@ body
                   | Ответы на вопросы слушателей.
 
     section.video
-      .wrapper.video__wrapper
+      .webinar__wrap.video__wrapper
         iframe.video__iframe(src="http://www.youtube.com/embed/K440S10l4uI?autoplay=0")
 
         .video__info.video-info
@@ -237,7 +233,7 @@ body
                   | Твиттер
 
     section.course-for
-      wrapper.wrapper
+      .webinar__wrap
         header.course-for__header
           | Дополнительные выгоды при покупке:
 
@@ -263,7 +259,7 @@ body
                   | (обновление раз в год, ближайшее - май 2016)
 
     section.test
-      .test__wrap
+      .webinar__wrap.test__wrap
         header.test__header
           h3.test__head
             | Цена вебинара - 4900 Р
@@ -275,7 +271,7 @@ body
           | Купить
 
     section.comment
-      wrapper.wrapper.comment__wrapper
+      .webinar__wrap.comment__wrapper
         header.comment--header
           h4.comment--head
             | Отзывы

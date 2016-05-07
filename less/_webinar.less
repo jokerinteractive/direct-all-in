@@ -4,25 +4,10 @@
 .webinar {
   box-sizing: border-box;
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+  .box-sizing();
 
-  .get-course {
-    padding-top: 18px;
-    padding-bottom: 50px;
-
-    &__details {
-      padding-bottom: 16px;
-      padding-left: 20px;
-      margin-top: 33px;
-    }
-  }
-
-  .header__navbar {
-    padding-bottom: 10px;
+  &__wrap {
+    .wrap();
   }
 
   .about-speaker {

@@ -1,4 +1,4 @@
-@import "__mixins"; // TODO: move all imports to style
+@import "__mixins";
 
 .header {
   overflow: hidden;
@@ -13,6 +13,10 @@
   &__navbar {
     padding-top: 20px;
     background-color: fade(#000, 50%);
+
+    &--padding {
+      padding-bottom: 10px;
+    }
   }
 
   &__wrap {
@@ -46,12 +50,6 @@
     > small {
       display: block;
       font-size: 29px;
-    }
-  }
-
-  &--padding {
-    .header__navbar {
-      padding-bottom: 10px;
     }
   }
 }
