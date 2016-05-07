@@ -14,7 +14,7 @@
 .will-never-collaborate {
   padding: 125px 0 110px;
 
-  background: url("../img/will-never-collaborate/top-arrow-bg.svg") no-repeat ~"50% 0%/100% auto", url("../img/will-never-collaborate/humor-words-bg.svg") repeat-x 50% 88%;
+  background: url("../img/will-never-collaborate/top-arrow-bg.png") no-repeat ~"50% 0%/100% auto", url("../img/will-never-collaborate/humor-words-bg.png") repeat-x 50% 100%;
 
   &__title {
     text-align: center;
@@ -52,7 +52,8 @@
 
       border: 1px solid #dbdbdb;
       border-radius: 50%;
-      background: url("../img/will-never-collaborate/will-never-collaborate-sprt.svg") no-repeat 0 28px;
+      background: url("../img/icons/mlm.svg") no-repeat 50% 50%;
+      background-size: 50%;
     }
 
     &::after {
@@ -65,16 +66,20 @@
 
       content: "";
 
-      background: url("../img/will-never-collaborate/will-never-collaborate-sprt.svg") no-repeat 0 -117px;
+      background: url("../img/icons/red-round-x.svg") no-repeat 50% 50%;
+      background-size: 100%;
     }
   }
 
-  &__informbusiness::before { background-position: 0 28px; }
-  &__MLM::before { background-position: -143px 28px; }
-  &__affiliate::before { background-position: -286px 28px; }
+  &__informbusiness::before { background-image: url("../img/icons/megaphone.svg"); }
+  &__MLM::before { background-image: url("../img/icons/mlm.svg"); }
+  &__affiliate::before { background-image: url("../img/icons/affilates.svg"); }
 
   &__valueless {
     display: flex;
+
+    max-width: 1078px;
+    margin: 0 auto;
 
     font-size: 16px;
 
