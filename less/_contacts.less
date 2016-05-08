@@ -1,0 +1,74 @@
+@import "__mixins";
+
+.contacts {
+  position: relative;
+
+  padding: 90px 0 67px;
+
+  text-align: center;
+
+  .beige-icons-repeating-background;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    left: 0;
+
+    height: 2px;
+
+    content: "";
+
+    background: url("../img/header-dashed-line.png") repeat-x 50% 0;
+  }
+
+  &__wrap { .wrap; }
+
+  .contacts__subtitle {
+    margin-top: 0;
+
+    font-size: 23px;
+  }
+
+  &__manager {
+    &-title { margin-bottom: 28px; }
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+
+      max-width: 752px;
+      margin: 0 auto 92px;
+
+      justify-content: space-between;
+    }
+
+    &-image { margin-right: 23px; }
+  }
+
+  &__worktime {
+    margin-bottom: 103px;
+
+    &-days {
+      margin-right: 16px;
+      color: #ff0c0c;
+    }
+  }
+
+  &__socials {
+    &-list {
+      display: flex;
+
+      max-width: 940px;
+      margin: 0 auto;
+
+      text-decoration: none;
+
+      font-size: 17px;
+
+      justify-content: space-between;
+    }
+    &-item { text-decoration: none; }
+    &-text { color: #000; } //TODO styleguide?
+  }
+}
