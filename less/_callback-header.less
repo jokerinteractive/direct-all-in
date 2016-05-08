@@ -20,18 +20,6 @@
     background: url("../img/header-dashed-line.png") repeat-x 50% 0;
   }
 
-  h2 {
-    margin-top: 0;
-    margin-bottom: 23px;
-
-    font-size: 40px;
-  }
-
-  h1 {
-    font-family: "PT Sans Narrow", "Open Sans", arial, sans-serif;
-    font-size: 65px;
-  }
-
   &__content {
     display: flex;
 
@@ -43,9 +31,30 @@
     width: 50%;
     margin-right: 20px;
 
-    p:last-child { margin-bottom: 0; }
+    img { margin-top: 24px; }
 
-    p {
+    &-title {
+      margin-top: 0;
+      margin-bottom: 23px;
+
+      font-size: 40px;
+    }
+
+    .yandex-red { color: #ff0c0c; }
+
+    &-logo {
+      font-family: "PT Sans Narrow", "Open Sans", arial, sans-serif;
+      font-size: 65px;
+
+      &::first-letter {
+        color: #ff0c0c;
+        font-weight: 600;
+      }
+    }
+
+    &-text:last-child { margin-bottom: 0; }
+
+    &-text {
       max-width: 510px;
       margin-top: 22px;
       margin-bottom: 46px;
