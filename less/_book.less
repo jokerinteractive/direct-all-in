@@ -1,0 +1,138 @@
+@import "__mixins";
+@import "_callback-header";
+
+.book {
+  &__wrap { .wrap; }
+
+  &__header {
+    padding: 47px 0;
+
+    color: #fff;
+
+    .header-arrow-background;
+
+    &-left {
+      position: relative;
+      img {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        left: 0;
+      }
+    }
+
+    &-right {
+      float: right;
+
+      max-width: 470px;
+
+      .callback-header__left-title { font-size: 25px; }
+    }
+
+    &-subtitle {
+      font-size: 27px;
+      font-weight: 600;
+    }
+
+    &-explanation {
+      font-size: 19px;
+      font-style: italic;
+      line-height: 24px;
+    }
+
+    &-disclaimer { color: #639fc8; }
+
+    &-button {
+      display: block;
+
+      box-sizing: border-box;
+      max-width: 365px;
+      margin-top: 32px;
+      padding: 15px;
+
+      text-align: center;
+      text-decoration: none;
+
+      color: #fff;
+      border-radius: 5px;
+
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+
+  &__benefits {
+    position: relative;
+
+    padding: 180px 0 120px;
+
+    .beige-icons-repeating-background;
+    span.dotted-underline { padding: 0 0 16px; }
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      right: 0;
+      left: 0;
+
+      height: 2px;
+
+      content: "";
+
+      background: url(../img/header-dashed-line.png) repeat-x 50% 0;
+    }
+
+    &-left { position: relative; }
+
+    &-image {
+      position: absolute;
+      top: -44px;
+      left: -90px;
+    }
+
+    &-right {
+      float: right;
+
+      box-sizing: border-box;
+      max-width: 680px;
+    }
+
+    &-title { margin: 0 0 10px; }
+
+    &-lists {
+      display: flex;
+
+      justify-content: space-around;
+    }
+
+    &-list-left { margin-right: 67px; }
+
+    &-item {
+      position: relative;
+
+      box-sizing: border-box;
+      max-width: 312px;
+      margin: 14px 0;
+      padding-left: 18px;
+
+      font-size: 18px;
+      line-height: 24px;
+
+      &::before {
+        position: absolute;
+        top: 9px;
+        left: 0;
+
+        width: 8px;
+        height: 8px;
+
+        content: "";
+
+        border-radius: 50%;
+        background: #e01736;
+      }
+    }
+
+    &-red { color: #e01736; }
+  }
+}

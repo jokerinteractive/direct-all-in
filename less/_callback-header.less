@@ -27,6 +27,11 @@
 
   }
 
+  &__logo {
+    font-family: "PT Sans Narrow", "Open Sans", arial, sans-serif;
+    font-size: 65px;
+  }
+
   &__left {
     width: 50%;
     margin-right: 20px;
@@ -38,18 +43,6 @@
       margin-bottom: 23px;
 
       font-size: 40px;
-    }
-
-    .yandex-red { color: #ff0c0c; }
-
-    &-logo {
-      font-family: "PT Sans Narrow", "Open Sans", arial, sans-serif;
-      font-size: 65px;
-
-      &::first-letter {
-        color: #ff0c0c;
-        font-weight: 600;
-      }
     }
 
     &-text:last-child { margin-bottom: 0; }
@@ -90,10 +83,12 @@
       box-sizing: border-box;
       width: 100%;
       margin-bottom: 11px;
+
       line-height: 20px;
     }
 
-    input&-button {
+    input&-button,
+    &-button {
       width: 100%;
 
       border: none;
