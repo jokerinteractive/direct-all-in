@@ -1,0 +1,153 @@
+.reviews {
+  margin-bottom: 41px;
+
+  &__title {
+    margin-top: 27px;
+    margin-bottom: 40px;
+
+    text-align: center;
+
+    font-weight: 600;
+  }
+
+  &__item {
+    position: relative;
+
+    display: flex;
+
+    box-sizing: border-box;
+    max-width: 955px;
+    margin: 10px auto;
+    padding-bottom: 45px;
+
+    border: 1px solid #e7e7e7;
+    border-radius: 23px;
+    background: #fff;
+  }
+
+  &__pagination-prev,
+  &__pagination-next {
+    position: absolute;
+    top: 50%;
+
+    box-sizing: border-box;
+    width: 52px;
+    height: 52px;
+
+    cursor: pointer;
+    transform: translateY(-50%);
+    text-align: center;
+
+    color: #d0d0d0;
+    border: 1px solid #ececec;
+    border-radius: 50%;
+    background: url("../img/founder/reviews-sprt.png") no-repeat 0 0;
+
+    font-size: 0;
+    line-height: 52px;
+
+    &:hover { border-color: #338bc3; }
+    &:active { border-color: #b7e0ff; }
+  }
+
+  &__pagination-prev {
+    left: -87px;
+    &:hover { background-position: 0 -50px; }
+    &:active { background-position: 0 -100px; }
+  }
+
+  &__pagination-next {
+    right: -87px;
+
+    background-position: -100px 0;
+    &:hover { background-position: -100px -50px; }
+    &:active { background-position: -100px -100px; }
+  }
+
+  &__photo {
+    box-sizing: border-box;
+    min-width: 225px;
+    max-width: 294px;
+    padding-top: 49px;
+    padding-right: 2.83%;
+    padding-left: 7.75%;
+
+    img { border-radius: 50%; }
+
+    &::before {
+      position: absolute;
+      top: 38px;
+      left: 3.77%;
+
+      width: 33px;
+      height: 28px;
+
+      content: "";
+
+      background: url("../img/founder/reviews-sprt.png") no-repeat -59px -11px;
+    }
+  }
+
+  &__texts {
+    max-width: 610px;
+    margin-right: 5.235%;
+    padding-top: 40px;
+    padding-left: 24px;
+    font-size: 18px; // TODO check Adwords&co
+
+    &-title,
+    &-text,
+    &-author {
+      margin: 0;
+    }
+
+    &-title,
+    &-author {
+      font-weight: 600;
+    }
+
+    &-title { margin-bottom: 12px; }
+    &-text { margin-bottom: 26px; }
+
+    &-author-job {
+      color: #a3a3a3;
+      font-size: 15px;
+    }
+  }
+
+
+  &__slider {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+
+    width: 100%;
+
+    transform: translateX(-50%);
+    text-align: center;
+
+    font-size: 0;
+
+    &-radio { display: none; }
+
+    &-point {
+      display: inline-block;
+
+      width: 12px;
+      height: 12px;
+      margin: 0 3px;
+
+      cursor: pointer;
+
+      border-radius: 50%;
+      // background: #f2f2f2;
+    }
+
+    #review-1:checked ~ &-point[for="review-1"],
+    #review-2:checked ~ &-point[for="review-2"],
+    #review-3:checked ~ &-point[for="review-3"],
+    #review-4:checked ~ &-point[for="review-4"] {
+      background: #368cc3;
+    }
+  }
+}
