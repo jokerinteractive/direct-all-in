@@ -212,13 +212,167 @@
     &-memo::before { background-image: url("../img/icons/newLessons.svg"); }
   }
 
+  &__author {
+    background: url("../img/book/setka-author.svg") no-repeat 50% 0, url("../img/book/book-author-bg.jpg") no-repeat ~"50% 0/100% auto", linear-gradient(90deg, #0e3b5a 0%, #0e3c5d 42%, #0f3d5e 47.8%, #104265 64%, #104469 83.16%, #124970 93.2%, #124c72 100%);
+    background-color: #0e3b5a;
+
+    .book__wrap {
+      display: flex;
+      flex-direction: row-reverse;
+
+      justify-content: center;
+    }
+
+    &-image { margin-top: -53px; }
+
+    &-texts {
+      max-width: 515px;
+      margin: 110px 0 40px;
+
+      color: #fff;
+    }
+
+    &-subtitle {
+      margin: 0;
+
+      color: #fff;
+
+      font-size: 24px;
+    }
+
+    &-title {
+      margin: 13px 0 15px;
+
+      color: #fff;
+
+      font-size: 45px;
+    }
+
+    &-text {
+      margin: 7px 0 26px;
+
+      color: #fff;
+
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+
+  &__faq {
+    position: relative;
+
+    padding: 591px 0 73px;
+
+    background: #f8f8f8;
+
+    &-image {
+      position: absolute;
+      top: -795px;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    &-title {
+      text-align: center;
+
+      font-size: 36px;
+    }
+
+    &-texts {
+      max-width: 785px;
+      margin-left: 15.833%;
+
+    }
+
+    &-question {
+      margin: 0 0 10px;
+
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    &-underlined {
+      padding-bottom: 30px;
+
+      border-bottom: 2px dashed #ff304f;
+    }
+
+    &-interviewer {
+      color: #747474;
+
+      font-size: 16px;
+    }
+
+    &-answer {
+      margin: 0 0 46px;
+
+      font-size: 17px;
+    }
+  }
+
   &__retailers {
     position: relative;
 
-    padding: 0 0 215px;
+    padding: 65px 0 215px;
 
-    .beige-icons-repeating-background;
-    background-image: linear-gradient(#fff 75%, #e7e7e7 100%);
+    background: url("../img/calmness/calmness-light-bg.png") repeat-x 50% 0, linear-gradient(#fff 75%, #e7e7e7 100%);
+
+    &-content {
+      display: flex;
+
+      justify-content: flex-start;
+    }
+
+    &-title {
+      margin: 30px 0 40px;
+
+      text-align: center;
+
+      font-size: 36px;
+    }
+
+    &-description {
+      max-width: 675px;
+      margin: 0 auto;
+
+      text-align: center;
+
+      font-size: 18px;
+    }
+
+    &-left { margin: 22px 0 0; }
+
+    &-right {
+      max-width: 490px;
+      margin: 88px 0 0 46px;
+    }
+
+    &-subtitle {
+      margin: 0 0 17px;
+
+      font-size: 18px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+
+      min-height: 81px;
+
+      border-top: 2px dotted fade(#e7e2c7, 70%);
+
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-buy {
+      box-sizing: border-box;
+      width: 101px;
+      padding: 7px 12px;
+
+      font-size: 14px;
+    }
 
     .book__brackets {
       position: absolute;
@@ -246,8 +400,51 @@
         font-weight: 700;
       }
 
+      &::before,
+      &::after {
+        position: absolute;
+        top: -3px;
+        bottom: -3px;
+        left: -56px;
+
+        width: 56px;
+        height: 221px;
+
+        content: "";
+
+        background: url("../img/book/skobka_l.svg") no-repeat ~"50% 50%/100% auto";
+      }
+
+      &::after {
+        right: -56px;
+        left: auto;
+
+        background: url("../img/book/skobka_r.svg") no-repeat ~"50% 50%/100% auto";
+      }
     }
   }
+
+  &__call-us {
+    display: block;
+
+    max-width: 955px;
+    margin: 37px auto 0;
+    padding-top: 42px;
+    padding-bottom: 30px;
+
+    border-radius: 13px;
+
+    &-title {
+      margin-bottom: 30px;
+
+      font-size: 18px;
+    }
+
+    &-submit {
+      margin: 35px 0 20px;
+    }
+  }
+
   &__reviews {
     padding: 155px 0 59px;
 

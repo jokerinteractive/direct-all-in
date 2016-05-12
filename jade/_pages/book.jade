@@ -12,7 +12,6 @@ body
       .book__header-right
         h1.callback-header__left-title Прочитайте книгу 
           br
-          //TODO пока так
           span.callback-header__logo.yandex-red Я
           span.callback-header__logo ндекс.Директ
           br
@@ -99,33 +98,38 @@ body
         li.book__useful-feature.book__useful-tutorial Учебник для новичков
         li.book__useful-feature.book__useful-memo Настольная книга-шпаргалка для специалиста
   
-  // TODO styles v
   .book__author
     .book__wrap
-      img(src="./img/book/book-author.png" width="" height="").book__author-image
-      p.book__author-subtitle Автор книги –
-      h2.book__author-title Филипп Царевский
-      p.book__author-text Специалист-практик по Яндекс.Директ, Владелец агентства Direct All-in, автор десятков популярных уроков, вебинаров, статей и других пособий для рекламодателей.
-      p.book__author-text По отзывам, бесплатный контент Филиппа – самый понятный, информативный и исчерпывающий на рынке, даёт пользы больше, чем платные программы у многих других специалистов. По этим материалам обучаются многие агентства из ТОП-10, а конкуренты копируют и расхватывают контент на цитаты...
+      img(src="./img/book/book-author.png" width="456" height="664").book__author-image
+      .book__author-texts
+        p.book__author-subtitle Автор книги –
+        h2.book__author-title Филипп Царевский
+        p.book__author-text Специалист-практик по Яндекс.Директ, Владелец агентства Direct All-in, автор десятков популярных уроков, вебинаров, статей и других пособий для рекламодателей.
+        p.book__author-text По отзывам, бесплатный контент Филиппа – самый понятный, информативный и исчерпывающий на рынке, даёт пользы больше, чем платные программы у многих других специалистов. По этим материалам обучаются многие агентства из ТОП-10, а конкуренты копируют и расхватывают контент на цитаты...
+
   .book__faq
     .book__wrap
-      img(src="./img/book/book-faq-image.png" width="" height="").book__faq-image
+      img(src="./img/book/faq-book.png" width="947" height="818").book__faq-image
       h2.book__faq-title Популярные вопросы о книге
       
-      p.book__faq-question А что, если я потрачу время на чтение, но ничего не узнаю? 
-        br
-        span.book__faq-interviewer (спрашивают специалисты по Яндекс.Директ)
-      p.book__faq-answer Десятки опытных специалистов уже нашли немало новых идей для себя.
-      
-      p.book__faq-question Зачем мне это знать? Я лучше делегирую!
-        br
-        span.book__faq-interviewer (спрашивают владельцы бизнеса)
-      p.book__faq-answer Вы не сможете отобрать хорошего специалиста из сотен некомпетентных, а если и сможете, то не сумеете проконтролировать. Книга – самый удобный и простой способ вникнуть в тему.
-      
-      p.book__faq-question В Директе всё быстро меняется – актуальна ли информация?
-        br
-        span.book__faq-interviewer (спрашивают все) 
-      p.book__faq-answer Именно по этой причине принято решение выпускать книгу небольшими тиражами и выдавать обновленную версию каждые несколько месяцев.
+      .book__faq-texts
+        p.book__faq-question
+          span.book__faq-underlined А что, если я потрачу время на чтение, но ничего не узнаю? 
+          br
+          span.book__faq-interviewer (спрашивают специалисты по Яндекс.Директ)
+        p.book__faq-answer Десятки опытных специалистов уже нашли немало новых идей для себя.
+        
+        p.book__faq-question
+          span.book__faq-underlined Зачем мне это знать? Я лучше делегирую!
+          br
+          span.book__faq-interviewer (спрашивают владельцы бизнеса)
+        p.book__faq-answer Вы не сможете отобрать хорошего специалиста из сотен некомпетентных, а если и сможете, то не сумеете проконтролировать. Книга – самый удобный и простой способ вникнуть в тему.
+        
+        p.book__faq-question
+          span.book__faq-underlined В Директе всё быстро меняется – актуальна ли информация?
+          br
+          span.book__faq-interviewer (спрашивают все) 
+        p.book__faq-answer Именно по этой причине принято решение выпускать книгу небольшими тиражами и выдавать обновленную версию каждые несколько месяцев.
   
   .book__retailers
     .book__wrap
@@ -134,9 +138,9 @@ body
       p.book__retailers-description Книга принадлежит издательству «Питер». Оно самостоятельно определяет стоимость, осуществляет поставки в магазины, организует доставку читателям. Найти можно в большинстве книжных магазинов, в т. ч. и в Интернете. 
       .book__retailers-content
         .book__retailers-left
-          img(src="./img/book/header-benefits.png" width="500" height="700").book__retailers-image
+          img(src="./img/book/retailers-book.png" width="590" height="617").book__retailers-image
         .book__retailers-right
-          p.book__retailers-subtitle
+          p.book__retailers-subtitle Вот несколько популярных магазинов:
           .book__retailers-item
             img(src="./img/book/piter.png" width="198" height="57").book__retailers-logo
             a(href="#").book__retailers-buy.btn__red-border Купить
@@ -152,25 +156,18 @@ body
           .book__retailers-item
             img(src="./img/book/labirint.png" width="198" height="56").book__retailers-logo
             a(href="#").book__retailers-buy.btn__red-border Купить
-        
       .book__call-us.footer.vedenie-footer.footer__call-us
-        h4.footer__call-us-title В случае если тираж подходит к концу, и книги нет в наличии ни в одном из магазинов, 
+        h4.footer__call-us-title.book__call-us-title В случае если тираж подходит к концу, и книги нет в наличии ни в одном из магазинов, 
           br
           | оставьте заявку, и мы найдём тот, в котором её ещё можно приобрести.
-
         form.form(action="")
           input.form__text(type="text" placeholder="Ваше Имя")
           input.form__text(type="text" placeholder="Ваш E-mail")
-          
-          .footer__submit
+          .footer__submit.book__call-us-submit
             input.btn(type="submit" value="Найдите мне книгу")
-
-      // TODO SVG brackets v
       .book__brackets
         p.book__brackets-title Учебник заточен под малый бизнес – услуги, магазины, производства. 
         p.book__brackets-text Если вы специализируетесь на МЛМ, инфобизнесе, арбитраже трафика – не могу гарантировать, что он принесет вам пользу.
-  
-  // TODO styles ^
 
   .book__reviews.reviews
     .book__wrap
@@ -179,13 +176,13 @@ body
         .reviews__pagination-prev &lt;
         .reviews__pagination-next &gt;
         .reviews__photo
-          img(src="./img/review-authors/artem-kabalkin.jpg" width="168px" height="168px")
+          img(src="./img/review-authors/artem-kabalkin.jpg" width="195px" height="176px")
         .reviews__texts
           h4.reviews__texts-title Яндекс.Директ – точный инструмент, или лотерея?
           p.reviews__texts-text Филипп Царевский, основатель агентства Direct-all- in и гостевой автор нашего блога LPgenerator, написал крайне полезную книгу «Яндекс.Директ: Как получать прибыль, а не играть в лотерею». Коротко поделимся впечатлениями о ней
           p.reviews__texts-text С первых строк автор обращается к читателю, словно к старому знакомому — на «ты», разбавляя... 
             a(href="#").link-blue Показать полностью
-          //TODO a?
+            //TODO a?
           p.reviews__texts-author — Артём Кабалкин
             br
             span.reviews__texts-author-job CEOLPGenerator

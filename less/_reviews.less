@@ -65,18 +65,20 @@
   }
 
   &__photo {
-    box-sizing: border-box;
-    min-width: 225px;
-    max-width: 294px;
-    padding-top: 49px;
-    padding-right: 2.83%;
-    padding-left: 7.75%;
+    overflow: hidden;
 
-    img { border-radius: 50%; }
+    box-sizing: border-box;
+    width: 168px;
+    height: 168px;
+    margin-top: 50px;
+    margin-right: 4px;
+    margin-left: 7.5%;
+
+    border-radius: 50%;
 
     &::before {
       position: absolute;
-      top: 38px;
+      top: 42px;
       left: 3.77%;
 
       width: 33px;
@@ -93,6 +95,7 @@
     margin-right: 5.235%;
     padding-top: 40px;
     padding-left: 24px;
+
     font-size: 18px; // TODO check Adwords&co
 
     &-title,
@@ -111,6 +114,7 @@
 
     &-author-job {
       color: #a3a3a3;
+
       font-size: 15px;
     }
   }
