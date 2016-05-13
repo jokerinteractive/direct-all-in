@@ -6,9 +6,7 @@ body
     include ../_common/_header__navbar
     
   .book__header
-    .book__wrap.clearfix
-      .book__header-left
-        img(src="./img/book/header-book.png" width="766" height="566").book__header-image
+    .book__wrap.book__header-content
       .book__header-right
         h1.callback-header__left-title Прочитайте книгу 
           br
@@ -21,6 +19,8 @@ body
           br
           span.book__header-disclaimer (по отзывам и рецензиям читателей).
         a(href="#").callback-header__form-button.book__header-button Купить книгу
+      .book__header-left
+        img(src="./img/book/header-book.png" width="766" height="566").book__header-image
   .book__benefits
     .book__wrap.clearfix
       .book__benefits-left

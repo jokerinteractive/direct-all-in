@@ -11,19 +11,22 @@
 
     .header-arrow-background;
 
+    &-content {
+      display: flex;
+      flex-direction: row-reverse;
+
+      justify-content: space-between;
+    }
+
     &-left {
-      position: relative;
-      img {
-        position: absolute;
-        z-index: 1;
-        top: 10px;
-        left: 0;
-      }
+      z-index: 1;
+
+      width: 50%;
+      margin: 0 0 -225px;
+      min-width: 640px;
     }
 
     &-right {
-      float: right;
-
       max-width: 470px;
 
       .callback-header__left-title { font-size: 25px; }
