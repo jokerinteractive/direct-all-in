@@ -146,6 +146,7 @@ gulp.task('style', ['styletest'], function () {
     }))
     // .pipe(gulpIf(!isOnProduction, sourcemaps.init()))
     .pipe(less())
+    .pipe(gulp.dest(paths.style.destination))
     .pipe(postcss([
       flexboxfixer,
       autoprefixer({
@@ -161,7 +162,6 @@ gulp.task('style', ['styletest'], function () {
         safe: true
       })
     ]))
-    .pipe(gulp.dest(paths.style.destination))
     .pipe(rename('style.min.css'))
     // .pipe(gulpIf(!isOnProduction, sourcemaps.write()))
     .pipe(gulp.dest(paths.style.destination))
