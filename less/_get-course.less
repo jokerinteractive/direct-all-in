@@ -18,10 +18,14 @@
     font-size: 18px;
     line-height: 1.3;
     border-left: 2px solid rgb(255, 47, 79);
+
+    &.details--no-border {
+      border: none;
+      padding-left: 0;
+    }
   }
 
   &--subscribe {
-    padding-left: 0 0 74px 14px;
 
     .get-course__header {
       font-size: 25px;
@@ -51,6 +55,28 @@
 
     .get-course__btn {
       margin-left: 0;
+    }
+  }
+
+  &--coach {
+    padding: 70px 0 70px 25px;
+
+    .get-course__header {
+      font-size: 27px;
+      margin: 0;
+    }
+
+    .get-course__details {
+      margin: 10px 0 25px;
+    }
+
+    .get-course__input-text {
+      margin: 0 0 12px;
+      padding: 18px 26px;
+
+      &--margin {
+        margin-bottom: 24px;
+      }
     }
   }
 }

@@ -1,0 +1,582 @@
+include ../_common/_doctype
+
+body
+  header.header.header--padding
+    include ../_common/_header__navbar--nomenu
+
+  section.subscription
+    .subscription__wrap.clearfix.subscription__wrap--main
+      .subscription__column--left.yandex-course
+        h3.yandex-course__call Индивидуальное онлайн-обучение
+        .yandex-course__logo
+          img.yandex-course__logo-img(src="./img/subscriptions/yandex.png" alt="Яндекс Директу")
+          | Яндес Директ
+        h3.yandex-course__from От Филиппа Царевского
+        p.yandex-course__feedback.yandex-course--normal Станьте экспертом по Яндекс.Директ
+        p.yandex-course__by.yandex-course__by--white или обучите сотрудника в штат!
+      .subscription__column--right.get-course.get-course--coach
+        h3.get-course__header Заполните заявку,
+        p.get-course__details.details--no-border и узнайте подробнее условия прохождения
+        form.form(action="")
+          input.form__text.form__text--big.get-course__input-text(type="text" placeholder="Ваше имя")
+          input.form__text.form__text--big.get-course__input-text.get-course__input-text--margin(type="text" placeholder="Ваш номер телефона")
+          input.btn.btn--main.get-course__btn(type="submit" value="Позвонить мне")
+
+  section.course-included
+    .course-included__wrap
+      header.course-included__header
+        h3.course-included__header--name
+          | Что включено в этот курс?
+      .course-included__flex
+        .course-included__flex--block
+          h6.course-included__title
+            | Теория
+          ul.course-included__list
+            li.course-included__list--item
+              | Правильное планирование рекламной кампании, разработка стратегии.
+            li.course-included__list--item
+              | Разберем все виды ключевиков, тонкую работу с ними, первичную и вторичную сортировку, минус-слова.
+            li.course-included__list--item
+              | Отдельное занятие будет посвящено правильному написанию объявлений.
+            li.course-included__list--item
+              | Очень глубокий разбор РСЯ и ретаргетинга.
+            li.course-included__list--item
+              | Фишки и тонкости, которые я никогда не раскрою на бесплатных вебинарах.
+            li.course-included__list--item
+              | Работа со статистикой. Яндекс.Метрика. Составление отчетов.
+            li.course-included__list--item
+              | А/Б-тесты: виды, способы, цели, итоги.
+            li.course-included__list--item
+              | Правильное ведение кампании, оптимизация бюджета.
+
+          h6.course-included__title
+            | Практика
+          ul.course-included__list
+            li.course-included__list--item
+              | Ответы на все вопросы в течение курса и после его завершения.
+            li.course-included__list--item
+              | Совместная интенсивная многочасовая работа. С каждым индивидуально.
+
+        .course-included__flex--block
+          h6.course-included__title
+            | Продолжение
+          ul.course-included__list
+            li.course-included__list--item
+              | Видеозапись всех занятий.
+            li.course-included__list--item
+              | Выдача сертификатов.
+            li.course-included__list--item
+              | Домашнее задание на месяц вперед.
+            li.course-included__list--item
+              | Расскажу, как правильно продавать свои услуги.
+            li.course-included__list--item
+              | План дальнейшего развития до уровня признанного эксперта.
+            li.course-included__list--item
+              | Доступ к трансляциям следующих потоков.
+            li.course-included__list--item
+              | Пожизненные ответы на вопросы по Яндекс.Директ в личном общении.
+            li.course-included__list--item
+              | Приглашение в чат с другими опытными специалистами.
+
+          h6.course-included__title
+            | Бонусы
+          ul.course-included__list
+            li.course-included__list--item
+              | Закрытые видеозаписи и чек-листы агентства.
+            li.course-included__list--item
+              | Подробны аудит вашего сайта – разложим по полочкам!
+            li.course-included__list--item
+              | Книга и все платные инфопродукты (в т. ч. новые) – в подарок!
+            li.course-included__list--item
+              | Скайп консультации.
+
+  section.study-format
+    .study-format__wrap
+      header.study-format__header
+        h3.study-format__header--name
+          | Формат обучения
+      .study-format__flex
+        .study-format__flex--item
+          .study-format__flex--img
+            img(src="./img/icons/steering.svg" alt="steering")
+          p
+            | У вас будет личный кабинет на специальной платформе.
+        .study-format__flex--item.study-format__flex--book
+          .study-format__flex--img
+            img(src="./img/icons/book.svg" alt="book")
+          p
+            | Начать можно в любой момент!
+        .study-format__flex--item
+          .study-format__flex--img
+            img(src="./img/icons/icon_cursor__.svg" alt="cursor")
+          p
+            | 9 занятий с домашними заданиями. После одобрения открывается следующее.
+        .study-format__flex--item
+          .study-format__flex--img
+            img(src="./img/icons/icon_user_speach.svg" alt="icon_user_speach")
+          p
+            | На выполнение домашнего задания дается 7 рабочих дней. На проверку – 3 рабочих дня.
+        .study-format__flex--item
+          .study-format__flex--img
+            img(src="./img/icons/brunches.svg" alt="brunches")
+          p
+            | 3-6 часов в день уходит на выполнение домашнего задания. Проверяет лично Филипп Царевский
+        .study-format__flex--item
+          .study-format__flex--img
+            img(src="./img/icons/brunches.svg" alt="brunches")
+          p
+            | В случае невыполнения в срок, доступ к курсу закрывается без возврата денег (при отсутствии уважительной причины).
+
+  section.calmness__promises.clearfix
+    .adwords__wrap
+      .calmness__promises-inside.calmness__promises-inside--column
+        p.calmness__promises--text
+          | Всё для одной цели - чтобы мои ученики были признаны на рынке как самые компетентные директологи. Чтобы мой сертификат был знаком качества, а не просто очередной пустой бумажкой. Чтобы за моих учеников разворачивалась настоящая борьба. А это значит, что я не могу халтурить с проверкой домашнего задания и допускать к занятию тех, кто не до конца освоил предыдущую тему.
+        p.calmness__promises--text.calmness__promises--author
+          | Филипп Царевский
+
+  section.better.better--grey
+    .better__wrap
+      h3.better__head
+        span
+          | Чем мой курс лучше других?
+      artcile.better__content
+
+        .better__left-column
+          ul.better__list
+
+            li.better__list-item
+              header.better__list-header
+                | Индивидуальная работа
+              p.better__list-text
+                | (это ещё называют «наставничеством»). Без возможности получить обратную связь, уточнить спорные или непонятные моменты, задать дополнительный вопрос, попросить дополнительные примеры и получить совет от эксперта, видеозаписи сами по себе будут иметь гораздо меньшую ценность. Если оценивать стоимость, то 30% – это информация и 70% – индивидуальная работа. Количество сообщений в переписке с учениками за время обучения достигает нескольких сотен, а то и тысяч!
+
+            li.better__list-item(style="margin-bottom: 60px;")
+              header.better__list-header
+                | Понимание процессов
+              p.better__list-text
+                | Про мой бесплатный курс, состоящий из 12 уроков, говорят, что он глубже многих платных на рынке. Что же тогда в платном? Отвечу – в моих бесплатных материалах от силы 10-20% всей необходимой информации. Для профессиональной работы требуется гораздо больше знаний, навыков, понимания нюансов. Я учу «видеть матрицу», понимать происходящие процессы, а не просто показываю формулы Excel и кнопки в интерфейсе.
+
+            li.better__list-item(style="margin-bottom: 60px;")
+              header.better__list-header
+                | То, что действительно работает.
+              p.better__list-text
+                | Каждую тему аргументирую и доказываю. На рынке слишком много спорной информации или «высосанных из пальца» фишек. Например, галочки, которая снижает бюджеты в 2 раза, не существует, но звучит она очень красиво. Никакой воды, только практика!
+
+            li.better__list-item
+              header.better__list-header
+                | Структурированность и четкость
+              p.better__list-text
+                | Всё разложено по полочкам, выстроено пошагово, донесено простым и понятным языком. Кроме того, речь и дикция в порядке, голос приятный, звук и изображение качественное, что тоже немаловажно (только в уроке №3 нарушено качество записи, но это скоро будет исправлено).
+
+        .better__right-column
+          .quote
+            p.quote__text
+              | Например, можно сказать:
+            header.quote__quote
+              | "Существует оператор фиксации словоформы. Для этого нужно поставить восклицательный знак перед словом".
+            p.quote__text
+              | Большинство других ведущих подают 90% информации в таком стиле. Я же стараюсь рассказать, в каких случаях и что применять, как найти такие случаи, показать примеры.
+
+          ul.better__list
+            li.better__list-item(style="margin-bottom: 50px;")
+              header.better__list-header
+                | Авторские наработки
+              p.better__list-text
+                | Минимум пересказа и очередной трактовки справочника Яндекса. Всё остальное – фишки, методы, сравнение вариантов.
+
+            li.better__list-item
+              header.better__list-header
+                | Не бросаем после обучения
+              p.better__list-text
+                | Филипп по-прежнему будет отвечать на вопросы, смотреть кампании, давать рекомендации, помогать с разработкой стратегий. Со многими учениками складываются дружеские отношения, которые продолжаются уже полтора года. Кроме того, вам помогут и другие участники – для этого создан чат специалистов (и через некоторое время вы там тоже будете в ранге специалиста, а не просто ученика).
+
+            li.better__list-item
+              header.better__list-header
+                | Специальная платформа
+              p.better__list-text
+                | Под обучение разработана специальная платформа на базе «Профологии». Множество функций, которые заметно облегчают работу!
+
+            li.better__list-item
+              header.better__list-header
+                | Гарантия 150%
+              p.better__list-text
+                | (подробнее ниже)
+
+  section.why-study
+    .why-study__wrap
+      header.why-study__header
+        h3.why-study__header--title
+          | И зачем вообще обучаться Директу?
+        h4.why-study__header--subtitle
+          | Вот что будет после прохождения тренинга:
+
+      ul.why-study__list
+        li.why-study__list--item
+          .why-study__list--img
+            img(src="./img/icons/tie.svg" alt="tie")
+          p
+            b Будете настраивать&nbsp;
+            | рекламную кампанию на уровне эксперта.
+        li.why-study__list--item
+          .why-study__list--img
+            img(src="./img/icons/glasses.svg" alt="tie")
+          p
+            b Освоите интересную,высокооплачиваемую профессию.&nbsp;
+            | Репутация профессионала, а не "горе-директолога".
+        li.why-study__list--item
+          .why-study__list--img
+            img(src="./img/icons/glider.svg" alt="tie")
+          p
+            b Территориальная независимость&nbsp;
+            | - работа директолога, как правило, удалённая, нужен только ноутбук и интернет. Посмотрите новые страны!
+        li.why-study__list--item
+          .why-study__list--img
+            img(src="./img/icons/icon_molecular.svg" alt="tie")
+          p
+            b Настроите для себя&nbsp;
+            | самостоятельно большой поток клиентов! Или, обучив сотрудника, получите в штат.
+        li.why-study__list--item
+          .why-study__list--img
+            img(src="./img/icons/calendar_1month.svg" alt="tie")
+          p
+            b Окупите стоимость&nbsp;
+            | тренинга уже в первый месяц после него!
+        li.why-study__list--item
+          .why-study__list--img
+            img(src="./img/icons/atom.svg" alt="tie")
+          p
+            b Неограниченное поле клиентов. Сможете выжать больше из 99% существующих в природе рекламных компаний.
+
+  section.course-for.course-for--lights
+    .webinar__wrap
+      header.course-for__header
+        | Я приглашаю вас на курс, если вы:
+
+        ul.course-for-list
+
+          li.course-for-list__item.answer
+            .course-for-list__item--wrapper
+              header.course-for-list__item--header
+                | Опытный специалист по контекстной рекламе.
+              p.course-for-list__item--text
+                | Обещаю, каким бы ни был ваш опыт, много информации вы услышите впервые. В противном случае я верну всю сумму до последней копейки, несмотря даже на расходы, которые я понесу.
+
+          li.course-for-list__item.newLessons
+            .course-for-list__item--wrapper
+              header.course-for-list__item--header
+                | Новичок.
+              p.course-for-list__item--text
+                | Вам интересна профессия, но не хотите прослыть «горе-директологом»? Ваш уровень после прохождения курса будет выше уровня 80-90% специалистов по Директу в России. А через какое-то время, набравшись опыта на практике, выше, чем у 95-99% директологов.
+
+          li.course-for-list__item.newLessons
+            .course-for-list__item--wrapper
+              header.course-for-list__item--header
+                | Владелец бизнеса.
+              p.course-for-list__item--text
+                | Вы найдёте для себя немало новых фишек и методов, (которых нет даже во многих платных курсах), и улучшите результаты своих клиентов.
+
+          li.course-for-list__item.newLessons
+            .course-for-list__item--wrapper
+              header.course-for-list__item--header
+                | У вас в штате есть директологи.
+              p.course-for-list__item--text
+                | Если бизнес относительно большой (среди малых и средних, как правило), то выгоднее иметь в штате своего специалиста, чем каждый раз обращаться за помощью в рекламное агентство. Только специалист должен работать продуктивно.
+
+  section.teacher
+    .teacher__wrap
+      .teacher__flex
+        .teacher__flex--block.teacher__text
+          p.teacher__text--rule
+            | Вести занятия буду я,
+          p.teacher__text--name
+            | Филипп Царевский
+          p.teacher__text--par
+            | Я уже заслужил репутацию уважаемого авторитета на рынке контекстной рекламы. Являюсь автором популярной книги (Яндекс.Директ: как получать прибыль, а не играть в лотерею), десятков вебинаров, статей, обучающих видео.
+          p.teacher__text--par
+            | По моим материалам обучаются многие другие агентства контекстной рекламы, в т. ч. из Топ-10. Также я предприниматель, маркетолог и практик в Яндекс.Директ. Обучение – это скорее мое хобби, которое держит в тонусе, но далеко не основной источник заработка. Возможно, поэтому у меня с трудом поворачивается язык называть себя «инфобизнесменом». По этой же причине беру не более 10 человек в месяц. С большим количеством учеников мне будет сложно уделять должное внимание проверке домашнего задания. Львиная доля моего времени посвящена основному бизнесу – агентству контекстной рекламы.
+        .teacher__flex--block
+          img.teacher__img(src="./img/founder/teacher.png" alt="Филипп Царевский")
+
+  section.price-list
+    .price-list__wrap
+      header.price-list__header
+        span.price-list__header--name
+          | Выберите свой формат:
+      .price-list__flex
+
+        .price-list__flex--block.price-list--names
+          header.price-list__flex--header
+            p.price-list__flex--name
+              | Заголовок
+            p.price-list__flex--price
+              | 44 000 Р
+          ul.price-list__list
+            li.price-list__list--item
+              p Просмотр записей
+            li.price-list__list--item
+              p Книга
+            li.price-list__list--item
+              p Демонстрационная
+                br
+                | настройка
+            li.price-list__list--item
+              p Доступ к обмновленным
+                br
+                | версиям
+            li.price-list__list--item
+              p Проверка Д.З.
+                br
+                | Филиппом Царевским
+            li.price-list__list--item
+              p Гарантия
+            li.price-list__list--item
+              p Консультации по скайпу
+            li.price-list__list--item
+              p Поддержка после курса
+            li.price-list__list--item
+              p Право на просрочку
+            li.price-list__list--item
+              p Добавление в чат
+                br
+                | директологов
+            li.price-list__list--item
+              p Доступ к новым
+                br
+                | инфопродуктам
+            li.price-list__list--item
+              p Аудит сайта
+            li.price-list__list--item
+              p Сертификация
+            li.price-list__list--item
+              p Глубокий аудит директа
+                br
+                | через месяц после курса
+            li.price-list__list--item
+              p Доступ к онлайн
+                br
+                | трансляциям следующих потоков
+
+        .price-list__flex--block
+          header.price-list__flex--header
+            p.price-list__flex--name
+              | Эконом
+            p.price-list__flex--price
+              | 29 000 Р
+          ul.price-list__list
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              p В подарок
+            li.price-list__list--item
+              p В подарок
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              p Без глубокого разбора
+            li.price-list__list--item
+              p 100%
+            li.price-list__list--item
+              p 30 минут
+            li.price-list__list--item
+              p 2 недели
+            li.price-list__list--item
+              p 1 раз на 3 дня
+            li.price-list__list--item
+              img(src="./img/icons/not-included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/not-included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/not-included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/not-included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/not-included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/not-included.png" alt="included")
+            btn.price-list__list--btn(value="") Заказать
+
+        .price-list__flex--block
+          header.price-list__flex--header
+            p.price-list__flex--name
+              | Стандарт
+            p.price-list__flex--price
+              | 44 900 Р
+          ul.price-list__list
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              p В подарок
+            li.price-list__list--item
+              p В подарок
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              p Глубокая
+            li.price-list__list--item
+              p 150%
+            li.price-list__list--item
+              p 2 часа
+            li.price-list__list--item
+              p Месяц
+            li.price-list__list--item
+              p 2 раза до 3 дней
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/not-included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/not-included.png" alt="included")
+            btn.price-list__list--btn(value="") Заказать
+
+        .price-list__flex--block
+          header.price-list__flex--header
+            p.price-list__flex--name
+              | Премиум
+            p.price-list__flex--price
+              | 59 000 Р
+          ul.price-list__list
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              p В подарок
+            li.price-list__list--item
+              p В подарок
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              p Глубокая
+            li.price-list__list--item
+              p 150%
+            li.price-list__list--item
+              p 4 часа
+            li.price-list__list--item
+              p Пожизненно
+            li.price-list__list--item
+              p 3 раза до 3 дней
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            li.price-list__list--item
+              img(src="./img/icons/included.png" alt="included")
+            btn.price-list__list--btn(value="") Заказать
+
+      article.price-list__question
+        | Уверен, что вервый вопрос в вашей голове
+        br
+        | - почему так дорого?
+
+  section.price-reasons
+    .price-reasons__wrap
+      header.price-reasons__header
+        span На то есть свои причины:
+      .price-reasons__flex
+
+        ul.price-reasons__list
+          li.price-reasons__list--item
+            | Главная из них – низкая цена (до 20 тыс. руб.) возможна только при наборе большого количества учеников. Это не позволит уделить внимание каждому, и обучение перестанет быть индивидуальным. Вы покупаете не информацию, а консультации. Причем, на самом деле, по оптовой цене.
+          li.price-reasons__list--item
+            | Есть риск, что вы сольете гораздо больше времени и денег в поисках хорошего специалиста.
+          li.price-reasons__list--item
+            | В отзывах мне говорят, что ценность выше цены. Это значит, что я всё делаю правильно. Да, меня постоянно просят снизить цену. И существует соблазн так сделать. Но это будет крайне несправедливо к тем, кто уже прошел обучение по такой цене. Да и к самому себе это будет несправедливо: ценность должна быть выше цены, но не в несколько раз. Реальную ценность я оцениваю в 80 тыс. руб. (кстати, был случай, когда ученик после курса добровольно доплатил 20 тыс. руб.)
+
+        ul.price-reasons__list
+          li.price-reasons__list--item
+            | Я уверен в качестве, поэтому даю гарантию 150%. Если вы сделаете все задания, но ничего нового так и не узнаете, или курс не понравится, то я верну в полтора раза больше оплаченных за него денег. Я настолько уверен в качестве курса, что без каких-либо колебаний могу это обещать (для директологов с большим опытом гарантия составляет 100%)
+          li.price-reasons__list--item
+            | Такую сумму не оплатят просто любопытные. Мне интереснее работать с теми, кому это действительно нужно, кто задался целью знать о Директе всё. К тому же, она здорово мотивирует на выполнение домашних заданий.
+          li.price-reasons__list--item
+            | Настройка рекламной кампании в моём агентстве, как правило, начинается от 40 тыс. руб., а в среднем составляет 90 тыс. руб. Здесь же вы сами настроите качественную кампанию, унесете с собой все знания и имеете возможность консультироваться по дальнейшим запускам.
+
+  section.clients__video.clients__video--grey
+    header.clients__video--header
+      | Отзывы
+    .clients__video--slider.slider
+
+      //На текст в ссылке завязан JS. Осторожно!
+
+      a.clients__video--nav.slider-nav.prev(href="")
+        | prev
+        img.clients__video--button(src="./img/icons/prev.svg", alt="prev")
+
+      .clients__video--slide.slide.slide-1
+        ifame.clients__video--video(src="http://www.youtube.com/embed/Wcg0-PE2IyU?autoplay=0")
+        p.clients__video--text
+          | ??? при ограничении на Яндекс.Директ
+      .clients__video--slide.slide.slide-2.active
+        ifame.clients__video--video(src="http://www.youtube.com/embed/YUIgrHzURCc?autoplay=0")
+        p.clients__video--text
+          | Всё о курсе Яндекс Директ Филиппа Царевского
+      .clients__video--slide.slide.slide-3.active
+        ifame.clients__video--video(src="https://www.youtube.com/watch?v=CznGfDo6hQc&list=PLsj3rrfxxpJHGmG_ZJceW1geSOdlkp_CQ&index=7")
+        p.clients__video--text
+          | Настройки в Яндекс.Директ
+      .clients__video--slide.slide.slide-4
+        ifame.clients__video--video(src="https://www.youtube.com/watch?v=GeZbIF87Nu8&list=PLsj3rrfxxpJHGmG_ZJceW1geSOdlkp_CQ&index=8")
+        p.clients__video--text
+          | Настройки в Яндекс.Директ
+
+      a.clients__video--nav.slider-nav.next(href="")
+        | next
+        img.clients__video--button(src="./img/icons/next.svg", alt="next")
+
+  section.comment.comment--webinar
+    .webinar__wrap.comment__wrapper
+      .comment--wrapper.clearfix
+
+        a.comment--move.move-back(href="") Назад
+
+        .comment--comment.about-comment
+          .about-comment__wrapper
+
+            .about-comment__image.clearfix
+              img.about-comment__image-pic(src="./img/review-authors/tatyana-ovchinnikova.jpg" alt="Комментарий")
+
+            .about-comment__text
+              header.about-comment__text--head
+                | Подходите ответственно и с душой к своему делу
+              p.about-comment__text--par
+                | Хочу выразить огромную благодарность Вам за ваши видеоуроки. Видеоуроков сейчас полно, но реально качественных и понятных для новичков единицы, да и для уже знающих не первый день про директ. Сразу видно, что Вы подходите ответственно и с душой к своему делу. Отзывы это еще раз подтверждают.
+
+              p.about-comment__text--author
+                | — Татьяна Овчинникова
+
+          nav.about-comment__nav
+            .about-comment__nav--wrapper
+              a.about-comment__nav--link.active(href="")
+                | 1
+              a.about-comment__nav--link(href="")
+                | 2
+              a.about-comment__nav--link(href="")
+                | 3
+              a.about-comment__nav--link(href="")
+                | 4
+
+        a.comment--move.move-foward(href="") Вперёд
+
+  footer.footer
+    .footer__call-us
+      h4.footer__call-us-title Записаться на курс
+      form.form(action="")
+        input.form__text(type="text" placeholder="Ваше Имя")
+        input.form__text(type="text" placeholder="Ваш номер телефона")
+        input.form__text(type="text" placeholder="Промо код")
+        .footer__submit
+          input.btn(type="submit" value="Отправить заявку")
+    include ../_common/_footer__nav
+    include ../_common/_footer__navbar
+  script(src = "js/jquery.min.js")
+  script(src = "js/script.js")
