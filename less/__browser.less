@@ -71,21 +71,35 @@
     display: flex;
     flex-direction: row;
 
+    padding: 44px 6px;
+
     justify-content: space-around;
     flex-wrap: wrap;
   }
 
   &__item {
-    display: flex;
-    flex-direction: column;
-
     box-sizing: border-box;
-    width: 333px;
-    padding: 24px;
+    width: 33%;
+    padding: 0 18px 10px;
 
     font-size: 16px;
+  }
 
-    justify-content: flex-start;
+  &__image {
+    display: block;
+
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+
+    border: 2px solid #c2e0f3;
+    border-radius: 6px;
+    background: url("../img/icons/searchDoc.svg") no-repeat 50% 50%;
+    background-size: 70%;
+  }
+
+  &__text {
+    margin: 19px 0;
   }
 }
 
@@ -97,9 +111,7 @@
   margin: 0 auto;
 
   border: 2px solid #c2e0f3;
-
   border-radius: 6px;
-
   background: url("../img/icons/searchDoc.svg") no-repeat 50% 50%;
   background-size: 70%;
 }
