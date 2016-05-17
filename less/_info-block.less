@@ -1,0 +1,56 @@
+.info-block {
+  margin: -110px 0 -110px;
+  padding: 110px 0 110px;
+  background: linear-gradient(to bottom, transparent 0, #cdcdcd 50%, #b4b4b4 51%, transparent 100%);
+
+  &__wrapper {
+    .wrap();
+
+    position: relative;
+    padding: 0 44px;
+  }
+
+
+  &__border {
+    display: block;
+    position: absolute;
+
+    height: 100%;
+    top: 0;
+
+    &:first-of-type {
+      left: 0;
+    }
+
+    &:last-of-type {
+      right: 0;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__text {
+    display: block;
+    position: relative;
+
+    padding: 40px 80px;
+    background: #fff;
+
+    &--par,
+    &--author {
+      display: block;
+
+      margin: 25px 0 0 0;
+
+      font-size: 18px;
+      line-height: 24px;
+
+      b {
+        font-weight: bold;
+      }
+    }
+
+    &--author {
+      font-style: italic;
+    }
+  }
+}
