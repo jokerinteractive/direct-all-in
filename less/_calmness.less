@@ -1,11 +1,11 @@
 .calmness {
-  padding: 65px 12px 90px;
+  padding: 60px 12px 90px;
 
   color: #000;
 
   h2 {
     margin-top: 0;
-    margin-bottom: 54px;
+    margin-bottom: 60px;
 
     text-align: center;
 
@@ -22,14 +22,13 @@
     position: relative;
 
     box-sizing: border-box;
-    max-width: 588px;
     min-height: 114px;
-    margin-bottom: 58px;
+    margin-bottom: 67px;
 
     &-title {
       margin: 0;
 
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 700;
       line-height: 34px;
     }
@@ -89,24 +88,18 @@
   }
 
   &__features-left {
-    margin-right: 12px;
+    margin-right: 13px;
 
     text-align: right;
 
-    &-item {
-      padding-right: 135px;
-      padding-left: 40px;
-    }
+    &-item { padding-right: 135px; }
     &-item::after { right: 0; }
   }
 
   &__features-right {
     margin-left: 12px;
 
-    &-item {
-      padding-right: 40px;
-      padding-left: 135px;
-    }
+    &-item { padding-left: 135px; }
     &-item::after { left: 0; }
   }
 
@@ -261,19 +254,23 @@
 
 
   &__confidence {
-    padding-top: 84px;
     position: relative;
+
+    padding-top: 84px;
 
     &::before {
       position: absolute;
-      content: "";
-      width: 1270px;
-      left: 50%;
       top: 0;
       bottom: 100%;
-      background: url("../img/calmness/confidence-bg-dots-lines.png") -85px 162px no-repeat;
+      left: 50%;
+
+      width: 1270px;
       height: 100%;
+
+      content: "";
       transform: translateX(-50%);
+
+      background: url("../img/calmness/confidence-bg-dots-lines.png") -85px 162px no-repeat;
     }
 
     &-content { display: flex; }
