@@ -5898,6 +5898,55 @@ span.dotted-underline {
 #review-4:checked ~ .reviews__slider-point[for="review-4"] {
   background: #368cc3;
 }
+.info-block {
+  margin: -110px 0 -110px;
+  padding: 110px 0 110px;
+  background: linear-gradient(to bottom, transparent 0, #cdcdcd 50%, #b4b4b4 51%, transparent 100%);
+}
+.info-block__wrapper {
+  display: block;
+  box-sizing: border-box;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+  padding: 0 44px;
+}
+.info-block__border {
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+.info-block__border:first-of-type {
+  left: 0;
+}
+.info-block__border:last-of-type {
+  right: 0;
+  transform: rotate(180deg);
+}
+.info-block__text {
+  display: block;
+  position: relative;
+  padding: 40px 80px;
+  background: #fff;
+}
+.info-block__text--par,
+.info-block__text--author {
+  display: block;
+  margin: 25px 0 0 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+.info-block__text--par b,
+.info-block__text--author b {
+  font-weight: bold;
+}
+.info-block__text--author {
+  font-style: italic;
+}
 .particles-js-canvas-el {
   position: absolute;
   top: 0;
