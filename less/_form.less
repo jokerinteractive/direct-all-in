@@ -1,12 +1,17 @@
 .form {
   &__text,
   &__textarea {
+    box-sizing: border-box;
+
     padding: 12px 15px;
     outline: none;
+
     border: 1px solid fade(#fff, 33%);
     border-radius: 5px;
+
     background-color: fade(#fff, 10%);
     color: #fff;
+
     font-size: 17px;
     transition: background-color .1s cubic-bezier(.42, 0, .58, 1);
 
@@ -14,9 +19,26 @@
       margin-right: 25px;
     }
 
+    &--w220 {
+      width: 220px;
+
+      &:first-of-type {
+        margin-right: 20px;
+      }
+    }
+
     &--w250 {
       width: 250px;
     }
+
+    &--w270 {
+      width: 270px;
+
+      &:first-of-type {
+        margin-right: 20px;
+      }
+    }
+
 
     &:focus {
       background-color: fade(#fff, 20%);

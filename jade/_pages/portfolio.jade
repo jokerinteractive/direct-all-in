@@ -113,15 +113,15 @@ body
                 | Подробнее
 
     footer.footer
-      .footer__call-us
+      .footer__call-us.footer__call-us--portfolio
         h4.footer__call-us-title Чтобы пообщаться с менеджером, узнать все детали и получить ответы
           br
           | на оставшиеся вопросы, оставьте заявку, и мы перезвоним в ближайшее рабочее время.
         form.form(action="")
-          input.form__text(type="text" placeholder="Ваше Имя")
-          input.form__text(type="text" placeholder="Ваш номер телефона")
-          .footer__submit
-            input.btn(type="submit" value="Отправить заявку")
+          input.form__text.form__text--w270(type="text" placeholder="Ваше Имя")
+          input.form__text.form__text--w270(type="text" placeholder="Ваш номер телефона")
+          .footer__submit.footer__submit--big
+            input.btn.btn--big(type="submit" value="Отправить заявку")
       include ../_common/_footer__nav
       include ../_common/_footer__navbar
   script(src = "js/jquery.min.js")
