@@ -3653,7 +3653,14 @@ span.dotted-underline {
   text-align: center;
   font-size: 34px;
   padding-top: 8px;
-  margin-bottom: 30px;
+}
+.course-for__header::after {
+  content: "";
+  display: block;
+  width: 600px;
+  height: 30px;
+  margin: 30px auto 0;
+  background: url(../img/icons/dashedLineRed.svg) center no-repeat;
 }
 .course-for-list {
   display: block;
@@ -3711,6 +3718,12 @@ span.dotted-underline {
 .course-for-list__item.newLessons::before {
   background-image: url(../img/icons/newLessons.svg);
 }
+.course-for-list__item.businessOwner::before {
+  background-image: url(../img/icons/BusinessOwner.svg);
+}
+.course-for-list__item.youHaveDirectologs::before {
+  background-image: url(../img/icons/youHaveDirectologs.svg);
+}
 .course-for-list__item--wrapper {
   display: block;
   width: 550px;
@@ -3727,6 +3740,9 @@ span.dotted-underline {
 }
 .course-for--light {
   background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 0;
+}
+.course-for--light .course-for__header::after {
+  background-image: url(../img/icons/dashedLineBlue.svg);
 }
 .course-for--light .course-for-list::before {
   background-image: url(../img/decoration/blue-line.png);
@@ -3863,6 +3879,9 @@ span.dotted-underline {
 }
 .better--grey {
   background: linear-gradient(to bottom, #fff, #f8f8f8);
+}
+.better--grey .better__wrap {
+  padding-top: 0;
 }
 .better__wrap {
   display: block;
@@ -5411,6 +5430,7 @@ span.dotted-underline {
   position: relative;
   box-sizing: border-box;
   width: 45%;
+  overflow: visible;
 }
 .teacher__text {
   width: 55%;
@@ -5441,9 +5461,8 @@ span.dotted-underline {
 .teacher__img {
   display: block;
   position: relative;
-  bottom: 25px;
-  left: 16px;
-  transform: scale(1.08);
+  bottom: 0;
+  left: 0;
   width: 80%;
 }
 .price-list__wrap {
@@ -5485,15 +5504,15 @@ span.dotted-underline {
 }
 .price-list__flex--block:nth-of-type(2) .price-list__flex--header,
 .price-list__flex--block:nth-of-type(2) .price-list__list--btn {
-  background: linear-gradient(2deg, #1e689c, #485a95);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(0, 0, 0, 0.05) 0, rgba(0, 0, 0, 0.05) 6px), linear-gradient(2deg, #1e689c, #485a95) no-repeat border-box;
 }
 .price-list__flex--block:nth-of-type(3) .price-list__flex--header,
 .price-list__flex--block:nth-of-type(3) .price-list__list--btn {
-  background: linear-gradient(2deg, #515793, #8c428a);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(0, 0, 0, 0.05) 0, rgba(0, 0, 0, 0.05) 6px), linear-gradient(2deg, #515793, #8c428a) no-repeat border-box;
 }
 .price-list__flex--block:nth-of-type(4) .price-list__flex--header,
 .price-list__flex--block:nth-of-type(4) .price-list__list--btn {
-  background: linear-gradient(2deg, #943f88, #bf3181);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(0, 0, 0, 0.05) 0, rgba(0, 0, 0, 0.05) 6px), linear-gradient(2deg, #943f88, #bf3181) no-repeat border-box;
 }
 .price-list__flex--header {
   display: block;
@@ -5609,12 +5628,11 @@ span.dotted-underline {
   content: "";
   display: block;
   position: absolute;
-  width: 14px;
-  height: 7px;
-  top: 7px;
-  left: 6px;
-  border: 2px solid #fff;
-  border-width: 0 0 3px 3px;
+  width: 15px;
+  height: 9px;
+  top: 5px;
+  left: 7px;
+  box-shadow: -3px 3px 0 0 #fff;
   transform: rotate(-45deg);
 }
 .price-list__list--no {
@@ -5989,8 +6007,8 @@ span.dotted-underline {
   background: #368cc3;
 }
 .info-block {
-  margin: -110px 0 -110px;
-  padding: 110px 0 110px;
+  margin: -110px 0 0;
+  padding: 110px 0;
   background: linear-gradient(to bottom, transparent 0, #cdcdcd 50%, #b4b4b4 51%, transparent 100%);
 }
 .info-block__wrapper {
