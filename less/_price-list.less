@@ -33,21 +33,21 @@
       &:nth-of-type(2) {
         .price-list__flex--header,
         .price-list__list--btn {
-          background: linear-gradient(2deg, #1e689c, #485a95);
+          background: repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(0, 0, 0, .05) 0, rgba(0, 0, 0, .05) 6px), linear-gradient(2deg, #1e689c, #485a95) no-repeat border-box;
         }
       }
 
       &:nth-of-type(3) {
         .price-list__flex--header,
         .price-list__list--btn {
-          background: linear-gradient(2deg, #515793, #8c428a);
+          background: repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(0, 0, 0, .05) 0, rgba(0, 0, 0, .05) 6px), linear-gradient(2deg, #515793, #8c428a) no-repeat border-box;
         }
       }
 
       &:nth-of-type(4) {
         .price-list__flex--header,
         .price-list__list--btn {
-          background: linear-gradient(2deg, #943f88, #bf3181);
+          background: repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(0, 0, 0, .05) 0, rgba(0, 0, 0, .05) 6px), linear-gradient(2deg, #943f88, #bf3181) no-repeat border-box;
         }
       }
     }
@@ -205,14 +205,15 @@
         display: block;
         position: absolute;
 
-        width: 14px;
-        height: 7px;
+        width: 15px;
+        height: 9px;
 
-        top: 7px;
-        left: 6px;
+        top: 5px;
+        left: 7px;
 
-        border: 2px solid #fff;
-        border-width: 0 0 3px 3px;
+        //border: 2px solid #fff;
+        //border-width: 0 0 3px 3px;
+        box-shadow: -3px 3px 0 0 #fff;
         transform: rotate(-45deg);
       }
     }

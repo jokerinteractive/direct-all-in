@@ -6,7 +6,18 @@
     text-align: center;
     font-size: 34px;
     padding-top: 8px;
-    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 600px;
+      height: 30px;
+
+      margin: 30px auto 0;
+
+      background: url(../img/icons/dashedLineRed.svg) center no-repeat;
+    }
   }
 
   &-list {
@@ -76,6 +87,14 @@
         background-image: url(../img/icons/newLessons.svg);
       }
 
+      &.businessOwner::before {
+        background-image: url(../img/icons/BusinessOwner.svg);
+      }
+
+      &.youHaveDirectologs::before {
+        background-image: url(../img/icons/youHaveDirectologs.svg);
+      }
+
       &--wrapper {
         display: block;
         width: 550px;
@@ -97,6 +116,10 @@
 
   &--light {
     background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 0;
+
+    .course-for__header::after {
+      background-image: url(../img/icons/dashedLineBlue.svg);
+    }
 
     .course-for-list::before {
       background-image: url(../img/decoration/blue-line.png);
