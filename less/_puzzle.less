@@ -8,7 +8,7 @@
 }
 
 .adwords-puzzle {
-  padding-top: 145px;
+  padding-top: 200px;
 
   background: url("../img/puzzles/puzzle-bg-top.png") no-repeat 50% -55px, url("../img/puzzles/puzzles-bg.png") no-repeat 50% 95%;
 
@@ -24,8 +24,8 @@
 
     text-align: center;
 
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
   }
 
   &__header {
@@ -38,22 +38,30 @@
       box-sizing: border-box;
       max-width: 490px;
       padding-top: 40px;
-      padding-right: 30px;
+      padding-right: 56px;
     }
 
     &-right {
       box-sizing: border-box;
       max-width: 710px;
-      padding: 30px 24px;
+      padding: 55px 0 30px 40px;
+    }
+
+    &-subtitle {
+      font-size: 28px;
     }
 
     &-feature {
       position: relative;
 
       padding-left: 37px;
+      margin: 0 0 36px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
 
       font-size: 15px;
-      font-weight: 500px;
 
       &::before {
         position: absolute;
@@ -76,17 +84,20 @@
     z-index: 2;
 
     display: flex;
+    justify-content: center;
 
-    padding-top: 37px;
+    padding-top: 30px;
   }
 
   &__specialists-description-annotation {
     position: absolute;
-    top: -2.5%;
-    right: 0;
+    top: -5.5%;
+    right: -1%;
 
-    max-width: 290px;
-    padding: 20px 30px;
+    max-width: 285px;
+    padding: 16px 0 16px 30px;
+
+    font-size: 16px;
 
     border: 1px solid rgba(193, 189, 145, .85);
     border-radius: 14px;
@@ -130,7 +141,7 @@
     width: 39.17%;
     min-width: 400px;
     height: 465px;
-    margin: 21px;
+    margin: 7px;
     margin-bottom: 38px;
 
     border: 1px solid rgba(196, 196, 196, .85);
@@ -145,8 +156,7 @@
     box-sizing: border-box;
     max-width: 612px;
     margin-bottom: 40px;
-    padding-right: 61px;
-    padding-left: 20px;
+    padding-left: 77px;
 
     &-title {
       margin-top: 80px;

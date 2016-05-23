@@ -2,7 +2,7 @@
   display: block;
 
   max-width: 1000px;
-  margin: 35px auto;
+  margin: 45px auto 35px;
 
   border: 1px solid rgba(105, 105, 105, .25);
   border-radius: 6px;
@@ -71,7 +71,7 @@
     display: flex;
     flex-direction: row;
 
-    padding: 44px 6px;
+    padding: 60px 6px 25px;
 
     justify-content: space-around;
     flex-wrap: wrap;
@@ -80,7 +80,7 @@
   &__item {
     box-sizing: border-box;
     width: 33%;
-    padding: 0 18px 10px;
+    padding: 0 18px 23px;
 
     font-size: 16px;
   }
@@ -99,7 +99,8 @@
   }
 
   &__text {
-    margin: 19px 0;
+    margin: 19px auto;
+    max-width: 230px;
   }
 }
 
@@ -118,7 +119,7 @@
 
 .browser__item-image-cursor() {
   background-image: url("../img/icons/cursor.svg");
-  background-size: 100%;
+  background-size: 50%;
 }
 
 .browser__item-image-AB() {

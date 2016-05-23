@@ -16,7 +16,13 @@
 .calmness__feature-budget::after { background: url("../img/icons/icon_safe.svg") no-repeat 50% 50%; }
 
 .vedenie {
-  &__wrap { .wrap; }
+  &__wrap {
+    .wrap;
+
+    &--no-padding {
+      padding: 0;
+    }
+  }
   &-founder { .adwords-founder; }
   &-puzzle { .adwords-puzzle; }
   &-portfolio { .adwords-portfolio; }
@@ -39,8 +45,8 @@
     &__title {
       margin: 0;
 
-      font-size: 30px;
-      line-height: 42px;
+      font-size: 35px;
+      line-height: 52px;
     }
 
     &__item-image {
