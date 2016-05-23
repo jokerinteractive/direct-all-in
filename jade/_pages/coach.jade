@@ -17,9 +17,9 @@ body
       .subscription__column--right.get-course.get-course--coach
         h3.get-course__header Заполните заявку,
         p.get-course__details.details--no-border и узнайте подробнее условия прохождения
-        form.form(action="")
-          input.form__text.form__text--big.get-course__input-text(type="text" placeholder="Ваше имя")
-          input.form__text.form__text--big.get-course__input-text.get-course__input-text--margin(type="text" placeholder="Ваш номер телефона")
+        form.form(action="./php/mail.php" method="post")
+          input.form__text.form__text--big.get-course__input-text(type="text" name="name" placeholder="Ваше имя" required)
+          input.form__text.form__text--big.get-course__input-text.get-course__input-text--margin(type="tel" name="phone" placeholder="Ваш номер телефона" required)
           input.btn.btn--main.get-course__btn(type="submit" value="Позвонить мне")
 
   section.course-included
@@ -592,10 +592,10 @@ body
   footer.footer
     .footer__call-us.footer__call-us--big
       h4.footer__title Записаться на курс
-      form.form(action="")
-        input.form__text.form__text--w250(type="text" placeholder="Ваше Имя")
-        input.form__text.form__text--w250(type="text" placeholder="Ваш номер телефона")
-        input.form__text.form__text--w250(type="text" placeholder="Промо код")
+      form.form(action="./php/mail-promo.php" method="post")
+        input.form__text.form__text--w250(type="text" placeholder="Ваше Имя" name="name" required)
+        input.form__text.form__text--w250(type="tel" placeholder="Ваш номер телефона" name="phone" required)
+        input.form__text.form__text--w250(type="text" placeholder="Промо код" name="promo" required)
         .footer__submit.footer__submit--big
           input.btn.btn--big(type="submit" value="Отправить заявку")
     include ../_common/_footer__nav
