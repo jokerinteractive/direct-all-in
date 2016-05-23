@@ -535,21 +535,21 @@ body
         img.clients__video--button(src="./img/icons/prev.svg", alt="prev")
 
       .clients__video--slide.slide.slide-1
-        ifame.clients__video--video(src="http://www.youtube.com/embed/Wcg0-PE2IyU?autoplay=0")
+        iframe(width="300" height="226" src="https://www.youtube.com/embed/xHSHId5XRHg" frameborder="0" allowfullscreen)
         p.clients__video--text
-          | ??? при ограничении на Яндекс.Директ
+          | Отзыв Романа об индивидуальном обучении Яндекс Директу
       .clients__video--slide.slide.slide-2.active
-        ifame.clients__video--video(src="http://www.youtube.com/embed/YUIgrHzURCc?autoplay=0")
+        iframe(width="300" height="226" src="https://www.youtube.com/embed/6wBgf2bOCXo" frameborder="0" allowfullscreen)
         p.clients__video--text
-          | Всё о курсе Яндекс Директ Филиппа Царевского
+          | Отзыв Ивана о курсе по Яндекс Директ
       .clients__video--slide.slide.slide-3.active
-        ifame.clients__video--video(src="https://www.youtube.com/watch?v=CznGfDo6hQc&list=PLsj3rrfxxpJHGmG_ZJceW1geSOdlkp_CQ&index=7")
+        iframe(width="300" height="226" src="https://www.youtube.com/embed/SVKHqx2IhtI" frameborder="0" allowfullscreen)
         p.clients__video--text
-          | Настройки в Яндекс.Директ
+          | Отзыв Ксюши о месячном курсе по Яндекс Директ
       .clients__video--slide.slide.slide-4
-        ifame.clients__video--video(src="https://www.youtube.com/watch?v=GeZbIF87Nu8&list=PLsj3rrfxxpJHGmG_ZJceW1geSOdlkp_CQ&index=8")
+        iframe(width="300" height="226"  src="https://www.youtube.com/embed/aT2ykoQLMAw" frameborder="0" allowfullscreen)
         p.clients__video--text
-          | Настройки в Яндекс.Директ
+          | Отзыв Мурада о месячном курсе по Яндекс Директ
 
       a.clients__video--nav.slider-nav.next(href="")
         | next
@@ -591,10 +591,10 @@ body
 
   footer.footer
     .footer__call-us.footer__call-us--big
-      h4.footer__call-us-title Записаться на курс
+      h4.footer__title Записаться на курс
       form.form(action="")
-        input.form__text.form__text--margin.form__text--w250(type="text" placeholder="Ваше Имя")
-        input.form__text.form__text--margin.form__text--w250(type="text" placeholder="Ваш номер телефона")
+        input.form__text.form__text--w250(type="text" placeholder="Ваше Имя")
+        input.form__text.form__text--w250(type="text" placeholder="Ваш номер телефона")
         input.form__text.form__text--w250(type="text" placeholder="Промо код")
         .footer__submit.footer__submit--big
           input.btn.btn--big(type="submit" value="Отправить заявку")

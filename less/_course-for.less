@@ -1,6 +1,10 @@
 .course-for {
   padding: 60px 0;
 
+  &--padding {
+    padding: 100px 0 30px;
+  }
+
   &__header {
     display: block;
     text-align: center;
@@ -14,7 +18,7 @@
       width: 600px;
       height: 30px;
 
-      margin: 30px auto 0;
+      margin: 5px auto 0;
 
       background: url(../img/icons/dashedLineRed.svg) center no-repeat;
     }
@@ -103,19 +107,20 @@
 
       &--header {
         font-weight: bold;
+        font-size: 18px;
         margin-bottom: 10px;
       }
 
       &--text {
         margin: 0;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }
 
   &--light {
-    background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 0;
+    //background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 10px;
 
     .course-for__header::after {
       background-image: url(../img/icons/dashedLineBlue.svg);

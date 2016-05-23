@@ -1,5 +1,20 @@
 .course-included {
-  background: #fff url(../img/calmness/calmness-light-bg.png) center 0 no-repeat;
+  position: relative;
+  background: #fff url(../img/calmness/calmness-light-bg.png) center 10px no-repeat;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    left: 0;
+    top: 3px;
+
+    border-bottom: 2px dashed #e5e7f3;
+  }
 
   &__wrap {
     .wrap();
@@ -11,7 +26,7 @@
     display: block;
     position: relative;
 
-    margin: 0 0 60px;
+    margin: 0 0 50px;
     text-align: center;
 
     &--name {
@@ -37,10 +52,10 @@
       display: block;
       box-sizing: border-box;
       width: 50%;
-      padding: 0 0 0 50px;
+      padding: 0 0 0 64px;
 
       &:nth-of-type(2) {
-        padding-left: 30px;
+        padding-left: 52px;
       }
     }
   }
@@ -52,7 +67,7 @@
     font-size: 20px;
     font-weight: bold;
 
-    margin: 0 0 10px;
+    margin: 0 0 16px;
 
     padding-left: 33px;
 
@@ -89,7 +104,7 @@
 
       font-size: 18px;
       padding-left: 40px;
-      margin: 0 0 15px;
+      margin: 0 0 12px;
 
       line-height: 23px;
 

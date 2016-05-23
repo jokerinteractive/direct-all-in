@@ -361,17 +361,19 @@ body
             br
             | контекстной рекламе
 
-  footer.footer.vedenie-footer.footer__call-us
-    h4.footer__call-us-title Чтобы пообщаться с менеджером, узнать все детали и получить ответы
-      br
-      | на оставшиеся вопросы, оставьте заявку, и мы перезвоним в ближайшее время.
+  footer.footer
+    .footer__call-us
+      h4.footer__title
+        | Чтобы пообщаться с менеджером, узнать все детали и получить ответы
+        br
+        | на оставшиеся вопросы, оставьте заявку, и мы перезвоним в ближайшее время.
 
-    form.form(action="")
-      input.form__text(type="text" placeholder="Ваше Имя")
-      input.form__text(type="text" placeholder="Ваш номер телефона")
+      form.form(action="")
+        input.form__text(type="text" placeholder="Ваше Имя")
+        input.form__text(type="text" placeholder="Ваш номер телефона")
 
-      .footer__submit
-        input.btn(type="submit" value="Позвонить мне")
+        .footer__submit
+          input.btn(type="submit" value="Позвонить мне")
 
     include ../_common/_footer__nav
     include ../_common/_footer__navbar

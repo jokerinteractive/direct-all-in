@@ -22,13 +22,13 @@ body
       p.contacts__subtitle Время работы:
       .contacts__worktime
         span.contacts__worktime-days ПН-ПТ
-        img(src="./img/contacts/working-hours.png" width="362" height="24") 
+        img(src="./img/contacts/working-hours.png" width="362" height="24")
         //TODO retina ok?
       p.contacts__socials-title.contacts__subtitle Социальные сети
-      .contacts__socials-list 
+      .contacts__socials-list
         a(href="#").contacts__socials-item
           img(src="./img/contacts/vk.svg" width="65" height="65")
-          p.contacts__socials-text Страница&nbsp;менеджера 
+          p.contacts__socials-text Страница&nbsp;менеджера
             br
             | на ВК
         a(href="#").contacts__socials-item
@@ -39,23 +39,23 @@ body
           p.contacts__socials-text Канал Direct-All-In на YouTube
         a(href="#").contacts__socials-item
           img(src="./img/contacts/fb.svg" width="65" height="65")
-          p.contacts__socials-text Страница Филиппа на Facebook 
+          p.contacts__socials-text Страница Филиппа на Facebook
         a(href="#").contacts__socials-item
           img(src="./img/contacts/vk.svg" width="65" height="65")
           p.contacts__socials-text Страница Филиппа на ВК
-        
-  
-  footer.footer.vedenie-footer.footer__call-us
-    h4.footer__call-us-title Если Вам неудобно звонить, оставьте заявку,
-      br
-      | и мы перезвоним Вам сами:
 
-    form.form(action="")
-      input.form__text(type="text" placeholder="Ваше Имя")
-      input.form__text(type="text" placeholder="Ваш номер телефона")
-      
-      .footer__submit
-        input.btn(type="submit" value="Позвонить мне")
+
+  footer.footer
+    .footer__call-us
+      h4.footer__title Если Вам неудобно звонить, оставьте заявку,
+        br
+        | и мы перезвоним Вам сами:
+
+      form.form(action="")
+        input.form__text(type="text" placeholder="Ваше Имя")
+        input.form__text(type="text" placeholder="Ваш номер телефона")
+        .footer__submit
+          input.btn(type="submit" value="Позвонить мне")
 
     include ../_common/_footer__nav
     include ../_common/_footer__navbar
