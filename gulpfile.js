@@ -16,6 +16,7 @@ var
   uglify = require('gulp-uglify'),
   deploy = require('gulp-gh-pages'),
   plumber = require('gulp-plumber'),
+  csscomb = require('gulp-csscomb'),
   postcss = require('gulp-postcss'),
   imagemin = require('gulp-imagemin'),
   syntax_less = require('postcss-less'),
@@ -40,6 +41,7 @@ var
     },
 
     style: {
+      src: './less',
       location: './less/style.less',
       watch: ['./less/*.less', './less/_*/*.less'],
       entryPoint: './css/style.css',
@@ -118,6 +120,13 @@ gulp.task('jade', function () {
       message: 'Jade: <%= file.relative %>',
       sound: 'Pop'
     }));
+});
+
+/* --------- stylecomb --------- */
+gulp.task('csscomb', function () {
+  return gulp.src(paths.style.watch)
+    .pipe(csscomb())
+    .pipe(gulp.dest(paths.style.src));
 });
 
 /* --------- styletest --------- */
