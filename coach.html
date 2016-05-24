@@ -34,9 +34,9 @@
       <div class="subscription__column--right get-course get-course--coach">
         <h3 class="get-course__header">Заполните заявку,</h3>
         <p class="get-course__details details--no-border">и узнайте подробнее условия прохождения</p>
-        <form action="" class="form">
-          <input type="text" placeholder="Ваше имя" class="form__text form__text--big get-course__input-text">
-          <input type="text" placeholder="Ваш номер телефона" class="form__text form__text--big get-course__input-text get-course__input-text--margin">
+        <form action="./php/mail.php" method="post" class="form">
+          <input type="text" name="name" placeholder="Ваше имя" required class="form__text form__text--big get-course__input-text">
+          <input type="tel" name="phone" placeholder="Ваш номер телефона" required class="form__text form__text--big get-course__input-text get-course__input-text--margin">
           <input type="submit" value="Позвонить мне" class="btn btn--main get-course__btn">
         </form>
       </div>
@@ -489,20 +489,20 @@
     <div class="clients__video--slider slider">
       <!--На текст в ссылке завязан JS. Осторожно!--><a href="" class="clients__video--nav slider-nav prev">prev<img src="./img/icons/prev.svg" alt="prev" class="clients__video--button"></a>
       <div class="clients__video--slide slide slide-1">
-        <ifame src="http://www.youtube.com/embed/Wcg0-PE2IyU?autoplay=0" class="clients__video--video"></ifame>
-        <p class="clients__video--text">??? при ограничении на Яндекс.Директ</p>
+        <iframe width="300" height="226" src="https://www.youtube.com/embed/xHSHId5XRHg" frameborder="0" allowfullscreen></iframe>
+        <p class="clients__video--text">Отзыв Романа об индивидуальном обучении Яндекс Директу</p>
       </div>
       <div class="clients__video--slide slide slide-2 active">
-        <ifame src="http://www.youtube.com/embed/YUIgrHzURCc?autoplay=0" class="clients__video--video"></ifame>
-        <p class="clients__video--text">Всё о курсе Яндекс Директ Филиппа Царевского</p>
+        <iframe width="300" height="226" src="https://www.youtube.com/embed/6wBgf2bOCXo" frameborder="0" allowfullscreen></iframe>
+        <p class="clients__video--text">Отзыв Ивана о курсе по Яндекс Директ</p>
       </div>
       <div class="clients__video--slide slide slide-3 active">
-        <ifame src="https://www.youtube.com/watch?v=CznGfDo6hQc&amp;list=PLsj3rrfxxpJHGmG_ZJceW1geSOdlkp_CQ&amp;index=7" class="clients__video--video"></ifame>
-        <p class="clients__video--text">Настройки в Яндекс.Директ</p>
+        <iframe width="300" height="226" src="https://www.youtube.com/embed/SVKHqx2IhtI" frameborder="0" allowfullscreen></iframe>
+        <p class="clients__video--text">Отзыв Ксюши о месячном курсе по Яндекс Директ</p>
       </div>
       <div class="clients__video--slide slide slide-4">
-        <ifame src="https://www.youtube.com/watch?v=GeZbIF87Nu8&amp;list=PLsj3rrfxxpJHGmG_ZJceW1geSOdlkp_CQ&amp;index=8" class="clients__video--video"></ifame>
-        <p class="clients__video--text">Настройки в Яндекс.Директ</p>
+        <iframe width="300" height="226" src="https://www.youtube.com/embed/aT2ykoQLMAw" frameborder="0" allowfullscreen></iframe>
+        <p class="clients__video--text">Отзыв Мурада о месячном курсе по Яндекс Директ</p>
       </div><a href="" class="clients__video--nav slider-nav next">next<img src="./img/icons/next.svg" alt="next" class="clients__video--button"></a>
     </div>
   </section>
@@ -527,11 +527,11 @@
   </section>
   <footer class="footer">
     <div class="footer__call-us footer__call-us--big">
-      <h4 class="footer__call-us-title">Записаться на курс</h4>
-      <form action="" class="form">
-        <input type="text" placeholder="Ваше Имя" class="form__text form__text--margin form__text--w250">
-        <input type="text" placeholder="Ваш номер телефона" class="form__text form__text--margin form__text--w250">
-        <input type="text" placeholder="Промо код" class="form__text form__text--w250">
+      <h4 class="footer__title">Записаться на курс</h4>
+      <form action="./php/mail-promo.php" method="post" class="form">
+        <input type="text" placeholder="Ваше Имя" name="name" required class="form__text form__text--w250">
+        <input type="tel" placeholder="Ваш номер телефона" name="phone" required class="form__text form__text--w250">
+        <input type="text" placeholder="Промо код" name="promo" required class="form__text form__text--w250">
         <div class="footer__submit footer__submit--big">
           <input type="submit" value="Отправить заявку" class="btn btn--big">
         </div>
