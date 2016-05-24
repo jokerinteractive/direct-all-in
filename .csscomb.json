@@ -1,6 +1,7 @@
 {
+    "verbose": true,
+
     "always-semicolon": true,
-    "block-indent": "  ",
     "color-case": "lower",
     "color-shorthand": true,
     "element-case": "lower",
@@ -9,18 +10,14 @@
     "quotes": "double",
     "remove-empty-rulesets": true,
     "sort-order-fallback": "abc",
-    "space-after-colon": " ",
-    "space-after-combinator": " ",
-    "space-after-opening-brace": "\n",
-    "space-after-selector-delimiter": "\n",
-    "space-before-closing-brace": "\n",
     "space-before-colon": "",
-    "space-before-combinator": "",
-    "space-before-opening-brace": " ",
+    "space-after-colon": " ",
+    "space-before-combinator": " ",
+    "space-after-combinator": " ",
     "space-before-selector-delimiter": "",
-    "space-between-declarations": "\n",
+    "space-before-opening-brace": " ",
     "strip-spaces": true,
     "unitless-zero": true,
-    "tab-size": true,
+    "tab-size": 3,
     "vendor-prefix-align": true
 }
