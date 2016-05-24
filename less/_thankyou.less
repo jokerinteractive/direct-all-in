@@ -1,0 +1,70 @@
+.thank-you {
+  position: relative;
+  background: #fff url(../img/calmness/calmness-light-bg.png) center 10px no-repeat;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    left: 0;
+    top: 3px;
+
+    border-bottom: 2px dashed #e5e7f3;
+  }
+
+  &__wrap {
+    .wrap();
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: row;
+
+    align-items: bottom;
+    justify-content: space-between;
+
+    &--block {
+      display: block;
+      box-sizing: border-box;
+      width: 40%;
+
+      &:first-of-type {
+        width: 60px;
+        padding: 180px 0;
+      }
+    }
+  }
+
+  &__header {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+
+    margin-bottom: 60px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 26px;
+
+    margin: 0 0 35px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__coach {
+    display: block;
+    position: relative;
+
+    &--img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
