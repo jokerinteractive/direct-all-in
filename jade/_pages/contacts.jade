@@ -52,10 +52,10 @@ body
         | и мы перезвоним Вам сами:
 
       form.form(action="")
-        input.form__text(type="text" placeholder="Ваше Имя")
-        input.form__text(type="text" placeholder="Ваш номер телефона")
+        input.form__text.form__text--w250(type="text" placeholder="Ваше Имя")
+        input.form__text.form__text--w250(type="text" placeholder="Ваш номер телефона")
         .footer__submit
-          input.btn(type="submit" value="Позвонить мне")
+          input.btn.btn--big(type="submit" value="Позвонить мне")
 
     include ../_common/_footer__nav
     include ../_common/_footer__navbar

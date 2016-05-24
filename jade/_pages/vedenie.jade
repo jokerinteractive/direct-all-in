@@ -7,21 +7,24 @@ body
   .callback-header
     .vedenie__wrap
       .callback-header__content
-        .callback-header__left
-          h1.callback-header__left-title Настройка
-            br
-            span.callback-header__left-logo Контекстной Рекламы
+        .callback-header__left.callback-header__left--padding
+          h1.callback-header__left-title
+            small Ведение и аналитика
+            span.callback-header__logo
+              | Контекстной Рекламы. Аудит
 
           h2.callback-header__left-text Премиум-услуги по настройке контекстной рекламы для малого бизнеса, работающего на рынке от 1 года.
           h2.callback-header__left-text Рекламный бюджет от 20 000 до 500 000 рублей.
 
-        form(action='' method='').callback-header__form
-          h3 Заполните заявку,
-          p.callback-header__form-expert-analisys и получите экспертную оценку действующей кампании и разработку стратегии
-            strong бесплатно!
-          input.callback-header__form-name.header-subscription-block__input(type='text' placeholder='Ваше Имя')
-          input.callback-header__form-phone.header-subscription-block__input(type='text' placeholder='Ваш номер телефона')
-          input.callback-header__form-button.header-subscription-block__input(type='submit' value='Позвонить мне')
+        article.callback-header__right
+          h3.callback-header__right--header Заполните заявку,
+          p.callback-header__right--expert-analisys и получите экспертную оценку действующей кампании и разработку стратегии
+            strong  бесплатно!
+
+          form(action='' method='').form
+            input.form__text.form__text--big(type='text' placeholder='Ваше Имя')
+            input.form__text.form__text--no-margin.form__text--big(type='tel' placeholder='Ваш номер телефона')
+            input.btn.btn--main(type='submit' value='Позвонить мне')
 
   .vedenie-explanation
     .vedenie__wrap
@@ -373,7 +376,7 @@ body
         input.form__text(type="text" placeholder="Ваш номер телефона")
 
         .footer__submit
-          input.btn(type="submit" value="Позвонить мне")
+          input.btn.btn--big(type="submit" value="Позвонить мне")
 
     include ../_common/_footer__nav
     include ../_common/_footer__navbar

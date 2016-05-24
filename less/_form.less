@@ -16,16 +16,8 @@
     transition: background-color .1s cubic-bezier(.42, 0, .58, 1);
     margin-left: 25px;
 
-    &:first-of-type {
-      margin-left: 0;
-    }
-
     &--w220 {
       width: 220px;
-
-      &:first-of-type {
-        margin-right: 20px;
-      }
     }
 
     &--w250 {
@@ -34,12 +26,7 @@
 
     &--w270 {
       width: 270px;
-
-      &:first-of-type {
-        margin-right: 20px;
-      }
     }
-
 
     &:focus {
       background-color: fade(#fff, 20%);
@@ -57,6 +44,21 @@
       &:focus {
         background-color: hsla(0, 0%, 0%, .2);
       }
+    }
+  }
+
+  &__text {
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &--no-margin {
+      margin-left: 0;
+    }
+
+    &--middle {
+      margin-left: auto !important;
     }
   }
 

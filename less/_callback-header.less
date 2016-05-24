@@ -30,6 +30,14 @@
   &__logo {
     font-family: "PT Sans Narrow", "Open Sans", arial, sans-serif;
     font-size: 65px;
+    line-height: 67px;
+    display: block;
+
+    &--red {
+      &::first-letter {
+        color: #ff0c0c;
+      }
+    }
   }
 
   &__left {
@@ -38,71 +46,50 @@
 
     img { margin-top: 24px; }
 
+    &--padding {
+      padding: 17px 0 0 40px;
+    }
     &-title {
       margin-top: 0;
       margin-bottom: 23px;
 
       font-size: 40px;
+
+      small {
+        display: block;
+        font-size: 22px;
+      }
     }
 
     &-text:last-child { margin-bottom: 0; }
 
     &-text {
       max-width: 510px;
-      margin-top: 22px;
-      margin-bottom: 46px;
+      margin: 22px 0 30px;
 
       font-size: 22px;
       line-height: 24px;
     }
   }
 
-  &__form {
+  &__right {
     box-sizing: border-box;
     min-width: 233px;
-    max-width: 392px;
+    max-width: 434px;
     padding-right: 27px;
 
-    &-expert-analisys {
+    &--header {
+      margin: 11px 0 6px;
+      font-size: 29px;
+    }
+
+    &--expert-analisys {
       margin-top: 0;
       margin-bottom: 18px;
 
       font-size: 16px;
       font-weight: 500;
       line-height: 24px;
-    }
-
-    h3 {
-      margin-top: 11px;
-      margin-bottom: 6px;
-
-      font-size: 29px;
-    }
-
-    input {
-      box-sizing: border-box;
-      width: 100%;
-      margin-bottom: 11px;
-
-      line-height: 20px;
-    }
-
-    input&-button,
-    &-button {
-      width: 100%;
-
-      border: none;
-      background-color: #1b92f0;
-      box-shadow: inset 0 1px rgba(255, 255, 255, .27), 0 3px rgba(0, 0, 0, .21);
-
-      font-weight: 700;
-
-      &:hover { background-color: #005aa2; }
-      &:active {
-        color: #246d9e;
-        background-color: #003d6d;
-        box-shadow: inset 0 -1px rgba(27, 146, 240, .21), 0 -3px rgba(0, 0, 0, .27);
-      }
     }
   }
 }
