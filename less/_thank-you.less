@@ -29,11 +29,12 @@
 
     &--block {
       display: block;
+      position: relative;
       box-sizing: border-box;
       width: 40%;
 
       &:first-of-type {
-        width: 60px;
+        width: 60%;
         padding: 180px 0;
       }
     }
@@ -60,7 +61,10 @@
 
   &__coach {
     display: block;
-    position: relative;
+    position: absolute;
+
+    width: 100%;
+    bottom: 0;
 
     &--img {
       display: block;

@@ -134,5 +134,28 @@
 
   &__navbar-contacts {
     font-size: 17px;
+
+    &--mail::before,
+    &--tel::before {
+      content: " ";
+      display: inline-block;
+
+      width: 20px;
+      height: 20px;
+
+      background: center no-repeat;
+      background-size: contain;
+
+      margin-right: 10px;
+      vertical-align: bottom;
+    }
+
+    &--mail::before {
+      background-image: url(../img/icons/_Footer_mail_icon.svg);
+    }
+
+    &--tel::before {
+      background-image: url(../img/icons/_Footer_phone_icon.svg);
+    }
   }
 }
