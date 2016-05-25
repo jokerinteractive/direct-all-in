@@ -80,8 +80,7 @@ gulp.task('js', function () {
     }))
     .pipe(gulp.dest('build/img'))
     .pipe(notify({
-      message: 'Images: <%= file.relative %>',
-      sound: 'Pop'
+      message: 'Image: <%= file.relative %>'
     }));
 });
 
@@ -221,7 +220,9 @@ if (!isOnProduction) {
   allTasks.push('serve');
 }
 
-gulp.task('build', ['style', 'jade', 'images', 'js']);
+gulp.task('build', ['style', 'jade', 'images', 'js'], function () {
+  return 
+});
 
 gulp.task('default', allTasks, function () {
   if (!isOnProduction) {
