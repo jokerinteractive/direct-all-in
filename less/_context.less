@@ -48,12 +48,21 @@
 
     &::after {
       content: "";
+      box-sizing: border-box;
       position: absolute;
+
       left: 0;
       top: 8px;
+
       width: 73px;
       height: 73px;
-      background: url("../img/context-sprt.jpg") 0 0 no-repeat;
+
+      padding: 5px;
+
+      background: url(../img/icons/growth.svg) center no-repeat;
+      background-size: 45px;
+      border: 2px solid #c1e0f2;
+      border-radius: 9px;
     }
 
     &:nth-of-type(2) {
@@ -61,10 +70,10 @@
     }
 
     &-safe::after {
-      background-position: 0 -80px;
+      background-image: url(../img/icons/safe.svg);
     }
     &-glass::after {
-      background-position: 0 -160px;
+      background-image: url(../img/icons/glasses.svg);
     }
   }
 }
