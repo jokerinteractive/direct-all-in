@@ -39,13 +39,16 @@ var
       data: './jade/_data/',
       destination: './build'
     },
-
     style: {
       src: './less',
       location: './less/style.less',
       watch: ['./less/*.less', './less/_*/*.less'],
       entryPoint: './css/style.css',
       destination: './build/css'
+    },
+    js: {
+      watch: './js/*.js',
+      destination: './build/js'
     }
   };
 
@@ -58,9 +61,13 @@ gulp.task('clean', function () {
 /* --------- js compress --------- */
 
 gulp.task('js', function () {
-  return gulp.src('js/*.js')
+  return gulp.src(paths.js.watch)
     .pipe(uglify())
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest(paths.js.destination))
+    .pipe(notify({
+      message: 'JS: <%= file.relative %>',
+      sound: 'Pop'
+    }));
 });
 
 /* --------- img compress --------- */
@@ -71,7 +78,11 @@ gulp.task('js', function () {
       optimizationLevel: 3,
       progressive: true
     }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'))
+    .pipe(notify({
+      message: 'Images: <%= file.relative %>',
+      sound: 'Pop'
+    }));
 });
 
 /* --------- push build to gh-pages --- */
@@ -187,6 +198,7 @@ gulp.task('style', ['styletest'], function () {
 gulp.task('watch', function () {
   gulp.watch(paths.jade.location, ['jade']);
   gulp.watch(paths.style.watch, ['style']);
+  gulp.watch(paths.js.watch, ['js']);
 });
 
 /* --------- serve --------- */
@@ -209,7 +221,7 @@ if (!isOnProduction) {
   allTasks.push('serve');
 }
 
-gulp.task('build', ['clean', 'style', 'jade', 'images', 'js']);
+gulp.task('build', ['style', 'jade', 'images', 'js']);
 
 gulp.task('default', allTasks, function () {
   if (!isOnProduction) {
