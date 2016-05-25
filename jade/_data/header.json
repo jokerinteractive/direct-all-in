@@ -1,19 +1,19 @@
 [
   {
     "name": "Главная",
-    "link": "index.html"
+    "link": "/"
   },
   {
     "name": "Обучение",
-    "link": "#"
+    "link": "/obychenie-yandex-direct"
   },
   {
     "name": "Услуги",
-    "link": "services.html"
+    "link": "/uslugi-i-ceny"
   },
   {
     "name": "Материалы",
-    "link": "portfolio.html"
+    "link": "#"
   },
   {
     "name": "Контакты",
