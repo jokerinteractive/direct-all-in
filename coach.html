@@ -13,13 +13,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;subset=latin,cyrillic-ext">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.png" type="image/png">
   </head>
 </html>
 <body>
-  <header class="header header--padding">
-    <div class="header__navbar header__navbar--padding">
-      <div class="header__wrap"><a href="/" class="logo">Direct All-in</a><a href="/callback" class="header__phone">8&nbsp;(499)&nbsp;649-54-17<span class="header__callback">Заказать звонок</span></a></div>
+  <header class="header">
+    <div class="header__navbar">
+      <div class="header__wrap"><a href="/" class="logo">Direct All-in</a>
+        <nav class="main-menu"><a href="/" class="main-menu__item">Главная</a><a href="/obychenie-yandex-direct" class="main-menu__item">Обучение</a><a href="/uslugi-i-ceny" class="main-menu__item">Услуги</a><a href="#" class="main-menu__item">Материалы</a><a href="#" class="main-menu__item">Контакты</a>
+        </nav><a href="/callback" data-title="Заказать звонок" class="header__phone">8&nbsp;(499)&nbsp;649-54-17<span class="header__callback">Заказать звонок</span></a>
+      </div>
     </div>
   </header>
   <section class="subscription">
@@ -356,7 +359,7 @@
             <li class="price-list__list--item"><img src="./img/icons/not-included.png" alt="included"></li>
             <li class="price-list__list--item"><img src="./img/icons/not-included.png" alt="included"></li>
             <li class="price-list__list--item"><img src="./img/icons/not-included.png" alt="included"></li>
-            <btn value="" class="price-list__list--btn">Заказать</btn>
+            <btn data-title="Индивидуальное обучение Эконом" data-btn="Записаться" class="price-list__list--btn">Заказать</btn>
           </ul>
         </div>
         <div class="price-list__flex--block">
@@ -406,7 +409,7 @@
             </li>
             <li class="price-list__list--item"><img src="./img/icons/not-included.png" alt="included"></li>
             <li class="price-list__list--item"><img src="./img/icons/not-included.png" alt="included"></li>
-            <btn value="" class="price-list__list--btn">Заказать</btn>
+            <btn data-title="Индивидуальное обучение Стандарт" data-btn="Записаться" class="price-list__list--btn">Заказать</btn>
           </ul>
         </div>
         <div class="price-list__flex--block">
@@ -460,11 +463,11 @@
             <li class="price-list__list--item">
               <div class="price-list__list--ok">Ok</div>
             </li>
-            <btn value="" class="price-list__list--btn">Заказать</btn>
+            <btn data-title="Индивидуальное обучение Премиум" data-btn="Записаться" class="price-list__list--btn">Заказать</btn>
           </ul>
         </div>
       </div>
-      <article class="price-list__question">Уверен, что вервый вопрос в вашей голове<br>- почему так дорого?</article>
+      <article class="price-list__question">Уверен, что вервый вопрос в вашей голове<br>— почему так дорого?</article>
     </div>
   </section>
   <section class="price-reasons">
@@ -597,6 +600,17 @@
       </div>
     </div>
   </footer>
+  <div class="popup"><span class="popup__close">&times;</span>
+    <h3 class="popup__header">Заполните заявку,</h3>
+    <p class="popup__text">и получите экспертную оценку действующей кампании и разработку стратегии <strong>бесплатно</strong>!</p>
+    <form action="" method="post" class="form">
+      <input type="hidden" name="title">
+      <input type="text" placeholder="Ваше Имя" name="name" class="form__text form__text--popup">
+      <input type="text" placeholder="Ваш номер телефона" name="phone" class="form__text form__text--popup">
+      <input type="submit" value="Позвонить мне" class="btn btn--main">
+    </form>
+  </div>
+  <script src="js/popup.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </body>
