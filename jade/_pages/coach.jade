@@ -402,7 +402,7 @@ body
               img(src="./img/icons/not-included.png" alt="included")
             li.price-list__list--item
               img(src="./img/icons/not-included.png" alt="included")
-            btn.price-list__list--btn(value="") Заказать
+            btn.price-list__list--btn(data-title="Эконом") Заказать
 
         .price-list__flex--block
           header.price-list__flex--header
@@ -447,7 +447,7 @@ body
               img(src="./img/icons/not-included.png" alt="included")
             li.price-list__list--item
               img(src="./img/icons/not-included.png" alt="included")
-            btn.price-list__list--btn(value="") Заказать
+            btn.price-list__list--btn(data-title="Стандарт") Заказать
 
         .price-list__flex--block
           header.price-list__flex--header
@@ -494,12 +494,12 @@ body
             li.price-list__list--item
               .price-list__list--ok
                 | Ok
-            btn.price-list__list--btn(value="") Заказать
+            btn.price-list__list--btn(data-title="Премиум") Заказать
 
       article.price-list__question
         | Уверен, что вервый вопрос в вашей голове
         br
-        | - почему так дорого?
+        | — почему так дорого?
 
   section.price-reasons
     .price-reasons__wrap
@@ -600,5 +600,8 @@ body
           input.btn.btn--big(type="submit" value="Отправить заявку")
     include ../_common/_footer__nav
     include ../_common/_footer__navbar
+    
+  include ../_common/_popup
+  script(src = "js/popup.js")
   script(src = "js/jquery.min.js")
   script(src = "js/script.js")
