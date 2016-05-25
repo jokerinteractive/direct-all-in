@@ -16,6 +16,10 @@
     transition: background-color .1s cubic-bezier(.42, 0, .58, 1);
     margin-left: 25px;
 
+    &:focus {
+      background-color: fade(#fff, 20%);
+    }
+
     &--w220 {
       width: 220px;
     }
@@ -26,10 +30,6 @@
 
     &--w270 {
       width: 270px;
-    }
-
-    &:focus {
-      background-color: fade(#fff, 20%);
     }
 
     &--big {
@@ -59,6 +59,22 @@
 
     &--middle {
       margin-left: auto !important;
+    }
+
+    &--popup {
+      font-size: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 15px;
+      background-color: #fff;
+      color: #666;
+      border: 1px solid #ccc;
+      &:focus {
+        border-color: #bbb;
+      }
     }
   }
 
