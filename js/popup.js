@@ -19,6 +19,9 @@
     e.preventDefault();
     popup.classList.add('popup--isopen');
     document.body.classList.add('overlay');
+    if (this.dataset.btn) {
+      btn.value = this.dataset.btn;
+    }
     if (this.dataset.title) {
       titlePopup = this.dataset.title;
       form.title.value = titlePopup;
