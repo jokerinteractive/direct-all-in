@@ -426,7 +426,7 @@ body {
   font: 300 20px "Open Sans", arial, sans-serif;
 }
 body > * {
-  min-width: 900px;
+  min-width: 1200px;
 }
 h1,
 h2,
@@ -844,8 +844,9 @@ li {
   font-size: 21px;
 }
 .price__feature {
-  width: 160px;
-  height: 160px;
+  box-sizing: border-box;
+  width: 244px;
+  height: 244px;
   padding: 70px 40px 20px;
   text-align: center;
   border-radius: 50%;
@@ -857,7 +858,7 @@ li {
   margin: 10px auto;
 }
 .price__feature:first-of-type {
-  padding-top: 37px;
+  padding-top: 50px;
 }
 .price__aside {
   margin-left: 77px;
@@ -912,25 +913,26 @@ li {
   border: 1px solid #ebebeb;
   border-radius: 50%;
   content: " ";
-  background: url(../img/included-sprt.png) 0 0 no-repeat;
+  background: center no-repeat;
+  background-size: 40px;
 }
 .included__feature-interview::before {
-  background-position: 0 0;
+  background-image: url(../img/icons/user_speach.svg);
 }
 .included__feature-audit::before {
-  background-position: 0 -80px;
+  background-image: url(../img/icons/icon_diagram_1.svg);
 }
 .included__feature-consulting::before {
-  background-position: 0 -160px;
+  background-image: url(../img/icons/tie.svg);
 }
 .included__feature-month::before {
-  background-position: -80px 0;
+  background-image: url(../img/icons/calendar_1month.svg);
 }
 .included__feature-star::before {
-  background-position: -80px -80px;
+  background-image: url(../img/icons/molecular.svg);
 }
 .included__feature-target::before {
-  background-position: -80px -160px;
+  background-image: url(../img/icons/target.svg);
 }
 .included__feature:nth-child(2n+1) {
   padding-right: 100px;
@@ -1342,10 +1344,10 @@ li {
   vertical-align: bottom;
 }
 .footer__navbar-contacts--mail::before {
-  background-image: url(../img/icons/_Footer_mail_icon.svg);
+  background-image: url(../img/icons/Footer_mail_icon.svg);
 }
 .footer__navbar-contacts--tel::before {
-  background-image: url(../img/icons/_Footer_phone_icon.svg);
+  background-image: url(../img/icons/Footer_phone_icon.svg);
 }
 .form__text,
 .form__textarea {
@@ -1578,7 +1580,7 @@ li {
 }
 .faq__questions {
   display: block;
-  background: #fff url(../img/calmness/calmness-light-bg.png) 50% 0 no-repeat;
+  background: #fff url(../img/calmness/calmness-light-bg.png) 50% 10px no-repeat;
 }
 .faq__questions--wrapper {
   padding: 80px 0;
@@ -1649,7 +1651,9 @@ li {
   background-size: 30%;
 }
 .calmness__feature-partnership::after {
-  background-image: url("../img/icons/icon_adwords-small.png");
+  background-image: url("../img/adwords-symbols.svg");
+  background-size: 222px;
+  background-position-x: 28px;
 }
 .calmness__feature-connect::after {
   background-image: url("../img/icons/mobile-phone.svg");
@@ -3763,6 +3767,9 @@ span.dotted-underline {
 .course-for {
   padding: 60px 0;
 }
+.course-for--no-padding-bottom {
+  padding-bottom: 0;
+}
 .course-for--padding {
   padding: 100px 0 30px;
 }
@@ -4930,6 +4937,7 @@ span.dotted-underline {
 }
 .book__header-right {
   max-width: 470px;
+  z-index: 2;
 }
 .book__header-right .callback-header__left-title {
   font-size: 25px;
@@ -5197,13 +5205,12 @@ span.dotted-underline {
   font-size: 14px;
 }
 .book__retailers .book__brackets {
-  position: absolute;
-  right: 55px;
-  bottom: -322px;
-  left: 55px;
+  position: relative;
+  top: 100px;
   box-sizing: border-box;
   height: 215px;
   padding: 55px 20px;
+  margin: 0 auto;
   text-align: center;
   background: #fff;
   font-size: 25px;
@@ -6246,8 +6253,8 @@ span.dotted-underline {
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
-  padding-top: 60px;
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 95px;
 }
 .all-socials__header {
   display: block;

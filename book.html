@@ -144,34 +144,36 @@
       </div>
     </div>
   </div>
-  <div class="book__reviews reviews">
-    <div class="book__wrap">
-      <h3 class="reviews__title">Отзывы и рецензии:</h3>
-      <article class="reviews__item clearfix">
-        <div class="reviews__pagination-prev">&lt;</div>
-        <div class="reviews__pagination-next">&gt;</div>
-        <div class="reviews__photo"><img src="./img/review-authors/artem-kabalkin.jpg" width="195px" height="176px"></div>
-        <div class="reviews__texts">
-          <h4 class="reviews__texts-title">Яндекс.Директ – точный инструмент, или лотерея?</h4>
-          <p class="reviews__texts-text">Филипп Царевский, основатель агентства Direct-all- in и гостевой автор нашего блога LPgenerator, написал крайне полезную книгу «Яндекс.Директ: Как получать прибыль, а не играть в лотерею». Коротко поделимся впечатлениями о ней</p>
-          <p class="reviews__texts-text">С первых строк автор обращается к читателю, словно к старому знакомому — на «ты», разбавляя...<a href="#" class="link-blue">Показать полностью</a>
-            <!--TODO a?-->
-          </p>
-          <p class="reviews__texts-author">— Артём Кабалкин<br><span class="reviews__texts-author-job">CEOLPGenerator</span></p>
-        </div>
-        <div class="reviews__slider">
-          <input id="review-1" type="radio" name="reviews-slider" checked class="reviews__slider-radio">
-          <input id="review-2" type="radio" name="reviews-slider" class="reviews__slider-radio">
-          <input id="review-3" type="radio" name="reviews-slider" class="reviews__slider-radio">
-          <input id="review-4" type="radio" name="reviews-slider" class="reviews__slider-radio">
-          <label for="review-1" class="reviews__slider-point slider-dot"></label>
-          <label for="review-2" class="reviews__slider-point slider-dot"></label>
-          <label for="review-3" class="reviews__slider-point slider-dot"></label>
-          <label for="review-4" class="reviews__slider-point slider-dot"></label>
-        </div>
-      </article>
-    </div>
-  </div>
+  <!--
+  .book__reviews.reviews
+    .book__wrap
+      h3.reviews__title Отзывы и рецензии:
+      article.reviews__item.clearfix
+        .reviews__pagination-prev &lt;
+        .reviews__pagination-next &gt;
+        .reviews__photo
+          img(src="./img/review-authors/artem-kabalkin.jpg" width="195px" height="176px")
+        .reviews__texts
+          h4.reviews__texts-title Яндекс.Директ – точный инструмент, или лотерея?
+          p.reviews__texts-text Филипп Царевский, основатель агентства Direct-all- in и гостевой автор нашего блога LPgenerator, написал крайне полезную книгу «Яндекс.Директ: Как получать прибыль, а не играть в лотерею». Коротко поделимся впечатлениями о ней
+          p.reviews__texts-text С первых строк автор обращается к читателю, словно к старому знакомому — на «ты», разбавляя...
+            a(href="#").link-blue Показать полностью
+            //TODO a?
+          p.reviews__texts-author — Артём Кабалкин
+            br
+            span.reviews__texts-author-job CEOLPGenerator
+  
+        .reviews__slider
+          input(id="review-1" type="radio" name="reviews-slider" checked).reviews__slider-radio
+          input(id="review-2" type="radio" name="reviews-slider" ).reviews__slider-radio
+          input(id="review-3" type="radio" name="reviews-slider" ).reviews__slider-radio
+          input(id="review-4" type="radio" name="reviews-slider" ).reviews__slider-radio
+          label(for="review-1").reviews__slider-point.slider-dot
+          label(for="review-2").reviews__slider-point.slider-dot
+          label(for="review-3").reviews__slider-point.slider-dot
+          label(for="review-4").reviews__slider-point.slider-dot
+  
+  -->
   <div class="footer__navbar">
     <div class="footer__wrap">
       <ul>
@@ -179,7 +181,7 @@
         <li>
           <p>ИП Царевский Ф. Л.<br>ОГРНИП 31377460370109</p>
         </li>
-        <li class="social"><a href=""><i class="fa fa-youtube-square fa-2x"></i></a><a href=""><i class="fa fa-facebook-square fa-2x"></i></a><a href=""><i class="fa fa-twitter-square fa-2x"></i></a><a href=""><i class="fa fa-instagram fa-2x"></i></a><a href=""><i class="fa fa-vk fa-2x"></i></a></li>
+        <li class="social"><a href="" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a><a href="" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a><a href="" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a><a href="" target="_blank"><i class="fa fa-instagram fa-2x"></i></a><a href="" target="_blank"><i class="fa fa-vk fa-2x"></i></a></li>
         <li><a href="mailto:sale@direct-all-in.ru" class="footer__navbar-contacts footer__navbar-contacts--mail">sale@direct-all-in.ru</a></li>
         <li><span class="footer__navbar-contacts footer__navbar-contacts--tel">8 (499) 649-54-17</span></li>
       </ul>
