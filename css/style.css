@@ -2801,7 +2801,7 @@ span.dotted-underline {
   position: relative;
   padding: 110px 0 50px;
   color: #fff;
-  background: #28405c url("../img/no-magic/no-magic-bg.png") no-repeat 50% 0/100% auto;
+  background: #28405c url("../img/no-magic/no-magic-bg.png") no-repeat center;
   background-size: 100%;
 }
 .no-magic__title {
@@ -4904,6 +4904,7 @@ span.dotted-underline {
 }
 .contacts__socials-item {
   text-decoration: none;
+  padding: 0 3px;
 }
 .contacts__socials-text {
   color: #000;
