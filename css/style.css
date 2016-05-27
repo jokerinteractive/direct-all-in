@@ -4433,9 +4433,6 @@ span.dotted-underline {
   display: block;
   background: #0f3c5b url(../img/subscriptions/subscribe-bg.jpg) top;
 }
-.subscribe-course__wrapper {
-  padding: 60px 0 95px;
-}
 .subscribe-course__text {
   display: block;
 }
@@ -4912,10 +4909,13 @@ span.dotted-underline {
   padding-left: 20px;
 }
 .book__header {
-  padding: 47px 0;
   color: #fff;
   background: url("../img/bg-adwords-feedback.png") no-repeat 50% 50%, url("../img/bg-header-repeat.png") repeat 0 0;
   background-color: #0e3b5a;
+}
+.book__header .book__wrap {
+  padding-top: 47px;
+  padding-bottom: 47px;
 }
 .book__header-content {
   display: flex;
@@ -5234,6 +5234,8 @@ span.dotted-underline {
 }
 .book__call-us {
   display: block;
+  background: #232d57 url(../img/bg-footer.jpg) no-repeat 50% 50% / cover;
+  color: #fff;
   max-width: 955px;
   margin: 37px auto 0;
   padding-top: 42px;
