@@ -44,32 +44,18 @@ body
         | Посмотрите видеоотзывы от довольных клиентов:
       .clients__video--slider.slider
 
-        //На текст в ссылке завязан JS. Осторожно!
-
-        a.clients__video--nav.slider-nav.prev(href="")
-          | prev
-          img.clients__video--button(src="./img/icons/prev.svg", alt="prev")
-
         .clients__video--slide.slide.slide-1
-          ifame.clients__video--video(src="http://www.youtube.com/embed/Wcg0-PE2IyU?autoplay=0")
+          iframe(width="300" height="226" src="https://www.youtube.com/embed/Y4Wn5fgZUW4" frameborder="0" allowfullscreen)
           p.clients__video--text
-            | ??? при ограничении на Яндекс.Директ
+            | Отзыв Константина Марченко о курсе по Яндекс.Директ Филиппа Царевского
         .clients__video--slide.slide.slide-2.active
-          ifame.clients__video--video(src="http://www.youtube.com/embed/YUIgrHzURCc?autoplay=0")
+          iframe(width="300" height="226" src="https://www.youtube.com/embed/EnqmjmubxNY" frameborder="0" allowfullscreen)
           p.clients__video--text
-            | Всё о курсе Яндекс Директ Филиппа Царевского
+            | Отзыв Ивана Вальмонта об обучении Яндекс Директ
         .clients__video--slide.slide.slide-3.active
-          ifame.clients__video--video(src="https://www.youtube.com/watch?v=CznGfDo6hQc&list=PLsj3rrfxxpJHGmG_ZJceW1geSOdlkp_CQ&index=7")
+          iframe(width="300" height="226" src="https://www.youtube.com/embed/qA4imKj93NE" frameborder="0" allowfullscreen)
           p.clients__video--text
-            | Настройки в Яндекс.Директ
-        .clients__video--slide.slide.slide-4
-          ifame.clients__video--video(src="https://www.youtube.com/watch?v=GeZbIF87Nu8&list=PLsj3rrfxxpJHGmG_ZJceW1geSOdlkp_CQ&index=8")
-          p.clients__video--text
-            | Настройки в Яндекс.Директ
-
-        a.clients__video--nav.slider-nav.next(href="")
-          | next
-          img.clients__video--button(src="./img/icons/next.svg", alt="next")
+            | Отзыв Лены о месячном курсе по Яндекс Директ
 
     section.clients__thnx
       .portfolio__wrap.clients__thnx--wrapper

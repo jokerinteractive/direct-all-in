@@ -168,32 +168,33 @@ body
         p.book__brackets-title Учебник заточен под малый бизнес – услуги, магазины, производства.
         p.book__brackets-text Если вы специализируетесь на МЛМ, инфобизнесе, арбитраже трафика – не могу гарантировать, что он принесет вам пользу.
 
-  .book__reviews.reviews
-    .book__wrap
-      h3.reviews__title Отзывы и рецензии:
-      article.reviews__item.clearfix
-        .reviews__pagination-prev &lt;
-        .reviews__pagination-next &gt;
-        .reviews__photo
-          img(src="./img/review-authors/artem-kabalkin.jpg" width="195px" height="176px")
-        .reviews__texts
-          h4.reviews__texts-title Яндекс.Директ – точный инструмент, или лотерея?
-          p.reviews__texts-text Филипп Царевский, основатель агентства Direct-all- in и гостевой автор нашего блога LPgenerator, написал крайне полезную книгу «Яндекс.Директ: Как получать прибыль, а не играть в лотерею». Коротко поделимся впечатлениями о ней
-          p.reviews__texts-text С первых строк автор обращается к читателю, словно к старому знакомому — на «ты», разбавляя...
-            a(href="#").link-blue Показать полностью
-            //TODO a?
-          p.reviews__texts-author — Артём Кабалкин
-            br
-            span.reviews__texts-author-job CEOLPGenerator
+  //
+    .book__reviews.reviews
+      .book__wrap
+        h3.reviews__title Отзывы и рецензии:
+        article.reviews__item.clearfix
+          .reviews__pagination-prev &lt;
+          .reviews__pagination-next &gt;
+          .reviews__photo
+            img(src="./img/review-authors/artem-kabalkin.jpg" width="195px" height="176px")
+          .reviews__texts
+            h4.reviews__texts-title Яндекс.Директ – точный инструмент, или лотерея?
+            p.reviews__texts-text Филипп Царевский, основатель агентства Direct-all- in и гостевой автор нашего блога LPgenerator, написал крайне полезную книгу «Яндекс.Директ: Как получать прибыль, а не играть в лотерею». Коротко поделимся впечатлениями о ней
+            p.reviews__texts-text С первых строк автор обращается к читателю, словно к старому знакомому — на «ты», разбавляя...
+              a(href="#").link-blue Показать полностью
+              //TODO a?
+            p.reviews__texts-author — Артём Кабалкин
+              br
+              span.reviews__texts-author-job CEOLPGenerator
 
-        .reviews__slider
-          input(id="review-1" type="radio" name="reviews-slider" checked).reviews__slider-radio
-          input(id="review-2" type="radio" name="reviews-slider" ).reviews__slider-radio
-          input(id="review-3" type="radio" name="reviews-slider" ).reviews__slider-radio
-          input(id="review-4" type="radio" name="reviews-slider" ).reviews__slider-radio
-          label(for="review-1").reviews__slider-point.slider-dot
-          label(for="review-2").reviews__slider-point.slider-dot
-          label(for="review-3").reviews__slider-point.slider-dot
-          label(for="review-4").reviews__slider-point.slider-dot
+          .reviews__slider
+            input(id="review-1" type="radio" name="reviews-slider" checked).reviews__slider-radio
+            input(id="review-2" type="radio" name="reviews-slider" ).reviews__slider-radio
+            input(id="review-3" type="radio" name="reviews-slider" ).reviews__slider-radio
+            input(id="review-4" type="radio" name="reviews-slider" ).reviews__slider-radio
+            label(for="review-1").reviews__slider-point.slider-dot
+            label(for="review-2").reviews__slider-point.slider-dot
+            label(for="review-3").reviews__slider-point.slider-dot
+            label(for="review-4").reviews__slider-point.slider-dot
 
   include ../_common/_footer__navbar

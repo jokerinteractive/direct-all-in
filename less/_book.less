@@ -32,6 +32,7 @@
 
     &-right {
       max-width: 470px;
+      z-index: 2;
 
       .callback-header__left-title { font-size: 25px; }
     }
@@ -387,14 +388,17 @@
     }
 
     .book__brackets {
-      position: absolute;
-      right: 55px;
-      bottom: -322px;
-      left: 55px;
+      position: relative;
+
+      top: 100px;
+      //right: 55px;
+      //bottom: -322px;
+      //left: 55px;
 
       box-sizing: border-box;
       height: 215px;
       padding: 55px 20px;
+      margin: 0 auto;
 
       text-align: center;
 

@@ -1,5 +1,3 @@
-@import "__mixins"; // TODO: move all imports to style
-
 .included {
   position: relative;
   clear: both;
@@ -39,15 +37,16 @@
       border: 1px solid #ebebeb;
       border-radius: 50%;
       content: " ";
-      background: url(../img/included-sprt.png) 0 0 no-repeat;
+      background: center no-repeat;
+      background-size: 40px;
     }
 
-    &-interview::before { background-position: 0 0; }
-    &-audit::before { background-position: 0 -80px; }
-    &-consulting::before { background-position: 0 -160px; }
-    &-month::before { background-position: -80px 0; }
-    &-star::before { background-position: -80px -80px; }
-    &-target::before { background-position: -80px -160px; }
+    &-interview::before { background-image: url(../img/icons/user_speach.svg); }
+    &-audit::before { background-image: url(../img/icons/icon_diagram_1.svg); }
+    &-consulting::before { background-image: url(../img/icons/tie.svg); }
+    &-month::before { background-image: url(../img/icons/calendar_1month.svg); }
+    &-star::before { background-image: url(../img/icons/molecular.svg); }
+    &-target::before { background-image: url(../img/icons/target.svg); }
 
     &:nth-child(2n+1) {
       padding-right: 100px;

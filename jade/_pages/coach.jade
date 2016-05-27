@@ -528,34 +528,20 @@ body
       | Отзывы
     .clients__video--slider.slider
 
-      //На текст в ссылке завязан JS. Осторожно!
-
-      a.clients__video--nav.slider-nav.prev(href="")
-        | prev
-        img.clients__video--button(src="./img/icons/prev.svg", alt="prev")
-
       .clients__video--slide.slide.slide-1
-        iframe(width="300" height="226" src="https://www.youtube.com/embed/xHSHId5XRHg" frameborder="0" allowfullscreen)
+        iframe(width="300" height="226" src="https://www.youtube.com/embed/Y4Wn5fgZUW4" frameborder="0" allowfullscreen)
         p.clients__video--text
-          | Отзыв Романа об индивидуальном обучении Яндекс Директу
+          | Отзыв Константина Марченко о курсе по Яндекс.Директ Филиппа Царевского
       .clients__video--slide.slide.slide-2.active
-        iframe(width="300" height="226" src="https://www.youtube.com/embed/6wBgf2bOCXo" frameborder="0" allowfullscreen)
+        iframe(width="300" height="226" src="https://www.youtube.com/embed/EnqmjmubxNY" frameborder="0" allowfullscreen)
         p.clients__video--text
-          | Отзыв Ивана о курсе по Яндекс Директ
+          | Отзыв Ивана Вальмонта об обучении Яндекс Директ
       .clients__video--slide.slide.slide-3.active
-        iframe(width="300" height="226" src="https://www.youtube.com/embed/SVKHqx2IhtI" frameborder="0" allowfullscreen)
+        iframe(width="300" height="226" src="https://www.youtube.com/embed/qA4imKj93NE" frameborder="0" allowfullscreen)
         p.clients__video--text
-          | Отзыв Ксюши о месячном курсе по Яндекс Директ
-      .clients__video--slide.slide.slide-4
-        iframe(width="300" height="226"  src="https://www.youtube.com/embed/aT2ykoQLMAw" frameborder="0" allowfullscreen)
-        p.clients__video--text
-          | Отзыв Мурада о месячном курсе по Яндекс Директ
+          | Отзыв Лены о месячном курсе по Яндекс Директ
 
-      a.clients__video--nav.slider-nav.next(href="")
-        | next
-        img.clients__video--button(src="./img/icons/next.svg", alt="next")
-
-  section.comment.comment--webinar
+  //section.comment.comment--webinar
     .webinar__wrap.comment__wrapper
       .comment--wrapper.clearfix
 
@@ -600,7 +586,7 @@ body
           input.btn.btn--big(type="submit" value="Отправить заявку")
     include ../_common/_footer__nav
     include ../_common/_footer__navbar
-    
+
   include ../_common/_popup
   script(src = "js/popup.js")
   script(src = "js/jquery.min.js")
