@@ -1,15 +1,19 @@
-@import "__mixins";
 @import "_callback-header";
 
 .book {
-  &__wrap { .wrap; }
+  &__wrap {
+    .wrap;
+  }
 
   &__header {
-    padding: 47px 0;
-
     color: #fff;
 
     .header-arrow-background;
+
+    .book__wrap {
+      padding-top: 47px;
+      padding-bottom: 47px;
+    }
 
     &-content {
       display: flex;
@@ -434,6 +438,8 @@
 
   &__call-us {
     display: block;
+    background: #232d57 url(../img/bg-footer.jpg) no-repeat 50% 50%/cover;
+    color: #fff;
 
     max-width: 955px;
     margin: 37px auto 0;
