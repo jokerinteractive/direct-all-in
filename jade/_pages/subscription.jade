@@ -117,7 +117,7 @@ body
 
   section.video
     .subscription__wrap.video__wrapper
-      iframe.video__iframe(src="http://www.youtube.com/embed/O1YwexOF0Gc?autoplay=0")
+      iframe.video__iframe(src="https://www.youtube.com/embed/O1YwexOF0Gc?autoplay=0")
 
       .video__info.video-info
         .video-info__top
@@ -318,7 +318,8 @@ body
           | Получите первое письмо на почту в течение 2 минут!
       form.form(action="")
         input.form__text.form__text--middle.form__text--big(type="text" placeholder="Введите ваш e-mail")
-        input.btn.btn--big(type="submit" value="Получить уроки")
+        .footer__submit
+          input.btn.btn--large(type="submit" value="Получить уроки")
 
   footer.footer
     include ../_common/_footer__navbar
