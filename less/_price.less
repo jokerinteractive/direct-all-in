@@ -1,36 +1,72 @@
-@import "__mixins"; // TODO: move all imports to style
-
 .price {
   padding-top: 35px;
   border-top: 1px solid #f0f2f4;
   background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #fff 50%, #fff 100%);
 
-  article,
-  aside { float: left; }
-
-  article { width: 60%; }
-
   &__wrap { .wrap; }
 
-  &__title { .title-dotted; }
+  &__title {
+    .title-dotted;
+    margin: 25px 0;
+  }
+
+  &__arguments-block,
+  &__aside { float: left; }
+
+  &__arguments-block {
+    width: 70%;
+    padding-left: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+    h3 {
+      margin-top: 35px;
+    }
+  }
 
   &__list {
-    li::before {
-      display: inline-block;
-      margin: -2px 8px 0 2px;
-      color: #338bc3;
-      content: "●";
-      vertical-align: top;
-      font-size: 21px;
+    margin-top: 45px;
+
+    li {
+      font-size: 18px;
+
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+
+      &::before {
+        display: inline-block;
+        margin: -2px 8px 0 2px;
+        color: #338bc3;
+        content: "●";
+        vertical-align: top;
+        font-size: 21px;
+      }
     }
   }
 
   &__feature {
-    width: 180px;
-    height: 180px;
-    padding: 40px;
+    box-sizing: border-box;
+    width: 244px;
+    height: 244px;
+    padding: 70px 40px 20px;
     text-align: center;
     border-radius: 50%;
     border: 2px dashed #ebebeb;
+    margin: 0;
+    margin-bottom: 25px;
+
+    img {
+      margin: 10px auto;
+    }
+
+    &:first-of-type {
+      padding-top: 50px;
+    }
+  }
+
+  &__aside {
+    margin-left: 77px;
+    padding-top: 22px;
   }
 }

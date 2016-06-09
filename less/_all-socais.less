@@ -1,0 +1,86 @@
+.all-socials {
+  display: block;
+  position: relative;
+  background: #0f3c5b center repeat url(../img/bg-all-socials.png);
+
+  &__wrap {
+    .wrap();
+    padding-top: 40px;
+    padding-bottom: 95px;
+  }
+
+  &__header {
+    display: block;
+    text-align: center;
+
+    font-size: 24px;
+    color: #fff;
+
+    margin-bottom: 45px;
+  }
+
+  &__list {
+    padding: 0 10px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: top;
+
+    &--item {
+      display: block;
+      margin: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin: 0 auto 20px;
+
+    background: center no-repeat;
+    background-size: content;
+
+    width: 65px;
+    height: 65px;
+
+    transition: .3s;
+
+    &--fb {
+      background-image: url(../img/icons/as-fb.svg);
+
+      &:hover {
+        background-image: url(../img/icons/as-fb-h.svg);
+      }
+    }
+
+    &--vk {
+      background-image: url(../img/icons/as-vk.svg);
+
+      &:hover {
+        background-image: url(../img/icons/as-vk-h.svg);
+      }
+    }
+
+    &--yt {
+      background-image: url(../img/icons/as-yt.svg);
+
+      &:hover {
+        background-image: url(../img/icons/as-yt-h.svg);
+      }
+    }
+  }
+
+  &__descr {
+    display: block;
+    text-align: center;
+    color: #fff;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    margin: 0;
+    padding: 0 5px;
+  }
+}

@@ -1,0 +1,64 @@
+include ../_common/_doctype
+
+body
+  header.header
+    include ../_common/_header__navbar
+
+  header.portfolio__header
+    h2.portfolio__header--text
+      | Спасибо за вашу заявку!
+
+  section.thank-you
+    .thank-you__wrap
+      .thank-you__flex
+        article.thank-you__flex--block
+          header.thank-you__header
+            | Мы свяжемся с вами в ближайшее рабочее время и ответим на все вопросы!
+          p.thank-you__text
+            | А пока изучите наш канал на YouTube, группу Вконтакте или блог.
+          p.thank-you__text
+            | Вы найдёте большое количество полезных материалов о Яндекс.Директе, принципах и подходе к работе нашего агентства и многое другое.
+          p.thank-you__text
+            | Если вы всерьёз задумались о роли контекстной рекламы для вашего бизнеса, эта информация будет для вас очень полезна.
+        article.thank-you__flex--block
+          .thank-you__coach
+            img.thank-you__coach--img(src="./img/founder/teacher.png" alt="Филипп Царевский")
+
+  section.all-socials
+    .all-socials__wrap
+      header.all-socials__header
+        | Социальные сети
+      ul.all-socials__list
+        li.all-socials__list--item
+          a.all-socials__link.all-socials__link--vk(href="" target="_blank")
+          p.all-socials__descr
+            | Страница менеджера
+            br
+            | на ВК
+        li.all-socials__list--item
+          a.all-socials__link.all-socials__link--vk(href="" target="_blank")
+          p.all-socials__descr
+            | Официальная группа
+            br
+            | Direct-all-in
+        li.all-socials__list--item
+          a.all-socials__link.all-socials__link--yt(href="" target="_blank")
+          p.all-socials__descr
+            | Канал Direct-all-in
+            br
+            | на Youtube
+        li.all-socials__list--item
+          a.all-socials__link.all-socials__link--fb(href="" target="_blank")
+          p.all-socials__descr
+            | Страница Филиппа
+            br
+            | на Facebook
+        li.all-socials__list--item
+          a.all-socials__link.all-socials__link--vk(href="" target="_blank")
+          p.all-socials__descr
+            | Страница Филиппа
+            br
+            | на ВК
+
+  footer.footer
+    include ../_common/_footer__navbar

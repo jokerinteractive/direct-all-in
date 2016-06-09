@@ -1,4 +1,4 @@
-@import "__mixins"; // TODO: move all imports to style
+@import "__mixins";
 
 .header {
   overflow: hidden;
@@ -13,12 +13,17 @@
   &__navbar {
     padding-top: 20px;
     background-color: fade(#000, 50%);
+
+    &--padding {
+      padding-bottom: 10px;
+    }
   }
 
   &__wrap {
+    .wrap();
+
     display: flex;
     justify-content: space-between;
-    .wrap;
   }
 
   &__phone {
@@ -34,6 +39,15 @@
     text-align: center;
     text-decoration: underline;
     font-size: 14px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background: url(../img/icons/header_phone_icon.svg) no-repeat 50% 50%/cover;
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &__title {
@@ -45,6 +59,20 @@
     > small {
       display: block;
       font-size: 29px;
+    }
+
+    &--big {
+      & > small {
+        display: block;
+        margin: 0 auto;
+
+        width: 814px;
+
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 24px;
+        text-align: center;
+      }
     }
   }
 }

@@ -1,14 +1,32 @@
+@import "__mixins";
+
+
 .earlier {
   position: relative;
-  padding: 180px 160px 100px 400px;
-  background: url(../img/bg-earlier-tile.png) no-repeat ~"50% 50px/100% auto",
-    url(../img/bg-earlier-border.png) repeat-x ~"50% 4px/12px 2px",
-    url(../img/bg-earlier.jpg) no-repeat ~"50% 120px/80%";
+  // background: url(../img/bg-earlier-tile.png) no-repeat ~"50% 50px/100% auto", url(../img/bg-earlier-border.png) repeat-x ~"50% 4px/12px 2px", url(../img/bg-earlier.jpg) no-repeat ~"50% 120px/80%";
+  // padding: 180px 160px 100px 400px;
+  // background: url("../img/bg-earlier-tile.png") no-repeat ~"50% 50px/100% auto", url("../img/bg-earlier-border.png") repeat-x ~"50% 4px/12px 2px";
+  background: url(../img/bg-earlier-tile.png) no-repeat ~"50% 20px/50% auto";
+  padding-top: 73px;
 
-  &::before {
+  .border-dash-top;
+
+  &__wrap {
+    .wrap;
+    position: relative;
+    // background: url("../img/bg-earlier.jpg") no-repeat ~"50% 0";
+    background: url(../img/bg-earlier.jpg) ~"50% 0px/90%" no-repeat;
+    padding: 97px 90px 167px 443px;
+    box-sizing: border-box;
+  }
+
+  &__wrap::before {
     position: absolute;
-    top: 185px;
-    left: 60px;
+    // top: 185px;
+    top: 107px;
+    // left: 60px;
+    // left: 95px;
+    left: 98px;
     display: block;
     width: 275px;
     height: 275px;
@@ -17,5 +35,10 @@
     background: #8474c1 url(../img/start.png) no-repeat ~"50% 50%/275px 275px";
     box-shadow: 0 0 68px 0 fade(#000, 20%);
     content: " ";
+  }
+
+  p {
+    margin: 20px 0 13px;
+    line-height: 1.3;
   }
 }

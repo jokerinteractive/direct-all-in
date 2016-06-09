@@ -1,0 +1,61 @@
+include ../_common/_doctype
+
+body
+
+  header.header
+    include ../_common/_header__navbar
+    h1.header__title Контакты
+
+  .contacts
+    .contacts__wrap
+      p.contacts__manager-title.contacts__subtitle Связаться с менеджером:
+      .contacts__manager-list
+        .contacts__manager-item.contacts__manager-phone
+          img(src="./img/contacts/phone.svg" width="29" height="29").contacts__manager-image
+          span +7 499 649 54 17
+        .contacts__manager-item.contacts__manager-email
+          img(src="./img/contacts/mail.svg" width="30" height="30").contacts__manager-image
+          span sale@direct-all-in.ru
+        .contacts__manager-item.contacts__manager-skype
+          img(src="./img/contacts/skype.svg" width="35" height="34").contacts__manager-image
+          span direct-all-in
+      p.contacts__subtitle Время работы:
+      .contacts__worktime
+        span.contacts__worktime-days ПН-ПТ
+        img(src="./img/contacts/working-hours.png" width="362" height="24")
+        //TODO retina ok?
+      p.contacts__socials-title.contacts__subtitle Социальные сети
+      .contacts__socials-list
+        a(href="#" target="_blank").contacts__socials-item
+          img(src="./img/contacts/vk.svg" width="65" height="65")
+          p.contacts__socials-text Страница&nbsp;менеджера
+            br
+            | на ВК
+        a(href="#" target="_blank").contacts__socials-item
+          img(src="./img/contacts/vk.svg" width="65" height="65")
+          p.contacts__socials-text Официальная группа Direct-All-In
+        a(href="#" target="_blank").contacts__socials-item
+          img(src="./img/contacts/youTube.svg" width="65" height="65")
+          p.contacts__socials-text Канал Direct-All-In на YouTube
+        a(href="#" target="_blank").contacts__socials-item
+          img(src="./img/contacts/fb.svg" width="65" height="65")
+          p.contacts__socials-text Страница Филиппа на Facebook
+        a(href="#" target="_blank").contacts__socials-item
+          img(src="./img/contacts/vk.svg" width="65" height="65")
+          p.contacts__socials-text Страница Филиппа на ВК
+
+
+  footer.footer
+    .footer__call-us
+      h4.footer__title Если Вам неудобно звонить, оставьте заявку,
+        br
+        | и мы перезвоним Вам сами:
+
+      form.form(action="")
+        input.form__text.form__text--w250(type="text" placeholder="Ваше Имя")
+        input.form__text.form__text--w250(type="text" placeholder="Ваш номер телефона")
+        .footer__submit
+          input.btn.btn--big(type="submit" value="Позвонить мне")
+
+    include ../_common/_footer__nav
+    include ../_common/_footer__navbar

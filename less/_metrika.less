@@ -1,6 +1,8 @@
 @import "__mixins"; // TODO: move all imports to style
 
 .metrika {
+  background: #f9f9f9 linear-gradient(to bottom, #fff, #f9f9f9);
+
   &__wrap {
     .wrap;
     &::after {
@@ -8,23 +10,32 @@
       display: table;
       clear: both;
     }
+
+    /* Depricated ?
+    padding-left: 94px;
+    padding-right: 90px;
+    */
   }
 
   &__title {
     .title-dotted;
-    margin-bottom: 35px;
+    margin: 70px 30px;
+    padding-left: 9%;
+    padding-right: 9%;
   }
 
   &__text {
     float: left;
-    padding-right: 2%;
+    padding: 0 2% 0 80px;
     width: 48%;
     font-size: 16px;
+    margin: 30px 0;
+    box-sizing: border-box;
   }
 
   &__show {
     position: relative;
-    padding-top: 100px;
+    padding-top: 150px;
     text-align: center;
     font-size: 18px;
 
@@ -40,7 +51,7 @@
       background: #fff url(../img/i-metrika.png) no-repeat ~"50% 50%/80%";
       box-shadow: 0 0 55px 0 fade(#000, 10%);
       content: " ";
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, 0);
     }
   }
 }

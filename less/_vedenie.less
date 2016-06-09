@@ -1,0 +1,74 @@
+@import "__mixins";
+@import "_calmness";
+@import "_adwords/_adwords-clients";
+@import "_adwords/_adwords-founder";
+@import "_puzzle";
+@import "_adwords/_adwords-portfolio";
+@import "__browser";
+@import "_work-stages";
+@import "_adwords/_adwords-configuration";
+@import "_will-never-collaborate";
+@import "_no-magic";
+@import "_questions";
+@import "_callback-header";
+@import "_services-list";
+
+.calmness__feature-budget::after { background: url("../img/icons/icon_safe.svg") no-repeat 50% 50%; }
+
+.vedenie {
+  &__wrap {
+    .wrap;
+
+    &--no-padding {
+      padding: 0;
+    }
+  }
+  &-founder { .adwords-founder; }
+  &-puzzle { .adwords-puzzle; }
+  &-portfolio { .adwords-portfolio; }
+  &-clients {
+    .adwords-clients;
+
+    background: #fff;
+    padding-top: 4px;
+  }
+
+  &-explanation {
+    padding-top: 60px;
+
+    text-align: center;
+
+    .border-dash-top;
+    .beige-icons-repeating-background;
+
+    &__title {
+      margin: 0;
+
+      font-size: 35px;
+      line-height: 52px;
+    }
+
+    &__item-image {
+      .browser__item-image;
+
+      &-clik { .browser__item-image-cursor; }
+      &-retargeting { .browser__item-image-glasses; }
+      &-monitoring { .browser__item-image-target; }
+
+      &-visitors { .browser__item-image-microscope; }
+      &-ab { .browser__item-image-AB; }
+      &-budget { .browser__item-image-tablet; }
+
+      &-traffic { .browser__item-image-atom; }
+      &-ctr { .browser__item-image-increase; }
+      &-extension { .browser__item-image-network; }
+
+      &-phrase { .browser__item-image-molecula; }
+      &-distribution { .browser__item-image-search; }
+      &-ads { .browser__item-image-notes; }
+
+      &-revision { .browser__item-image-loupe; }
+      &-support { .browser__item-image-growth; }
+    }
+  }
+}

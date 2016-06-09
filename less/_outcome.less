@@ -1,0 +1,129 @@
+@import "__mixins";
+
+.outcome {
+  padding: 100px 0 60px;
+
+  background: url("../img/top-bg-arrow.png") no-repeat ~"50% 0/100% auto", url(../img/faq-bg.png) 95% 0 no-repeat;
+
+  &-title {
+    text-align: center;
+
+    font-size: 35px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+
+    max-width: 890px;
+    margin: 0 auto;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &-feature {
+    position: relative;
+
+    box-sizing: border-box;
+    max-width: 300px;
+    min-height: 200px;
+    margin: 20px 0;
+    padding: 115px 0 0;
+
+    text-align: center;
+
+    font-size: 16px;
+    color: #000;
+
+    &:nth-of-type(3n+2) { max-width: 220px; }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 96px;
+      height: 96px;
+
+      content: "";
+      transform: translateX(-50%);
+
+      border: 1px solid #e1e1e1;
+      border-radius: 50%;
+      background: url("../img/icons/blackboard.svg") 50% 50% no-repeat;
+      background-size: 44%;
+    }
+  }
+
+  &-strategy::before { background-image: url("../img/icons/blackboard.svg"); }
+  &-analisys::before { background-image: url("../img/icons/zoomIn.svg"); }
+  &-economy::before {
+    background-image: url("../img/icons/safe.svg");
+    background-size: 42%;
+  }
+  &-ab::before {
+    background-image: url("../img/icons/AB.svg");
+    background-size: 75%;
+  }
+  &-competitiveness::before {
+    background-image: url("../img/icons/steering.svg");
+    background-size: 48%;
+  }
+  &-retargeting::before {
+    background-image: url("../img/icons/settings.svg");
+    background-size: 40%;
+  }
+  &-interface::before {
+    background-image: url("../img/icons/glasses.svg");
+    background-size: 48%;
+  }
+  &-demand::before {
+    background-image: url("../img/icons/mobile-phone.svg");
+    background-size: 35%;
+  }
+  &-ads::before {
+    background-image: url("../img/icons/note.svg");
+    background-size: 46%;
+  }
+  &-optimization::before { background-image: url("../img/icons/icon_diagram_1.svg"); }
+  &-targeted::before {
+    background-image: url("../img/icons/target.svg");
+    background-size: 57%;
+  }
+  &-improvment::before {
+    background-image: url("../img/icons/highConversion.svg");
+    background-size: 63%;
+  }
+  &-keys::before {
+    background-image: url("../img/icons/molecular.svg");
+    background-size: 57%;
+  }
+  &-site::before {
+    background-image: url("../img/icons/icon_report.svg");
+    background-size: 35%;
+  }
+
+  &-btn {
+    display: block;
+
+    box-sizing: border-box;
+    width: 220px;
+    margin: 0 auto;
+    padding: 13px 20px;
+
+    text-align: center;
+    text-decoration: none;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 1px rgba(255, 255, 255, .27);
+
+    font-size: 17px;
+    font-weight: 300;
+
+    &:hover {
+      box-shadow: none;
+      border: none;
+    }
+  }
+}

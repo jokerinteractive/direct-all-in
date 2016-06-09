@@ -1,0 +1,114 @@
+include ../_common/_doctype
+
+body
+  .portfolio
+
+    header.header
+      include ../_common/_header__navbar
+
+    header.portfolio__header
+      h2.portfolio__header--text
+        | Портфолио
+
+    section.clients
+      .portfolio__wrap.clients__wrapper
+
+        header.clients__header
+          h3.clients__header--text
+            | Красивые слова не имеют смысла, если они не подтверждены фактами.
+
+        p.clients__text
+          | Однако мы не будем бомбардировать вас скриншотами и инфографикой с впечатляющими, но ничего не значащими цифрами. "Было", "стало", "CTR", "цена клика" и прочие шаблонные кейсы ничего не скажут о реальном качестве рекламных компаний и нашем профессионализме. Дать действительно полезную информацию могут видеоотзывы и благодарственные письма, в которых клиенты рассказывают о работе с нами, а также целые истории запуска компаний с интересными подробностями.
+
+        article.clients__pics
+          header.clients__pics--header
+            | Клиенты, которые уже доверили нам свои рекламные компании:
+
+          .clients__pics--wrapper
+            .clients__pics--block.block-1
+            .clients__pics--block.block-2
+            .clients__pics--block.block-3
+            .clients__pics--block.block-4
+            .clients__pics--block.block-5
+            .clients__pics--block.block-6
+
+          .clients__pics--wrapper
+            .clients__pics--block.block-7
+            .clients__pics--block.block-8
+            .clients__pics--block.block-9
+            .clients__pics--block.block-10
+            .clients__pics--block.block-11
+
+    section.clients__video
+      header.clients__video--header
+        | Посмотрите видеоотзывы от довольных клиентов:
+      .clients__video--slider.slider
+
+        .clients__video--slide.slide.slide-1
+          iframe(width="300" height="226" src="https://www.youtube.com/embed/Y4Wn5fgZUW4" frameborder="0" allowfullscreen)
+          p.clients__video--text
+            | Отзыв Константина Марченко о курсе по Яндекс.Директ Филиппа Царевского
+        .clients__video--slide.slide.slide-2.active
+          iframe(width="300" height="226" src="https://www.youtube.com/embed/EnqmjmubxNY" frameborder="0" allowfullscreen)
+          p.clients__video--text
+            | Отзыв Ивана Вальмонта об обучении Яндекс Директ
+        .clients__video--slide.slide.slide-3.active
+          iframe(width="300" height="226" src="https://www.youtube.com/embed/qA4imKj93NE" frameborder="0" allowfullscreen)
+          p.clients__video--text
+            | Отзыв Лены о месячном курсе по Яндекс Директ
+
+    section.clients__thnx
+      .portfolio__wrap.clients__thnx--wrapper
+        header.clients__thnx--header
+          | Благодарственные письма
+        .clients__thnx--flex
+          .clients__thnx--item
+            img.clients__thnx--img(src="./img/portfolio/letters/1.png", alt="")
+          .clients__thnx--item
+            img.clients__thnx--img(src="./img/portfolio/letters/2.png", alt="")
+          .clients__thnx--item
+            img.clients__thnx--img(src="./img/portfolio/letters/3.png", alt="")
+          .clients__thnx--item
+            img.clients__thnx--img(src="./img/portfolio/letters/4.png", alt="")
+
+    section.clients__case
+      .portfolio__wrap.clients__case--wrapper
+        header.clients__case--header
+          | Кейсы
+
+        article.clients__case--article
+          .clients__case--screen.screen-1
+          .clients__case--text.case-text
+            header.case-text__header
+              | История ведения кампании в Яндекс.Директ
+            p.case-text__descr
+              | Полтора года назад к нам обратился Кирилл за настройке рекламы в Яндекс.Директ. Во-первых, с непонятной для нас темой (антиколлекторы, abankiri.ru), а во-вторых, ещё и на старте своего бизнеса. Изначально он хотел работать с оплатой а результат (процент с продаж), но у нас были сомнения по поводу этого самого результата. Поэтому мы взялись за проект на обычных для всех клиентов условиях. И очень удивились, когда заявки пошли одна за другой.
+
+              a.case-text__descr--link(href="")
+                | Подробнее
+
+        article.clients__case--article
+          .clients__case--screen.screen-2
+          .clients__case--text.case-text
+            header.case-text__header
+              | Выжили благодаря аналитике
+            p.case-text__descr
+              | История стартапа, который прорвался исключительно благодаря контекстной рекламе. Подключение дополнительных сервисов и ежедневная работа аналитиков позволили увеличивать прибыль ежемесячно и всего за 2 года разрастить до одной из самых больших в Москве юридических фирм.
+
+              a.case-text__descr--link(href="")
+                | Подробнее
+
+    footer.footer
+      .footer__call-us.footer__call-us--portfolio
+        h4.footer__title Чтобы пообщаться с менеджером, узнать все детали и получить ответы
+          br
+          | на оставшиеся вопросы, оставьте заявку, и мы перезвоним в ближайшее рабочее время.
+        form.form(action="")
+          input.form__text.form__text--w270(type="text" placeholder="Ваше Имя")
+          input.form__text.form__text--w270(type="text" placeholder="Ваш номер телефона")
+          .footer__submit.footer__submit--big
+            input.btn.btn--big(type="submit" value="Отправить заявку")
+      include ../_common/_footer__nav
+      include ../_common/_footer__navbar
+  script(src = "js/jquery.min.js")
+  script(src = "js/script.js")

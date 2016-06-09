@@ -1,15 +1,88 @@
 .form {
-  &__text {
+  &__text,
+  &__textarea {
+    box-sizing: border-box;
+
     padding: 12px 15px;
     outline: none;
+
     border: 1px solid fade(#fff, 33%);
     border-radius: 5px;
+
     background-color: fade(#fff, 10%);
     color: #fff;
+
     font-size: 17px;
-    transition: background-color .1s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: background-color .1s cubic-bezier(.42, 0, .58, 1);
+    margin-left: 15px;
 
+    &:focus {
+      background-color: fade(#fff, 20%);
+    }
 
-    &:focus { background-color: fade(#fff, 20%); }
+    &--w220 {
+      width: 220px;
+    }
+
+    &--w250 {
+      width: 250px;
+    }
+
+    &--w270 {
+      width: 270px;
+    }
+
+    &--big {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 366px;
+      margin-bottom: 15px;
+      padding: 15px;
+      background-color: hsla(0, 0%, 0%, .1);
+      box-shadow: inset 0 0 35px rgba(0, 0, 0, .1);
+      &:focus {
+        background-color: hsla(0, 0%, 0%, .2);
+      }
+    }
+  }
+
+  &__text {
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &--no-margin {
+      margin-left: 0;
+    }
+
+    &--middle {
+      margin-left: auto !important;
+    }
+
+    &--popup {
+      font-size: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 15px;
+      background-color: #fff;
+      color: #666;
+      border: 1px solid #ccc;
+      &:focus {
+        border-color: #bbb;
+      }
+    }
+  }
+
+  &__textarea {
+    display: block;
+    margin: 20px auto 0;
+
+    width: 466px;
+    resize: none;
   }
 }

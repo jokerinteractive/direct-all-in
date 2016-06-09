@@ -1,0 +1,25 @@
+@import "__mixins";
+@import "_calmness";
+@import "_adwords/_adwords-clients";
+@import "_adwords/_adwords-founder";
+@import "_puzzle";
+@import "_adwords/_adwords-portfolio";
+@import "_adwords/_adwords-configuration";
+@import "_work-stages";
+@import "_will-never-collaborate";
+@import "_no-magic";
+@import "_questions";
+@import "_services-list";
+@import "_callback-header";
+@import "_blog";
+
+.adwords {
+  &__wrap {
+    .wrap;
+
+    .callback-header__left {
+      &-title { margin-bottom: 13px; }
+      &-text:first-of-type { margin-top: 12px; }
+    }
+  }
+}

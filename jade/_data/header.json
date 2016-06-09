@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Главная",
+    "link": "/"
+  },
+  {
+    "name": "Обучение",
+    "link": "/obychenie-yandex-direct"
+  },
+  {
+    "name": "Услуги",
+    "link": "/uslugi-i-ceny"
+  },
+  {
+    "name": "Материалы",
+    "link": "#"
+  },
+  {
+    "name": "Контакты",
+    "link": "#"
+  }
+]

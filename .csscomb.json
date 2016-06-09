@@ -1,0 +1,23 @@
+{
+    "verbose": true,
+
+    "always-semicolon": true,
+    "color-case": "lower",
+    "color-shorthand": true,
+    "element-case": "lower",
+    "eof-newline": true,
+    "leading-zero": false,
+    "quotes": "double",
+    "remove-empty-rulesets": true,
+    "sort-order-fallback": "abc",
+    "space-before-colon": "",
+    "space-after-colon": " ",
+    "space-before-combinator": " ",
+    "space-after-combinator": " ",
+    "space-before-selector-delimiter": "",
+    "space-before-opening-brace": " ",
+    "strip-spaces": true,
+    "unitless-zero": true,
+    "tab-size": 3,
+    "vendor-prefix-align": true
+}

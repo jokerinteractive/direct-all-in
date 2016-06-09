@@ -1,0 +1,82 @@
+.callback-header {
+  position: relative;
+
+  padding: 53px 0 65px;
+
+  color: #fff;
+
+  .header-bg;
+
+  &__content {
+    display: flex;
+
+    justify-content: space-between;
+
+  }
+
+  &__logo {
+    font-family: "PT Sans Narrow", "Open Sans", arial, sans-serif;
+    font-size: 65px;
+    line-height: 67px;
+    display: block;
+
+    &--red {
+      &::first-letter {
+        color: #ff0c0c;
+      }
+    }
+  }
+
+  &__left {
+    width: 50%;
+    margin-right: 20px;
+
+    img { margin-top: 24px; }
+
+    &--padding {
+      padding: 17px 0 0 40px;
+    }
+    &-title {
+      margin-top: 0;
+      margin-bottom: 23px;
+
+      font-size: 40px;
+
+      small {
+        display: block;
+        font-size: 22px;
+      }
+    }
+
+    &-text:last-child { margin-bottom: 0; }
+
+    &-text {
+      max-width: 510px;
+      margin: 22px 0 30px;
+
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  &__right {
+    box-sizing: border-box;
+    min-width: 233px;
+    max-width: 434px;
+    padding-right: 27px;
+
+    &--header {
+      margin: 11px 0 6px;
+      font-size: 29px;
+    }
+
+    &--expert-analisys {
+      margin-top: 0;
+      margin-bottom: 18px;
+
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+}

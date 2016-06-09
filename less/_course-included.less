@@ -1,0 +1,120 @@
+.course-included {
+  position: relative;
+  background: #fff url(../img/calmness/calmness-light-bg.png) center 10px no-repeat;
+
+  .border-dash-top;
+
+  &__wrap {
+    .wrap();
+
+    padding: 60px 0;
+  }
+
+  &__header {
+    display: block;
+    position: relative;
+
+    margin: 0 0 50px;
+    text-align: center;
+
+    &--name {
+      display: inline-block;
+
+      padding: 0 10px 15px;
+      margin: 0;
+
+      border-bottom: 2px dotted fade(#e7e2c7, 70%);
+
+      font-size: 35px;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    position: relative;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--block {
+      display: block;
+      box-sizing: border-box;
+      width: 50%;
+      padding: 0 0 0 64px;
+
+      &:nth-of-type(2) {
+        padding-left: 52px;
+      }
+    }
+  }
+
+  &__title {
+    display: block;
+    position: relative;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    margin: 0 0 16px;
+
+    padding-left: 33px;
+
+    &::before {
+      content: "";
+
+      display: block;
+      position: absolute;
+
+      width: 37px;
+      height: 18px;
+
+      left: 0;
+      top: 50%;
+
+      margin-top: -9px;
+
+      background: url(../img/subscriptions/check.png) no-repeat;
+    }
+  }
+
+  &__list {
+    display: block;
+    position: relative;
+    margin: 0 0 40px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &--item {
+      display: block;
+      position: relative;
+
+      font-size: 18px;
+      padding-left: 40px;
+      margin: 0 0 12px;
+
+      line-height: 23px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: "";
+
+        display: block;
+        position: absolute;
+
+        width: 8px;
+        height: 8px;
+
+        top: 6px;
+        left: 3px;
+
+        background-color: #ccc;
+        border-radius: 50%;
+      }
+    }
+  }
+}

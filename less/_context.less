@@ -1,9 +1,11 @@
 @import "__mixins"; // TODO: move all imports to style
 
 .context {
-  padding-bottom: 150px;
-  border-bottom: 1px solid #f0f2f4;
-  background: #f7f9fa linear-gradient(to top, #f6f8fa 0%, #fff 50%, #fff 100%);
+  padding-top: 120px;
+  padding-bottom: 75px;
+  // padding-bottom: 150px; //TODO: check out where else it is used
+  // border-bottom: 1px solid #f0f2f4; //TODO: check out where else it is used
+  background: url("../img/bg-arrow-gradient.png") ~"50% 0/100% auto" no-repeat, url("../img/context-web-bg.png") ~"50% 520px/80% auto" no-repeat;
 
   &__wrap { .wrap; }
 
@@ -22,15 +24,56 @@
     margin-right: auto;
     margin-left: auto;
     width: 66%;
+    box-sizing: border-box;
   }
 
   &__text { text-align: center; }
 
   &__features {
-    padding: 60px;
+    padding: 25px 60px 0 95px;
     border: 1px solid #d9d9d9;
     border-radius: 30px;
     background-color: #fff;
     box-shadow: 0 4px 13px 0 fade(#000, 8%);
+  }
+
+  &__feature {
+    position: relative;
+    padding-left: 100px;
+    min-height: 74px;
+    margin-bottom: 55px;
+    padding-top: 3px;
+    line-height: 1.6;
+    font-size: 15px;
+
+    &::after {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+
+      left: 0;
+      top: 8px;
+
+      width: 73px;
+      height: 73px;
+
+      padding: 5px;
+
+      background: url(../img/icons/growth.svg) center no-repeat;
+      background-size: 45px;
+      border: 2px solid #c1e0f2;
+      border-radius: 9px;
+    }
+
+    &:nth-of-type(2) {
+      margin-bottom: 35px;
+    }
+
+    &-safe::after {
+      background-image: url(../img/icons/safe.svg);
+    }
+    &-glass::after {
+      background-image: url(../img/icons/glasses.svg);
+    }
   }
 }

@@ -1,0 +1,41 @@
+.webinar {
+  .box-sizing;
+
+  &__wrap {
+    .wrap;
+  }
+
+  &__header {
+    display: block;
+    .header-bg;
+
+    &--img {
+      display: block;
+      position: absolute;
+
+      width: 100%;
+      height: 424px;
+
+      bottom: 0;
+    }
+  }
+
+  &__flex {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--left,
+    &--right {
+      display: block;
+      position: relative;
+      width: 500px;
+    }
+
+    &--left {
+      width: 515px;
+      padding-left: 15px;
+    }
+  }
+}

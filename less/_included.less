@@ -1,14 +1,19 @@
-@import "__mixins"; // TODO: move all imports to style
-
 .included {
   position: relative;
   clear: both;
   padding-top: 35px;
-  background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #fff 50%, #fff 100%);
+  padding-bottom: 60px;
+  // background: #f7f9fa linear-gradient(to bottom, #f6f8fa 0%, #fff 50%, #fff 100%); //TODO: check out where else it is used
+  background: #fff url(../img/included-web.png) 50% 0 no-repeat;
 
   &__wrap { .wrap; }
 
-  &__title { .title-dotted; }
+  &__title {
+    .title-dotted;
+    margin-top: 125px;
+    margin-bottom: 60px;
+    font-size: 35px;
+  }
 
   &__features {
     display: flex;
@@ -32,7 +37,16 @@
       border: 1px solid #ebebeb;
       border-radius: 50%;
       content: " ";
+      background: center no-repeat;
+      background-size: 40px;
     }
+
+    &-interview::before { background-image: url(../img/icons/user_speach.svg); }
+    &-audit::before { background-image: url(../img/icons/icon_diagram_1.svg); }
+    &-consulting::before { background-image: url(../img/icons/tie.svg); }
+    &-month::before { background-image: url(../img/icons/calendar_1month.svg); }
+    &-star::before { background-image: url(../img/icons/molecular.svg); }
+    &-target::before { background-image: url(../img/icons/target.svg); }
 
     &:nth-child(2n+1) {
       padding-right: 100px;

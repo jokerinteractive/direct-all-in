@@ -1,0 +1,56 @@
+.info-block {
+  margin: -110px 0 0;
+  padding: 110px 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, #e3e3e3 50%, #bebebe 50%, rgba(255, 255, 255, 0));
+
+  &__wrapper {
+    .wrap();
+
+    position: relative;
+    padding: 0 44px;
+  }
+
+
+  &__border {
+    display: block;
+    position: absolute;
+
+    height: 100%;
+    top: 0;
+
+    &:first-of-type {
+      left: 0;
+    }
+
+    &:last-of-type {
+      right: 0;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__text {
+    display: block;
+    position: relative;
+
+    padding: 40px 80px;
+    background: #fff;
+
+    &--par,
+    &--author {
+      display: block;
+
+      margin: 25px 0 0 0;
+
+      font-size: 18px;
+      line-height: 24px;
+
+      b {
+        font-weight: bold;
+      }
+    }
+
+    &--author {
+      font-style: italic;
+    }
+  }
+}

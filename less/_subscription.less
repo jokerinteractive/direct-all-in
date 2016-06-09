@@ -1,0 +1,24 @@
+@import "__mixins";
+
+.subscription {
+
+  color: #fff;
+  .box-sizing;
+
+  .header-bg;
+
+  &__wrap {
+    .wrap();
+  }
+
+  &__column {
+    &--left {
+      float: left;
+      width: 50%;
+    }
+    &--right {
+      float: right;
+      width: 40%;
+    }
+  }
+}

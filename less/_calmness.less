@@ -1,0 +1,331 @@
+.calmness {
+  padding: 100px 12px 90px;
+
+  color: #000;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 60px;
+
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .border-dash-top;
+
+  &__feature {
+    position: relative;
+
+    box-sizing: border-box;
+    min-height: 114px;
+    margin-bottom: 50px;
+
+    &-title {
+      margin: 0;
+
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 34px;
+    }
+
+    &-text {
+      margin: 0;
+
+      font-size: 14px;
+    }
+  }
+
+  &__feature::after {
+    position: absolute;
+    top: 5px;
+
+    width: 96px;
+    height: 96px;
+
+    content: "";
+
+    border: 1px solid #6d6d6d;
+    border-radius: 50%;
+    background: url("../img/icons/safe.svg") no-repeat 50% 50%;
+  }
+
+  &__feature-growth::after { background-image: url("../img/icons/icon_diagram_1.svg"); }
+  &__feature-strategy::after { background-image: url("../img/icons/icon_strategy-growth.svg"); }
+  &__feature-reporting::after {
+    background-image: url("../img/icons/icon_report.svg");
+    background-size: 30%;
+  }
+
+  &__feature-partnership::after {
+    background-image: url("../img/adwords-symbols.svg");
+    background-size: 222px;
+    background-position-x: 28px;
+  }
+  &__feature-connect::after {
+    background-image: url("../img/icons/mobile-phone.svg");
+    background-size: 30%;
+  }
+
+  &__feature-training::after {
+    background-image: url("../img/icons/book.svg");
+    background-size: 50%;
+  }
+
+  &__features {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  &__features-left,
+  &__features-right {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  &__features-left {
+    margin-right: 13px;
+
+    text-align: right;
+
+    &-item { padding-right: 135px; }
+    &-item::after { right: 0; }
+  }
+
+  &__features-right {
+    margin-left: 12px;
+
+    &-item { padding-left: 135px; }
+    &-item::after { left: 0; }
+  }
+
+  &__promises {
+
+    &.no-margin {
+      margin: 0;
+      padding: 0;
+    }
+
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #e3e3e3 50%, #bebebe 0, hsla(0, 0%, 100%, 0));
+
+    &-inside {
+      position: relative;
+
+      display: flex;
+      flex-direction: row;
+
+      box-sizing: border-box;
+      min-height: 341px;
+      margin: 0 57px;
+      padding: 50px 15px 50px 65px;
+
+      background: #fff;
+
+      font-size: 12px;
+
+      justify-content: space-between;
+      flex-wrap: nowrap;
+
+      &--column {
+        flex-direction: column;
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        top: 50%;
+
+        width: 58px;
+        min-height: 341px;
+
+        content: "";
+        transform: translateY(-50%);
+
+        background: url("../img/calmness/promises-left-brace.png");
+      }
+
+      &::before {
+        left: -58px;
+      }
+
+      &::after {
+        right: -58px;
+
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+
+    &-left {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+
+      max-width: 392px;
+
+      justify-content: flex-start;
+
+      &-title {
+        margin: 0;
+        margin-bottom: 20px;
+
+        font-size: 25px;
+        font-weight: 500;
+      }
+
+      &-text {
+        max-width: 392px;
+        margin: 0;
+
+        font-size: 16px;
+        line-height: 35px;
+      }
+    }
+
+    &-right {
+      max-width: 480px;
+      padding-left: 37px;
+
+      font-size: 16px;
+
+      &-title {
+        margin: 0;
+
+        font-size: 16px;
+      }
+
+      &-ps {
+        margin: 0;
+
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    &-list {
+      margin: 10px 0;
+
+      &-item {
+        position: relative;
+
+        margin: 10px 0;
+        padding-left: 37px;
+
+        line-height: 30px;
+
+        &::before {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+
+          width: 11px;
+          height: 11px;
+
+          content: "";
+
+          border-radius: 50%;
+          background: #ff2f4f;
+        }
+      }
+    }
+
+    &--text {
+      display: block;
+      position: relative;
+
+      margin: 0;
+
+      font-size: 16px;
+      line-height: 35px;
+    }
+
+    &--author {
+      font-style: italic;
+      margin: 20px 0;
+    }
+  }
+
+
+
+  &__confidence {
+    position: relative;
+
+    padding: 70px 0 55px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 100%;
+      left: 50%;
+
+      width: 1200px;
+      height: 100%;
+
+      content: "";
+      transform: translateX(-50%);
+
+      background: url("../img/calmness/confidence-bg-dots-lines.png") -85px 162px no-repeat;
+    }
+
+    &-content {
+      display: flex;
+      padding: 0 35px;
+    }
+
+    &-title {
+      margin: 0 0 70px;
+
+      text-align: center;
+
+      font-size: 35px;
+    }
+
+    &-item {
+      position: relative;
+
+      margin: 0;
+      margin-bottom: 20px;
+      padding-left: 37px;
+
+      font-size: 15px;
+      line-height: 26px;
+
+      &::before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        width: 10px;
+        height: 10px;
+
+        content: "";
+
+        border-radius: 50%;
+        background: #338bc3;
+      }
+    }
+
+    &-left,
+    &-right {
+      max-width: 500px;
+    }
+
+    &-left { margin-right: 6.5%; }
+
+    &-item:nth-of-type(1) { margin-bottom: 4.57%; }
+    &-item:nth-of-type(2) { margin-bottom: 6.93%; }
+    &-item:nth-of-type(3) { margin-bottom: 7.7%; }
+  }
+
+  &--adwords {
+    padding-left: 0;
+    padding-right: 0;
+    .beige-icons-repeating-background;
+  }
+}

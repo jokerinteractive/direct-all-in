@@ -1,0 +1,103 @@
+@import "__mixins";
+
+.wrap { .wrap; }
+
+.will-never-collaborate {
+  padding: 125px 0 110px;
+
+  background: url("../img/will-never-collaborate/top-arrow-bg.png") no-repeat ~"50% 0%/100% auto", url("../img/will-never-collaborate/humor-words-bg.png") repeat-x 50% 100%;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__features {
+    display: flex;
+
+    margin-bottom: 50px;
+    padding: 0 10%;
+
+    justify-content: space-around;
+  }
+
+  &__item {
+    position: relative;
+
+    width: 200px;
+    padding-top: 160px;
+
+    text-align: center;
+
+    font-size: 15px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 143px;
+      height: 143px;
+
+      content: "";
+      transform: translateX(-50%);
+
+      border: 1px solid #dbdbdb;
+      border-radius: 50%;
+      background: url("../img/icons/mlm.svg") no-repeat 50% 50%;
+      background-size: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      top: 2px;
+      right: 22.5%;
+
+      width: 31px;
+      height: 31px;
+
+      content: "";
+
+      background: url("../img/icons/red-round-x.svg") no-repeat 50% 50%;
+      background-size: 100%;
+    }
+  }
+
+  &__informbusiness::before { background-image: url("../img/icons/megaphone.svg"); }
+  &__mlm::before { background-image: url("../img/icons/mlm.svg"); }
+  &__affiliate::before { background-image: url("../img/icons/affilates.svg"); }
+
+  &__valueless {
+    display: flex;
+
+    max-width: 1078px;
+    margin: 0 auto;
+
+    font-size: 16px;
+
+    justify-content: space-between;
+
+    &-item { margin: 0 0 15px; }
+
+    &-left,
+    &-right {
+      display: flex;
+      flex-direction: column;
+
+      width: 490px;
+      margin: 10px;
+
+      justify-content: space-between;
+    }
+
+    &-subtitle {
+      margin: 0;
+      margin-bottom: 15px;
+
+      font-weight: 600;
+    }
+
+    &-text {
+      margin: 0;
+    }
+  }
+}

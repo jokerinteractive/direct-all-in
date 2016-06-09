@@ -1,0 +1,459 @@
+@import "_callback-header";
+
+.book {
+  &__wrap {
+    .wrap;
+  }
+
+  &__header {
+    color: #fff;
+
+    .header-bg;
+
+    .book__wrap {
+      padding-top: 47px;
+      padding-bottom: 47px;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: row-reverse;
+
+      justify-content: space-between;
+    }
+  }
+  &__header-left {
+    z-index: 1;
+
+    width: 50%;
+    margin: 0 0 -225px;
+    min-width: 640px;
+  }
+
+  &__header-right {
+    max-width: 470px;
+    z-index: 2;
+
+    .callback-header__left-title { font-size: 25px; }
+  }
+
+  &__header-subtitle {
+    font-size: 27px;
+    font-weight: 600;
+
+    &::first-letter {
+      color: #fff;
+    }
+  }
+
+  &__header-explanation {
+    font-size: 19px;
+    font-style: italic;
+    line-height: 24px;
+  }
+
+  &__header-disclaimer { color: #639fc8; }
+
+  &__header-button {
+    display: block;
+
+    box-sizing: border-box;
+    max-width: 365px;
+    margin-top: 32px;
+    padding: 15px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 5px;
+
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__benefits {
+    position: relative;
+
+    padding: 180px 0 70px;
+
+    .beige-icons-repeating-background;
+
+    .border-dash-top;
+
+
+    &-left { position: relative; }
+
+    &-image {
+      position: absolute;
+      top: -44px;
+      left: -90px;
+    }
+
+    &-right {
+      float: right;
+
+      box-sizing: border-box;
+      max-width: 680px;
+    }
+
+    &-title { margin: 0 0 10px; }
+
+    &-lists {
+      display: flex;
+
+      justify-content: space-around;
+    }
+
+    &-list-left { margin-right: 67px; }
+
+    &-item {
+      position: relative;
+
+      box-sizing: border-box;
+      max-width: 312px;
+      margin: 14px 0;
+      padding-left: 18px;
+
+      font-size: 16px;
+      line-height: 24px;
+
+      &::before {
+        position: absolute;
+        top: 9px;
+        left: 0;
+
+        width: 8px;
+        height: 8px;
+
+        content: "";
+
+        border-radius: 50%;
+        background: #e01736;
+      }
+    }
+
+    &-red { color: #e01736; }
+  }
+
+  &__useful {
+    padding: 50px 0;
+
+    background: url("../img/book/bg-repeating-beige-bottom.png") no-repeat ~"50% 95%/100% auto";
+
+    &-title {
+      position: relative;
+
+      margin: 0;
+      padding-bottom: 100px;
+
+      text-align: center;
+
+      font-size: 37px;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+
+        width: 702px;
+        height: 89px;
+
+        content: "";
+        transform: translateX(-50%);
+
+        background: url("../img/book/brackets-down.svg") no-repeat 50% 50%;
+      }
+    }
+
+    &-content {
+      position: relative;
+
+      max-width: 500px;
+      margin: 70px auto 0;
+    }
+
+    &-feature {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+
+      min-height: 97px;
+      margin: 0 0 85px;
+      padding-left: 148px;
+
+      font-weight: 600;
+
+      justify-content: center;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 96px;
+        height: 96px;
+
+        content: "";
+
+        border: 1px solid #b7b7b7;
+        border-radius: 12px;
+        background: url("../img/icons/infoBusinessman.svg") no-repeat 50% 50%;
+      }
+    }
+
+    &-workshop::before { background-image: url("../img/icons/practicum.svg"); }
+    &-tutorial::before { background-image: url("../img/icons/infoBusinessman.svg"); }
+    &-memo::before { background-image: url("../img/icons/newLessons.svg"); }
+  }
+
+  &__author {
+    background: url("../img/book/setka-author.svg") no-repeat 50% 0, url("../img/book/book-author-bg.jpg") no-repeat ~"50% 0/100% auto", linear-gradient(90deg, #0e3b5a 0%, #0e3c5d 42%, #0f3d5e 47.8%, #104265 64%, #104469 83.16%, #124970 93.2%, #124c72 100%);
+    background-color: #0e3b5a;
+
+    .book__wrap {
+      display: flex;
+      flex-direction: row-reverse;
+
+      justify-content: center;
+    }
+
+    &-image {
+      margin-top: -53px;
+      vertical-align: bottom;
+    }
+
+    &-texts {
+      max-width: 515px;
+      margin: 110px 0 40px;
+
+      color: #fff;
+    }
+
+    &-subtitle {
+      margin: 0;
+
+      color: #fff;
+
+      font-size: 24px;
+    }
+
+    &-title {
+      margin: 13px 0 15px;
+
+      color: #fff;
+
+      font-size: 45px;
+    }
+
+    &-text {
+      margin: 7px 0 26px;
+
+      color: #fff;
+
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+
+  &__faq {
+    position: relative;
+
+    padding: 591px 0 73px;
+
+    background: #f8f8f8;
+
+    &-image {
+      position: absolute;
+      top: -795px;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    &-title {
+      text-align: center;
+
+      font-size: 36px;
+    }
+
+    &-texts {
+      max-width: 785px;
+      margin-left: 15.833%;
+
+    }
+
+    &-question {
+      margin: 0 0 10px;
+
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    &-underlined {
+      padding-bottom: 30px;
+
+      border-bottom: 2px dashed #ff304f;
+    }
+
+    &-interviewer {
+      color: #747474;
+
+      font-size: 16px;
+    }
+
+    &-answer {
+      margin: 0 0 46px;
+
+      font-size: 17px;
+    }
+  }
+
+  &__retailers {
+    position: relative;
+
+    padding: 65px 0 215px;
+
+    background: url("../img/calmness/calmness-light-bg.png") repeat-x 50% 10px, linear-gradient(#fff 75%, #e7e7e7 100%);
+
+    &-content {
+      display: flex;
+
+      justify-content: flex-start;
+    }
+
+    &-title {
+      margin: 30px 0 40px;
+
+      text-align: center;
+
+      font-size: 36px;
+    }
+
+    &-description {
+      max-width: 675px;
+      margin: 0 auto;
+
+      text-align: center;
+
+      font-size: 18px;
+    }
+
+    &-left { margin: 22px 0 0 -90px; }
+
+    &-right {
+      max-width: 490px;
+      margin: 88px 0 0 34px;
+    }
+
+    &-subtitle {
+      margin: 0 0 17px;
+
+      font-size: 18px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+
+      width: 492px;
+      min-height: 81px;
+
+      border-top: 2px dotted fade(#e7e2c7, 70%);
+
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-buy {
+      box-sizing: border-box;
+      width: 101px;
+      padding: 7px 12px;
+
+      font-size: 14px;
+    }
+
+    .book__brackets {
+      position: relative;
+
+      top: 100px;
+      //right: 55px;
+      //bottom: -322px;
+      //left: 55px;
+
+      box-sizing: border-box;
+      height: 215px;
+      padding: 55px 20px;
+      margin: 0 auto;
+
+      text-align: center;
+
+      background: #fff;
+
+      font-size: 25px;
+
+      &-title,
+      &-text {
+        max-width: 920px;
+        margin: 0 auto;
+      }
+
+      &-title {
+        font-weight: 700;
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        top: -3px;
+        bottom: -3px;
+        left: -56px;
+
+        width: 56px;
+        height: 221px;
+
+        content: "";
+
+        background: url("../img/book/skobka_l.svg") no-repeat ~"50% 50%/100% auto";
+      }
+
+      &::after {
+        right: -56px;
+        left: auto;
+
+        background: url("../img/book/skobka_r.svg") no-repeat ~"50% 50%/100% auto";
+      }
+    }
+  }
+
+  &__call-us {
+    display: block;
+    background: #232d57 url(../img/bg-footer.jpg) no-repeat 50% 50%/cover;
+    color: #fff;
+
+    max-width: 955px;
+    margin: 37px auto 0;
+    padding-top: 42px;
+    padding-bottom: 30px;
+
+    border-radius: 13px;
+
+    &-title {
+      margin-bottom: 30px;
+
+      font-size: 18px;
+    }
+
+    &-submit {
+      margin: 35px 0 20px;
+    }
+  }
+
+  &__reviews {
+    padding: 155px 0 59px;
+
+    background: linear-gradient(#dadada 0%, #e9e9e9 164px, #fafafa 100%);
+  }
+
+}

@@ -1,0 +1,107 @@
+.why-study {
+  background: url(../img/calmness/calmness-light-bg.png) center 10px no-repeat;
+
+  &__wrap {
+    .wrap();
+    padding: 110px 0 30px;
+  }
+
+  &__header {
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+
+    &--title {
+      font-size: 34px;
+      margin: 0;
+    }
+
+    &--subtitle {
+      font-size: 28px;
+      margin: 0;
+    }
+  }
+
+  &__list {
+    display: block;
+    position: relative;
+
+    width: 75%;
+    margin: 0 auto;
+    padding-left: 55px;
+
+    &--item {
+      display: flex;
+      position: relative;
+
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      padding: 0;
+      margin: 0 0 15px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      p {
+        display: block;
+        max-width: 80%;
+
+        font-size: 20px;
+        line-height: 26px;
+
+        padding: 20px 0;
+        margin: 0 0 0 35px;
+
+        b {
+          font-weight: bold;
+        }
+      }
+
+      &::after {
+        content: "";
+
+        display: block;
+        position: absolute;
+
+        left: 60px;
+        bottom: -80px;
+
+        border-right: 2px dotted #ccc;
+
+        width: 0;
+        height: 90px;
+      }
+    }
+
+    &--img {
+      display: block;
+      position: relative;
+
+      width: 75px;
+      height: 75px;
+
+      background: #fff;
+      margin-left: 24px;
+
+      img,
+      svg {
+        display: block;
+        position: absolute;
+
+        width: 70%;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
