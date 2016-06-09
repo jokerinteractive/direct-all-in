@@ -1,8 +1,5 @@
 'use strict';
 
-var argv = require('minimist')(process.argv.slice(2));
-var isOnProduction = !!argv.production;
-
 /* --------- plugins --------- */
 
 var
@@ -32,7 +29,7 @@ var
 
 var
   paths = {
-    build: '.',
+    build: './build',
     jade: {
       location: './jade/**/*.jade',
       compiled: './jade/_pages/*.jade',
@@ -215,18 +212,9 @@ gulp.task('serve', function () {
 
 /* --------- default --------- */
 
-var allTasks = ['style', 'jade'];
-if (!isOnProduction) {
-  allTasks.push('serve');
-}
+gulp.task('build', ['style', 'jade', 'images', 'js']);
 
-gulp.task('build', ['style', 'jade', 'images', 'js'], function () {
-  return 
-});
-
-gulp.task('default', allTasks, function () {
-  if (!isOnProduction) {
-    gulp.watch(paths.style.watch, ['style', server.stream]);
-    gulp.watch(paths.jade.location, ['jade', server.reload]);
-  }
+gulp.task('default', ['style', 'jade'], function () {
+  gulp.watch(paths.style.watch, ['style', server.stream]);
+  gulp.watch(paths.jade.location, ['jade', server.reload]);
 });

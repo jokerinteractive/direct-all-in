@@ -8,7 +8,7 @@
   &__header {
     color: #fff;
 
-    .header-arrow-background;
+    .header-bg;
 
     .book__wrap {
       padding-top: 47px;
@@ -21,61 +21,55 @@
 
       justify-content: space-between;
     }
+  }
+  &__header-left {
+    z-index: 1;
 
-    &-left {
-      z-index: 1;
+    width: 50%;
+    margin: 0 0 -225px;
+    min-width: 640px;
+  }
 
-      width: 50%;
-      margin: 0 0 -225px;
-      min-width: 640px;
-    }
+  &__header-right {
+    max-width: 470px;
+    z-index: 2;
 
-    &-right {
-      max-width: 470px;
-      z-index: 2;
+    .callback-header__left-title { font-size: 25px; }
+  }
 
-      .callback-header__left-title { font-size: 25px; }
-    }
+  &__header-subtitle {
+    font-size: 27px;
+    font-weight: 600;
 
-    &-subtitle {
-      font-size: 27px;
-      font-weight: 600;
-
-      &::first-letter {
-        color: #fff;
-      }
-    }
-
-    &-explanation {
-      font-size: 19px;
-      font-style: italic;
-      line-height: 24px;
-    }
-
-    &-disclaimer { color: #639fc8; }
-
-    &-button {
-      display: block;
-
-      box-sizing: border-box;
-      max-width: 365px;
-      margin-top: 32px;
-      padding: 15px;
-
-      text-align: center;
-      text-decoration: none;
-
+    &::first-letter {
       color: #fff;
-      border-radius: 5px;
-
-      font-size: 25px;
-      line-height: 30px;
     }
   }
 
-  &__benefits,
-  &__retailers {
-    span.dotted-underline { padding: 0 0 16px; }
+  &__header-explanation {
+    font-size: 19px;
+    font-style: italic;
+    line-height: 24px;
+  }
+
+  &__header-disclaimer { color: #639fc8; }
+
+  &__header-button {
+    display: block;
+
+    box-sizing: border-box;
+    max-width: 365px;
+    margin-top: 32px;
+    padding: 15px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 5px;
+
+    font-size: 25px;
+    line-height: 30px;
   }
 
   &__benefits {
@@ -85,18 +79,8 @@
 
     .beige-icons-repeating-background;
 
-    &::before {
-      position: absolute;
-      top: 3px;
-      right: 0;
-      left: 0;
+    .border-dash-top;
 
-      height: 2px;
-
-      content: "";
-
-      background: url(../img/header-dashed-line.png) repeat-x 50% 0;
-    }
 
     &-left { position: relative; }
 
@@ -235,7 +219,10 @@
       justify-content: center;
     }
 
-    &-image { margin-top: -53px; }
+    &-image {
+      margin-top: -53px;
+      vertical-align: bottom;
+    }
 
     &-texts {
       max-width: 515px;

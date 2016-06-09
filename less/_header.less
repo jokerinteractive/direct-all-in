@@ -39,6 +39,15 @@
     text-align: center;
     text-decoration: underline;
     font-size: 14px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background: url(../img/icons/header_phone_icon.svg) no-repeat 50% 50%/cover;
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &__title {
