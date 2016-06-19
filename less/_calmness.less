@@ -3,12 +3,20 @@
 
   color: #000;
 
-  h2 {
+  &__header {
     margin-top: 0;
     margin-bottom: 60px;
 
     text-align: center;
-    font-size: 35px;
+
+    > span {
+      font-size: 35px;
+    }
+
+    &--dotted {
+      .title-dotted;
+      margin-bottom: 60px;
+    }
   }
 
   .border-dash-top;
@@ -44,7 +52,7 @@
 
     content: "";
 
-    border: 1px solid #6d6d6d;
+    border: 1px solid #d6d6d6;
     border-radius: 50%;
     background: url("../img/icons/safe.svg") no-repeat 50% 50%;
   }
@@ -112,7 +120,7 @@
       padding: 0;
     }
 
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #e3e3e3 50%, #bebebe 0, hsla(0, 0%, 100%, 0));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, #e3e3e3 50%, #bebebe 50%, rgba(255, 255, 255, 0));
 
     &-inside {
       position: relative;
@@ -276,14 +284,6 @@
     &-content {
       display: flex;
       padding: 0 35px;
-    }
-
-    &-title {
-      margin: 0 0 70px;
-
-      text-align: center;
-
-      font-size: 35px;
     }
 
     &-item {

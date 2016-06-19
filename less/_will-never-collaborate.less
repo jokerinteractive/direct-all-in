@@ -1,14 +1,14 @@
-@import "__mixins";
-
 .wrap { .wrap; }
 
 .will-never-collaborate {
-  padding: 125px 0 110px;
+  padding: 55px 0 110px;
 
-  background: url("../img/will-never-collaborate/top-arrow-bg.png") no-repeat ~"50% 0%/100% auto", url("../img/will-never-collaborate/humor-words-bg.png") repeat-x 50% 100%;
+  background: url("../img/will-never-collaborate/humor-words-bg.png") repeat-x 50% 100%;
+  //url("../img/will-never-collaborate/top-arrow-bg.png") no-repeat ~"50% 0%/100% auto",
 
   &__title {
-    text-align: center;
+    .title-dotted;
+    margin-bottom: 60px;
   }
 
   &__features {

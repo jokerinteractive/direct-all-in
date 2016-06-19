@@ -10,7 +10,11 @@
 .adwords-puzzle {
   padding-top: 200px;
 
-  background: url("../img/puzzles/puzzle-bg-top.png") no-repeat 50% -55px, url("../img/puzzles/puzzles-bg.png") no-repeat 50% 95%;
+  background: url("../img/puzzles/puzzle-bg-top.png") no-repeat 50% -55px ~"/110%", url("../img/puzzles/puzzles-bg.png") repeat-x 50% 95%;
+
+  &--gradient-bg {
+    background: url("../img/puzzles/puzzle-bg-top.png") no-repeat 50% -55px ~"/110%", url("../img/puzzles/puzzles-bg.png") repeat-x 50% 95%, linear-gradient(180deg, #fff 90%, #fafafa 100%);
+  }
 
   &__wrap {
     padding-left: 8.16%;

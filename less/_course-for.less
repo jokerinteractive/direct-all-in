@@ -1,6 +1,10 @@
 .course-for {
   padding: 60px 0;
 
+  &--calmness-bg {
+    background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 10px ~"/cover";
+  }
+
   &--no-padding-bottom {
     padding-bottom: 0;
   }
@@ -124,10 +128,11 @@
   }
 
   &--light {
-    //background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 10px;
 
     .course-for__header::after {
       background-image: url(../img/icons/dashedLineBlue.svg);
+      background-size: 630px;
+      width: 700px;
     }
 
     .course-for-list::before {

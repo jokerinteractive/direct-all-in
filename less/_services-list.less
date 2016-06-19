@@ -14,15 +14,34 @@
   }
 
   &__item {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    display: block;
+    width: 184px;
+
     margin-bottom: 0;
+
+    &::before {
+      content: "";
+
+      display: block;
+
+      width: 145px;
+      height: 145px;
+
+      margin: 0 auto;
+
+      border-radius: 50%;
+      background: #fff url(../img/icons/emc.svg) no-repeat center;
+      background-size: 40%;
+    }
 
     &-text {
       font-size: 18px;
       text-align: center;
-      margin: 20px 0;
+      margin: 20px 0 0;
+    }
+
+    &--steering::before {
+      background-image: url(../img/icons/steering.svg);
     }
   }
 }
