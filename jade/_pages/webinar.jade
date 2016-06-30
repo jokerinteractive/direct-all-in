@@ -10,7 +10,8 @@ body
       .webinar__wrap.webinar__header--wrapper
         .webinar__flex
           .webinar__flex--left
-            img.webinar__header--img(src="./img/webinar-video.png", alt="Самый лучший вебинар")
+            p.webinar__text-popular
+              | "Это мой самый популярный материал, который пересмотрели уже сотни людей. И ещё я не получил ни одного негативного отзыва."
           .webinar__flex--right.get-course.get-course--webinar
             h3.get-course__header
               | Запись вебинара по ведению и аналитике рекламных компаний в
@@ -22,16 +23,16 @@ body
               | рекламной кампании с комментариями
               br
               | Филиппа Царевского
-            a.btn.btn--cta.get-course__btn(href="")
+            a.btn.btn--main.get-course__btn(href="")
               | Купить вебинар
 
-    section.about-speaker.about-speaker--webinar
+    section.about-speaker.about-speaker--calmness
       .webinar__wrap.about-speaker__wrapper
         header.about-speaker__header
 
           .about-speaker__header--left.speaker-photo
             .speaker-photo__wrapper
-              img.speaker-photo__img(src="./img/subscriptions/speaker.jpg" alt="Филипп Царевский")
+              img.speaker-photo__img.speaker-photo__img--moved-right(src="./img/founder/Phil.png" alt="Филипп Царевский")
 
           .about-speaker__header--right.speaker-descr
             small.speaker-descr__coach
@@ -94,7 +95,7 @@ body
               li.configuration__browser-button
               li.configuration__browser-button
               li.configuration__browser-button
-          .configuration__browser-title
+          .configuration__browser-title.configuration__browser-title--myriad
             span Вебинар / Содержание
           .configuration__browser-content
             ul.configuration__browser--list
@@ -235,14 +236,15 @@ body
     section.course-for.course-for--light.course-for--calmness-bg
       .webinar__wrap
         header.course-for__header
-          | Дополнительные выгоды при покупке:
+          p
+            | Дополнительные выгоды при покупке:
 
         ul.course-for-list
 
           li.course-for-list__item.answer
             .course-for-list__item--wrapper
               header.course-for-list__item--header
-                | Отвечу на любой вопрос по вебинару.
+                p Отвечу на любой вопрос по вебинару.
 
           li.course-for-list__item.pay
             .course-for-list__item--wrapper
@@ -261,7 +263,7 @@ body
     section.test
       .webinar__wrap.test__wrap
         header.test__header
-          h3.test__head
+          h3.test__head.test__head--normal
             | Цена вебинара - 4900 &#8381;
         p.test__text
           | 5-часовая запись настройки рекламной кампании с

@@ -19,16 +19,26 @@
     font-size: 34px;
     padding-top: 8px;
 
-    &::after {
-      content: "";
+    p {
+      display: inline-block;
+      margin: 0;
 
-      display: block;
-      width: 600px;
-      height: 30px;
+      &::after {
+        content: "";
 
-      margin: 5px auto 0;
+        display: block;
+        height: 30px;
 
-      background: url(../img/icons/dashedLineRed.svg) center no-repeat;
+        margin: 5px auto 0;
+
+        background: url(../img/icons/dashedLineRed.svg) center no-repeat;
+        background-size: 100%;
+      }
+    }
+
+    &--small {
+      font-size: 24px;
+      line-height: 30px;
     }
   }
 
@@ -129,14 +139,20 @@
 
   &--light {
 
-    .course-for__header::after {
-      background-image: url(../img/icons/dashedLineBlue.svg);
-      background-size: 630px;
-      width: 700px;
+    .course-for__header {
+      p::after {
+        background-image: url(../img/icons/dashedLineBlue.svg);
+      }
     }
 
     .course-for-list::before {
       background-image: url(../img/decoration/blue-line.png);
+    }
+  }
+
+  &--circles {
+    .course-for-list__item::before {
+      border-radius: 50%;
     }
   }
 }

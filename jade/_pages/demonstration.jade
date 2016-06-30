@@ -1,0 +1,68 @@
+include ../_common/_doctype
+
+body
+  header.header.header--padding
+    include ../_common/_header__navbar--nomenu
+
+  section.subscription
+    .subscription__wrap.clearfix.subscription__wrap--main
+      .subscription__column--left
+        img.subscription__img(src="" alt="Демонстрационная настройка видео")
+
+      .subscription__column--right.get-course.get-course--subscribe
+        span.get-course__header Демонстрационная настройка
+        h3.get-course__logo Яндекс.Директ
+        p.get-course__details
+          | 5-часовая запись настройки
+          br
+          | рекламной компании с комментариями
+          br
+          | Филиппа Царевского
+        a.btn.btn--main.get-course__btn(href="#") Смотреть видео
+
+  section.about-speaker.about-speaker--calmness
+    .webinar__wrap.about-speaker__wrapper
+      header.about-speaker__header
+
+        .about-speaker__header--left.speaker-photo
+          .speaker-photo__wrapper
+            img.speaker-photo__img(src="./img/subscriptions/speaker.jpg" alt="Филипп Царевский")
+
+        .about-speaker__header--right.speaker-descr
+          .about-speaker__quote
+            P.about-speaker__quote-small
+              | &laquo;На своих вебинарах я даю большое количество информации бесплатно. Однако многим было интересно копнуть поглубже и посмотреть, как я лично создаю кампанию с нуля и до запуска. Так родилась идея этого видео.&raquo;
+            p.about-speaker__quote-author
+              | — Филипп Царевский
+
+  section.video-included
+    header.vide-included__header
+      span Что в Видео-Записи:
+    .video-included__watch
+      iframe(src="")
+      article.course-for.course-for--circles.course-for--no-padding-bottom.course-for--light
+        header.course-for__header.course-for__header--small
+          p "В нем я создаю кампанию..."
+
+        ul.course-for-list
+
+          li.course-for-list__item.business
+            .course-for-list__item--wrapper
+              header.course-for-list__item--header
+                | Что даст просмотр этой записи:
+              p.course-for-list__item--text
+                | Он заточен под настоящий малый бизнес.
+
+          li.course-for-list__item.study
+            .course-for-list__item--wrapper
+              header.course-for-list__item--header
+                | Кому стоит смотреть:
+              p.course-for-list__item--text
+                | Для которого слово своего "гуру" авторитетнее любого аргумента, пусть даже 100 раз логически доказанного.
+
+          li.course-for-list__item.study
+            .course-for-list__item--wrapper
+              header.course-for-list__item--header
+                | Кому будет не так полезно:
+              p.course-for-list__item--text
+                | Для которого слово своего "гуру" авторитетнее любого аргумента, пусть даже 100 раз логически доказанного.
