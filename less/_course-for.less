@@ -5,8 +5,8 @@
     background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 10px ~"/cover";
   }
 
-  &--no-padding-bottom {
-    padding-bottom: 0;
+  &--no-padding {
+    padding: 0;
   }
 
   &--padding {
@@ -37,8 +37,15 @@
     }
 
     &--small {
-      font-size: 24px;
-      line-height: 30px;
+      font-size: 18px;
+      line-height: 23px;
+      padding: 0 10px;
+      color: #000;
+
+      p::after {
+        height: 45px;
+        margin-top: 25px;
+      }
     }
   }
 
@@ -83,6 +90,7 @@
         background-position: center center;
         border-radius: 12px;
         margin-right: 43px;
+        background-size: 50%;
       }
 
       &.business::before {
@@ -115,6 +123,18 @@
 
       &.youHaveDirectologs::before {
         background-image: url(../img/icons/youHaveDirectologs.svg);
+      }
+
+      &.diagram::before {
+        background-image: url(../img/icons/icon_diagram_1.svg);
+      }
+
+      &.tie::before {
+        background-image: url(../img/icons/tie.svg);
+      }
+
+      &.mlm::before {
+        background-image: url(../img/icons/mlm.svg);
       }
 
       &--wrapper {
@@ -151,8 +171,26 @@
   }
 
   &--circles {
+    .course-for-list__item {
+      margin: 23px 0;
+    }
+
     .course-for-list__item::before {
       border-radius: 50%;
+      width: 115px;
+      height: 115px;
+      margin-right: 70px;
+
+    }
+
+    .course-for-list__item--header {
+      font-size: 19px;
+      margin-bottom: 3px;
+    }
+
+    .course-for-list__item--text {
+      font-size: 18px;
+      line-height: 24px;
     }
   }
 }

@@ -1,0 +1,130 @@
+.lesson-parts {
+  padding: 85px 0 165px;
+  background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 10px ~"/100%";
+
+  &__wrap {
+    .wrap;
+  }
+
+  &__header {
+    .title-dotted;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 90px;
+  }
+
+  &__flex {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__part {
+    text-align: center;
+    width: 25%;
+    box-sizing: border-box;
+
+    padding: 0 10px;
+  }
+
+  &__img {
+    display: block;
+    position: relative;
+
+    margin: 0 auto 40px;
+
+    width: 125px;
+    height: 125px;
+
+    border-radius: 50%;
+    border: 2px solid rgb(235, 235, 235);
+
+    background: #fff center no-repeat;
+    background-size: 40%;
+
+    &::after {
+      content: "1";
+
+      display: block;
+      position: absolute;
+
+      width: 30px;
+      height: 30px;
+
+      bottom: -15px;
+      left: 50%;
+      margin-left: -15px;
+
+      background: rgb(255, 47, 79);
+      border-radius: 50%;
+
+      color: #fff;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    &--target {
+      background-image: url(../img/icons/target.svg);
+      &::after {
+        content: "2";
+      }
+    }
+
+    &--checklist {
+      background-image: url(../img/icons/cheklist.svg);
+    }
+
+    &--note {
+      background-image: url(../img/icons/note.svg);
+      &::after {
+        content: "3";
+      }
+    }
+
+    &--glasses {
+      background-image: url(../img/icons/glasses.svg);
+      &::after {
+        content: "4";
+      }
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    height: 52px;
+    margin-bottom: 5px;
+  }
+
+  &__list {
+    margin: 10px 0 0 10px;
+
+    &-item {
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0 0 15px;
+      text-align: left;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: "";
+
+        display: inline-block;
+
+        width: 10px;
+        height: 10px;
+
+        margin-right: 10px;
+        background: rgb(255, 47, 79);
+        border-radius: 50%;
+      }
+    }
+  }
+}

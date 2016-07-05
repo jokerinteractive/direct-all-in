@@ -3,6 +3,11 @@
   padding: 110px 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, #e3e3e3 50%, #bebebe 50%, rgba(255, 255, 255, 0));
 
+  &--larger-padding {
+    padding: 170px 0;
+    margin-top: -170px;
+  }
+
   &__wrapper {
     .wrap();
 
@@ -50,6 +55,25 @@
     }
 
     &--author {
+      font-style: italic;
+    }
+
+    &--big {
+      display: block;
+      margin: 25px 0;
+
+      font-size: 22px;
+      line-height: 32px;
+
+      text-align: center;
+      color: #000;
+    }
+
+    &--bold {
+      font-weight: bold;
+    }
+
+    &--italic {
       font-style: italic;
     }
   }

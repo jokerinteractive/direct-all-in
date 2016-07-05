@@ -1,0 +1,147 @@
+.important {
+  padding: 120px 0 60px;
+  background: url(../img/bg-arrow-gradient.png) 50% 0 ~"/100%" auto no-repeat, url(../img/faq-bg.png) 95% 50% no-repeat;
+
+  &--no-bg {
+    background: none;
+  }
+
+  &--normal-padding {
+    padding: 60px 0;
+  }
+
+  &__wrap {
+    .wrap();
+    width: 856px;
+  }
+
+  &__header {
+    .title-dotted();
+    margin-bottom: 50px;
+    font-size: 37px;
+    line-height: 37px;
+  }
+
+  &__subheader {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0 0 115px;
+    text-align: center;
+
+    span {
+      color: #fe4660;
+    }
+  }
+
+  &__list {
+    &-header {
+      .title-dotted();
+      font-size: 26px;
+      line-height: 32px;
+      margin-bottom: 65px;
+    }
+
+    &-item {
+      display: flex;
+      position: relative;
+
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      padding: 0;
+      margin: 0 0 23px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      p {
+        display: block;
+        max-width: 80%;
+
+        font-size: 24px;
+        line-height: 26px;
+
+        padding: 20px 0;
+        margin: 0 0 0 35px;
+      }
+
+      &--small p {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      &::after {
+        content: "";
+
+        display: block;
+        position: absolute;
+
+        left: 24px;
+        bottom: -25px;
+
+        border-right: 2px dotted #ccc;
+
+        width: 0;
+        height: 40%;
+      }
+
+      &--no-after::after {
+        display: none;
+      }
+
+      &::before {
+        content: "1";
+        display: block;
+        position: relative;
+
+        margin-right: 10px;
+
+        width: 48px;
+        height: 48px;
+
+        border-radius: 50%;
+        border: 1px solid #fe4660;
+
+        font-size: 24px;
+        line-height: 48px;
+        text-align: center;
+      }
+
+      &--2::before {
+        content: "2";
+      }
+
+      &--3::before {
+        content: "3";
+      }
+
+      &--4::before {
+        content: "4";
+      }
+
+      &--5::before {
+        content: "5";
+      }
+
+      &--6::before {
+        content: "6";
+      }
+
+      &--7::before {
+        content: "7";
+      }
+    }
+  }
+
+  &__par {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+}

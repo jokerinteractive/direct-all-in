@@ -83,3 +83,6 @@ var sliderModule = (function () {
 if ($('.slider-nav')) {
   sliderModule.init();
 }
+
+console.log("script works");
+$("a").mPageScroll2id();

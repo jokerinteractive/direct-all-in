@@ -17,7 +17,7 @@ body
         h2.book__header-explanation «Самая полная, структурированная и понятная книга о контекстной рекламе в России»
           br
           span.book__header-disclaimer (по отзывам и рецензиям читателей).
-        a(href="#").btn.btn--big Купить книгу
+        a(href="#book__retailers").btn.btn--big Купить книгу
       .book__header-left
         img(src="./img/book/header-book.png" width="766" height="566").book__header-image
   .book__benefits
@@ -130,7 +130,7 @@ body
           span.book__faq-interviewer (спрашивают все)
         p.book__faq-answer Именно по этой причине принято решение выпускать книгу небольшими тиражами и выдавать обновленную версию каждые несколько месяцев.
 
-  .book__retailers
+  .book__retailers#book__retailers
     .book__wrap
       h2.book__retailers-title.title-underline
         span Как приобрести?
@@ -142,26 +142,27 @@ body
           p.book__retailers-subtitle Вот несколько популярных магазинов:
           .book__retailers-item
             img(src="./img/book/piter.png" width="198" height="57").book__retailers-logo
-            a(href="#").book__retailers-buy.btn__red-border Купить
+            a(href="http://www.piter.com/product_by_id/46924151" target="_blank").book__retailers-buy.btn__red-border Купить
           .book__retailers-item
             img(src="./img/book/ozon.png" width="198" height="45").book__retailers-logo
-            a(href="#").book__retailers-buy.btn__red-border Купить
+            a(href="https://www.ozon.ru/context/detail/id/34342262/" target="_blank").book__retailers-buy.btn__red-border Купить
           .book__retailers-item
             img(src="./img/book/chitay-gorod.png" width="198" height="59").book__retailers-logo
-            a(href="#").book__retailers-buy.btn__red-border Купить
+            a(href="http://www.chitai-gorod.ru/catalog/book/868876/" target="_blank").book__retailers-buy.btn__red-border Купить
           .book__retailers-item
             img(src="./img/book/bukvoed.png" width="198" height="33").book__retailers-logo
-            a(href="#").book__retailers-buy.btn__red-border Купить
+            a(href="http://bookvoed.ru/book?id=6628086" target="_blank").book__retailers-buy.btn__red-border Купить
           .book__retailers-item
             img(src="./img/book/labirint.png" width="198" height="56").book__retailers-logo
-            a(href="#").book__retailers-buy.btn__red-border Купить
+            a(href="http://www.labirint.ru/books/508030/" target="_blank").book__retailers-buy.btn__red-border Купить
       .book__call-us.vedenie-footer.footer__call-us
         h4.footer__call-us-title.book__call-us-title В случае если тираж подходит к концу, и книги нет в наличии ни в одном из магазинов,
           br
           | оставьте заявку, и мы найдём тот, в котором её ещё можно приобрести.
-        form.form(action="")
-          input.form__text.form__text--w250(type="text" placeholder="Ваше Имя")
-          input.form__text.form__text--w250(type="text" placeholder="Ваш E-mail")
+        form.form(action="" method="post")
+          input(type="hidden" name="subject" value="Заявка на получение книги")
+          input.form__text.form__text--w250(type="text" name="name" placeholder="Ваше Имя" required)
+          input.form__text.form__text--w250(type="text" name="email" placeholder="Ваш E-mail" required)
           .footer__submit.book__call-us-submit
             input.btn.btn--big(type="submit" value="Найдите мне книгу")
       .book__brackets
@@ -198,3 +199,4 @@ body
             label(for="review-4").reviews__slider-point.slider-dot
 
   include ../_common/_footer__navbar
+  include ../_common/_scripts

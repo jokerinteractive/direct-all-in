@@ -1,0 +1,57 @@
+.author-instrument {
+  padding: 120px 0 60px;
+  background: url(../img/bg-arrow-gradient.png) 50% 0 ~"/100%" auto no-repeat;
+
+  &__wrap {
+    .wrap();
+  }
+
+  &__header {
+    .title-dotted();
+    margin-bottom: 60px;
+    font-size: 37px;
+    line-height: 37px;
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+
+  &__column {
+    display: block;
+
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0 10px;
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0 0 30px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__subtext {
+    text-align: center;
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0;
+    }
+  }
+
+  &__subheader {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+}

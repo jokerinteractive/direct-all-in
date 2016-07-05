@@ -7,7 +7,7 @@ body
   section.subscription
     .subscription__wrap.clearfix.subscription__wrap--main
       .subscription__column--left
-        img.subscription__img(src="" alt="Демонстрационная настройка видео")
+        img.subscription__img(src="img/demonstration/main-video.png" alt="Демонстрационная настройка видео")
 
       .subscription__column--right.get-course.get-course--subscribe
         span.get-course__header Демонстрационная настройка
@@ -36,33 +36,150 @@ body
               | — Филипп Царевский
 
   section.video-included
-    header.vide-included__header
-      span Что в Видео-Записи:
-    .video-included__watch
-      iframe(src="")
-      article.course-for.course-for--circles.course-for--no-padding-bottom.course-for--light
-        header.course-for__header.course-for__header--small
-          p "В нем я создаю кампанию..."
+    .video-included__wrap
+      header.video-included__header
+        span Что в Видео-Записи:
+      .video-included__watch
+        iframe(src="https://www.youtube.com/embed/2eO_ZRAa0Bw" allowfullscreen).video-included__video
+        article.course-for.course-for--circles.course-for--no-padding.course-for--light
+          header.course-for__header.course-for__header--small
+            p “В нём я создаю кампанию, записывая всё, что происходит на экране, и комментируя каждое действие за кадром. Более того, я сделал из этого видео урок, объясняя цель каждого действия и показывая различные подходы к одному и тому же этапу.”
 
-        ul.course-for-list
+          ul.course-for-list
 
-          li.course-for-list__item.business
-            .course-for-list__item--wrapper
-              header.course-for-list__item--header
-                | Что даст просмотр этой записи:
-              p.course-for-list__item--text
-                | Он заточен под настоящий малый бизнес.
+            li.course-for-list__item.diagram
+              .course-for-list__item--wrapper
+                header.course-for-list__item--header
+                  | Что даст просмотр этой записи:
+                p.course-for-list__item--text
+                  | Посмотрев видео и повторив все мои действия, вы сможете настроить на свой сайт целевой трафик, который будет приносить заказы. Видео окупается с первых дней работы над рекламной кампанией.
 
-          li.course-for-list__item.study
-            .course-for-list__item--wrapper
-              header.course-for-list__item--header
-                | Кому стоит смотреть:
-              p.course-for-list__item--text
-                | Для которого слово своего "гуру" авторитетнее любого аргумента, пусть даже 100 раз логически доказанного.
+            li.course-for-list__item.tie
+              .course-for-list__item--wrapper
+                header.course-for-list__item--header
+                  | Кому стоит смотреть:
+                p.course-for-list__item--text
+                  | Полезно тем, кто настраивает рекламные кампании самостоятельно – специалистам по Директу, рекламодателям и новичкам.
 
-          li.course-for-list__item.study
-            .course-for-list__item--wrapper
-              header.course-for-list__item--header
-                | Кому будет не так полезно:
-              p.course-for-list__item--text
-                | Для которого слово своего "гуру" авторитетнее любого аргумента, пусть даже 100 раз логически доказанного.
+            li.course-for-list__item.mlm
+              .course-for-list__item--wrapper
+                header.course-for-list__item--header
+                  | Кому будет не так полезно:
+                p.course-for-list__item--text
+                  | Если вы – владелец бизнеса и изучаете Яндекс.Директ с целью дальнейшего делегирования и контроля сотрудников, то это видео не для вас.
+
+  section.important
+    .important__wrap
+      header.important__header
+        span Важно!
+      p.important__subheader
+        span «
+        | Всё-таки это один из моих самых сложных для восприятия уроков – 5 часов настройки, сухой информации. За один раз посмотреть не получится. Поэтому рекомендую купить именно тем, кто хочет вникнуть в нюансы настройки поисковой рекламной кампании.
+        span »
+      header.important__list-header
+        span Чему ты научишься?
+      ul.important__list
+        li.important__list-item.important__list-item--1
+          p Понимать запросы не как набор слов, а как зеркало, отражающее желание человека
+        li.important__list-item.important__list-item--2
+          p Анализировать все возможные формулировки запросов и применять операторы
+        li.important__list-item.important__list-item--3
+          p Прорабатывать минус-слова для любой ниши под завязку
+        li.important__list-item.important__list-item--4
+          p Фишкам в экселе и ворде, которые помогут создать кампанию быстрее, при той же эффективности
+        li.important__list-item.important__list-item--5
+          p Попадать в точку при написании текстов и быстрых ссылок
+        li.important__list-item.important__list-item--6
+          p Разделять ключевики на смысловые группы
+        li.important__list-item.important__list-item--7
+          p Работать с поиском и вордстатом
+
+  section.lesson-parts
+    .lesson-parts__wrap
+      header.lesson-parts__header
+        span Урок разбит на 4 части
+      .lesson-parts__flex
+
+        .lesson-parts__part
+          .lesson-parts__img.lesson-parts__img--checklist
+          p.lesson-parts__name
+            | Подготовка и начало работы:
+          ul.lesson-parts__list
+            li.lesson-parts__list-item
+              | Что продаем?
+            li.lesson-parts__list-item
+              | Первые шаги
+            li.lesson-parts__list-item
+              | Основные направления
+            li.lesson-parts__list-item
+              | Основные минус-слова
+
+        .lesson-parts__part
+          .lesson-parts__img.lesson-parts__img--target
+          p.lesson-parts__name
+            | Сбор ключевиков:
+          ul.lesson-parts__list
+            li.lesson-parts__list-item
+              | Генерация второстепенных масок
+            li.lesson-parts__list-item
+              | Парсинг
+            li.lesson-parts__list-item
+              | Сортировка
+            li.lesson-parts__list-item
+              | Проработка минус-слов
+
+        .lesson-parts__part
+          .lesson-parts__img.lesson-parts__img--note
+          p.lesson-parts__name
+            | Написание объявлений и оформление в Excel:
+          ul.lesson-parts__list
+            li.lesson-parts__list-item
+              | Заголовки
+            li.lesson-parts__list-item
+              | Тексты
+            li.lesson-parts__list-item
+              | Быстрые ссылки
+            li.lesson-parts__list-item
+              | Ссылки и utm-метки
+            li.lesson-parts__list-item
+              | Оформление в Excel
+
+        .lesson-parts__part
+          .lesson-parts__img.lesson-parts__img--glasses
+          p.lesson-parts__name
+            | Работа в интерфейсе
+          ul.lesson-parts__list
+            li.lesson-parts__list-item
+              | Выгрузка
+            li.lesson-parts__list-item
+              | Настройки
+            li.lesson-parts__list-item
+              | Ставки
+            li.lesson-parts__list-item
+              | Первые действия
+
+  section.info-block.info-block--larger-padding
+    .info-block__wrapper
+
+      img.info-block__border(src="./img/calmness/promises-left-brace.png" alt="")
+
+      .info-block__text
+        p.info-block__text--big
+          | Кроме того, я считаю, что само по себе видео не несёт большой ценности, если нельзя задать вопрос автору, уточнить спорные моменты, привести свои примеры, получить обратную связь. Поэтому я лично посмотрю твои рекламные кампании и отвечу на любые вопросы по уроку!
+
+      img.info-block__border(src="./img/calmness/promises-left-brace.png" alt="")
+
+  section.test
+    .test__wrap
+      header.test__header.test__header--large
+        h3.test__head.test__head--normal
+          | Цена видео - 9900 &#8381;
+      p.test__text
+        | В дальнейшем, если ты решишь учиться у меня, оплаченная
+        br
+        | за видео сумма будет вычтена из стоимости курса!
+      a.btn.btn--main.btn--cta.test__btn(href="")
+        | Купить видео
+
+  footer.footer
+    include ../_common/_footer__navbar
