@@ -20,7 +20,7 @@ body
           | Филиппа Царевского
         a.btn.btn--main.get-course__btn(href="#") Смотреть видео
 
-  section.about-speaker.about-speaker--calmness
+  section.about-speaker.about-speaker--calmness.about-speaker--fa-bg
     .webinar__wrap.about-speaker__wrapper
       header.about-speaker__header
 
@@ -47,21 +47,27 @@ body
 
           ul.course-for-list
 
-            li.course-for-list__item.diagram
+            li.course-for-list__item
+              .course-for-list__img.course-for-list__img--attention
+                img(src="../img/icons/icon_diagram_1.svg")
               .course-for-list__item--wrapper
                 header.course-for-list__item--header
                   | Что даст просмотр этой записи:
                 p.course-for-list__item--text
                   | Посмотрев видео и повторив все мои действия, вы сможете настроить на свой сайт целевой трафик, который будет приносить заказы. Видео окупается с первых дней работы над рекламной кампанией.
 
-            li.course-for-list__item.tie
+            li.course-for-list__item
+              .course-for-list__img.course-for-list__img--true
+                img(src="../img/icons/tie.svg")
               .course-for-list__item--wrapper
                 header.course-for-list__item--header
                   | Кому стоит смотреть:
                 p.course-for-list__item--text
                   | Полезно тем, кто настраивает рекламные кампании самостоятельно – специалистам по Директу, рекламодателям и новичкам.
 
-            li.course-for-list__item.mlm
+            li.course-for-list__item
+              .course-for-list__img.course-for-list__img--false
+                img(src="../img/icons/mlm.svg")
               .course-for-list__item--wrapper
                 header.course-for-list__item--header
                   | Кому будет не так полезно:

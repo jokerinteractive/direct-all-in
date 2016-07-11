@@ -1,5 +1,5 @@
 .course-for {
-  padding: 60px 0;
+  padding: 75px 0 60px;
 
   &--calmness-bg {
     background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 10px ~"/cover";
@@ -11,6 +11,10 @@
 
   &--padding {
     padding: 100px 0 30px;
+  }
+
+  &--larger-padding-bottom {
+    padding-bottom: 130px;
   }
 
   &__header {
@@ -125,18 +129,6 @@
         background-image: url(../img/icons/youHaveDirectologs.svg);
       }
 
-      &.diagram::before {
-        background-image: url(../img/icons/icon_diagram_1.svg);
-      }
-
-      &.tie::before {
-        background-image: url(../img/icons/tie.svg);
-      }
-
-      &.mlm::before {
-        background-image: url(../img/icons/mlm.svg);
-      }
-
       &--wrapper {
         display: block;
         width: 550px;
@@ -176,11 +168,7 @@
     }
 
     .course-for-list__item::before {
-      border-radius: 50%;
-      width: 115px;
-      height: 115px;
-      margin-right: 70px;
-
+      display: none;
     }
 
     .course-for-list__item--header {
@@ -191,6 +179,61 @@
     .course-for-list__item--text {
       font-size: 18px;
       line-height: 24px;
+    }
+
+    .course-for-list__img {
+      display: block;
+      position: relative;
+
+      width: 115px;
+      height: 115px;
+
+      border: 1px solid rgb(183, 183, 183);
+      background-color: #fff;
+      border-radius: 50%;
+      margin-right: 70px;
+
+      &::before {
+        content: "";
+
+        display: block;
+        position: absolute;
+
+        left: 85%;
+        top: 15%;
+
+        width: 40px;
+        height: 40px;
+
+        transform: translate(-50%, -50%);
+
+        background: no-repeat center center;
+        background-image: url(../img/demonstration/attention.svg);
+      }
+
+      img {
+        display: block;
+        position: absolute;
+
+        width: 50%;
+
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+
+      &--attention::before {
+        background-image: url(../img/demonstration/attention.svg);
+      }
+
+      &--true::before {
+        background-image: url(../img/demonstration/true.svg);
+      }
+
+      &--false::before {
+        background-image: url(../img/demonstration/false.svg);
+      }
     }
   }
 }

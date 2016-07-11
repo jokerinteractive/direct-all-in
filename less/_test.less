@@ -1,5 +1,14 @@
 .test {
   background: #0f3c5b url(../img/subscriptions/test.png) 50%/cover;
+  color: #fff;
+
+  &--padding-bottom {
+    padding-bottom: 60px;
+
+    .test__wrap {
+      height: auto;
+    }
+  }
 
   &__wrap {
     .wrap();
@@ -45,6 +54,15 @@
       box-sizing: border-box;
       width: 600px;
     }
+
+    span {
+      display: inline-block;
+
+      margin-top: 10px;
+
+      font-size: 16px;
+      color: rgb(199, 199, 199);
+    }
   }
 
   &__head {
@@ -57,16 +75,78 @@
     &--normal {
       font-weight: normal;
     }
+
+    &--no-margin {
+      margin: 0;
+    }
   }
 
   &__text {
     display: block;
     text-align: center;
-    padding: 140px 0 57px;
+    padding: 130px 0 48px;
     margin: 0;
     color: #fff;
-    font-size: 24px;
+    font-size: 26px;
+    line-height: 33px;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  &__column {
+    display: block;
+    box-sizing: border-box;
+
+    width: 34%;
+    padding: 0 10px;
+  }
+
+  &__par {
+    display: block;
+    margin: 0 0 30px;
+
+    font-size: 18px;
     line-height: 24px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 20px 0 0 35px;
+  }
+
+  &__item {
+    display: block;
+    margin: 0 0 10px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    &::before {
+      content: "";
+
+      display: inline-block;
+
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+
+      border-radius: 50%;
+      background-color: rgb(255, 48, 79);
+    }
+  }
+
+  &__small {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 45px 0 0;
   }
 
   &__btn {

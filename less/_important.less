@@ -6,8 +6,64 @@
     background: none;
   }
 
-  &--normal-padding {
-    padding: 60px 0;
+  &--small-padding {
+    padding: 0 0 60px;
+  }
+
+  &--calmness {
+    background: #fff url(../img/calmness/calmness-light-bg.png) 50% 10px ~"/100%" no-repeat;
+  }
+
+  &--blue {
+    .important {
+      &__header {
+        border: none;
+        margin-bottom: 10px;
+
+        p {
+          display: inline-block;
+          margin: 0;
+
+          &::after {
+            content: "";
+            display: block;
+
+            height: 30px;
+            margin: 20px auto 0;
+
+            background: url(../img/icons/dashedLineBlue.svg) 50% no-repeat;
+            background-size: 100%;
+          }
+        }
+      }
+
+      &__list {
+        padding: 0 40px;
+
+        &::before {
+          content: "";
+          display: block;
+          height: 40px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url(../img/decoration/blue-line.png);
+          background-size: 100%;
+        }
+
+        &-item {
+          padding-left: 30px;
+          &::before {
+            border-color: rgb(51, 139, 195);
+          }
+          &::after {
+            left: 54px;
+          }
+          p {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
   }
 
   &__wrap {
@@ -20,6 +76,10 @@
     margin-bottom: 50px;
     font-size: 37px;
     line-height: 37px;
+
+    &--small {
+      font-size: 30px;
+    }
   }
 
   &__subheader {
@@ -31,9 +91,15 @@
     span {
       color: #fe4660;
     }
+
+    &--common-margin {
+      margin: 35px 0 0;
+    }
   }
 
   &__list {
+    padding-left: 25px;
+
     &-header {
       .title-dotted();
       font-size: 26px;
@@ -51,6 +117,10 @@
 
       padding: 0;
       margin: 0 0 23px;
+
+      &--no-margin {
+        margin-bottom: 0;
+      }
 
       &:last-of-type {
         margin-bottom: 0;
@@ -136,6 +206,10 @@
       &--7::before {
         content: "7";
       }
+
+      &--8::before {
+        content: "8";
+      }
     }
   }
 
@@ -143,5 +217,6 @@
     font-size: 18px;
     line-height: 24px;
     text-align: center;
+    margin: 45px 0 20px;
   }
 }
