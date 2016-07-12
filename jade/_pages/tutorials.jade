@@ -1,0 +1,124 @@
+include ../_common/_doctype
+
+body
+  header.header.header--padding
+    include ../_common/_header__navbar--nomenu
+
+  section.tutorials
+    .tutorials__wrap
+      .tutorials__flex
+        .tutorials__img
+          img(src="img/book/book-author.png" alt="Филипп Царевский")
+        .tutorials__text
+          p.tutorials__text-header
+            | Филипп Царевский
+            small Эксперт по Яндекс.Директ, основатель агентства Direct All-in
+          h2.tutorials__text-main
+            | 12 пошаговых видео-уроков по настройке Яндекс.Директ
+          p.tutorials__text-details
+            | Узнайте принципы Яндекс.Директ,
+            br
+            | о которых не знает 95% рекламодателей
+
+  section.lesson
+    .lesson__wrap
+      header.lesson__header
+        span Урок 1. Подготовка к настройке Яндекс.Директ
+      .lesson__flex
+        iframe.lesson__video(width="720px" height="483px")
+        .lesson__text
+          .lesson__links
+            header.lesson__links-header
+              span Смотрите также:
+            ul.lesson__links-list
+              li.lesson__links-item
+                a(href="#")
+                  | Вебинар по ведению и аналитике
+              li.lesson__links-item
+                a(href="#")
+                  | Демонстрационная настройка РК
+              li.lesson__links-item
+                a(href="#")
+                  | Онлайн курс по Яндекс.Директ
+              li.lesson__links-item
+                a(href="#")
+                  | Аудит рекламных кампаний в Яндекс.Директ
+              li.lesson__links-item
+                a(href="#")
+                  | Аудит сайта
+              li.lesson__links-item
+                a(href="#")
+                  | Аудит ситуации “Все хорошо, нет заявок”
+              li.lesson__links-item
+                a(href="#")
+                  | Скайп-консультация
+              li.lesson__links-item
+                a(href="#")
+                  | Онлайн-тест на знание Яндекс.Директ
+              li.lesson__links-item
+                a(href="#")
+                  | Книга по Яндекс.Директ
+          .lesson__share
+            span
+              | Понравился видео-урок?
+              br
+              | Жми лайк и расскажи о нем своим друзьям
+
+  section.lessons-content
+    .lessons-content__slider
+    .lessons-content__wrap
+      header.lessons-content__header
+        span В этом уроке мы рассматриваем:
+      ul.lessons-content__list
+        li.lessons-content__item
+          .lessons-content__img
+            img(src="img/icons/glasses.svg")
+          .lessons-content__text
+            span
+              | 1. Азы Яндекс.Директ.
+              br
+              | 2. Анализ целевой аудитории.
+              br
+              | 3. Стратегия, которую необходимо продумать до начала настройки.
+        li.lessons-content__item
+          .lessons-content__img
+            img(src="img/icons/glasses.svg")
+          .lessons-content__text
+            span
+              | По некоторым отзывам, этот урок полностью изменил представление о Директе, и без него результат от рассылки был бы хуже.
+        li.lessons-content__item
+          .lessons-content__img
+            img(src="img/icons/glasses.svg")
+          .lessons-content__text
+            span
+              | В следующем уроке я покажу максимально эффективный способ сбора ключевых фраз. Именно они составляют основу любой рекламной кампании.
+      .lessons-content__questions
+        .lessons-content__questions-img
+          img(src="img/tutorials/founder.png" alt="Филипп Царевский")
+        .lessons-content__questions-text
+          p
+            | Остались вопросы по уроку?
+            br
+            | Задай их в комментариях ниже.
+          p Я отвечаю на вопросы по вторникам и пятницам, с 14:00 до 15:00 по МСК.
+          p Авторы лучших вопросов получат бесплатную 20-минутную консультацию по скайпу!
+
+  section.share
+    .share__wrap
+      p.share__text
+        | Ваши друзья еще не получают прибыль с Яндекс.Директ?
+        br
+        | Тогда поделитесь с ними
+      ul.share__social
+        li.share__social-item
+          a(href="" target="_blank")
+            i.fa.fa-facebook-square.fa-2x
+        li.share__social-item
+          a(href="" target="_blank")
+            i.fa.fa-twitter-square.fa-2x
+        li.share__social-item
+          a(href="" target="_blank")
+            i.fa.fa-vk.fa-2x
+
+  footer.footer
+    include ../_common/_footer__navbar

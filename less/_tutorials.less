@@ -1,0 +1,61 @@
+.tutorials {
+  color: #fff;
+  background: #0f3c5b url(../img/bg-adwords-feedback.png) no-repeat 50% 50% ~"/cover";
+
+  &__wrap {
+    .wrap();
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__img {
+    display: block;
+    position: relative;
+    width: 35%;
+
+    img {
+      width: 72%;
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    display: block;
+    width: 65%;
+    padding: 110px 0 60px 15px;
+
+    &-header {
+      font-size: 30px;
+      line-height: 30px;
+      margin: 0 0 10px;
+
+      small {
+        display: block;
+        line-height: 20px;
+        font-size: 19px;
+        margin: 15px 0 0;
+        color: rgba(255, 255, 255, .8);
+      }
+    }
+
+    &-main {
+      font-size: 50px;
+      line-height: 60px;
+      margin: 50px 0 40px;
+    }
+
+    &-details {
+      border-left: 2px solid rgb(255, 47, 79);
+      font-size: 22px;
+      line-height: 26px;
+      margin: 0;
+      padding: 10px 0 10px 22px;
+      color: rgba(255, 255, 255, .8);
+    }
+  }
+}

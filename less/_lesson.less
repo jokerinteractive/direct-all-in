@@ -1,0 +1,69 @@
+.lesson {
+  background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 10px ~"/100%";
+  position: relative;
+  padding: 100px 0 60px;
+
+  &__wrap {
+    .wrap();
+  }
+
+  &__header {
+    text-align: center;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 40px;
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__video {
+    border: none;
+    background: #ccc;
+  }
+
+  &__text {
+    width: 340px;
+  }
+
+  &__links {
+    padding: 20px 0 20px 15px;
+    margin-bottom: 15px;
+    border: solid 1px rgba(105, 105, 105, .25);
+    border-radius: 7px;
+    background-color: rgba(248, 248, 248, 1);
+    box-shadow: 2px 3.464px 13px 3px rgba(0, 0, 0, .031);
+    font-size: 15px;
+    line-height: 20px;
+
+    &-header {
+      font-weight: bold;
+      margin-bottom: 17px;
+    }
+
+    &-list {
+      padding: 0;
+      margin: 0;
+    }
+
+    &-item {
+      margin: 0 0 16px;
+      a {
+        color: #000;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__share {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
