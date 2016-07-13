@@ -1,1 +1,88 @@
-var sliderModule=function(){var e=function(){n()},n=function(){$(".slider-nav").on("click",a)},a=function(e){e.preventDefault();var n=$(".slider"),a=$(n.children(".slide")),i=parseInt($(a[0]).css("width")),t=60,r=e.currentTarget.innerText;if("next"===r){if(a.last().hasClass("active"))return console.log("Крайний справа"),!1;$.each(a,function(e,n){var a=parseInt($(n).css("margin-left")),r=a-i-t;$(n).removeClass("active"),$(n).animate({"margin-left":a+"px","margin-left":r+"px"},500,function(){-330!==r&&30!==r||$(n).addClass("active")})})}if("prev"===r){if(a.first().hasClass("active"))return console.log("Крайний слева"),!1;$.each(a,function(e,n){var a=parseInt($(n).css("margin-left")),r=a+i+t;$(n).removeClass("active"),$(n).animate({"margin-left":a+"px","margin-left":r+"px"},500,function(){-330!==r&&30!==r||$(n).addClass("active")})})}};return{init:e}}();$(".slider-nav")&&sliderModule.init();
+/*
+particlesJS.load('particles-js', 'js/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+*/
+
+var sliderModule = (function () {
+
+  var init = function () {
+    _setUpListeners();
+  };
+
+  var _setUpListeners = function () {
+    $('.slider-nav').on('click', _moveSlides);
+  };
+
+  var _moveSlides = function (e) {
+    e.preventDefault();
+
+    var slider      = $('.slider'),
+        slides      = $(slider.children('.slide')),
+        slideWidth  = parseInt($(slides[0]).css('width')),
+        slideMargin = 60,
+        moveSide    = e.currentTarget.innerText;
+
+    if (moveSide === 'next') {
+
+      //проверка, а не с краю ли мы
+      if (slides.last().hasClass('active')) {
+        console.log('Крайний справа');
+        return false;
+      }
+
+      $.each(slides, function(index, slide) {
+        var margin = parseInt($(slide).css('margin-left')),
+            newMargin = margin - slideWidth - slideMargin;
+
+        $(slide).removeClass('active');
+        $(slide).animate({
+          'margin-left': margin + 'px',
+          'margin-left': newMargin + 'px'},
+          500, function () {
+            if (newMargin === -330 || newMargin === 30) {
+              $(slide).addClass('active');
+            }
+          });
+      });
+
+    }
+
+    if (moveSide === 'prev') {
+
+      //проверка, а не с краю ли мы
+      if (slides.first().hasClass('active')) {
+        console.log('Крайний слева');
+        return false;
+      }
+
+      $.each(slides, function(index, slide) {
+        var margin = parseInt($(slide).css('margin-left')),
+            newMargin = margin + slideWidth + slideMargin;
+
+        $(slide).removeClass('active');
+        $(slide).animate({
+          'margin-left': margin + 'px',
+          'margin-left': newMargin + 'px'},
+          500, function () {
+            if (newMargin === -330 || newMargin === 30) {
+              $(slide).addClass('active');
+            }
+          });
+      });
+
+    }
+  };
+
+  return {
+    init: init
+  };
+
+})();
+
+if ($('.slider-nav')) {
+  sliderModule.init();
+}
+
+console.log("script works");
+$("a").mPageScroll2id();

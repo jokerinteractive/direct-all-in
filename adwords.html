@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;subset=latin,cyrillic-ext">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="icon" href="favicon.png" type="image/png">
   </head>
 </html>
 <body>
@@ -45,9 +45,9 @@
       </div>
     </div>
   </div>
-  <div class="calmness adwords-calmness clearfix">
+  <div class="calmness calmness--adwords clearfix">
     <div class="adwords__wrap">
-      <h2><span class="dotted-underline">Работая с нами, Вы спите Спокойно!</span></h2>
+      <h2 class="calmness__header calmness__header--dotted"><span>Работая с нами, Вы спите Спокойно!</span></h2>
       <div class="calmness__features clearfix">
         <div class="calmness__features-left">
           <div class="calmness__feature calmness__features-left-item calmness__feature-growth">
@@ -104,7 +104,7 @@
   </div>
   <div class="calmness__confidence">
     <div class="adwords__wrap clearfix">
-      <h2 class="calmness__confidence-title"><span class="dotted-underline">Вы можете быть уверены в результатах, потому что:</span></h2>
+      <h2 class="calmness__header calmness__header--dotted"><span>Вы можете быть уверены в результатах, потому что:</span></h2>
       <div class="calmness__confidence-content">
         <ul class="calmness__confidence-left">
           <li class="calmness__confidence-item">На погружение в ваш бизнес и разработку долгосрочной стратегии рекламной кампании выделяем 3–4 дня<br>(а не 30 минут для галочки).</li>
@@ -199,7 +199,7 @@
       </div>
     </div>
   </div>
-  <div class="adwords-puzzle clearfix">
+  <div class="adwords-puzzle adwords-puzzle--gradient-bg clearfix">
     <div class="adwords__wrap">
       <h2 class="adwords-puzzle__title">Авторская система построения работы специалистов над рекламной кампанией</h2>
       <div class="adwords-puzzle__header clearfix">
@@ -315,7 +315,7 @@
   </div>
   <div class="work-stages">
     <div class="adwords__wrap">
-      <h2 class="work-stages__title"><span class="dotted-underline">Этапы работы с нами</span></h2>
+      <h2 class="work-stages__title title-underline"><span>Этапы работы с нами</span></h2>
       <div class="work-stages__round">
         <ul class="work-stages__list-left">
           <li class="work-stages__list-item"><span class="work-stages__list-digit">01</span> Бесплатный анализ действующих кампаний</li>
@@ -341,35 +341,31 @@
   </div>
   <div class="will-never-collaborate">
     <div class="adwords__wrap">
-      <h2 class="will-never-collaborate__title"><span class="dotted-underline">С кем мы не работаем из принципа?</span></h2>
+      <h2 class="will-never-collaborate__title title-underline"><span>С кем мы не работаем из принципа?</span></h2>
       <ul class="will-never-collaborate__features">
         <li class="will-never-collaborate__item will-never-collaborate__informbusiness">Инфобизнес</li>
         <li class="will-never-collaborate__item will-never-collaborate__mlm">МЛМ</li>
         <li class="will-never-collaborate__item will-never-collaborate__affiliate">Партнерские программы</li>
       </ul>
-      <h2 class="will-never-collaborate__title"><span class="dotted-underline">На что мы не идем даже за Большие Деньги?</span></h2>
-      <div class="will-never-collaborate__valueless">
-        <ul class="will-never-collaborate__valueless-left">
-          <li class="will-never-collaborate__valueless-item">
-            <h4 class="will-never-collaborate__valueless-subtitle">– На составление медиапланов и прогнозов бюджета</h4>
-            <p class="will-never-collaborate__valueless-text">Существующие методики имеют большую погрешность. К тому же, прогноз легко подгоняется под ваши возможности, а реальный результат – под прогноз. Наиболее достоверный прогноз составляется на основании тестовой рекламной кампании, которая делается для набора статистики.</p>
-          </li>
-          <li class="will-never-collaborate__valueless-item">
-            <h4 class="will-never-collaborate__valueless-subtitle">– На предоставлении вам гарантии продаж с первых дней</h4>
-            <p class="will-never-collaborate__valueless-text">Это возможно далеко не всегда. В большинстве случаев приходится экспериментировать, подбирать наиболее эффективные стратегии, вести работу с сайтом и настройками AdWords.</p>
-          </li>
-        </ul>
-        <ul class="will-never-collaborate__valueless-right">
-          <li class="will-never-collaborate__valueless-item">
-            <h4 class="will-never-collaborate__valueless-subtitle">– На работу с вашим проектом без вашего участия</h4>
-            <p class="will-never-collaborate__valueless-text">Нельзя оплатить месяц работы и пропасть. Эффективная рекламная кампания основывается на тесном сотрудничестве, постоянной обратной связи. Вы – самый лучший знаток своего бизнеса, а мы отвечаем за своё направление.</p>
-          </li>
-          <li class="will-never-collaborate__valueless-item">
-            <h4 class="will-never-collaborate__valueless-subtitle">– На настройку кампании со 100 000 ключевиков с ценой 2 рубля/клик.</h4>
-            <p class="will-never-collaborate__valueless-text">Стратегически неверно для бизнеса. Это повлечет за собой большие риски, высокую стоимость работ, раздутие бюджета, долгий запуск, нарушение принципа Парето и т. д.</p>
-          </li>
-        </ul>
-      </div>
+      <!--
+      h2.will-never-collaborate__title.title-underline
+        span На что мы не идем даже за Большие Деньги?
+      .will-never-collaborate__valueless
+        ul.will-never-collaborate__valueless-left
+          li.will-never-collaborate__valueless-item
+            h4.will-never-collaborate__valueless-subtitle – На составление медиапланов и прогнозов бюджета
+            p.will-never-collaborate__valueless-text Существующие методики имеют большую погрешность. К тому же, прогноз легко подгоняется под ваши возможности, а реальный результат – под прогноз. Наиболее достоверный прогноз составляется на основании тестовой рекламной кампании, которая делается для набора статистики.
+          li.will-never-collaborate__valueless-item
+            h4.will-never-collaborate__valueless-subtitle – На предоставлении вам гарантии продаж с первых дней
+            p.will-never-collaborate__valueless-text Это возможно далеко не всегда. В большинстве случаев приходится экспериментировать, подбирать наиболее эффективные стратегии, вести работу с сайтом и настройками AdWords.
+        ul.will-never-collaborate__valueless-right
+          li.will-never-collaborate__valueless-item
+            h4.will-never-collaborate__valueless-subtitle – На работу с вашим проектом без вашего участия
+            p.will-never-collaborate__valueless-text Нельзя оплатить месяц работы и пропасть. Эффективная рекламная кампания основывается на тесном сотрудничестве, постоянной обратной связи. Вы – самый лучший знаток своего бизнеса, а мы отвечаем за своё направление.
+          li.will-never-collaborate__valueless-item
+            h4.will-never-collaborate__valueless-subtitle – На настройку кампании со 100 000 ключевиков с ценой 2 рубля/клик.
+            p.will-never-collaborate__valueless-text Стратегически неверно для бизнеса. Это повлечет за собой большие риски, высокую стоимость работ, раздутие бюджета, долгий запуск, нарушение принципа Парето и т. д.
+      -->
     </div>
   </div>
   <div class="no-magic">
@@ -386,18 +382,23 @@
       <h2 class="adwords-portfolio__title">Портфолио</h2>
       <div class="adwords-portfolio__content">
         <div class="adwords-portfolio__item">
-          <h3 class="adwords-portfolio__item-title">Видео отзывы</h3>
-          <iframe width="367" height="228" src="https://www.youtube.com/embed/GeZbIF87Nu8" frameborder="0" allowfullscreen></iframe>
+          <h3 class="adwords-portfolio__item-title title-underline"><span>Видео отзывы</span></h3>
+          <div class="adwords-portfolio__item-content">
+            <iframe src="https://www.youtube.com/embed/GeZbIF87Nu8" width="367" height="228" frameborder="0" allowfullscreen class="adwords-portfolio__item-image"></iframe>
+          </div>
           <p class="adwords-portfolio__item-description">Дмитрий, Интернет Магазин Сувениров</p><a href="#" class="adwords-portfolio__item-link link-blue">Смотреть другие отзывы</a>
         </div>
         <div class="adwords-portfolio__item">
-          <h3 class="adwords-portfolio__item-title">Благодарственные письма</h3><img src="./img/portfolio/oren-house.png" width="367" height="228" class="adwords-portfolio__item-image">
+          <h3 class="adwords-portfolio__item-title title-underline"><span>Благодарственные письма</span></h3>
+          <div class="adwords-portfolio__item-content"><img src="./img/portfolio/oren-house.png" class="adwords-portfolio__item-image"></div>
           <p class="adwords-portfolio__item-description">OpenHouse</p><a href="#" class="adwords-portfolio__item-link link-blue">Смотреть другие письма</a>
         </div>
         <div class="adwords-portfolio__item">
-          <h3 class="adwords-portfolio__item-title">Истории-Кейсы</h3>
-          <h4 class="adwords-portfolio__item-subtitle">Выжили благодаря аналитике</h4>
-          <p class="adwords-portfolio__item-text">История стартапа, который прорвался исключительно благодаря контекстной рекламе. Подключение дополнительных сервисов и ежедневная работа аналитиков позволили увеличивать прибыль ежемесячно и всего за 2года разрастить до одной из самых больших в Москве юридических ...<a href="#" class="link-blue">Читать далее</a></p>
+          <h3 class="adwords-portfolio__item-title title-underline"><span>Истории-Кейсы</span></h3>
+          <div class="adwords-portfolio__item-content">
+            <h4 class="adwords-portfolio__item-subtitle">Выжили благодаря аналитике</h4>
+            <p class="adwords-portfolio__item-text">История стартапа, который прорвался исключительно благодаря контекстной рекламе. Подключение дополнительных сервисов и ежедневная работа аналитиков позволили увеличивать прибыль ежемесячно и всего за 2года разрастить до одной из самых больших в Москве юридических ...<a href="#" class="link-blue">Читать далее</a></p>
+          </div>
           <p class="adwords-portfolio__item-description">Банкротство физическиз лиц</p><a href="#" class="adwords-portfolio__item-link link-blue">Смотреть другие кейсы</a>
         </div>
       </div>
@@ -433,28 +434,28 @@
       </div><a href="#" class="questions__button btn__red-border">Все вопросы</a>
     </div>
   </div>
-  <div class="services-list">
-    <div class="adwords__wrap">
+  <section class="services-list">
+    <div class="index__wrap">
       <h2 class="services-list__title">Какие услуги вы можете заказать в агентстве Direct All-In:</h2>
       <ul class="services-list__content">
-        <li class="services-list__item"><img src="./img/services-list/complex.png" width="145px" heigth="145px">
+        <li class="services-list__item services-list__item--complex">
           <p class="services-list__item-text">Комплексная<br>настройка</p>
         </li>
-        <li class="services-list__item"><img src="./img/services-list/adwords.png" width="145px" heigth="145px">
+        <li class="services-list__item services-list__item--google">
           <p class="services-list__item-text">Настройка<br>Google AdWords</p>
         </li>
-        <li class="services-list__item"><img src="./img/services-list/direct.png" width="145px" heigth="145px">
+        <li class="services-list__item services-list__item--yandex">
           <p class="services-list__item-text">Настройка<br>Яндекс.Директ</p>
         </li>
-        <li class="services-list__item"><img src="./img/services-list/maintenance.png" width="145px" heigth="145px">
+        <li class="services-list__item services-list__item--steering">
           <p class="services-list__item-text">Ведение<br>контекстной рекламы</p>
         </li>
-        <li class="services-list__item"><img src="./img/services-list/training.png" width="145px" heigth="145px">
+        <li class="services-list__item services-list__item--emc">
           <p class="services-list__item-text">Обучение<br>контекстной рекламе</p>
         </li>
       </ul>
     </div>
-  </div>
+  </section>
   <div class="blog">
     <div class="adwords__wrap">
       <h2 class="blog__title">Блог</h2>
