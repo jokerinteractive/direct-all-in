@@ -1966,7 +1966,7 @@ li {
   border: 1px solid rgba(196, 196, 196, 0.85);
   border-radius: 20px;
   box-shadow: 0 9px rgba(0, 0, 0, 0.15);
-  background: #f7f7f7 url("../../img/puzzles/puzzle-specs-bg.svg") no-repeat 50% 50%/110% auto;
+  background: #f7f7f7 url("../img/puzzles/puzzle-specs-bg.svg") no-repeat 50% 50%/110% auto;
 }
 .adwords-puzzle__specialists-description {
   float: left;
@@ -2858,7 +2858,7 @@ li {
   border: 1px solid rgba(196, 196, 196, 0.85);
   border-radius: 20px;
   box-shadow: 0 9px rgba(0, 0, 0, 0.15);
-  background: #f7f7f7 url("../../img/puzzles/puzzle-specs-bg.svg") no-repeat 50% 50%/110% auto;
+  background: #f7f7f7 url("../img/puzzles/puzzle-specs-bg.svg") no-repeat 50% 50%/110% auto;
 }
 .vedenie-puzzle__specialists-description {
   float: left;
