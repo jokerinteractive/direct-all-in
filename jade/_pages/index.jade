@@ -28,7 +28,7 @@ body
 
   .calmness.index-calmness.clearfix
     .index__wrap
-      h2.title-underline
+      h2.calmness__header.calmness__header--dotted
         span Работая с нами, Вы спите Спокойно!
       .calmness__features.clearfix
         .calmness__features-left
@@ -68,7 +68,7 @@ body
           p.calmness__promises-right-ps Количество кликов, просмотров страниц и прочие параметры мы отслеживаем и анализируем только через призму роста продаж.
   .calmness__confidence
     .index__wrap.clearfix
-      h2.calmness__confidence-title.title-underline
+      h2.calmness__header.calmness__header--dotted
         span Вы можете быть уверены в результатах, потому что:
       .calmness__confidence-content
         ul.calmness__confidence-left
@@ -114,26 +114,28 @@ body
           li.adwords-founder__achivements-right-item Занимается обучением директологов для крупных организаций и рекламодателей
           li.adwords-founder__achivements-right-item Ведущий семинаров в Высшей Школе Экономики
           li.adwords-founder__achivements-right-item Ведёт авторские колонки в блоге "Нетологии" и "Лп Генераторе"
-      .adwords-founder__reviews
-        h3.adwords-founder__reviews-title Вот что о нем пишут рекламодатели
-        article.adwords-founder__reviews-item.clearfix
-          .adwords-founder__reviews-item-pagination-prev &lt;
-          .adwords-founder__reviews-item-pagination-next &gt;
-          .adwords-founder__reviews-item-image
-            img(src="img/review-authors/tatyana-ovchinnikova.jpg" width="168px" height="168px")
-          .adwords-founder__reviews-item-texts
-            h4.adwords-founder__reviews-item-texts-title Подходите ответственно и с душой к своему делу
-            p.adwords-founder__reviews-item-texts-text Хочу выразить огромную благодарность Вам за ваши видеоуроки. Видеоуроков сейчас полно, но реально качественных и понятных для новичков единицы, да и для уже знающих не первый день про директ. Сразу видно, что Вы подходите ответственно и с душой к своему делу. Отзывы это еще раз подтверждают.
-            p.adwords-founder__reviews-item-texts-author — Татьяна Овчинникова
-          .adwords-founder__reviews-item-slider
-            input(id="review-1" type="radio" name="reviews-slider" checked).adwords-founder__reviews-item-slider-radio
-            input(id="review-2" type="radio" name="reviews-slider" ).adwords-founder__reviews-item-slider-radio
-            input(id="review-3" type="radio" name="reviews-slider" ).adwords-founder__reviews-item-slider-radio
-            input(id="review-4" type="radio" name="reviews-slider" ).adwords-founder__reviews-item-slider-radio
-            label(for="review-1").adwords-founder__reviews-item-slider-point.slider-dot
-            label(for="review-2").adwords-founder__reviews-item-slider-point.slider-dot
-            label(for="review-3").adwords-founder__reviews-item-slider-point.slider-dot
-            label(for="review-4").adwords-founder__reviews-item-slider-point.slider-dot
+
+      //
+        .adwords-founder__reviews
+          h3.adwords-founder__reviews-title Вот что о нем пишут рекламодатели
+          article.adwords-founder__reviews-item.clearfix
+            .adwords-founder__reviews-item-pagination-prev &lt;
+            .adwords-founder__reviews-item-pagination-next &gt;
+            .adwords-founder__reviews-item-image
+              img(src="img/review-authors/tatyana-ovchinnikova.jpg" width="168px" height="168px")
+            .adwords-founder__reviews-item-texts
+              h4.adwords-founder__reviews-item-texts-title Подходите ответственно и с душой к своему делу
+              p.adwords-founder__reviews-item-texts-text Хочу выразить огромную благодарность Вам за ваши видеоуроки. Видеоуроков сейчас полно, но реально качественных и понятных для новичков единицы, да и для уже знающих не первый день про директ. Сразу видно, что Вы подходите ответственно и с душой к своему делу. Отзывы это еще раз подтверждают.
+              p.adwords-founder__reviews-item-texts-author — Татьяна Овчинникова
+            .adwords-founder__reviews-item-slider
+              input(id="review-1" type="radio" name="reviews-slider" checked).adwords-founder__reviews-item-slider-radio
+              input(id="review-2" type="radio" name="reviews-slider" ).adwords-founder__reviews-item-slider-radio
+              input(id="review-3" type="radio" name="reviews-slider" ).adwords-founder__reviews-item-slider-radio
+              input(id="review-4" type="radio" name="reviews-slider" ).adwords-founder__reviews-item-slider-radio
+              label(for="review-1").adwords-founder__reviews-item-slider-point.slider-dot
+              label(for="review-2").adwords-founder__reviews-item-slider-point.slider-dot
+              label(for="review-3").adwords-founder__reviews-item-slider-point.slider-dot
+              label(for="review-4").adwords-founder__reviews-item-slider-point.slider-dot
       .adwords-founder__videos.clearfix
         h3.adwords-founder__videos-title Посмотрите самые популярные видео
         .adwords-founder__videos-block
