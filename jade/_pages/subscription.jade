@@ -4,12 +4,11 @@ body
   header.header.header--padding
     include ../_common/_header__navbar--nomenu
   section.subscription
-    .subscription__wrap.clearfix.subscription__wrap--main
+    .subscription__wrap
       .subscription__column--left.yandex-course
         h3.yandex-course__call Пройди бесплатный курс по
-        .yandex-course__logo
-          img.yandex-course__logo-img(src="./img/subscriptions/yandex.png" alt="Яндекс Директ")
-          | Яндес Директ
+        span.callback-header__logo.callback-header__logo--red.callback-header__logo--big
+          | Яндекс.Директ
         h3.yandex-course__from От Филиппа Царевского
         p.yandex-course__feedback "Самый исчерпывающий и структурированный на рынке"
         p.yandex-course__by (по отзывам подписчиков)
@@ -24,21 +23,22 @@ body
 
   section.effective
     header.effective__header
-      div.effective__wrap.clearfix
+      .effective__wrap
         .effective__left
             img(src="./img/subscriptions/effective.png" alt="Эффект")
-        .effective-header__right
+        .effective__right
           h3.effective__h3
             | В среднем, эффективность контекстной рекламы после прохождения курса увеличивается в 2,34 раза
           p.effective__text
             | Кто-то снижает расходы, кто-то увеличивает количество заявок или повышает их качество, кому-то удается поднять средний чек.
           p.effective__text
             | Рекламодатели смогут легко отличить дилетанта от профессионала, а директологи (или специалисты по контекстной рекламе, если угодно) повысят свою экспертность и будут дороже продавать свои услуги.
-    .subscription__wrap.subscription__effective--wrapper
+
+    .effective-content__wrap
       article.subscription__effective--content.effective-content
         h3.effective-content__header
           | За счёт чего это происходит?
-        .effective-content__wrapper
+        .effective-content__flex
           ul.effective-content__column
             li.effective-content__column--element.column-element
               .column-element__wrapper
@@ -116,7 +116,7 @@ body
                 | Будете в курсе всех тенденций и новинок.
 
   section.video
-    .subscription__wrap.video__wrapper
+    .video__wrap
       iframe.video__iframe(src="https://www.youtube.com/embed/O1YwexOF0Gc?autoplay=0")
 
       .video__info.video-info
@@ -213,7 +213,7 @@ body
         | Пройти тест
 
   section.about-speaker.about-speaker--subscribe
-    .subscription__wrap.about-speaker__wrapper
+    .about-speaker__wrap
 
       header.about-speaker__header
 

@@ -1,142 +1,302 @@
-@media only screen and (max-width: 1200px) {
+@laptop: ~"only screen and (max-width: 1025px)";
+@tablet: ~"only screen and (max-width: 769px)";
 
-  .header {
-    min-width: 1200px;
-  }
-
-  .footer {
-    min-width: 1200px;
-  }
-
-  .subscription {
-    background: #0f3c5b;
-
-    &__wrap--main {
-      background: url(../img/subscriptions/bg.jpg) 50% 100%;
-    }
-  }
-
-  .video {
-    background: #0f3c5b;
-
-    &__wrapper {
-      background: #0f3c5b url(../img/subscriptions/video.jpg) -30px -203px;
-    }
-  }
-
-  .better {
-    background: #fff;
-
-    &__wrap {
-      background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 0;
-    }
-  }
-
-  .test {
-    background: #0f3c5b;
-
-    &__wrap {
-      background: url(../img/subscriptions/test.png) 50% 50%/cover;
-    }
-  }
-
-  .about-speaker {
-    background: #fff;
-
-    &__wrapper {
-      background: url(../img/founder/founder-texture-top-x.png) 0 1px repeat-x, linear-gradient(to bottom, transparent 85%, #fff 100%), url(../img/founder/founder-texture-bg.png) 0 0 repeat;
-    }
-  }
-
-  .subscribe-course {
-    background: #0f3c5b;
-
-    &__wrapper {
-      background: #0f3c5b url(../img/subscriptions/subscribe-bg.jpg) top;
-    }
-  }
-
-  .webinar {
-
+.effective {
+  @media @laptop {
     &__header {
-      background: #0f3c5b;
-
-      &--wrapper {
-        background: #0f3c5b url(../img/bg-adwords-feedback.png) no-repeat 50% 50%/cover;
-      }
+      padding-top: 80px;
     }
 
-    &__flex {
-      &--right {
-        padding-right: 15px;
-      }
+    &__left {
+      padding-right: 40px;
     }
 
-    .comment {
-      background: #f8f8f8;
+    &__h3 {
+      font-size: 29px;
+    }
 
-      &__wrapper {
-        background: #f8f8f8 url(../img/included-web.png) 50% 0 no-repeat;
-      }
+    &-content {
+      background-position: 50% -77px;
+      padding-top: 45px;
     }
   }
 
-  .achieve {
-    background: #fafafa;
-
-    &__wrapper {
-      background: #fafafa url(../img/configuration-top-bg.png) no-repeat 50% 0;
-    }
-  }
-
-  .configuration {
-    padding-top: 0;
-    background: no-repeat 50% 0, linear-gradient(180deg, #fafafa 0, #fafafa 34px, #f9f9f9 34px, #f9f9f9 101px, #f8f8f8 101px, #f8f8f8 473px, transparent 474px, transparent 100%);
-
-    .adwords-wrap {
+  @media @tablet {
+    &__header {
       padding-top: 60px;
-      background: url(../img/configuration-top-bg.png) no-repeat 50% 0, linear-gradient(180deg, #fafafa 0, #fafafa 34px, #f9f9f9 34px, #f9f9f9 101px, #f8f8f8 101px, #f8f8f8 473px, transparent 474px, transparent 100%);
     }
-  }
-
-  .portfolio {
-
-    &__header {
-      width: 1200px;
+    &__wrap {
+      flex-wrap: wrap;
+      justify-content: center;
     }
-  }
-
-  .clients {
-    background: #fff;
-
-    &__wrapper {
-      background: #fff url(../img/calmness/calmness-light-bg.png) center no-repeat;
+    &__left {
+      order: 2;
     }
-  }
-
-  .clients__thnx {
-    background: #fafafa;
-
-    &--wrapper {
-      background: #fafafa url(../img/portfolio/thnx-bg.png);
+    &__right {
+      order: 1;
+      padding: 0 30px;
+      margin-bottom: 35px;
     }
-  }
-
-  .clients__case {
-    background: #fff;
-
-    &--wrapper {
-      background: #fff url(../img/portfolio/thnx-bg.png) no-repeat top center;
+    &__h3 {
+      text-align: center;
+      font-size: 30px;
     }
-  }
 
-  .faq {
-    &__questions {
+    &-content {
       background: #fff;
+      padding-top: 25px;
 
-      &--wrapper {
-        background: #fff url(../img/calmness/calmness-light-bg.png) 50% 0 no-repeat;
+      &__header {
+        box-sizing: border-box;
+        border: 2px dashed #c2e0f3;
+        border-radius: 30px;
+        width: 590px;
+        margin: 0 auto 40px;
+        padding: 25px 20px;
+      }
+
+      &__flex {
+        padding-bottom: 35px;
       }
     }
+  }
+}
+
+.video {
+  @media @laptop {
+    &__wrap {
+      padding: 60px 20px;
+    }
+
+    &__iframe {
+      width: 630px;
+      height: 380px;
+    }
+
+    &-info {
+      width: 330px;
+      min-height: 380px;
+
+      &__top {
+        &--watch {
+          font-size: 30px;
+          margin: 0;
+        }
+        &--choose {
+          font-size: 20px;
+          margin: 0 0 25px;
+        }
+        &--text {
+          margin: 25px 0;
+        }
+      }
+
+      &__bottom {
+        &--like {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.better {
+  @media @laptop {
+    &__head {
+      font-size: 30px;
+      margin: 15px 0 29px;
+    }
+
+    .quote {
+      box-sizing: border-box;
+      width: 500px;
+      padding: 20px 25px;
+      background-size: 100%;
+
+      &__text {
+        margin: 0 0 5px;
+      }
+
+      &__quote {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      + .better__list {
+        padding: 0 0 0 20px;
+      }
+    }
+
+    &__list {
+      padding: 40px 0 0;
+    }
+  }
+}
+
+.test {
+  @media @laptop {
+    &__header {
+      padding: 0 30px;
+    }
+
+    &__head {
+      font-size: 28px;
+    }
+
+    &__text {
+      padding: 110px 0 45px;
+    }
+
+    &__wrap {
+      height: auto;
+      padding-bottom: 80px;
+    }
+  }
+
+  @media @tablet {
+    &__head {
+      padding: 0 20px;
+      font-size: 24px;
+      margin: 15px 10px;
+    }
+    &__text {
+      padding: 90px 0 45px;
+    }
+    &__wrap {
+      padding-bottom: 70px;
+    }
+  }
+}
+
+.about-speaker {
+  @media @laptop {
+    &__wrap {
+      padding-top: 110px;
+    }
+
+    &__header {
+      &--right {
+        width: 630px;
+      }
+
+      .speaker-descr {
+        &__name {
+          font-size: 50px;
+          margin: 5px 0 0;
+        }
+
+        &__text {
+          width: 100%;
+          font-size: 16px;
+          margin-bottom: 20px;
+
+          &:first-of-type {
+            margin-bottom: 30px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    &--subscribe {
+      .about-speaker__header--right {
+        width: 600px;
+      }
+    }
+
+    &__quote {
+      &--text {
+        margin: 0 0 20px;
+      }
+    }
+  }
+}
+
+.course-for {
+  @media @laptop {
+    padding: 40px 0;
+
+    &__header {
+      padding-top: 0;
+    }
+
+    &-list {
+      width: 650px;
+    }
+
+    &-list-item {
+      margin: 50px 0;
+
+      &:first-of-type {
+        margin-top: 50px;
+      }
+    }
+
+    &--no-padding-bottom {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.get-course {
+  @media @laptop {
+    padding: 45px 0;
+  }
+
+  @media @tablet {
+    padding: 0 0 60px 32px;
+
+    &__details {
+      max-width: 480px;
+    }
+
+    &--subscribe {
+      .get-course__input-text {
+        margin: 0 auto 24px;
+      }
+    }
+  }
+}
+
+.yandex-course {
+  @media @laptop {
+    padding-top: 60px;
+  }
+
+  @media @tablet {
+    &__call {
+      margin-bottom: 15px;
+    }
+    &__feedback {
+      margin-top: 30px;
+      font-size: 24px;
+    }
+    &__by {
+      font-size: 18px;
+    }
+  }
+}
+
+.subscription {
+  @media @tablet {
+    background: #0f3c5b url(../img/subscriptions/test.png) repeat 50% 50%;
+    background-size: 100%;
+
+    &__wrap {
+      flex-wrap: wrap;
+    }
+
+    &__column {
+      &--left,
+      &--right {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.form {
+  @media @tablet {
+    text-align: center;
   }
 }

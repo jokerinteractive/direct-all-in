@@ -1,5 +1,3 @@
-@import "__mixins";
-
 .effective {
   color: #000;
 
@@ -12,10 +10,12 @@
 
   &__wrap {
     .wrap();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   &__left {
-    float: left;
     width: 296px;
     padding-left: 40px;
     padding-right: 60px;
@@ -27,7 +27,6 @@
   }
 
   &__right {
-    float: right;
     width: 760px;
   }
 
