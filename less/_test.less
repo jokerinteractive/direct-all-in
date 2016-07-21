@@ -5,7 +5,7 @@
   &--padding-bottom {
     padding-bottom: 60px;
 
-    .test__wrap {
+    .test__wrap { /* FIXME: опять каскад... */
       height: auto;
     }
   }
@@ -18,6 +18,14 @@
     .wrap();
 
     height: 415px;
+    @media @laptop {
+      height: auto;
+      padding-bottom: 80px;
+    }
+    @media @tablet {
+      height: auto;
+      padding-bottom: 70px;
+    }
   }
 
   &__header {
@@ -36,6 +44,9 @@
     border: 1px solid #ded7cf;
     border-radius: 25px;
     background: #fdfcfb;
+    @media @laptop {
+      padding: 0 30px;
+    }
 
     &::after {
       position: absolute;
@@ -75,6 +86,14 @@
     font-size: 32px;
     margin: 20px;
     font-weight: 600;
+    @media @laptop {
+      font-size: 28px;
+    }
+    @media @tablet {
+      padding: 0 20px;
+      font-size: 24px;
+      margin: 15px 10px;
+    }
 
     &--normal {
       font-weight: normal;
@@ -93,6 +112,12 @@
     color: #fff;
     font-size: 26px;
     line-height: 33px;
+    @media @laptop {
+      padding: 110px 0 45px;
+    }
+    @media @tablet {
+      padding: 90px 0 45px;
+    }
   }
 
   &__flex {

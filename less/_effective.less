@@ -6,6 +6,12 @@
   &__header {
     background: url("../img/calmness/calmness-light-bg.png") no-repeat 50% 10px;
     padding-top: 95px;
+    @media @laptop {
+      padding-top: 80px;
+    }
+    @media @tablet {
+      padding-top: 60px;
+    }
   }
 
   &__wrap {
@@ -13,12 +19,22 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media @tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__left {
     width: 296px;
     padding-left: 40px;
     padding-right: 60px;
+    @media @laptop {
+      padding-right: 40px;
+    }
+    @media @tablet {
+      order: 2;
+    }
 
     img {
       display: block;
@@ -28,12 +44,24 @@
 
   &__right {
     width: 760px;
+    @media @tablet {
+      order: 1;
+      padding: 0 30px;
+      margin-bottom: 35px;
+    }
   }
 
   &__h3 {
     margin: 0 0 22px;
     font-size: 34px;
     line-height: 1.44;
+    @media @laptop {
+      font-size: 29px;
+    }
+    @media @tablet {
+      text-align: center;
+      font-size: 30px;
+    }
   }
 
   &__text {

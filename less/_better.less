@@ -20,6 +20,10 @@
     text-align: center;
     font-size: 34px;
     margin: 25px 0;
+    @media @laptop {
+      font-size: 30px;
+      margin: 15px 0 29px;
+    }
 
     & > span {
       border-bottom: 2px dashed #c2e0f3;
@@ -43,7 +47,7 @@
     width: 564px;
     padding-top: 20px;
 
-    .better-list {
+    .better-list { /* FIXME: что делает тут блок? */
       padding-left: 30px;
       padding-top: 5px;
     }
@@ -52,6 +56,9 @@
   &__list {
     padding: 52px 0 0;
     margin: 0;
+    @media @laptop {
+      padding: 40px 0 0;
+    }
   }
 
   &__list-item {
@@ -79,16 +86,25 @@
     padding-left: 37px;
   }
 
-  .quote {
+  .quote { /* FIXME: что делает тут блок? */
     display: block;
     width: 511px;
     height: 315px;
     padding: 20px 30px 0;
     background: url(../img/subscriptions/quote.png) no-repeat 0 0;
+    @media @laptop {
+      box-sizing: border-box;
+      width: 500px;
+      padding: 20px 25px;
+      background-size: 100%;
+    }
 
     &__text {
       font-size: 18px;
       margin: 9px 0 7px;
+      @media @laptop {
+        margin: 0 0 5px;
+      }
     }
 
     &__quote {
@@ -96,11 +112,18 @@
       font-style: italic;
       font-size: 24px;
       line-height: 1.5;
+      @media @laptop {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
     }
 
     & + .better__list {
       padding-top: 30px;
       padding-left: 30px;
+      @media @laptop {
+        padding: 0 0 0 20px;
+      }
     }
   }
 }

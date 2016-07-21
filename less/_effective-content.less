@@ -2,6 +2,14 @@
   background: #fff url(../img/subscriptions/effective-bg.png) no-repeat 50% -30px;
   display: block;
   padding-top: 90px;
+  @media @laptop {
+    background-position: 50% -77px;
+    padding-top: 45px;
+  }
+  @media @tablet {
+    background-image: none;
+    padding-top: 25px;
+  }
 
   &__wrap {
     .wrap();
@@ -11,6 +19,14 @@
     font-size: 36px;
     text-align: center;
     margin: 30px 0 65px;
+    @media @tablet {
+      box-sizing: border-box;
+      border: 2px dashed #c2e0f3;
+      border-radius: 30px;
+      width: 590px;
+      margin: 0 auto 40px;
+      padding: 25px 20px;      
+    }
   }
 
   &__flex {
@@ -19,6 +35,9 @@
     justify-content: space-between;
     align-items: flex-start;
     padding-bottom: 61px;
+    @media @tablet {
+      padding-bottom: 35px;
+    }
   }
 
   &__column {
