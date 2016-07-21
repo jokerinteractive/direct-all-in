@@ -13,6 +13,18 @@
 
     &--wrapper {
       padding: 80px 0;
+
+      @media @tablet {
+        padding: 60px 0;
+      }
+
+      @media @mobileLarge {
+        padding: 50px 0;
+      }
+
+      @media @mobileSmall {
+        padding: 40px 0;
+      }
     }
 
     &--list {
@@ -22,6 +34,16 @@
       width: 814px;
 
       text-align: left;
+
+      @media @tablet {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 30px;
+      }
+
+      @media @mobileSmall {
+        padding: 0 20px;
+      }
     }
 
     &--item {

@@ -15,6 +15,10 @@
     margin-bottom: 0;
   }
 
+  @media @mobileLarge {
+    margin-bottom: 30px;
+  }
+
   &__wrapper {
     display: block;
     position: relative;
@@ -24,6 +28,16 @@
     border-radius: 50%;
     border: 2px solid rgb(194, 224, 243);
     background-color: #fff;
+
+    @media @mobileLarge {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media @mobileSmall {
+      width: 80px;
+      height: 80px;
+    }
 
     &--img {
       display: block;
@@ -40,5 +54,10 @@
     text-align: center;
     margin: 23px 0 30px;
     line-height: 1.5;
+
+    @media @mobileSmall {
+      font-size: 15px;
+      margin: 15px 0 0;
+    }
   }
 }

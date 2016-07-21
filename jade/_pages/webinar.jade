@@ -22,8 +22,9 @@ body
               | рекламной кампании с комментариями
               br
               | Филиппа Царевского
-            a.btn.btn--main.get-course__btn(href="")
-              | Купить вебинар
+            form.form
+              a.btn.btn--main.get-course__btn(href="")
+                | Купить вебинар
 
     section.about-speaker.about-speaker--calmness
       .webinar__wrap.about-speaker__wrapper
@@ -206,10 +207,10 @@ body
                   | Ответы на вопросы слушателей.
 
     section.video.video--webinar
-      .webinar__wrap.video__wrapper
+      .video__wrap
         iframe.video__iframe(src="https://www.youtube.com/embed/K440S10l4uI?autoplay=0")
 
-        .video__info.video-info
+        .video-info.video-info--webinar
           .video-info__top
             h3.video-info__top--watch
               | Посмотрите вырезку:
@@ -268,7 +269,7 @@ body
           | 5-часовая запись настройки рекламной кампании с
           br
           |комментариями Филиппа Царевского
-        a.btn.btn--main.btn--cta.test__btn(href="")
+        a.btn.btn--main.btn--cta(href="")
           | Купить
 
     //section.comment.comment--webinar

@@ -2,14 +2,39 @@
   background: url(../img/bgArrowsGeometry.svg) 50% 0 ~"/100%" no-repeat;
   padding-bottom: 250px;
 
+  @media @tablet {
+    background-size: cover;
+  }
+
+  @media @mobileLarge {
+    background-position: 50% -30px;
+  }
+
   &__wrapper {
     padding: 120px 0 0;
+
+    @media @tablet {
+      padding-top: 80px;
+    }
   }
 
   &__header {
     font-size: 34px;
     line-height: 38px;
     text-align: center;
+
+    @media @tablet {
+      font-size: 30px;
+    }
+
+    @media @mobileLarge {
+      font-size: 26px;
+    }
+
+    @media @mobileSmall {
+      font-size: 22px;
+      line-height: 28px;
+    }
   }
 
   &__flex {
@@ -19,10 +44,25 @@
     justify-content: space-around;
     flex-direction: row;
 
+    @media @tablet {
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
     &--item {
       display: block;
 
       width: 165px;
+
+      @media @tablet {
+        width: 33%;
+        margin-bottom: 20px;
+      }
+
+      @media @mobileLarge {
+        width: 45%;
+        margin-bottom: 15px;
+      }
     }
 
     &--wrapper {
@@ -35,6 +75,11 @@
       background-color: #fff;
       border-radius: 50%;
       margin: 0 auto;
+
+      @media @mobileLarge {
+        width: 100px;
+        height: 100px;
+      }
     }
 
     &--img {
@@ -49,6 +94,14 @@
 
       margin-top: -32px;
       margin-left: -32px;
+
+      @media @mobileLarge {
+        width: 50px;
+        height: 50px;
+
+        margin-top: -25px;
+        margin-left: -25px;
+      }
     }
 
     &--text {

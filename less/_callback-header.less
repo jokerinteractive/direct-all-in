@@ -20,6 +20,11 @@
     line-height: 67px;
     display: block;
 
+    @media @mobileLarge {
+      font-size: 55px;
+      line-height: 55px;
+    }
+
     &--red {
       &::first-letter {
         color: #ff0c0c;
@@ -27,8 +32,13 @@
     }
 
     &--big {
-      font-size: 80px;
-      line-height: 80px;
+      font-size: 75px;
+      line-height: 75px;
+
+      @media @mobileLarge {
+        font-size: 55px;
+        line-height: 55px;
+      }
     }
   }
 

@@ -11,6 +11,14 @@
     padding-top: 158px;
     padding-bottom: 57px;
 
+    @media @laptop {
+      padding-top: 110px;
+    }
+
+    @media @tablet {
+      padding-bottom: 20px;
+    }
+
     &::before {
       position: absolute;
       top: -36px;
@@ -32,11 +40,26 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    @media @tablet {
+      flex-wrap: wrap;
+    }
+
     &--left {
       width: 308px;
+
+      @media @tablet {
+        margin: 0 auto;
+      }
     }
 
     .speaker-photo {
+      @media @mobileLarge {
+        width: 280px;
+      }
+
+      @media @mobileSmall {
+        width: 240px;
+      }
 
       &__wrapper {
         display: block;
@@ -46,6 +69,16 @@
         overflow: hidden;
         width: 324px;
         height: 324px;
+
+        @media @mobileLarge {
+          width: 280px;
+          height: 280px;
+        }
+
+        @media @mobileSmall {
+          width: 240px;
+          height: 240px;
+        }
       }
 
       &__img {
@@ -62,19 +95,59 @@
     &--right {
       width: 760px;
       padding-top: 30px;
+
+      @media @laptop {
+        width: 630px;
+      }
+
+      @media @tablet {
+        width: 75%;
+        margin: 50px auto 0;
+        padding: 0;
+      }
+
+      @media @mobileLarge {
+        width: 100%;
+        margin-top: 30px;
+      }
     }
 
     .speaker-descr {
+      @media @mobileSmall {
+        padding: 0;
+        margin: 20px 0 0;
+      }
 
       &__coach {
         color: rgb(122, 122, 122);
         font-size: 23px;
+
+        @media @mobileSmall {
+          font-size: 20px;
+        }
       }
 
       &__name {
         font-size: 53px;
         font-weight: normal;
         margin: 20px 0 0;
+
+        @media @laptop {
+          font-size: 50px;
+          margin: 5px 0 0;
+        }
+
+        @media @mobileLarge {
+          font-size: 40px;
+          line-height: 40px;
+          margin-bottom: 10px;
+        }
+
+        @media @mobileSmall {
+          font-size: 29px;
+          line-height: 30px;
+          margin: 10px 0;
+        }
       }
 
       &__text {
@@ -92,6 +165,27 @@
           font-size: 22px;
           margin-bottom: 40px;
         }
+
+        @media @laptop {
+          width: 100%;
+          font-size: 16px;
+          margin-bottom: 20px;
+
+          &:first-of-type {
+            margin-bottom: 30px;
+            font-size: 20px;
+          }
+        }
+
+        @media @mobileSmall {
+          font-size: 14px;
+          margin-bottom: 10px;
+
+          &:first-of-type {
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+        }
       }
     }
   }
@@ -107,6 +201,23 @@
     .red {
       color: #ff8395;
     }
+
+    @media @tablet {
+      font-size: 27px;
+      margin: 30px auto;
+    }
+
+    @media @mobileLarge {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 20px auto;
+    }
+
+    @media @mobileSmall {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 15px auto;
+    }
   }
 
   &__quote {
@@ -114,16 +225,43 @@
     padding: 12px 50px;
     text-align: center;
 
+    @media @mobileLarge {
+      padding: 0;
+    }
+
+    &--no-padding-media {
+      @media @tablet {
+        padding: 0;
+      }
+    }
+
     &--text {
       font-size: 28px;
       line-height: 38px;
       margin: 0 10% 30px;
       font-style: italic;
+
+      @media @laptop {
+        margin: 0 0 20px;
+      }
+
+      @media @mobileLarge {
+        font-size: 24px;
+      }
+
+      @media @mobileSmall {
+        font-size: 18px;
+        line-height: 24px;
+      }
     }
 
     &--comment {
       font-size: 18px;
       margin: 0;
+
+      @media @mobileSmall {
+        font-size: 15px;
+      }
     }
 
     &-small {
@@ -135,6 +273,20 @@
       text-align: left;
       font-size: 24px;
       line-height: 35px;
+
+      @media @tablet {
+        margin-top: 0;
+      }
+
+      @media @mobileLarge {
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+      @media @mobileSmall {
+        font-size: 18px;
+        line-height: 30px;
+      }
     }
 
     &-author {
@@ -144,6 +296,16 @@
       text-align: left;
       font-size: 24px;
       line-height: 30px;
+
+      @media @mobileLarge {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      @media @mobileSmall {
+        margin: 10px 0 10px;
+        font-size: 18px;
+      }
     }
   }
 
@@ -152,6 +314,10 @@
       width: 800px;
       box-sizing: border-box;
       padding-left: 10px;
+
+      @media @laptop {
+        width: 600px;
+      }
     }
   }
 
@@ -160,6 +326,14 @@
 
     .about-speaker__wrapper {
       padding-top: 70px;
+
+      @media @tablet {
+        padding-top: 55px;
+      }
+
+      @media @mobileSmall {
+        padding-top: 40px;
+      }
 
       &::before {
         content: "";

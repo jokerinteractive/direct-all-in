@@ -1,5 +1,3 @@
-@import "__mixins";
-
 .header {
   overflow: hidden;
   background: #0e3b5a url(../img/bg-header.png) no-repeat 50% 50%/cover;
@@ -24,9 +22,18 @@
 
     display: flex;
     justify-content: space-between;
+
+    @media @mobileSmall {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__phone {
+    @media @mobileSmall {
+      display: none;
+    }
+
     &:hover {
       .header__callback {
         text-decoration: none;
@@ -56,6 +63,22 @@
     text-align: center;
     font-size: 52px;
 
+    @media @tablet {
+      font-size: 48px;
+    }
+
+    @media @mobileLarge {
+      font-size: 40px;
+      line-height: 50px;
+      margin: 45px 0 60px;
+    }
+
+    @media @mobileSmall {
+      font-size: 35px;
+      line-height: 45px;
+      margin: 35px 0 40px;
+    }
+
     > small {
       display: block;
       font-size: 29px;
@@ -72,6 +95,21 @@
         font-weight: normal;
         line-height: 24px;
         text-align: center;
+
+        @media @tablet {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0 25px;
+        }
+
+        @media @mobileLarge {
+          padding: 0 20px;
+          margin-top: 15px;
+        }
+
+        @media @mobileSmall {
+          padding: 0 15px;
+        }
       }
     }
   }

@@ -1,4 +1,12 @@
 .form {
+  @media @tablet {
+    text-align: center;
+  }
+
+  &--footer-nav {
+    text-align: left;
+  }
+
   &__text,
   &__textarea {
     box-sizing: border-box;
@@ -15,6 +23,11 @@
     font-size: 17px;
     transition: background-color .1s cubic-bezier(.42, 0, .58, 1);
     margin-left: 15px;
+
+    @media @mobileLarge {
+      display: block;
+      margin: 0 auto 20px;
+    }
 
     &:focus {
       background-color: fade(#fff, 20%);
@@ -44,17 +57,32 @@
       &:focus {
         background-color: hsla(0, 0%, 0%, .2);
       }
+
+      @media @mobileLarge {
+        width: 300px;
+      }
+
+      @media @mobileSmall {
+        width: 240px;
+      }
     }
   }
 
   &__text {
-
     &:first-of-type {
       margin-left: 0;
+
+      @media @mobileLarge {
+        margin-left: auto;
+      }
     }
 
     &--no-margin {
       margin-left: 0;
+
+      @media @mobileLarge {
+        margin-left: auto;
+      }
     }
 
     &--middle {
@@ -84,5 +112,13 @@
 
     width: 466px;
     resize: none;
+
+    @media @mobileLarge {
+      width: 300px;
+    }
+
+    @media @mobileSmall {
+      width: 260px;
+    }
   }
 }

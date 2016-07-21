@@ -2,6 +2,18 @@
   padding: 120px 0 60px;
   background: url(../img/bg-arrow-gradient.png) 50% 0 ~"/100%" auto no-repeat, url(../img/faq-bg.png) 95% 50% no-repeat;
 
+  @media @laptop {
+    padding: 100px 0 40px;
+  }
+
+  @media @tablet {
+    padding: 70px 0 20px;
+  }
+
+  @media @mobileLarge {
+    padding-top: 50px;
+  }
+
   &--no-bg {
     background: none;
   }
@@ -77,6 +89,21 @@
     font-size: 37px;
     line-height: 37px;
 
+    @media @mobileLarge {
+      font-size: 34px;
+      line-height: 34px;
+    }
+
+    @media @mobileSmall {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 40px;
+
+      span {
+        padding: 10px;
+      }
+    }
+
     &--small {
       font-size: 30px;
     }
@@ -87,6 +114,20 @@
     line-height: 24px;
     margin: 0 0 115px;
     text-align: center;
+
+    @media @laptop {
+      margin-bottom: 80px;
+    }
+
+    @media @tablet {
+      margin-bottom: 50px;
+      font-size: 20px;
+    }
+
+    @media @mobileLarge {
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
 
     span {
       color: #fe4660;
@@ -100,11 +141,33 @@
   &__list {
     padding-left: 25px;
 
+    @media @mobileSmall {
+      padding-left: 0;
+    }
+
     &-header {
       .title-dotted();
       font-size: 26px;
       line-height: 32px;
       margin-bottom: 65px;
+
+      @media @tablet {
+        margin-bottom: 45px;
+      }
+
+      @media @mobileLarge {
+        margin-bottom: 30px;
+      }
+
+      @media @mobileSmall {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 25px;
+
+        span {
+          padding-bottom: 10px;
+        }
+      }
     }
 
     &-item {
@@ -117,6 +180,10 @@
 
       padding: 0;
       margin: 0 0 23px;
+
+      @media @tablet {
+        margin-bottom: 20px;
+      }
 
       &--no-margin {
         margin-bottom: 0;
@@ -139,6 +206,21 @@
 
         padding: 20px 0;
         margin: 0 0 0 35px;
+
+        @media @tablet {
+          font-size: 22px;
+        }
+
+        @media @mobileLarge {
+          font-size: 18px;
+          margin: 0 0 0 20px;
+          max-width: 70%;
+        }
+
+        @media @mobileSmall {
+          max-width: 100%;
+          width: 100%;
+        }
       }
 
       &--small p {
@@ -159,6 +241,10 @@
 
         width: 0;
         height: 40%;
+
+        @media @mobileLarge {
+          display: none;
+        }
       }
 
       &--no-after::after {
@@ -181,6 +267,17 @@
         font-size: 24px;
         line-height: 48px;
         text-align: center;
+
+        @media @mobileLarge {
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 20px;
+        }
+
+        @media @mobileSmall {
+          display: none;
+        }
       }
 
       &--2::before {

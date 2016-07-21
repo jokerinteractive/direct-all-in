@@ -5,11 +5,11 @@ body
     include ../_common/_header__navbar--nomenu
 
   section.subscription
-    .subscription__wrap.clearfix.subscription__wrap--main
-      .subscription__column--left
+    .subscription__wrap.subscription__wrap--main
+      .subscription__column--left.subscription__column--order-2
         img.subscription__img(src="img/demonstration/main-video.png" alt="Демонстрационная настройка видео")
 
-      .subscription__column--right.get-course.get-course--subscribe
+      .subscription__column--right.get-course.get-course--subscribe.get-course--padding-media
         span.get-course__header Демонстрационная настройка
         h3.get-course__logo Яндекс.Директ
         p.get-course__details
@@ -18,7 +18,8 @@ body
           | рекламной компании с комментариями
           br
           | Филиппа Царевского
-        a.btn.btn--main.get-course__btn(href="#") Смотреть видео
+        form.form
+          a.btn.btn--main.get-course__btn(href="#") Смотреть видео
 
   section.about-speaker.about-speaker--calmness.about-speaker--fa-bg
     .webinar__wrap.about-speaker__wrapper
@@ -29,7 +30,7 @@ body
             img.speaker-photo__img(src="./img/subscriptions/speaker.jpg" alt="Филипп Царевский")
 
         .about-speaker__header--right.speaker-descr
-          .about-speaker__quote
+          .about-speaker__quote.about-speaker__quote--no-padding-media
             P.about-speaker__quote-small
               | &laquo;На своих вебинарах я даю большое количество информации бесплатно. Однако многим было интересно копнуть поглубже и посмотреть, как я лично создаю кампанию с нуля и до запуска. Так родилась идея этого видео.&raquo;
             p.about-speaker__quote-author

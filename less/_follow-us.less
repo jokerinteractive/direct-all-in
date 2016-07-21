@@ -3,6 +3,18 @@
   padding: 100px 0;
   position: relative;
 
+  @media @tablet {
+    padding: 50px 0;
+  }
+
+  @media @mobileLarge {
+    padding: 40px 0 0;
+  }
+
+  @media @mobileSmall {
+    padding: 35px 0 0;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -20,9 +32,31 @@
     text-align: center;
     margin-bottom: 70px;
 
+    @media @tablet {
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    @media @mobileLarge {
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+
+    @media @mobileSmall {
+      font-size: 28px;
+      width: 75%;
+      margin: 0 auto 30px;
+      border-bottom: 2px dashed #c2e0f3;
+      padding-bottom: 7px;
+    }
+
     span {
       border-bottom: 2px dashed #c2e0f3;
       padding-bottom: 10px;
+
+      @media @mobileSmall {
+        border-bottom: none;
+      }
     }
   }
 
@@ -31,6 +65,15 @@
     line-height: 28px;
     margin: 0 0 25px;
     text-align: center;
+
+    @media @mobileLarge {
+      font-size: 20px;
+    }
+
+    @media @mobileSmall {
+      font-size: 18px;
+      line-height: 26px;
+    }
   }
 
   &__widget {
@@ -38,5 +81,13 @@
     height: 360px;
     margin: 0 auto;
     background: #ccc;
+
+    @media @tablet {
+      max-width: 80%;
+    }
+
+    @media @mobileLarge {
+      height: 300px;
+    }
   }
 }

@@ -2,10 +2,51 @@
   padding: 60px 0;
   color: #fff;
 
+  @media @laptop {
+    padding: 45px 0;
+  }
+
+  @media @tablet {
+    padding: 0 0 60px 32px;
+  }
+
+  @media @mobileLarge {
+    padding: 0 0 40px;
+  }
+
+  @media @mobileSmall {
+    padding-bottom: 30px;
+  }
+
+  &--padding-media {
+    @media @laptop {
+      padding: 60px 0 0 32px;
+    }
+
+    @media @mobileLarge {
+      padding: 30px 0;
+    }
+
+    @media @mobileSmall {
+      padding: 20px 0;
+    }
+  }
+
   &__header {
     line-height: 1;
     font-size: 28px;
     margin: 15px 0 0;
+
+    @media @mobileLarge {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    @media @mobileSmall {
+      margin: 0;
+      font-size: 20px;
+      line-height: 28px;
+    }
   }
 
   .yandex-course__logo {
@@ -20,6 +61,17 @@
     font-size: 80px;
     line-height: 80px;
 
+    @media @mobileLarge {
+      font-size: 65px;
+      line-height: 65px;
+    }
+
+    @media @mobileSmall {
+      font-size: 50px;
+      line-height: 50px;
+      margin-top: 5px;
+    }
+
     &::first-letter {
       color: #ff0c0c;
     }
@@ -32,6 +84,17 @@
     font-family: "PT Sans Narrow", "Open Sans", arial, sans-serif;
     font-size: 55px;
     line-height: 55px;
+
+    @media @mobileLarge {
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    @media @mobileSmall {
+      font-size: 38px;
+      line-height: 40px;
+      margin: 0;
+    }
 
     &--big {
       font-size: 75px;
@@ -49,6 +112,24 @@
     font-size: 25px;
     line-height: 36px;
     margin: 30px 0 36px;
+
+    @media @tablet {
+      font-size: 20px;
+      line-height: 28px;
+      margin: 0 0 20px 30px;
+      width: 70%;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    @media @mobileLarge {
+      font-size: 18px;
+      line-height: 26px;
+      margin-left: 20px;
+      width: 100%;
+    }
   }
 
   &__small {
@@ -56,12 +137,37 @@
     font-size: 18px;
     line-height: 24px;
     margin: 45px 0 0;
+
+    @media @tablet {
+      margin-top: 20px;
+    }
+
+    @media @mobileLarge {
+      margin-top: 15px;
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 
   &__big {
     display: block;
     font-size: 34px;
     margin: 0 0 20px;
+
+    @media @tablet {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    @media @mobileLarge {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    @media @mobileSmall {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
   }
 
   &__details {
@@ -75,40 +181,114 @@
       border: none;
       padding-left: 0;
     }
+
+    @media @tablet {
+      max-width: 480px;
+    }
+
+    @media @mobileSmall {
+      margin: 10px 0;
+      font-size: 16px;
+    }
   }
 
   &--subscribe {
     padding-left: 20px;
 
+    @media @tablet {
+      padding-left: 0;
+    }
+
     .get-course__header {
       font-size: 25px;
       line-height: 31px;
       margin: 2px 0 0;
+
+      @media @mobileLarge {
+        font-size: 22px;
+        margin: 0;
+      }
+
+      @media @mobileSmall {
+        margin: 0;
+        font-size: 20px;
+        line-height: 28px;
+      }
     }
 
     .get-course__details {
       margin: 30px 0 38px;
       font-size: 18px;
       line-height: 24px;
+
+      @media @mobileLarge {
+        font-size: 16px;
+        margin: 15px 0;
+      }
     }
 
     .get-course__input-text {
       margin: 0 0 24px;
       padding: 18px 20px;
+
+      @media @tablet {
+        margin: 0 auto 24px;
+      }
     }
   }
 
   &--webinar {
-    padding: 18px 0 50px;
+    padding: 18px 0 50px 40px;
 
-    .get-course__details {
-      padding-bottom: 16px;
-      padding-left: 20px;
-      margin-top: 33px;
+    @media @laptop {
+      padding-left: 30px;
     }
 
-    .get-course__btn {
-      margin-left: 0;
+    @media @tablet {
+      padding: 30px 0 40px;
+      width: 70%;
+      min-width: 425px;
+    }
+
+    @media @mobileLarge {
+      padding: 20px 15px 30px;
+      min-width: 0;
+      width: 100%;
+    }
+
+    @media @mobileSmall {
+      padding: 20px 0 30px;
+    }
+
+    .get-course {
+      &__header {
+        @media @tablet {
+          font-size: 26px;
+          margin: 15px 0 10px;
+        }
+
+        @media @mobileLarge {
+          margin: 10px 0;
+          font-size: 22px;
+          line-height: 30px;
+        }
+
+        @media @mobileSmall {
+          font-size: 20px;
+          line-height: 26px;
+        }
+      }
+
+      &__details {
+        padding-bottom: 16px;
+        padding-left: 20px;
+        margin-top: 33px;
+
+        @media @tablet {
+          margin: 20px 0 25px;
+          padding: 10px 0 10px 15px;
+        }
+      }
     }
   }
 

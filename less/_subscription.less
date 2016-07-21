@@ -5,25 +5,58 @@
 
   .header-bg;
 
+  @media @tablet {
+    background: #0f3c5b url(../img/subscriptions/test.png) repeat 50% 50%;
+  }
+
   &__wrap {
     .wrap();
     display: flex;
     justify-content: space-between;
+
+    @media @tablet {
+      flex-wrap: wrap;
+    }
   }
 
   &__column {
     &--left {
       width: 50%;
+
+      @media @tablet {
+        width: 100%;
+      }
     }
     &--right {
       width: 40%;
+
+      @media @tablet {
+        width: 100%;
+      }
     }
     &--padding {
       padding: 60px 0 65px;
+
+      @media @tablet {
+        padding: 30px 30px 35px;
+      }
+
+      @media @mobileLarge {
+        padding: 20px 20px 25px;
+      }
+    }
+    &--order-2 {
+      @media @tablet {
+        order: 2;
+      }
     }
   }
 
   &__img {
     margin-top: 70px;
+
+    @media @tablet {
+      display: none;
+    }
   }
 }

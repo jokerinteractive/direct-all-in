@@ -90,17 +90,42 @@ span.dotted-underline {
 
       border-bottom: 3px solid #e5e5e5;
 
+      @media @mobileLarge {
+        padding: 15px;
+        border-width: 2px;
+      }
+
+      @media @mobileSmall {
+        padding: 10px 15px;
+      }
+
       span {
         vertical-align: top;
 
         line-height: 30px;
         font-size: 26px;
+
+        @media @mobileLarge {
+          font-size: 24px;
+        }
+
+        @media @mobileSmall {
+          font-size: 22px;
+        }
       }
 
       &--myriad {
         span {
           font-size: 28px;
           font-family: "Myriad Pro";
+
+          @media @mobileLarge {
+            font-size: 24px;
+          }
+
+          @media @mobileSmall {
+            font-size: 22px;
+          }
         }
       }
     }
@@ -131,6 +156,15 @@ span.dotted-underline {
       padding: 50px 0;
       width: 860px;
 
+      @media @tablet {
+        padding: 10px 30px;
+      }
+
+      @media @mobileLarge {
+        margin: 0;
+        padding: 15px 5px 25px 25px;
+      }
+
       .list-item {
         display: block;
 
@@ -141,9 +175,27 @@ span.dotted-underline {
         line-height: 24px;
         text-align: left;
 
+        @media @tablet {
+          font-size: 20px;
+        }
+
+        @media @mobileLarge {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+
+        @media @mobileSmall {
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+
         &__num {
           color: red;
           margin-right: 10px;
+
+          @media @mobileLarge {
+            margin-right: 5px;
+          }
         }
 
         &:last-of-type {
@@ -157,6 +209,10 @@ span.dotted-underline {
     padding-top: 40px;
     margin-top: -250px;
     background: none;
+
+    @media @mobileLarge {
+      padding-top: 20px;
+    }
 
     .configuration__browser {
       margin-top: 0;

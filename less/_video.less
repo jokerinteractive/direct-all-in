@@ -10,6 +10,22 @@
     align-items: flex-start;
     padding: 70px 0 79px;
     box-sizing: border-box;
+
+    @media @laptop {
+      padding: 60px 20px;
+    }
+
+    @media @tablet {
+      flex-wrap: wrap;
+    }
+
+    @media @mobileLarge {
+      padding: 50px 20px;
+    }
+
+    @media @mobileSmall {
+      padding: 30px 20px;
+    }
   }
 
   &__iframe {
@@ -17,85 +33,26 @@
     height: 476px;
     background-color: #000;
     border: none;
-  }
 
-  &-info {
-    width: 362px;
-    min-height: 475px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    justify-content: space-between;
-
-    &__top {
-
-      &--watch {
-        font-size: 35px;
-        margin: 0 0 10px;
-        line-height: 1.4;
-      }
-
-      &--choose {
-        line-height: 1.3;
-        font-size: 28px;
-        margin: 0;
-        margin-bottom: 42px;
-      }
-
-      &--text {
-        padding: 5px 0 5px 18px;
-        font-size: 18px;
-        line-height: 1.3;
-        border-left: 2px solid rgb(255, 47, 79);
-      }
+    @media @laptop {
+      width: 630px;
+      height: 380px;
     }
 
-    &__bottom {
-      &--like {
-        font-size: 18px;
-        line-height: 1.4;
-        margin: 0;
-        margin-bottom: 16px;
-        color: #aadcff;
-      }
+    @media @tablet {
+      margin: 0 auto;
+      order: 2;
+    }
 
-      .socials {
-        margin: 0;
-        padding: 0;
+    @media @mobileLarge {
+      width: 100%;
+      height: 250px;
+    }
 
-        &__item {
-          font-size: 0;
-          display: inline-block;
-          list-style: none;
-          width: 61px;
-          height: 24px;
-          overflow: hidden;
-          margin: 0 0 0 5px;
-          background-repeat: no-repeat;
-          background-image: url("../img/subscriptions/icons/socials.png");
-
-          &:first-of-type {
-            margin-left: 0;
-          }
-
-          &--vk {
-            background-position: 0 0;
-          }
-
-          &--fb {
-            background-position: -65px 0;
-          }
-
-          &--tw {
-            background-position: -130px 0;
-          }
-        }
-      }
+    @media @mobileSmall {
+      height: 180px;
     }
   }
-
   &--webinar {
     display: block;
     background: #fff url(../img/video-bg.png) no-repeat 50% 0 ~"/cover";
@@ -103,21 +60,12 @@
     margin-top: -120px;
     padding-top: 120px;
 
-    .video-info__top {
-      &--watch {
-        font-size: 34px;
-        margin-bottom: 26px;
-      }
-      &--choose {
-        font-size: 24px;
-        line-height: 36px;
-        font-weight: normal;
-        margin-bottom: 20px;
-      }
+    @media @tablet {
+      padding-top: 45px;
+    }
 
-      &--text {
-        font-size: 24px;
-      }
+    @media @mobileSmall {
+      padding-top: 70px;
     }
   }
 }

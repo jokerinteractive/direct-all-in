@@ -2,6 +2,18 @@
   padding: 85px 0 165px;
   background: url(../img/calmness/calmness-light-bg.png) no-repeat 50% 10px ~"/100%";
 
+  @media @laptop {
+    padding-top: 80px;
+  }
+
+  @media @tablet {
+    padding: 60px 0 140px;
+  }
+
+  @media @mobileLarge {
+    padding-bottom: 40px;
+  }
+
   &__wrap {
     .wrap;
   }
@@ -11,6 +23,15 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 90px;
+
+    @media @tablet {
+      margin-bottom: 60px;
+    }
+
+    @media @mobileLarge {
+      font-size: 30px;
+      line-height: 30px;
+    }
   }
 
   &__flex {
@@ -19,6 +40,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+
+    @media @tablet {
+      flex-wrap: wrap;
+    }
+
+    @media @mobileLarge {
+      justify-content: center;
+    }
   }
 
   &__part {
@@ -27,6 +56,19 @@
     box-sizing: border-box;
 
     padding: 0 10px;
+
+    @media @tablet {
+      width: 40%;
+      margin-bottom: 20px;
+    }
+
+    @media @mobileLarge {
+      width: 80%;
+    }
+
+    @media @mobileSmall {
+      width: 100%;
+    }
   }
 
   &__img {
@@ -43,6 +85,12 @@
 
     background: #fff center no-repeat;
     background-size: 40%;
+
+    @media @mobileLarge {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 30px;
+    }
 
     &::after {
       content: "1";
@@ -64,6 +112,15 @@
       font-size: 18px;
       line-height: 30px;
       text-align: center;
+
+      @media @mobileLarge {
+        width: 25px;
+        height: 25px;
+        bottom: -7px;
+        margin-left: -7px;
+        font-size: 15px;
+        line-height: 25px;
+      }
     }
 
     &--target {
@@ -98,6 +155,10 @@
     line-height: 26px;
     height: 52px;
     margin-bottom: 5px;
+
+    @media @laptop {
+      height: auto;
+    }
   }
 
   &__list {

@@ -1,6 +1,4 @@
 .webinar {
-  .box-sizing;
-
   &__wrap {
     .wrap;
   }
@@ -26,22 +24,50 @@
     flex-direction: row;
     justify-content: space-between;
 
+    @media @laptop {
+      justify-content: center;
+    }
+
+    @media @tablet {
+      flex-wrap: wrap;
+    }
+
     &--left,
     &--right {
       display: block;
       position: relative;
       width: 500px;
+      box-sizing: border-box;
     }
 
     &--left {
       width: 515px;
-      padding-left: 15px;
-
       background: url(../img/webinar-video.png) no-repeat right bottom;
+      background-size: contain;
+
+      @media @tablet {
+        order: 2;
+        height: 425px;
+        max-width: 90%;
+      }
+
+      @media @mobileLarge {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+        background: none;
+        margin-top: 30px;
+      }
     }
 
     &--right {
-      margin-right: -40px;
+      @media @laptop {
+        width: 40%;
+      }
+
+      @media @tablet {
+        width: 100%;
+      }
     }
   }
 
@@ -59,5 +85,16 @@
     line-height: 24px;
     font-style: italic;
     color: #fff;
+
+    @media @mobileLarge {
+      position: relative;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    @media @mobileSmall {
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 }
